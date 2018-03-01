@@ -1,0 +1,20 @@
+package com.bridgelabz.functional;
+
+import java.util.Scanner;
+
+import com.bridgelabz.utility.Utility;
+
+public class Quadratic15 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter three numbers to find roots");
+		double a=scanner.nextInt();
+		double b=scanner.nextInt();
+		double c=scanner.nextInt();
+		double rootarray[]=new double[2];
+		rootarray=Utility.quadratic(a, b, c);
+		scanner.close();
+	}
+}

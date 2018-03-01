@@ -1,0 +1,9 @@
+package com.bridgelabz.functional;
+
+public class PermutationOfString12 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

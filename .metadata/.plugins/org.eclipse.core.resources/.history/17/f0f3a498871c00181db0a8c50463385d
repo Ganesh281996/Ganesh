@@ -1,0 +1,16 @@
+package com.bridgelabz.functional;
+
+import java.util.Scanner;
+
+public class TwoDArray 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in);
+		int row,col;
+		System.out.println("Enter Rows and Columns of array=");
+		row=scanner.nextInt();
+		col=scanner.nextInt();
+		int twodarray[][]=new int[row][col]();
+	}
+}

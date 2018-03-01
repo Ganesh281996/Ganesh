@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;times&apos; in &apos;com.bridgelabz.functional.FlipCoin.main(...)&apos; to &apos;fliptimes&apos;&#x0A;- Original project: &apos;BasicProject&apos;&#x0A;- Original element: &apos;com.bridgelabz.functional.FlipCoin.main(String[]).times&apos;&#x0A;- Renamed element: &apos;times&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;times&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.bridgelabz.functional{FlipCoin.java[FlipCoin~main~\[QString;@times!134!142!138!142!I!0!false" name="fliptimes" references="true" stamp="1519814279992" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+package com.bridgelabz.functional;
+
+public class PowerValue4 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

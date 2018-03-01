@@ -1,0 +1,16 @@
+package com.bridgelabz.functional;
+
+import java.util.Scanner;
+
+public class Distance11 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter two command line arguments=");
+		int x=Integer.parseInt(args[0]);
+		int y=Integer.parseInt(args[1]);
+		
+		scanner.close();
+	}
+}
