@@ -1,0 +1,40 @@
+package com.bridgelabz.algorithm;
+
+import java.util.Scanner;
+
+import com.bridgelabz.utility.Utility;
+
+public class TemperatureConversion12 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in);
+		int choice=0;
+		double celsius,fahrenheit;
+		do
+		{
+			System.out.println("1 Enter Celsius");
+			System.out.println("2 Enter Fahrenheit");
+			System.out.println("3 Exit.");
+			System.out.println("Enter your choice=");
+			switch(choice)
+			{
+			case 1:
+				System.out.println("Enter in Celsius=");
+				celsius=scanner.nextInt();
+				fahrenheit=Utility.celsiusToFahrenheit(celsius);
+				System.out.println("Fahrenheit="+fahrenheit);
+				break;
+			case 2:
+				System.out.println("Enter in Fahrenheit=");
+				fahrenheit=scanner.nextInt();
+				celsius=Utility.FahrenheitToCelsius(fahrenheit);
+				break;
+			case 3:
+				break;	
+			}
+		}
+		while(choice!=3);
+		scanner.close();
+	}
+}

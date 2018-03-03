@@ -1,0 +1,11 @@
+package com.bridgelabz.algorithm;
+
+import java.util.Scanner;
+
+public class MonthlyPayment13 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in);
+	}
+}

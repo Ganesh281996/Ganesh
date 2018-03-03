@@ -1,0 +1,9 @@
+package com.bridgelabz.algorithm;
+
+public class GuessNumber5 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

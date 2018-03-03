@@ -9,6 +9,100 @@ public class Utility
 {
 	static Scanner scanner=new Scanner(System.in);
 	
+	public static double monthlyPayment(double p,double y,double r)
+	{
+		double smallr=r/(12*100);
+		double smalln=12*y;
+		double payment=(p*smallr)/(1-Math.pow((1+smallr), -smalln));
+		return payment;
+	}
+	public static void guessNumber(int bign,int smalln,int mynumber)
+	{
+		int array[]=new int[bign];
+		boolean flag=false;
+		int i;
+		for(i=0;i<bign;i++)
+		{
+			array[i]=i;
+		}
+		Random random=new Random();
+		int randomnumber=0;
+		int first=0,last=bign-1,mid=bign;
+		for(i=0;i<smalln;i++)
+		{
+			do
+			{
+				randomnumber=random.nextInt(mid);
+			}
+			while(randomnumber<=first || randomnumber>=last);
+			if(randomnumber==mynumber)
+			{
+				System.out.println(randomnumber);
+				System.out.println("Number was found.");
+				break;
+			}
+			else
+			{
+				System.out.println(randomnumber);
+				System.out.println("Enter true if the number is greater than the number u thought=");
+				flag=scanner.nextBoolean();
+			}
+			if(flag==true)
+			{
+				last=randomnumber-1;
+			}
+			else
+			{
+				first=randomnumber+1;
+			}
+			mid=(first+last)/2;
+		}
+		if(i>=bign)
+		{
+			System.out.println("Number was not found.");
+		}
+	}
+	public static double celsiusToFahrenheit(double celsius)
+	{
+		return ((celsius*9/5)+32);
+	}
+	public static double fahrenheitToCelsius(double Fahrenheit) 
+	{
+		return ((Fahrenheit-32)*5/9);
+	}
+	public static String[] insertionSortString(String array[])
+	{
+		String key;
+		int j;
+		for(int i=1;i<array.length;i++)
+		{
+			key = array[i];  
+            j=i-1;  
+            while((j>=0) && (array[j].compareToIgnoreCase(key))>0) 
+            {  
+                array[j+1]=array[j];  
+                j--;  
+            }
+            array[j+1]=key;
+		}
+		return array;
+	}
+	public static int[] insertionSortInteger(int array[])
+	{
+		int key,j;
+		for(int i=0;i<array.length;i++)
+		{
+			key = array[i];  
+            j=i-1;  
+            while((j>-1) && (array[j]>key)) 
+            {  
+                array[j+1]=array[j];  
+                j--;  
+            }
+            array[j+1]=key;
+		}
+		return array;
+	}
 	public static boolean binarySearchInteger(int array[],int number)
 	{
 		array=bubbleSortInteger(array);
@@ -214,8 +308,68 @@ public class Utility
 		rootarray[1]=(-b-Math.sqrt(delta))%(2*a);
 		return rootarray;
 	}
-	public static char[][] ticTacToe(char[][]game)
+	public static String ticTacToeResult(char[][] game)
 	{
+		String userwon="Player 1 User has won.";
+		String computerwon="Player 2 Computer has won.";
+		String draw="It was a Draw.";
+		for(int j=0;j<3;j++)
+		{
+			for(int i=0;i<3;i++)
+			{
+				if(i==j && game[i][j]==game[i+1][j+1] && game[i+1][j+1]==game[i+2][j+2])
+				{
+					if(game[i][j]=='X')
+					{
+						return userwon;
+					}
+					else if(game[i][j]=='O')
+					{
+						return computerwon;
+					}
+				}
+				if(i+j==2 && game[i-2][j]==game[i-1][j+1] && game[i-1][j+1]==game[i][j+2])
+				{
+					if(game[i-2][j]=='X')
+					{
+						return userwon;
+					}
+					else if(game[i-2][j]=='O')
+					{
+						return computerwon;
+					}
+				}
+				if(game[i][j]==game[i][j+1] && game[i][j+1]==game[i][j+2])
+				{
+					if(game[i][j]=='X')
+					{
+						return userwon;
+					}
+					else if(game[i][j]=='O')
+					{
+						return computerwon;
+					}
+				}
+				if(game[j][i]==game[j+1][i] && game[j+1][i]==game[j+2][i])
+				{
+					if(game[i][j]=='X')
+					{
+						return userwon;
+					}
+					else if(game[i][j]=='O')
+					{
+						return computerwon;
+					}
+				}
+			}
+			j=0;
+		}
+		return draw;
+	}
+	public static char[][] ticTacToe(char[][] game)
+	{
+		String userwon="Player 1 User has won.";
+		String computerwon="Player 2 Computer has won.";
 		System.out.println("Player 1 :User");
 		System.out.println("Player 2 :Computer");
 		System.out.println("User will start the game.");
@@ -228,13 +382,21 @@ public class Utility
 		{
 			do
 			{
-				System.out.println("Enter column and row to mark as x between 0 and 3");
+				System.out.println("Enter column and row to mark as X between 0 and 3");
 				row=scanner.nextInt();
 				col=scanner.nextInt();
 			}
 			while(game[row][col]=='X' || game[row][col]=='O');
 			game[row][col]='X';
 			rounds++;
+			if(rounds==9)
+			{
+				break;
+			}
+//			if(Utility.ticTacToeResult(game)==userwon || Utility.ticTacToeResult(game)==computerwon)
+//			{
+//				return game;
+//			}
 			do
 			{
 				randomrow=random.nextInt(3);
@@ -244,6 +406,10 @@ public class Utility
 					game[randomrow][randomcol]='O';
 					computer++;
 					rounds++;
+//					if(Utility.ticTacToeResult(game)==userwon || Utility.ticTacToeResult(game)==computerwon)
+//					{
+//						return game;
+//					}
 				}
 			}
 			while(computer!=1);
@@ -256,17 +422,9 @@ public class Utility
 				}
 				System.out.println();
 			}	
-			System.out.println("Play next turn");System.out.println(rounds);
+			System.out.println("Play next turn");
 		}
-		while(rounds!=9);
-		for(int i=0;i<3;i++)
-		{
-			for(int j=0;j<3;j++)
-			{
-				System.out.print(game[i][j]+"  ");
-			}
-			System.out.println();
-		}
+		while(rounds<=9);
 		return game;
 	}
 	public static long stopWatch()
