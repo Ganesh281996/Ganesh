@@ -1,0 +1,29 @@
+package com.bridgelabz.algorithm;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+
+public class BinarySearchWordFromFile 
+{
+	public static void main(String[] args) 
+	{
+		try 
+		{
+			InputStream inputfile=new FileInputStream("/home/bridgeit/Ganesh/Files/File1");
+			while(inputfile.read()!=0)
+			{
+				
+			}
+		} 
+		catch (FileNotFoundException e) 
+		{
+			e.printStackTrace();
+		} 
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+	}
+}

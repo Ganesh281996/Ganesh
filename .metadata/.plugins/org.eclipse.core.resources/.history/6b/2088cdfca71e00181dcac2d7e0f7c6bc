@@ -1,0 +1,67 @@
+package com.bridgelabz.algorithm;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Scanner;
+
+import com.bridgelabz.utility.Utility;
+
+public class BinarySearchWordFromFile 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in); 
+		int content=0;boolean flag=false;
+		String string="";
+		String stringarray[];
+		InputStream inputfile=null;
+		try 
+		{
+			inputfile=new FileInputStream("/home/bridgeit/Ganesh/Files/File1");
+			while((content=inputfile.read())!=-1)
+			{
+				string=string+(char)content;
+			}
+			stringarray=string.split(" ");
+			
+			stringarray=Utility.bubbleSortString(stringarray);
+			for(int i=0;i<stringarray.length;i++)
+			{
+				System.out.println(stringarray[i]);
+			}
+			System.out.println("Enter the string to search=");
+			string=scanner.next();
+			flag=Utility.binarySearchString(stringarray, string);
+			if(flag==true)
+			{
+				System.out.println("The word is present.");
+			}
+			else
+			{
+				System.out.println("The word was not found.");
+			}
+		} 
+		catch (FileNotFoundException e) 
+		{
+			e.printStackTrace();
+		} 
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+		finally 
+		{
+			try 
+			{
+				inputfile.close();
+			} 
+			catch (IOException e) 
+			{
+				e.printStackTrace();
+			}
+		}
+		scanner.close();
+	}
+}

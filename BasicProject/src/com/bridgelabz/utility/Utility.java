@@ -9,6 +9,149 @@ public class Utility
 {
 	static Scanner scanner=new Scanner(System.in);
 	
+	public static boolean binarySearchInteger(int array[],int number)
+	{
+		array=bubbleSortInteger(array);
+		int first=0,mid=array.length/2,last=array.length-1;
+		int count=0;
+		int originallast=last;
+		do
+		{
+			for(int i=0;i<originallast;i++)
+			{
+				mid=(first+last)/2;
+				if(number==array[mid])
+				{
+					return true;
+				}
+				else
+				{
+					if(number>array[mid])
+					{
+						first=mid+1;
+					}
+					else
+					{
+						last=mid-1;
+					}
+				}
+			}
+			count++;
+			if(count>originallast)
+			{
+				return false;
+			}
+		}
+		while(mid>0 && mid<originallast-1);
+		return false;
+	}
+	public static boolean binarySearchString(String array[],String string)
+	{
+		array=bubbleSortString(array);
+		int first=0,mid=array.length/2,last=array.length-1;
+		int count=0;
+		int originallast=last;
+		do
+		{
+			for(int i=0;i<originallast;i++)
+			{
+				mid=(first+last)/2;
+				if(string.equals(array[mid]))
+				{
+					return true;
+				}
+				else
+				{
+					if(string.compareToIgnoreCase(array[mid])>0)
+					{
+						first=mid+1;
+					}
+					else
+					{
+						last=mid-1;
+					}
+				}
+			}
+			count++;
+			if(count>originallast)
+			{
+				return false;
+			}
+		}
+		while(mid>0 && mid<originallast-1);
+		return false;
+	}
+	public static String[] bubbleSortString(String[] array)
+	{
+		String temp="";
+		for(int i=0;i<array.length;i++)
+		{
+			for(int j=0;j<array.length-1;j++)
+			{
+				if(array[j].compareToIgnoreCase(array[j+1])>0)
+				{
+					temp=array[j];
+					array[j]=array[j+1];
+					array[j+1]=temp;
+				}
+			}
+		}
+		return array;
+	}
+	public static int[] bubbleSortInteger(int[] array)
+	{
+		int temp=0;
+		for(int i=0;i<array.length;i++)
+		{
+			for(int j=0;j<array.length-1;j++)
+			{
+				if(array[j]>array[j+1])
+				{
+					temp=array[j];
+					array[j]=array[j+1];
+					array[j+1]=temp;
+				}
+			}
+		}
+		return array;
+	}
+	public static boolean palindrome(int number)
+	{
+		int reversenumber=0;
+		int originalnumber=number;
+		while(number!=0)
+		{
+			reversenumber=(10*reversenumber)+(number%10);
+			number=number/10;
+		}
+		if(originalnumber==reversenumber)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	public static boolean primeNumber(int number)
+	{
+		if(number==0 || number==1)
+		{
+			return false;
+		}
+		if(number==2)
+		{
+			return true;
+		}
+		for(int i=2;i<number;i++)
+		{
+			if(number%i==0)
+			{
+				return false;
+			}
+		}
+		return true;
+	}
 	public static char[] sortCharArray(char[] chararray)
 	{
 		char temp=0;
@@ -43,9 +186,18 @@ public class Utility
 			{
 				if(chararray1[i]==chararray2[j])
 				{
-					
+					count++;
+					break;
 				}
 			}
+		}
+		if(count==chararray1.length)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
 		}
 	}
 	public static double windChill(double t,double v)
@@ -232,18 +384,21 @@ public class Utility
 	}
 	public static void couponNumber(int number)
 	{
+		int count=0;
 		List<Integer> list=new ArrayList<Integer>();
 		Random random=new Random();
 		int randomnumber;
 		do
 		{
 			randomnumber=random.nextInt(number);
+			count++;
 			if(!list.contains(new Integer(randomnumber)))
 			{
 				list.add(randomnumber);
 			}
 		}
 		while(list.size()!=number);
+		System.out.println("Total random numbers needed ="+count);
 		for(Integer num:list)
 		{
 			System.out.println(num);

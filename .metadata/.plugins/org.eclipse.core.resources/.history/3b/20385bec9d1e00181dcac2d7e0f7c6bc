@@ -1,0 +1,12 @@
+package com.bridgelabz.algorithm;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+
+public class BinarySearchWordFromFile 
+{
+	public static void main(String[] args) 
+	{
+		InputStream inputfile=new FileInputStream("/home/bridgeit/Ganesh/Files");
+	}
+}

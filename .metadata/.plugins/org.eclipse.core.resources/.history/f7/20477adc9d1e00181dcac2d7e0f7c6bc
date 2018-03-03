@@ -1,0 +1,9 @@
+package com.bridgelabz.algorithm;
+
+public class BinarySearchWordFromFile 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}
