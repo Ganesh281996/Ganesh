@@ -1,0 +1,17 @@
+package com.bridgelabz.algorithm;
+
+import java.util.Scanner;
+
+import com.bridgelabz.utility.Utility;
+
+public class Sqrt14 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter value of c=");
+		double c=scanner.nextDouble();
+		double c=Utility.sqrt(c);
+		scanner.close();
+	}
+}

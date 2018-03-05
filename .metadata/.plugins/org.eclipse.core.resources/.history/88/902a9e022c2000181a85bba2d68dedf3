@@ -1,0 +1,55 @@
+package com.bridgelabz.algorithm;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+import com.bridgelabz.utility.Utility;
+
+public class SearchSortMethods4 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Input size of Arrays=");
+		long currenttime;
+		HashMap<String, Long> elapsedtime=new HashMap<String, Long>();
+		int elapsedsize=0;
+		int size=scanner.nextInt();
+		int integerarray[]=new int[size];
+//		long elapsedtime[]=new long[6];
+		String stringarray[]=new String[size];
+		System.out.println("Input integer array=");
+		for(int i=0;i<size;i++)
+		{
+			integerarray[i]=scanner.nextInt();
+		}
+		for(int i=0;i<size;i++)
+		{
+			stringarray[i]=scanner.next();
+		}
+		System.out.println("Input String array=");
+		System.out.println("Enter number to search in integer array=");
+		int number=scanner.nextInt();
+		System.out.println("Enter String to search in String array=");
+		String string=scanner.next();
+		currenttime=System.currentTimeMillis();
+		Utility.bubbleSortInteger(integerarray);
+		elapsedtime.
+		currenttime=System.currentTimeMillis();
+		Utility.bubbleSortString(stringarray);
+		elapsedtime[elapsedsize++]=System.currentTimeMillis()-currenttime;
+		currenttime=System.currentTimeMillis();
+		Utility.insertionSortInteger(integerarray);
+		elapsedtime[elapsedsize++]=System.currentTimeMillis()-currenttime;
+		currenttime=System.currentTimeMillis();
+		Utility.insertionSortString(stringarray);
+		elapsedtime[elapsedsize++]=System.currentTimeMillis()-currenttime;
+		currenttime=System.currentTimeMillis();
+		Utility.binarySearchInteger(integerarray, number);
+		elapsedtime[elapsedsize++]=System.currentTimeMillis()-currenttime;
+		currenttime=System.currentTimeMillis();
+		Utility.binarySearchString(stringarray, string);
+		elapsedtime[elapsedsize++]=System.currentTimeMillis()-currenttime;
+		scanner.close();
+	}
+}

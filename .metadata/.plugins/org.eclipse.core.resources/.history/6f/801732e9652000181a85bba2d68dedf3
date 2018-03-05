@@ -1,0 +1,19 @@
+package com.bridgelabz.functional;
+
+import com.bridgelabz.utility.Utility;
+
+public class LeapYear
+{
+	public static void main(String[] args) 
+	{
+		Utility utility=new Utility();
+		int year=0;
+		do
+		{
+			System.out.println("Enter the Year");
+			year=utility.nextInt();
+		}
+		while(year<1000);
+		System.out.println(Utility.leapyear(year));
+	}
+}

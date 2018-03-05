@@ -1,0 +1,17 @@
+package com.bridgelabz.functional;
+
+import java.util.Scanner;
+
+import com.bridgelabz.utility.Utility;
+
+public class PermutationOfString
+{
+	public static void main(String[] args) 
+	{
+		Utility utility=new Utility();
+		System.out.println("Enter the String=");
+		String string=scanner.next();
+		Utility.permutationOfStringIterative(string);
+		scanner.close();
+	}
+}

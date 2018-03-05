@@ -1,0 +1,15 @@
+package com.bridgelabz.algorithm;
+
+import java.util.Scanner;
+
+public class dayOfWeek11 
+{
+	public static void main(String[] args) 
+	{
+		int day=Integer.parseInt(args[0]);
+		
+		System.out.println("The three command line arguments are ");
+		System.out.print(args[0]+"  "+args[1]+"  "+args[2]);
+		
+	}
+}

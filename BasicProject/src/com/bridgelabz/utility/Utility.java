@@ -7,8 +7,229 @@ import java.util.Scanner;
 
 public class Utility
 {
-	static Scanner scanner=new Scanner(System.in);
+	Scanner scanner;
 	
+	/**
+	 * Constructor to create scanner
+	 */
+	public Utility()
+	{
+		scanner=new Scanner(System.in);
+	}
+	/**
+	 * @return input for String
+	 */
+	public String next()
+	{
+		try
+		{
+			return scanner.next();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return "";
+	}	
+	/**
+	 * @return Input for Integer
+	 */
+	public int nextInt()
+	{
+		try
+		{
+			return scanner.nextInt();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return 0;
+	}	
+	/**
+	 * @return Input for Double
+	 */
+	public double nextDouble()
+	{
+		try
+		{
+			return scanner.nextDouble();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return 0;
+	}	
+	/**
+	 * @return Input for Boolean
+	 */
+	public boolean nextBoolean()
+	{
+		try
+		{
+			return scanner.nextBoolean();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return false;
+	}
+	/**
+	 * @return Input for Long
+	 */
+	public long nextLong()
+	{
+		try
+		{
+			return scanner.nextLong();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return 0;
+	}
+	
+	/**
+	 * purpose: convert the given number to its Binary representation
+	 * @param number input from user to convert into binary form
+	 * @return Binary string representation of giver number
+	 */
+	public static String toBinary(int number)
+	{
+		String ans="";
+		int rem=0;
+		do
+		{
+			rem=number%2;
+			ans=ans+rem;
+			number=number/2;
+		}
+		while(number>0);
+//		char array[]=ans.toCharArray();
+//		int size=array.length-1;
+		for(int i=0;i<ans.length();i++)
+		{
+			
+		}
+		return ans;
+	}
+	/**
+	 * purpose: finding day of given date
+	 * @param day 
+	 * @param month
+	 * @param year
+	 * @return day of given date
+	 */
+	public static int dayOfWeek(int day,int month,int year) 
+	{
+		int y=year-(14-month)/12;
+		int x=y+(y/4)-(y/100)+(y/400);
+		int m=month+12*((14-month)/12)-2;
+		int d= (day+x+31*m/12)%7;
+		return d;
+	}
+	/**
+	 * purpose: take positive integer as input and find square root of it
+	 * @param c input from user to find the square root
+	 * @return square root of the given number
+	 */
+	public static double sqrt(double c)
+	{
+		double t=c;
+		double epsilon=Math.pow(10, -15);
+		double div;
+		do
+		{
+			t=(t+(c/t))/2;
+			div=t-(c/t);
+		}
+		while(Math.abs(div)>epsilon*t);
+		return t;
+	}
+	/**
+	 * purpose: merging the sub arrays to form original array
+	 * @param array main array
+	 * @param low starting index of array
+	 * @param mid middle index of array
+	 * @param high last index of array
+	 */
+	public static void mergeThem(String array[],int low,int mid,int high)
+	{
+		int subarray1size=mid-low+1;
+		int subarray2size=high-mid;
+		String subarray1[]=new String[subarray1size];
+		String subarray2[]=new String[subarray2size];
+		for(int i=0;i<subarray1size;i++)
+		{
+			subarray1[i]=array[i+low];
+		}
+		for(int i=0;i<subarray2size;i++)
+		{
+			subarray2[i]=array[i+mid+1];
+		}
+		int subarray1initial=0,subarray2initial=0;
+		int mainarraysize=low;
+		while(subarray1initial<subarray1size && subarray2initial<subarray2size)
+		{
+			if(subarray1[subarray1initial].compareToIgnoreCase(subarray2[subarray2initial])<0)
+			{
+				array[mainarraysize]=subarray1[subarray1initial];
+				subarray1initial++;
+				mainarraysize++;
+			}
+			else
+			{
+				array[mainarraysize]=subarray2[subarray2initial];
+				subarray2initial++;
+				mainarraysize++;
+			}
+		}
+		while(subarray1initial<subarray1size)
+		{
+			array[mainarraysize]=subarray1[subarray1initial];
+			subarray1initial++;
+			mainarraysize++;
+		}
+		while(subarray2initial<subarray2size)
+		{
+			array[mainarraysize]=subarray2[subarray2initial];
+			subarray2initial++;
+			mainarraysize++;
+		}
+	}
+	/**
+	 * purpose: dividing array into sub arrays
+	 * @param array main array
+	 * @param low starting index of array
+	 * @param high last index of array
+	 * @return sorted array using merge sort
+	 */
+	public static String[] mergeSortString(String array[],int low,int high)
+	{
+		int mid;
+		if(array.length==0 ||array.length==1)
+		{
+			return array;
+		}
+		if(low<high)
+		{
+			mid=low+((high-low)/2);
+			mergeSortString(array, low, mid);
+			mergeSortString(array, mid+1, high);
+			mergeThem(array, low, mid, high);
+		}
+		return array;
+	}
+	/** 
+	 * purpose: finding monthly payment using given inputs
+	 * @param p principle
+	 * @param y year
+	 * @param r rate of interest
+	 * @return double value of monthly payment
+	 */
 	public static double monthlyPayment(double p,double y,double r)
 	{
 		double smallr=r/(12*100);
@@ -16,8 +237,15 @@ public class Utility
 		double payment=(p*smallr)/(1-Math.pow((1+smallr), -smalln));
 		return payment;
 	}
+	/**
+	 * purpose: computer will guess number that u selected using random number 
+	 * @param bign range of numbers to guess
+	 * @param smalln number of guesses
+	 * @param mynumber number to search
+	 */
 	public static void guessNumber(int bign,int smalln,int mynumber)
 	{
+		Utility utility=new Utility();
 		int array[]=new int[bign];
 		boolean flag=false;
 		int i;
@@ -45,7 +273,7 @@ public class Utility
 			{
 				System.out.println(randomnumber);
 				System.out.println("Enter true if the number is greater than the number u thought=");
-				flag=scanner.nextBoolean();
+				flag=utility.nextBoolean();
 			}
 			if(flag==true)
 			{
@@ -62,14 +290,29 @@ public class Utility
 			System.out.println("Number was not found.");
 		}
 	}
+	/**
+	 * purpose: convert celcius to fahrenheit
+	 * @param celsius temperature in celcius
+	 * @return temperature in fahrenheit
+	 */
 	public static double celsiusToFahrenheit(double celsius)
 	{
 		return ((celsius*9/5)+32);
 	}
+	/**
+	 * purpose: convert fahrenheit to celcius
+	 * @param Fahrenheit temperature in Fahrenheit
+	 * @return temperature in cencius
+	 */
 	public static double fahrenheitToCelsius(double Fahrenheit) 
 	{
 		return ((Fahrenheit-32)*5/9);
 	}
+	/**
+	 * purpose: Sorting String using Insertion sort
+	 * @param array array to be sorted
+	 * @return sorted array
+	 */
 	public static String[] insertionSortString(String array[])
 	{
 		String key;
@@ -87,6 +330,11 @@ public class Utility
 		}
 		return array;
 	}
+	/**
+	 * purpose: Sorting Integer array using Insertion sort
+	 * @param array array to be sorted
+	 * @return sorted array
+	 */
 	public static int[] insertionSortInteger(int array[])
 	{
 		int key,j;
@@ -103,6 +351,12 @@ public class Utility
 		}
 		return array;
 	}
+	/**
+	 * purpose: Search number in integer array using binary search
+	 * @param array input array
+	 * @param number value to be searched in array
+	 * @return true if number is found else false
+	 */
 	public static boolean binarySearchInteger(int array[],int number)
 	{
 		array=bubbleSortInteger(array);
@@ -139,6 +393,12 @@ public class Utility
 		while(mid>0 && mid<originallast-1);
 		return false;
 	}
+	/**
+	 * purpose: Search String in String array using binary search
+	 * @param array input array
+	 * @param string value to be searched in array
+	 * @return true if string is found else false
+	 */
 	public static boolean binarySearchString(String array[],String string)
 	{
 		array=bubbleSortString(array);
@@ -175,6 +435,11 @@ public class Utility
 		while(mid>0 && mid<originallast-1);
 		return false;
 	}
+	/**
+	 * purpose: sorting String array using bubble sort
+	 * @param array input array
+	 * @return sorted array
+	 */
 	public static String[] bubbleSortString(String[] array)
 	{
 		String temp="";
@@ -192,6 +457,33 @@ public class Utility
 		}
 		return array;
 	}
+	/**
+	 * purpose: sorting long array in descending order
+	 * @param array input array
+	 * @return sorted array
+	 */
+	public static long[] sortLongDesc(long[] array)
+	{
+		long temp=0;
+		for(int i=0;i<array.length;i++)
+		{
+			for(int j=0;j<array.length-1;j++)
+			{
+				if(array[j]<array[j+1])
+				{
+					temp=array[j];
+					array[j]=array[j+1];
+					array[j+1]=temp;
+				}
+			}
+		}
+		return array;
+	}
+	/**
+	 * purpose: Sorting integer array using bubble sort
+	 * @param array input array
+	 * @return sorted array
+	 */
 	public static int[] bubbleSortInteger(int[] array)
 	{
 		int temp=0;
@@ -209,6 +501,11 @@ public class Utility
 		}
 		return array;
 	}
+	/**
+	 * purpose: Finding if the given number is palindrome or not
+	 * @param number input number
+	 * @return returns true if number is palindrome else false
+	 */
 	public static boolean palindrome(int number)
 	{
 		int reversenumber=0;
@@ -227,6 +524,11 @@ public class Utility
 			return false;
 		}
 	}
+	/**
+	 * purpose: Finding if the given number is prime or not
+	 * @param number input number
+	 * @return true if number is prime else false
+	 */
 	public static boolean primeNumber(int number)
 	{
 		if(number==0 || number==1)
@@ -246,6 +548,11 @@ public class Utility
 		}
 		return true;
 	}
+	/**
+	 * purpose: sorting character array
+	 * @param chararray input character array
+	 * @return sorted array
+	 */
 	public static char[] sortCharArray(char[] chararray)
 	{
 		char temp=0;
@@ -263,6 +570,12 @@ public class Utility
 		}
 		return chararray;
 	}
+	/**
+	 * purpose: finding if the given strings are anagram or not
+	 * @param string1 first string 
+	 * @param string2 second string
+	 * @return true if strings are anagram else false
+	 */
 	public static boolean findingAnagram(String string1,String string2)
 	{
 		int count=0;
@@ -294,11 +607,24 @@ public class Utility
 			return false;
 		}
 	}
+	/**
+	 * purpose: calculating windchill using formula
+	 * @param t temperature in fahrenheit
+	 * @param v speed in miles per hour
+	 * @return calculated windchill 
+	 */
 	public static double windChill(double t,double v)
 	{
 		double w=35.74+0.6215*t+(((0.4275*t)-35.75)*Math.pow(v, 0.16));
 		return w;
 	}
+	/**
+	 * purpose: finding roots of given equation
+	 * @param a value used in formula
+	 * @param b value used in formula
+	 * @param c value used in formula
+	 * @return roots of equation
+	 */
 	public static double[] quadratic(double a,double b,double c)
 	{
 		double rootarray[]=new double[2];
@@ -308,6 +634,11 @@ public class Utility
 		rootarray[1]=(-b-Math.sqrt(delta))%(2*a);
 		return rootarray;
 	}
+	/**
+	 * purpose: Finding the result of tic tac toe game played by user and computer
+	 * @param game value of game in twodarray form
+	 * @return who won the game or is it draw
+	 */
 	public static String ticTacToeResult(char[][] game)
 	{
 		String userwon="Player 1 User has won.";
@@ -366,10 +697,16 @@ public class Utility
 		}
 		return draw;
 	}
+	/**
+	 * purpose: playing tic tac toe game 
+	 * @param game twodarray on which game will be played
+	 * @return returns the game played
+	 */
 	public static char[][] ticTacToe(char[][] game)
 	{
-		String userwon="Player 1 User has won.";
-		String computerwon="Player 2 Computer has won.";
+		Utility utility=new Utility();
+//		String userwon="Player 1 User has won.";
+//		String computerwon="Player 2 Computer has won.";
 		System.out.println("Player 1 :User");
 		System.out.println("Player 2 :Computer");
 		System.out.println("User will start the game.");
@@ -383,8 +720,8 @@ public class Utility
 			do
 			{
 				System.out.println("Enter column and row to mark as X between 0 and 3");
-				row=scanner.nextInt();
-				col=scanner.nextInt();
+				row=utility.nextInt();
+				col=utility.nextInt();
 			}
 			while(game[row][col]=='X' || game[row][col]=='O');
 			game[row][col]='X';
@@ -427,20 +764,35 @@ public class Utility
 		while(rounds<=9);
 		return game;
 	}
+	/**
+	 * purpose: Finding elapsed time between two inputs from user
+	 * @return elapsed time
+	 */
 	public static long stopWatch()
 	{
-		long starttime=System.currentTimeMillis();
+		Utility utility=new Utility();
 		long stoptime=0;
+		long starttime=System.currentTimeMillis();
 		System.out.println("Enter number to stop the watch=");
-		scanner.nextInt();
+		utility.nextInt();
 		stoptime=System.currentTimeMillis();
 		long elapsedtime=stoptime-starttime;
 		return elapsedtime;
 	}
+	/**
+	 * purpose: finding all the combinations of given string
+	 * @param string input String
+	 */
 	public static void permutationOfStringIterative(String string)
 	{
 		
 	}
+	/**
+	 * purpose: Finding distance using power function
+	 * @param x value used in formula
+	 * @param y value used in formula
+	 * @return calculated distance
+	 */
 	public static double distance(int x,int y)
 	{
 		double xsquare=Math.pow(x, 2);
@@ -449,6 +801,10 @@ public class Utility
 		double distance=Math.pow(sumofsquares, 0.5);
 		return distance;
 	}
+	/**
+	 * purpose: finding distinct integer triplets whose sum=0
+	 * @param array input array
+	 */
 	public static void integerTriplet(int array[])
 	{
 		int numoftriplets=0;
@@ -471,19 +827,23 @@ public class Utility
 		}
 		System.out.println("Number of Triplets="+numoftriplets);
 	}
+	/**
+	 * purpose: Reading Integer 2Darray and printing it
+	 */
 	public static void integer2DArray()
 	{	
+		Utility utility=new Utility();
 		int row,col;
 		System.out.println("Enter Rows and Columns of array=");
-		row=scanner.nextInt();
-		col=scanner.nextInt();
+		row=utility.nextInt();
+		col=utility.nextInt();
 		int twodarray[][]=new int[row][col];
 		for(int i=0;i<row;i++)
 		{
 			for(int j=0;j<col;j++)
 			{
 				System.out.print("Enter "+(row*col)+" numbers.");
-				twodarray[i][j]=scanner.nextInt();
+				twodarray[i][j]=utility.nextInt();
 			}
 		}
 		for(int i=0;i<row;i++)
@@ -494,19 +854,23 @@ public class Utility
 			}
 		}
 	}
+	/**
+	 * purpose: Reading double 2Darray and printing it
+	 */
 	public static void double2DArray()
 	{
+		Utility utility=new Utility();
 		int row,col;
 		System.out.println("Enter Rows and Columns of array=");
-		row=scanner.nextInt();
-		col=scanner.nextInt();
+		row=utility.nextInt();
+		col=utility.nextInt();
 		double twodarray[][]=new double[row][col];
 		for(int i=0;i<row;i++)
 		{
 			for(int j=0;j<col;j++)
 			{
 				System.out.print("Enter "+(row*col)+" numbers.");
-				twodarray[i][j]=scanner.nextDouble();
+				twodarray[i][j]=utility.nextDouble();
 			}
 		}
 		for(int i=0;i<row;i++)
@@ -517,19 +881,23 @@ public class Utility
 			}
 		}
 	}
+	/**
+	 * purpose: Reading Boolean 2Darray and printing it
+	 */
 	public static void boolean2DArray()
 	{
+		Utility utility=new Utility();
 		int row,col;
 		System.out.println("Enter Rows and Columns of array=");
-		row=scanner.nextInt();
-		col=scanner.nextInt();
+		row=utility.nextInt();
+		col=utility.nextInt();
 		boolean twodarray[][]=new boolean[row][col];
 		for(int i=0;i<row;i++)
 		{
 			for(int j=0;j<col;j++)
 			{
 				System.out.println("Enter "+(row*col)+" numbers.");
-				twodarray[i][j]=scanner.nextBoolean();
+				twodarray[i][j]=utility.nextBoolean();
 			}
 		}
 		for(int i=0;i<row;i++)
@@ -540,6 +908,10 @@ public class Utility
 			}
 		}
 	}
+	/** 
+	 * purpose: random numbers need to generate distinct coupon numbers
+	 * @param number N distinct coupon number
+	 */
 	public static void couponNumber(int number)
 	{
 		int count=0;
@@ -562,6 +934,12 @@ public class Utility
 			System.out.println(num);
 		}
 	}
+	/**
+	 * purpose: gambler game. Start with stake and keep betting to win or lose
+	 * @param stake initial money
+	 * @param goal goal neede to be reached in order to win
+	 * @param times how times to play
+	 */
 	public static void gambler(int stake,int goal,int times)
 	{
 		int win=0,lose=0;
@@ -595,6 +973,10 @@ public class Utility
 		System.out.println("Wins="+win+"  Lose="+lose);
 		System.out.println("WinPercentage="+winpercent+"%    LosePercentage"+losepercent+"%");
 	}
+	/**
+	 * purpose: finding prime factors of given number
+	 * @param number input number
+	 */
 	public static void primeFactors(int number)
 	{
 		if(number==1)
@@ -614,6 +996,11 @@ public class Utility
 			}
 		}
 	}
+	/**
+	 * purpose: finding harmonic number using formula
+	 * @param harmonicnumber input variable
+	 * @return calculated harmonic number
+	 */
 	public static double harmonicNumber(int harmonicnumber)
 	{
 		double sum=0;
@@ -625,6 +1012,10 @@ public class Utility
 		}
 		return sum;
 	}
+	/**
+	 * purpose: finding power of 2 which is less than given number
+	 * @param power input number
+	 */
 	public static void powerValue(int power)
 	{
 		int mul=2;
@@ -635,10 +1026,20 @@ public class Utility
 			mul=mul*2;	
 		}
 	}
+	/**
+	 * purpose: printing hello username
+	 * @param username input name
+	 * @return string representing hello username
+	 */
 	public static String helloUserName(String username)
 	{
 		return "Hello "+username+" ,How are you?";
 	}
+	/**
+	 * purpose: flip a coin many times and find percentage of heads and tails
+	 * @param fliptimes number of times to flip coin
+	 * @return percentage of head
+	 */
 	public static double flipCoin(int fliptimes)
 	{
 		double head=0;
@@ -655,6 +1056,11 @@ public class Utility
 		div=(head/fliptimes);
 		return (div*100);
 	}
+	/**
+	 * purpose: finding if the given year is leap year or not
+	 * @param year given year
+	 * @return string stating if the year is leap year or not
+	 */
 	public static String leapyear(int year)
 	{
 		if((year%4)==0)

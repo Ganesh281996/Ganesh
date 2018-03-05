@@ -1,0 +1,16 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.Utility;
+
+public class MonthlyPayment 
+{
+	public static void main(String[] args) 
+	{
+		double p=Double.parseDouble(args[0]);
+		double y=Double.parseDouble(args[1]);
+		double r=Double.parseDouble(args[2]);
+		System.out.println("Inputs are "+p+"  "+y+"  "+r);
+		double payment=Utility.monthlyPayment(p, y, r);
+		System.out.println("Payment="+payment);
+	}
+}
