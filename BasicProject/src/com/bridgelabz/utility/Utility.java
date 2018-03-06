@@ -1,9 +1,15 @@
 package com.bridgelabz.utility;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Utility
 {
@@ -104,16 +110,16 @@ public class Utility
 		do
 		{
 			rem=number%2;
-			ans=ans+rem;
+			ans=rem+ans;
 			number=number/2;
 		}
 		while(number>0);
-//		char array[]=ans.toCharArray();
-//		int size=array.length-1;
-		for(int i=0;i<ans.length();i++)
+		do
 		{
-			
+			ans="0"+ans;
 		}
+		while(ans.length()<32);
+		System.out.println();
 		return ans;
 	}
 	/**
@@ -285,7 +291,7 @@ public class Utility
 			}
 			mid=(first+last)/2;
 		}
-		if(i>=bign)
+		if(i>=smalln)
 		{
 			System.out.println("Number was not found.");
 		}
@@ -589,13 +595,9 @@ public class Utility
 		chararray2=sortCharArray(chararray2);
 		for(int i=0;i<chararray1.length;i++)
 		{
-			for(int j=0;j<chararray1.length;j++)
+			if(chararray1[i]==chararray2[i])
 			{
-				if(chararray1[i]==chararray2[j])
-				{
-					count++;
-					break;
-				}
+				count++;
 			}
 		}
 		if(count==chararray1.length)
@@ -644,8 +646,9 @@ public class Utility
 		String userwon="Player 1 User has won.";
 		String computerwon="Player 2 Computer has won.";
 		String draw="It was a Draw.";
-		for(int j=0;j<3;j++)
+		for(int k=0;k<3;k++)
 		{
+			int j=0;
 			for(int i=0;i<3;i++)
 			{
 				if(i==j && game[i][j]==game[i+1][j+1] && game[i+1][j+1]==game[i+2][j+2])
@@ -693,7 +696,6 @@ public class Utility
 					}
 				}
 			}
-			j=0;
 		}
 		return draw;
 	}
@@ -705,8 +707,8 @@ public class Utility
 	public static char[][] ticTacToe(char[][] game)
 	{
 		Utility utility=new Utility();
-//		String userwon="Player 1 User has won.";
-//		String computerwon="Player 2 Computer has won.";
+		String userwon="Player 1 User has won.";
+		String computerwon="Player 2 Computer has won.";
 		System.out.println("Player 1 :User");
 		System.out.println("Player 2 :Computer");
 		System.out.println("User will start the game.");
@@ -730,10 +732,10 @@ public class Utility
 			{
 				break;
 			}
-//			if(Utility.ticTacToeResult(game)==userwon || Utility.ticTacToeResult(game)==computerwon)
-//			{
-//				return game;
-//			}
+			if(Utility.ticTacToeResult(game)==userwon || Utility.ticTacToeResult(game)==computerwon)
+			{
+				return game;
+			}
 			do
 			{
 				randomrow=random.nextInt(3);
@@ -743,10 +745,10 @@ public class Utility
 					game[randomrow][randomcol]='O';
 					computer++;
 					rounds++;
-//					if(Utility.ticTacToeResult(game)==userwon || Utility.ticTacToeResult(game)==computerwon)
-//					{
-//						return game;
-//					}
+					if(Utility.ticTacToeResult(game)==userwon || Utility.ticTacToeResult(game)==computerwon)
+					{
+						return game;
+					}
 				}
 			}
 			while(computer!=1);
@@ -1070,6 +1072,179 @@ public class Utility
 		else
 		{
 			return "The year "+year+" is not a Leap Year";
+		}
+	}
+	/**
+	 * purpose: swapping nibbles of a binary number
+	 * @param number input number
+	 * @return true if decimal value is power of 2 else false
+	 */
+	public static boolean swapNibble(int number)
+	{
+		String binary=toBinary(number);
+		int size=binary.length()-1;
+		String bit8="";
+		String firsthalf="";
+		String secondhalf="";
+		double decimal;
+		int num1=0,num2=4;
+		do
+		{
+			bit8=binary.charAt(size)+bit8;
+			size--;
+		}
+		while(bit8.length()!=8);
+		do
+		{
+			firsthalf=firsthalf+bit8.charAt(num1);
+			secondhalf=secondhalf+bit8.charAt(num2);
+			num1++;num2++;
+		}
+		while(num1<4 && num2!=8);
+		binary=secondhalf+firsthalf;System.out.println(binary);
+		decimal=toDecimal(binary);
+		System.out.println("The Decimal Number after swapping nibbles="+decimal);
+		for(int i=0;i<decimal;i++)
+		{
+			if((i*2)==decimal)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+	/**
+	 * purpose: converts binary numbers to decimal
+	 * @param binary input binary number
+	 * @return decimal value of binary
+	 */
+	public static double toDecimal(String binary)
+	{
+		double decimal=0;
+		int num=7;
+		for(int i=0;i<binary.length()-1;i++)
+		{
+			if(binary.charAt(i)=='1')
+			{
+				decimal=decimal+Math.pow(2, num);
+			}
+			num--;
+		}
+		return decimal;
+	}
+	/**
+	 * purpose: finding number of notes from given amount of money
+	 * @param amount input money
+	 * @return array of number of notes
+	 */
+	public static int[] noOfNotes(int amount)
+	{
+		int noofnotes[]=new int[8];
+		int notes[]=new int[]{1000,500,100,10,5,2,1};
+		int sizenoofnotes=0,sizenotes=0;
+		int number=0;
+		do
+		{
+			number=amount/notes[sizenotes];
+			amount=amount%notes[sizenotes];
+			noofnotes[sizenoofnotes]=number;
+			sizenoofnotes++;
+			sizenotes++;
+		}
+		while(amount!=0);
+		return noofnotes;
+	}
+	/**
+	 * purpose: finding numbers which are prime, palindrome and anagrams
+	 * @param range range of numbers(0 to range)
+	 */
+	public static void primePalindromeAnagram(int range)
+	{
+		List<Integer> primenumber=new ArrayList<Integer>();
+		List<Integer> primepalindrome=new ArrayList<Integer>();
+		Set<Integer> primeanagram=new TreeSet<Integer>();
+		List<Integer> primepalindromeanagram=new ArrayList<Integer>();
+		String string1="",string2="";
+		for(int i=0;i<range;i++)
+		{
+			if(primeNumber(i)==true)
+			{
+				primenumber.add(i);
+			}
+		}
+		System.out.println("Prime numbers="+primenumber);
+		for(Integer i:primenumber)
+		{
+			if(palindrome(i)==true)
+			{
+				primepalindrome.add(i);
+			}
+		}
+		System.out.println("PrimePalindromes="+primepalindrome);
+		for(Integer i:primenumber)
+		{
+			for(Integer j:primenumber)
+			{
+				if(i!=j)
+				{
+					string1=string1+i;
+					string2=string2+j;
+					if(findingAnagram(string1, string2)==true)
+					{
+						primeanagram.add(i);
+						primeanagram.add(j);
+					}
+					string1="";
+					string2="";
+				}
+			}
+		}
+		System.out.println("PrimeAnagrams="+primeanagram);
+		for(Integer i:primepalindrome)
+		{
+			if(primeanagram.contains(i))
+			{
+				primepalindromeanagram.add(i);
+			}
+		}
+		System.out.println("PrimePalindromeAnagram="+primepalindromeanagram);
+	}
+	/**
+	 * purpose: taking path as input and getting the contents present on the file
+	 * @param path path of the file
+	 * @return string array of contents present in file
+	 */
+	public static String[] getFileContents(String path)
+	{
+		InputStream file=null;
+		String string="";
+		String array[]=null;
+		int content=0;
+		try
+		{
+			file=new FileInputStream(path);
+			while((content=file.read())!=-1)
+			{
+				string=string+(char)content;
+			}
+			array=string.split(" ");
+		}
+		catch(FileNotFoundException e)
+		{
+			e.printStackTrace();
+		}
+		catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+		return array;
+	}
+	public static void calender(int year,int month)
+	{
+		String calender[][]=new String[7][7];
+		for(int i=0;i<calender.length;i++)
+		{
+			
 		}
 	}
 }

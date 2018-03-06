@@ -11,12 +11,9 @@ public class PrimeAnagramPalindrome
 {
 	public static void main(String[] args) 
 	{
-		for(int i=0;i<1000;i++)
-		{
-			if(Utility.primeNumber(i) && Utility.palindrome(i))
-			{
-				System.out.println(i);
-			}
-		}
+		Utility utility=new Utility();
+		System.out.println("Enter the range=");
+		int range=utility.nextInt();
+		Utility.primePalindromeAnagram(range);
 	}
 }

@@ -1,0 +1,11 @@
+package com.bridgelabz.utility;
+
+class Node
+{
+	private Node value;
+	private Node pointer;
+}
+public class UnOrderedList 
+{
+	
+}

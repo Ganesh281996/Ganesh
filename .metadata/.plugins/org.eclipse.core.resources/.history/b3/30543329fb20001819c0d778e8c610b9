@@ -1,0 +1,22 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.Utility;
+
+public class SwapNibbleOfBinaryNumber 
+{
+	public static void main(String[] args) 
+	{
+		Utility utility=new Utility();
+		System.out.println("Enter number=");
+		int number=utility.nextInt();
+		boolean flag=utility.swapNibble(number);
+		if(flag==true)
+		{
+			System.out.println("The decimal number is power of 2");
+		}
+		else
+		{
+			System.out.println("It is not power of 2");
+		}
+	}
+}

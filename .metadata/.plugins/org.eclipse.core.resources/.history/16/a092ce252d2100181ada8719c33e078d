@@ -1,0 +1,12 @@
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.Utility;
+
+public class UnOrderedList 
+{
+	public static void main(String[] args) 
+	{
+		String array[]=Utility.getFileCOntents();
+		
+	}
+}

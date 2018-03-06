@@ -1,0 +1,14 @@
+package com.bridgelabz.algorithm;
+
+/*
+ * purpose: Finding numbers which are prime, palindrome and anagram
+ * @author Ganesh
+ * @since 3 March 2018
+*/
+public class PrimeAnagramPalindrome
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

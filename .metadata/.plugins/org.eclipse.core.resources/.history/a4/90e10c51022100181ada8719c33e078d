@@ -1,0 +1,18 @@
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.Utility;
+
+/**
+ * purpose: taking money as input and finding number of notes needed to take change
+ * @author Ganesh
+ * @since 6 march 2018
+ */
+public class VendingMachine 
+{
+	public static void main(String[] args) 
+	{
+		Utility utility=new Utility();
+		System.out.println("Enter the amount=");
+		int amount=utility.nextInt();
+	}
+}

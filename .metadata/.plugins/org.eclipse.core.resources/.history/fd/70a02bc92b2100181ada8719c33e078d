@@ -1,0 +1,33 @@
+package com.bridgelabz.datastructure;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+
+public class UnOrderedList 
+{
+	public static void main(String[] args) 
+	{
+		InputStream file=null;
+		String string="";
+		int content=0;
+		try
+		{
+			file=new FileInputStream("/home/bridgeit/Ganesh/Files/UnOrderedList");
+			while(content=file.read()!=-1)
+			{
+				string=string+(char)file.read();
+			}
+			System.out.println(string);
+		}
+		catch(FileNotFoundException e)
+		{
+			e.printStackTrace();
+		}
+		catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
+}

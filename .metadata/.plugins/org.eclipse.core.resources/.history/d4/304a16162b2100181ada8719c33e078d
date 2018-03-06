@@ -1,0 +1,16 @@
+package com.bridgelabz.datastructure;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+
+public class UnOrderedList 
+{
+	public static void main(String[] args) 
+	{
+		InputStream file=null;
+		try
+		{
+			file=new FileInputStream("/home/bridgeit/Ganesh/Files/UnOrderedList");
+		}
+	}
+}

@@ -1,0 +1,39 @@
+package com.bridgelabz.utility;
+
+class Node
+{
+	private Node value;
+	private Node pointer;
+	
+	public Node(Node value, Node pointer) 
+	{
+		super();
+		this.value = value;
+		this.pointer = pointer;
+	}
+
+	public Node getValue() 
+	{
+		return value;
+	}
+
+	public void setValue(Node value) 
+	{
+		this.value = value;
+	}
+
+	public Node getPointer() 
+	{
+		return pointer;
+	}
+
+	public void setPointer(Node pointer) 
+	{
+		this.pointer = pointer;
+	}
+	
+}
+public class UnOrderedList 
+{
+	
+}
