@@ -1,0 +1,12 @@
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.Utility;
+
+public class OrderedList 
+{
+	public static void main(String[] args) 
+	{
+		String path="/home/bridgeit/Ganesh/Files/OrderedList";
+		String array[]=Utility.getFileContents(path);
+	}
+}

@@ -1,0 +1,153 @@
+package com.bridgelabz.utility;
+
+
+public class LinkedList 
+{
+	Node start;
+	Node end;
+	int size;
+	
+	public Node emptyList()
+	{
+		start=null;
+		end=null;
+		size=0;
+		return start; 
+	}
+	
+	public void add(String value)
+	{
+		Node newnode=new Node(value, null);
+		size++;
+		if(start==null)
+		{
+			start=newnode;
+			end=start;
+		}
+		else
+		{
+			newnode.setPointer(start);
+			start=newnode;
+		}
+	}
+	public void remove(String value)
+	{
+		Node temp=start;
+		Node prevpointer;
+		size--;
+		if(temp==end)
+		{
+			start=null;
+			end=start;
+		}
+		else if(start.getValue().equals(value))
+		{
+			start=temp.getPointer();
+			temp.setPointer(null);
+		}
+		else if(end.getValue().equals(value))
+		{
+			do
+			{
+				prevpointer=temp;
+				temp=temp.getPointer();
+			}
+			while(temp!=end);
+			end=prevpointer;
+			prevpointer.setPointer(null);
+		}
+		else
+		{
+			do
+			{
+				prevpointer=temp;
+				temp=temp.getPointer();
+				if(temp.getValue().equals(value))
+				{
+					prevpointer.setPointer(temp.getPointer());
+					temp.setPointer(null);
+				}	
+			}
+			while(temp.getPointer()!=null);
+		}
+	}
+	public boolean search(String value)
+	{
+		Node temp=start;
+		do
+		{
+			if(temp.getValue().equals(value))
+			{
+				return true;
+			}
+			temp=temp.getPointer();
+		}
+		while(temp!=null);
+		return false;
+	}
+	public int size()
+	{
+		return size;
+	}
+	public void append(String value)
+	{
+		Node newnode=new Node(value, null);
+		size++;
+		Node temp=start;
+		if(start==null)
+		{
+			start=newnode;
+			end=start;
+		}
+		else
+		{
+			end.setPointer(newnode);
+			end=newnode;
+			newnode.setPointer(null);
+		}
+	}
+	public void display()
+	{
+		Node temp=start;
+		if(size==0)
+		{
+			System.out.println("Empty");
+		}
+		else if(size==1)
+		{
+			System.out.println(start.getValue()+"  ");
+		}
+		else
+		{
+			do
+			{
+				System.out.print(temp.getValue()+"  ");
+				temp=temp.getPointer();
+			}
+			while(temp!=null);
+		}
+	}
+	@Override
+	public String toString()
+	{
+		Node temp=start;
+		String tostring="";
+		if(start==null)
+		{
+			return "";
+		}
+		else if(start==end)
+		{
+			return start.getValue();
+		}
+		else
+		{
+			do
+			{
+				tostring=tostring+temp.getValue();
+			}
+			while(temp!=null);
+		}
+		return tostring;
+	}
+}

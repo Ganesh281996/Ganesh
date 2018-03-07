@@ -2,8 +2,10 @@ package com.bridgelabz.utility;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -1238,6 +1240,35 @@ public class Utility
 			e.printStackTrace();
 		}
 		return array;
+	}
+	/**
+	 * Purpose: takes byte array and stores in file
+	 * @param bytearray byte array input
+	 * @param path path of file
+	 */
+	public static void bytesToFile(byte bytearray[],String path)
+	{
+		OutputStream list=null;
+		InputStream file=null;
+		int content=0;
+		try
+		{
+			list=new FileOutputStream(path);
+			list.write(bytearray);
+			file=new FileInputStream(path);
+			while((content=file.read())==-1)
+			{
+				System.out.print((char)content);
+			}
+		}
+		catch(FileNotFoundException e)
+		{
+			e.printStackTrace();
+		}
+		catch(IOException e)
+		{
+			e.printStackTrace();
+		}
 	}
 	public static void calender(int year,int month)
 	{

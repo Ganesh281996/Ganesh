@@ -1,0 +1,106 @@
+package com.bridgelabz.utility;
+
+
+public class LinkedList 
+{
+	Node start;
+	Node end;
+	int size;
+	
+	public Node emptyList()
+	{
+		this.start=null;
+		this.end=null;
+		this.size=0;
+		return start; 
+	}
+	
+	public void add(String value)
+	{
+		Node newnode=new Node(value, null);
+		size++;
+		if(start==null)
+		{
+			start=newnode;
+			end=start;
+		}
+		else
+		{
+			start.setPointer(newnode);
+			start=newnode;
+		}
+	}
+	public void remove(String value)
+	{
+		Node temp=start;
+		Node prevpointer;
+		if(temp==end)
+		{
+			start=null;
+			end=start;
+		}
+		else if(start.getValue()==value)
+		{
+			start=temp.getPointer();
+			temp.setPointer(null);
+		}
+		else if(end.getValue()==value)
+		{
+			do
+			{
+				prevpointer=temp;
+				temp=temp.getPointer();
+			}
+			while(temp!=end);
+			end=prevpointer;
+			prevpointer.setPointer(null);
+		}
+		else
+		{
+			do
+			{
+				if(temp.getValue()==value)
+				{
+					temp.setPointer(temp.getPointer());
+				}
+				temp=temp.getPointer();
+			}
+			while(temp!=null);
+		}
+	}
+	public boolean search(String value)
+	{
+		Node temp=start;
+		do
+		{
+			if(temp.getValue()==value)
+			{
+				return true;
+			}
+			temp=temp.getPointer();
+		}
+		while(temp!=null);
+		return false;
+	}
+	public int size()
+	{
+		return size;
+	}
+	public void append(String value)
+	{
+		Node newnode=new Node<>(value, null);
+		Node temp=start;
+		do
+		{
+			temp=temp.getPointer();
+		}
+		while(temp!=null);
+		temp.setPointer(newnode);
+		end=newnode;
+		newnode.setPointer(null);
+	}
+	public void display()
+	{
+		Node temp=start;
+	}
+}

@@ -1,0 +1,9 @@
+package com.bridgelabz.datastructure;
+
+public class OrderedList 
+{
+	public static void main(String[] args) 
+	{
+		String path="/home/bridgeit/Ganesh/Files/OrderedList";
+	}
+}

@@ -1,0 +1,70 @@
+package com.bridgelabz.utility;
+
+
+public class LinkedList 
+{
+	Node start;
+	Node end;
+	int size;
+	
+	public Node emptyList()
+	{
+		this.start=null;
+		this.end=null;
+		this.size=0;
+		return start; 
+	}
+	
+	public void add(String value)
+	{
+		Node newnode=new Node(value, null);
+		size++;
+		if(start==null)
+		{
+			start=newnode;
+			end=start;
+		}
+		else
+		{
+			end.setPointer(start);
+			end=newnode;
+		}
+	}
+	public void remove(String value)
+	{
+		Node temp=start;
+		Node prevpointer;
+		if(temp==end)
+		{
+			start=null;
+			end=start;
+		}
+		else if(start.getValue()==value)
+		{
+			start=temp.getPointer();
+			temp.setPointer(null);
+		}
+		else if(end.getValue()==value)
+		{
+			do
+			{
+				prevpointer=temp;
+				temp=temp.getPointer();
+			}
+			while(temp!=end);
+			end=prevpointer;
+		}
+		else
+		{
+			do
+			{
+				if(temp.getValue()==value)
+				{
+					temp.setPointer(temp);
+				}
+				temp=temp.getPointer();
+			}
+			while(temp!=end);
+		}
+	}
+}
