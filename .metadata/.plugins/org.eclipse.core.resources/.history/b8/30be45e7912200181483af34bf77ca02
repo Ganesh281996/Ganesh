@@ -1,0 +1,15 @@
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.Utility;
+import com.bridgelabz.utility.Stack;
+
+public class StackMain
+{
+	public static void main(String[] args) 
+	{
+		Utility utility=new Utility();
+		System.out.println("Enter the arithematic expression=");
+		String expression=utility.next();
+		
+	}
+}

@@ -6,12 +6,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="nibb" key="selection"/>
+		<item value="T" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="?"/>
 			<item value="nibb"/>
 			<item value="tictac"/>
 			<item value="tic"/>
@@ -20,6 +21,7 @@
 			<item value="coupon"/>
 		</list>
 		<list key="replacehistory">
+			<item value="T"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

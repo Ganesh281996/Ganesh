@@ -1,0 +1,14 @@
+package com.bridgelabz.utility;
+
+public class Queue 
+{
+	private int front;
+	private int rear;
+	private Object queue[];
+	private int size;
+	
+	public Queue(int capacity)
+	{
+		size=capacity;
+	}
+}

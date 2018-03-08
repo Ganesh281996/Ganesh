@@ -1065,15 +1065,15 @@ public class Utility
 	 * @param year given year
 	 * @return string stating if the year is leap year or not
 	 */
-	public static String leapyear(int year)
+	public static boolean leapyear(int year)
 	{
 		if((year%4)==0)
 		{
-			return "The year "+year+" is a Leap Year";
+			return true;
 		}
 		else
 		{
-			return "The year "+year+" is not a Leap Year";
+			return false;
 		}
 	}
 	/**
@@ -1270,12 +1270,193 @@ public class Utility
 			e.printStackTrace();
 		}
 	}
-	public static void calender(int year,int month)
+	/**
+	 * Purpose: Printing the calendar of given month and year
+	 * @param year input year of calendar
+	 * @param month input month of calendar
+	 * @return 2D array of calendar
+	 */
+	public static String[][] calender(int year,int month)
 	{
 		String calender[][]=new String[7][7];
-		for(int i=0;i<calender.length;i++)
+		int dayofweek,date=1;
+		int temp=0;
+		calender[0][0]="Sun";
+		calender[0][1]="Mon";
+		calender[0][2]="Tue";
+		calender[0][3]="Wed";
+		calender[0][4]="Thu";
+		calender[0][5]="Fri";
+		calender[0][6]="Sat";
+		dayofweek=dayOfWeek(1, month, year);
+		if(leapyear(year) && month==2)
 		{
-			
+			for(int j=1;j<7;j++)
+			{
+				for(int k=dayofweek;k<7;k++)
+				{
+					calender[j][k]=""+date;
+					date++;
+					if(date==30)
+					{
+						break;
+					}
+				}	
+				dayofweek=temp;
+				temp=temp++;
+				if(date==30)
+				{
+					break;
+				}
+			}
 		}
+		else if((!leapyear(year)) && month==2)
+		{
+			for(int j=1;j<7;j++)
+			{
+				for(int k=dayofweek;k<7;k++)
+				{
+					calender[j][k]=""+date;
+					date++;
+					if(date==29)
+					{
+						break;
+					}
+				}	
+				dayofweek=temp;
+				temp=temp++;
+				if(date==29)
+				{
+					break;
+				}
+			}
+		}
+		else
+		{
+			if(month==4 || month==6 || month==9 || month==11)
+			{
+				for(int j=1;j<7;j++)
+				{
+					for(int k=dayofweek;k<7;k++)
+					{
+						calender[j][k]=""+date;
+						date++;
+						if(date==31)
+						{
+							break;
+						}
+					}	
+					dayofweek=temp;
+					temp=temp++;
+					if(date==31)
+					{
+						break;
+					}
+				}
+			}
+			else if(month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12)
+			{
+				for(int j=1;j<7;j++)
+				{
+					for(int k=dayofweek;k<7;k++)
+					{
+						calender[j][k]=""+date;
+						date++;
+						if(date==32)
+						{
+							break;
+						}
+					}
+					dayofweek=temp;
+					temp=temp++;
+					if(date==32)
+					{
+						break;
+					}
+				}
+			}
+		}
+		for(int i=1;i<7;i++)
+		{
+			for(int j=0;j<7;j++)
+			{
+				if(calender[i][j]!=null)
+				{
+					do
+					{
+						calender[i][j]=calender[i][j]+" ";
+					}
+					while(calender[i][j].length()!=3);
+				}
+				if(calender[i][j]==null)
+				{
+					calender[i][j]="   ";
+				}
+			}
+		}
+		return calender;
+	}
+	/**
+	 * Purpose: creates 2d array of range of prime numbers
+	 * @param range max range of prime numbers
+	 * @return 2d array of prime numbers
+	 */
+	public static String[][] twoDPrimeNumber(int range,int col)
+	{
+		String array[][]=new String[100][col];
+		int a=100,b=-1,c=0;
+		int temp=0;
+		for(int i=0;i<col;i++)
+		{
+			array[0][i]=temp+"-"+(temp+100);
+			temp=temp+100;
+		}
+		temp=2;
+		for(int i=0;i<col;i++)
+		{
+			for(int j=1;j<100;j++)
+			{
+				for(int k=temp;k<a;k++)
+				{
+					if(primeNumber(k))
+					{
+						array[j][i]=""+k;
+						temp=k+1;
+						break;
+					}
+					if(k==range)
+					{
+						b=range;
+						break;
+					}
+				}
+			}
+			c=c+100;
+			temp=c;
+			a=a+100;
+			if(b==range)
+			{
+				break;
+			}
+		}
+		for(int i=1;i<100;i++)
+		{
+			for(int j=0;j<col;j++)
+			{
+				if(array[i][j]!=null)
+				{
+					do
+					{
+						array[i][j]=array[i][j]+" ";
+					}
+					while(array[i][j].length()<=6);
+				}
+				if(array[i][j]==null)
+				{
+					array[i][j]="";
+				}
+			}
+		}
+		return array;
 	}
 }

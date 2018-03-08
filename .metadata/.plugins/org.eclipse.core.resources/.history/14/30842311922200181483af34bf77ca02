@@ -1,0 +1,14 @@
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.Utility;
+
+public class BalancedParenthesesStack Simple   Balanced   Parentheses 
+{
+	public static void main(String[] args) 
+	{
+		Utility utility=new Utility();
+		System.out.println("Enter the arithematic expression=");
+		String expression=utility.next();
+		
+	}
+}

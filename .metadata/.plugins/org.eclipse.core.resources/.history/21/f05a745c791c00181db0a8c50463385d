@@ -1,9 +1,0 @@
-package com.bridgelabz.functional;
-
-public class Gambler7 
-{
-	public static void main(String[] args) 
-	{
-		
-	}
-}

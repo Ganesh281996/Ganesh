@@ -1,9 +1,0 @@
-package com.bridgelabz.functional;
-
-public class PrimeFactors6 
-{
-	public static void main(String[] args) 
-	{
-		
-	}
-}

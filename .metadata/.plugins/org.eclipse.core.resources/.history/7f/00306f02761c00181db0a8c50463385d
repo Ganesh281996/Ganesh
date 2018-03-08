@@ -1,9 +1,0 @@
-package com.bridgelabz.functional;
-
-public class HarmonicNumber5
-{
-	public static void main(String[] args) 
-	{
-		
-	}
-}

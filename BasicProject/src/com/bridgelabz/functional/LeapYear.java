@@ -19,6 +19,14 @@ public class LeapYear
 			year=utility.nextInt();
 		}
 		while(year<1000);
-		System.out.println(Utility.leapyear(year));
+		boolean flag=Utility.leapyear(year);
+		if(flag==true)
+		{
+			System.out.println("The year "+year+" is a Leap Year");
+		}
+		else
+		{
+			System.out.println("The year "+year+" is not a Leap Year");
+		}
 	}
 }

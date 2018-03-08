@@ -1,0 +1,7 @@
+package com.bridgelabz.utility;
+
+public class Stack 
+{
+	int top;
+	Objest array[]=null;
+}

@@ -1,0 +1,13 @@
+package com.bridgelabz.utility;
+
+public class Stack 
+{
+	private int top;
+	private Object stack[]=null;
+	
+	public Stack(int capacity)
+	{
+		stack=new Object[capacity];
+		this.top=0;
+	}
+}

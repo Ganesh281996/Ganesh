@@ -1,5 +1,48 @@
 package com.bridgelabz.utility;
 
+class Node<T>
+{
+	private T value;
+	private Node<T> pointer;
+
+	public Node(T value, Node<T> pointer) 
+	{
+		this.value = value;
+		this.pointer = pointer;
+	}
+	
+	public Node() 
+	{
+		super();
+	}
+
+	public T getValue() 
+	{
+		return value;
+	}
+
+	public void setValue(T value) 
+	{
+		this.value = value;
+	}
+
+	public Node<T> getPointer() 
+	{
+		return pointer;
+	}
+
+	public void setPointer(Node<T> pointer) 
+	{
+		this.pointer = pointer;
+	}	
+	
+	@Override
+	public String toString() 
+	{
+		return "Node [value=" + value + ", pointer=" + pointer + "]";
+	}
+
+}
 
 public class LinkedList<T>
 {
@@ -71,6 +114,47 @@ public class LinkedList<T>
 			while(temp.getPointer()!=null);
 		}
 	}
+	public void removeInteger(int value)
+	{
+		Node<T> temp=start;
+		Node<T> prevpointer;
+		size--;
+		if(temp==end)
+		{
+			start=null;
+			end=start;
+		}
+		else if(((int)start.getValue())==value)
+		{
+			start=temp.getPointer();
+			temp.setPointer(null);
+		}
+		else if(((int)end.getValue())==value)
+		{
+			do
+			{
+				prevpointer=temp;
+				temp=temp.getPointer();
+			}
+			while(temp!=end);
+			end=prevpointer;
+			prevpointer.setPointer(null);
+		}
+		else
+		{
+			do
+			{
+				prevpointer=temp;
+				temp=temp.getPointer();
+				if(((int)temp.getValue())==value)
+				{
+					prevpointer.setPointer(temp.getPointer());
+					temp.setPointer(null);
+				}	
+			}
+			while(temp.getPointer()!=null);
+		}
+	}
 	public boolean search(T value)
 	{
 		Node<T> temp=start;
@@ -85,12 +169,14 @@ public class LinkedList<T>
 		while(temp!=null);
 		return false;
 	}
-	public boolean searchInteger(T value)
+	public boolean searchInteger(int value)
 	{
 		Node<T> temp=start;
+		int a;
 		do
 		{
-			if(temp.getValue()==value)
+			a=(int)temp.getValue();
+			if(a==value)
 			{
 				return true;
 			}
@@ -140,10 +226,11 @@ public class LinkedList<T>
 			while(temp!=null);
 		}
 	}
-	public String listToString()
+	@Override
+	public String toString()
 	{
 		Node<T> temp=start;
-		String tostring=null;
+		String tostring="";
 		if(start==null)
 		{
 			return "";
@@ -182,5 +269,4 @@ public class LinkedList<T>
 			 }
 		 }
 	}
-
 }

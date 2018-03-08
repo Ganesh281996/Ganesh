@@ -11,6 +11,7 @@ public class OrderedList
 		String path="/home/bridgeit/Ganesh/Files/OrderedList";
 		String array[]=Utility.getFileContents(path);
 		LinkedList<Integer> list=new LinkedList<Integer>();
+		list.emptyList();
 		for(int i=0;i<array.length-1;i++)
 		{
 			list.add(Integer.parseInt(array[i]));
@@ -19,13 +20,13 @@ public class OrderedList
 		list.display();
 		System.out.println("Enter the Number=");
 		int number=utility.nextInt();
-		if(list.searchInteger(number)==true)
+		if(list.search(number)==true)
 		{
-			list.remove(number);System.out.println(true);
+			list.removeInteger(number);
 		}
 		else
 		{
-			list.add(number);System.out.println(false);
+			list.add(number);
 		}
 		String tostring=list.toString();
 		System.out.println(tostring);

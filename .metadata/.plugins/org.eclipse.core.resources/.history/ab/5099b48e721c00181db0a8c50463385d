@@ -1,9 +1,0 @@
-package com.bridgelabz.functional;
-
-public class HelloUserName 
-{
-	public static void main(String[] args) 
-	{
-		
-	}
-}

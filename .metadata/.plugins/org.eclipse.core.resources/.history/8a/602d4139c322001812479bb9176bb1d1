@@ -1,0 +1,26 @@
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.Utility;
+
+public class TwoDPrimeNumber 
+{
+	public static void main(String[] args) 
+	{
+		Utility utility=new Utility();
+		int col;
+		System.out.println("Enter range=");
+		int range=utility.nextInt();
+		if(range%100==0)
+		{
+			col=range/100;
+			array=new String[100][col];
+		}
+		else
+		{
+			col=(range/100)+1;
+			array=new String[100][col];
+		}
+		String array[][]=Utility.twoDPrimeNumber(range);
+		
+	}
+}
