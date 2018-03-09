@@ -1,16 +1,16 @@
 package com.bridgelabz.utility;
 
-public class Stack 
+public class Stack<T>
 {
 	private int top;
-	private Object stack[]=null;
-	private int capacity=0;
+	private LinkedList<T> stack=null;
+	private int capacity;
 	
 	public Stack(int capacity)
 	{
-		stack=new Object[capacity];
-		this.capacity=capacity;
+		stack=new LinkedList<T>();
 		top=0;
+		this.capacity=capacity;
 	}
 	public boolean isEmpty()
 	{
@@ -24,7 +24,7 @@ public class Stack
 		}
 	}
 	public boolean isFull()
-	{
+	{ 
 		if(top==capacity)
 		{
 			return true;
@@ -34,11 +34,11 @@ public class Stack
 			return false;
 		}
 	}
-	public void push(Object item)
+	public void push(T item)
 	{
 		if(!isFull())
 		{
-			stack[top]=item;
+			stack.append(item);
 			top++;
 		}
 		else
@@ -46,26 +46,40 @@ public class Stack
 			System.out.println("Stack is Full.");
 		}
 	}
-	public Object pop()
+	public T pop()
 	{
-		Object item=null;
+		T item=null;
 		if(isEmpty())
 		{
-			item="stack is Empty";
+			System.out.println("Stack is Empty.");
 		}
 		else
 		{
-			item=stack[top];
+			item=stack.getLastItem();
+			stack.remove(item);
 			top--;
 		}
 		return item;
 	}
-	public Object peek()
+	public T peek()
 	{
-		return stack[top];
+		return stack.getLastItem();
 	}
 	public int size()
 	{
 		return top;
+	}
+	@Override
+	public String toString()
+	{
+		return stack.toString();
+	}
+	public void order()
+	{
+		stack.order();
+	}
+	public void reverseStack()
+	{
+		stack.reverseStack();
 	}
 }

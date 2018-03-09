@@ -10,13 +10,13 @@ public class BalancedParenthesesStack
 		Utility utility=new Utility();
 		System.out.println("Enter the arithematic expression=");
 		String expression=utility.next();
-		Stack stack=new Stack(expression.length());
+		Stack<String> stack=new Stack<String>(expression.length());
 		char chararray[]=expression.toCharArray();
 		for(int i=0;i<chararray.length;i++)
 		{
 			if(chararray[i]=='(')
 			{
-				stack.push('(');
+				stack.push("(");
 			}
 			else if(chararray[i]==')')
 			{

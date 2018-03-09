@@ -832,83 +832,18 @@ public class Utility
 		System.out.println("Number of Triplets="+numoftriplets);
 	}
 	/**
-	 * purpose: Reading Integer 2Darray and printing it
+	 * Purpose: Reading Generic 2Darray and printing it
+	 * @param twodarray array of generic type
+	 * @param row number of rows
+	 * @param col number of columns
 	 */
-	public static void integer2DArray()
+	public static <T> void generic2DArray(T[][] twodarray,int row,int col)
 	{	
-		Utility utility=new Utility();
-		int row,col;
-		System.out.println("Enter Rows and Columns of array=");
-		row=utility.nextInt();
-		col=utility.nextInt();
-		int twodarray[][]=new int[row][col];
-		for(int i=0;i<row;i++)
-		{
-			for(int j=0;j<col;j++)
-			{
-				System.out.print("Enter "+(row*col)+" numbers.");
-				twodarray[i][j]=utility.nextInt();
-			}
-		}
 		for(int i=0;i<row;i++)
 		{
 			for(int j=0;j<col;j++)
 			{
 				System.out.println("arr["+i+"]["+j+"]="+twodarray[i][j]);
-			}
-		}
-	}
-	/**
-	 * purpose: Reading double 2Darray and printing it
-	 */
-	public static void double2DArray()
-	{
-		Utility utility=new Utility();
-		int row,col;
-		System.out.println("Enter Rows and Columns of array=");
-		row=utility.nextInt();
-		col=utility.nextInt();
-		double twodarray[][]=new double[row][col];
-		for(int i=0;i<row;i++)
-		{
-			for(int j=0;j<col;j++)
-			{
-				System.out.print("Enter "+(row*col)+" numbers.");
-				twodarray[i][j]=utility.nextDouble();
-			}
-		}
-		for(int i=0;i<row;i++)
-		{
-			for(int j=0;j<col;j++)
-			{
-				System.out.println("arr["+i+"]["+j+"]="+twodarray[i][j]);
-			}
-		}
-	}
-	/**
-	 * purpose: Reading Boolean 2Darray and printing it
-	 */
-	public static void boolean2DArray()
-	{
-		Utility utility=new Utility();
-		int row,col;
-		System.out.println("Enter Rows and Columns of array=");
-		row=utility.nextInt();
-		col=utility.nextInt();
-		boolean twodarray[][]=new boolean[row][col];
-		for(int i=0;i<row;i++)
-		{
-			for(int j=0;j<col;j++)
-			{
-				System.out.println("Enter "+(row*col)+" numbers.");
-				twodarray[i][j]=utility.nextBoolean();
-			}
-		}
-		for(int i=0;i<row;i++)
-		{
-			for(int j=0;j<col;j++)
-			{
-				System.out.print("arr["+i+"]["+j+"]="+twodarray[i][j]);
 			}
 		}
 	}
@@ -1439,6 +1374,10 @@ public class Utility
 				break;
 			}
 		}
+		return array;
+	}
+	public static String[][] removeNull(String[][] array,int col)
+	{
 		for(int i=1;i<100;i++)
 		{
 			for(int j=0;j<col;j++)
@@ -1458,5 +1397,49 @@ public class Utility
 			}
 		}
 		return array;
+	}
+	/**
+	 * Purpose: create 2D array of anagrams that are prime number
+	 * @param range range of numbers
+	 * @param col number of columns
+	 * @return 2D array of anagrams that are prime number
+	 */
+	public static String[][] twoDPrimeAnagram(int range,int col)
+	{
+		int temp=0,temp1,temp2,temp3=1;
+		String array[][]=twoDPrimeNumber(range, col);
+		String arrayanagram[][]=new String[100][col];
+		for(int i=0;i<col;i++)
+		{
+			arrayanagram[0][i]=temp+"-"+(temp+100);
+			temp=temp+100;
+		}
+		for(int j=0;j<col;j++)
+		{
+			for(int i=1;i<100;i++)
+			{
+				if(array[i][j]!=null)
+				{
+					for(int k=i+1;k<100-i;k++)
+					{
+						if(array[k][j]!=null)
+						{
+							temp1=Integer.parseInt(array[i][j]);
+							temp2=Integer.parseInt(array[k][j]);
+							if(    (findingAnagram(array[i][j], array[k][j]))  && 
+								   (primeNumber(temp1) && primeNumber(temp2))    )
+							{
+								arrayanagram[temp3][j]=array[i][j];
+								temp3++;
+								arrayanagram[temp3][j]=array[k][j];
+								temp3++;
+							}
+						}
+					}
+				}
+			}
+			temp3=1;
+		}
+		return arrayanagram;
 	}
 }

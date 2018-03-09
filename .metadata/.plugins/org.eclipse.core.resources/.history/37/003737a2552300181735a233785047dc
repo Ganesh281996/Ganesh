@@ -1,0 +1,41 @@
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.Queue;
+import com.bridgelabz.utility.Utility;
+
+public class BankingCashQueue 
+{
+	public static void main(String[] args) 
+	{
+		Utility utility=new Utility();
+		System.out.println("Enter the size of Queue=");
+		int size=utility.nextInt();
+		int person=1,choice=0;
+		long amount =100000000;
+		int inputamount=0;
+		Queue<Integer> queue=new Queue<Integer>(size);
+		for(int i=1;i<=size;i++)
+		{
+			queue.enqueue(i);
+		}
+		do
+		{
+			System.out.println("Person="+person);
+			System.out.println("Amount="+amount);
+			System.out.println("1: Deposit");
+			System.out.println("2: withdraw");
+			System.out.println("Enter your choice=");
+			choice=utility.nextInt();
+			switch(choice)
+			{
+			case 1:
+				System.out.println("Enter Amount=");
+				inputamount=utility.nextInt();
+				amount=amount+inputamount;
+				queue.deQueue();
+				break;
+			}
+		}
+		while(size!=0);
+	}
+}

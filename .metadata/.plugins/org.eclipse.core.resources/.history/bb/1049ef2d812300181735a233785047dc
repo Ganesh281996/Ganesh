@@ -1,0 +1,32 @@
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.Stack;
+import com.bridgelabz.utility.Utility;
+
+public class PrimeAnagramStack 
+{
+	public static void main(String[] args) 
+	{
+		Utility utility=new Utility();
+		Stack<Integer> stack=new Stack<Integer>(1000);
+		System.out.println("Enter the range=");
+		int range=utility.nextInt();
+		for(int i=0;i<range;i++)
+		{
+			for(int j=i+1;j<range;j++)
+			{
+				if(Utility.primeNumber(i) && Utility.primeNumber(j))
+				{
+					if(Utility.findingAnagram(""+i,""+j))
+					{
+						stack.push(i);
+						stack.push(j);
+					}
+				}
+			}
+		}
+		stack.order();
+		String tostring=stack.toString();
+		System.out.println(tostring);
+	}
+}

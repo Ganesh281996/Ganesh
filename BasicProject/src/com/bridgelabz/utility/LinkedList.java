@@ -73,6 +73,20 @@ public class LinkedList<T>
 			start=newnode;
 		}
 	}
+	public T getLastItem()
+	{
+		return end.getValue();
+	}
+	public T getFirstItem()
+	{
+		return start.getValue();
+	}
+	public void removeFirst()
+	{
+		Node<T> temp=start;
+		start.setPointer(start.getPointer());
+		temp.setPointer(null);
+	}
 	public void remove(T value)
 	{
 		Node<T> temp=start;
@@ -268,5 +282,20 @@ public class LinkedList<T>
 				 }
 			 }
 		 }
+	}
+	public void reverseStack()
+	{
+		LinkedList<T> list=new LinkedList<T>();
+		for(Node<T> i=start;i!=null;i=i.getPointer())
+		{
+			list.add(i.getValue());
+		}
+		start=null;end=null;size=0;
+		int capacity=list.size;
+		for(int i=0;i<capacity;i++)
+		{
+			add(list.getLastItem());
+			list.remove(list.getLastItem());
+		}
 	}
 }

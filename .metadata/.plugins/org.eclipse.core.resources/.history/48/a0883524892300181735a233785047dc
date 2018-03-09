@@ -1,0 +1,9 @@
+package com.bridgelabz.datastructure;
+
+public class PrimeAnagramQueue 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

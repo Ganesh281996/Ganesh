@@ -1,0 +1,9 @@
+package com.bridgelabz.datastructure;
+
+public class HashingSearchSlotNumber 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

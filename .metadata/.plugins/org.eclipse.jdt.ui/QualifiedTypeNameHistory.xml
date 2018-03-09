@@ -30,14 +30,14 @@
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
-<fullyQualifiedTypeName name="javax.xml.crypto.KeySelector.Purpose"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.LinkedList"/>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
-<fullyQualifiedTypeName name="com.bridgelabz.utility.Utility"/>
 <fullyQualifiedTypeName name="com.bridgelabz.datastructure.Stack"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.Stack"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.Utility"/>
+<fullyQualifiedTypeName name="javax.xml.crypto.KeySelector.Purpose"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>

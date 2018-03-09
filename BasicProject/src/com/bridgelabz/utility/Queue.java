@@ -1,17 +1,15 @@
 package com.bridgelabz.utility;
 
-public class Queue 
+public class Queue<T>
 {
-	private int front;
 	private int rear;
-	private Object queue[];
+	private LinkedList<T> queue;
 	private int size;
 	
 	public Queue(int capacity)
 	{
 		size=capacity;
-		queue=new Object[capacity];
-		front=0;
+		queue=new LinkedList<>();
 		rear=-1;
 	}
 	public boolean isEmpty()
@@ -40,9 +38,8 @@ public class Queue
 	{
 		return rear+1;
 	}
-	public void enqueue(Object item)
-	{
-		
+	public void enQueue(T item)
+	{	
 		if(isFull())
 		{
 			System.out.println("Queue is Full.");
@@ -50,25 +47,27 @@ public class Queue
 		else
 		{
 			rear++;
-			queue[rear]=item;
+			queue.append(item);
 		}
 	}
-	public Object deQueue()
+	public T deQueue()
 	{
-		Object item=null;
+		T item=null;
 		if(isEmpty())
 		{
-			item="Queue is Empty";
+			System.out.println("Queue is Empty.");
 		}
 		else
 		{
-			item=queue[front]; 
-			for(int i=front;i<rear;i--)
-			{
-				queue[i]=queue[i+1];
-			}
+			item=queue.getFirstItem();
+			queue.remove(item);
 			rear--;
 		}
 		return item;
+	}
+	@Override
+	public String toString()
+	{
+		return queue.toString();
 	}
 }
