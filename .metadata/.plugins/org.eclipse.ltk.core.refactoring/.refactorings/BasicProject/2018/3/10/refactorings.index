@@ -2,3 +2,6 @@
 1520319494000	Rename local variable 'b'
 1520395047689	Rename type 'UnOrderedList'
 1520489298289	Delete element
+1520658095844	Infer generic type arguments
+1520684595658	Infer generic type arguments
+1520684603812	Infer generic type arguments

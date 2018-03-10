@@ -80,6 +80,10 @@ public class Stack<T>
 	}
 	public void reverseStack()
 	{
-		stack.reverseStack();
+		stack.reverseLinkedList();
+	}
+	public String[] retrieve()
+	{
+		return stack.retrieve();
 	}
 }

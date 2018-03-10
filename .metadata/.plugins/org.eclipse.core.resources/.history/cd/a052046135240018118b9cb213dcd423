@@ -1,0 +1,22 @@
+package com.bridgelabz.utility;
+
+public class Test 
+{
+	public static void main(String[] args) 
+	{
+		Queue<String> queue=new Queue<>(5);
+		queue.enQueue("a");
+		queue.enQueue("b");
+		queue.deQueue();
+		queue.enQueue("c");
+		queue.enQueue("d");
+		queue.enQueue("e");
+		String array[]=queue.retrieve();
+//		int arr[]=new int[10];
+		for(int i=0;i<array.length;i++)
+		{
+//			array[i]=Integer.parseInt(array[i]);
+			System.out.println(array[i]);
+		}
+	}
+}

@@ -97,4 +97,8 @@ public class DeQueue<T>
 	{
 		return dequeue.toString();
 	}
+	public String[] retrieve()
+	{
+		return dequeue.retrieve();
+	}
 }

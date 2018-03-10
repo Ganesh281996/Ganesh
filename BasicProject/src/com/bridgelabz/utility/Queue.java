@@ -70,4 +70,8 @@ public class Queue<T>
 	{
 		return queue.toString();
 	}
+	public String[] retrieve()
+	{
+		return queue.retrieve();
+	}
 }
