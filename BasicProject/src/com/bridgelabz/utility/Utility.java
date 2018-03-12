@@ -3,9 +3,12 @@ package com.bridgelabz.utility;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.OutputStream;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -14,6 +17,11 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 public class Utility
 {
@@ -791,7 +799,49 @@ public class Utility
 	 */
 	public static void permutationOfStringIterative(String string)
 	{
-		
+		Set<String> set=new TreeSet<String>();
+		int no_of_permutations=1,intnumber=0;
+		for(int i=1;i<=string.length();i++)
+		{
+			no_of_permutations=no_of_permutations*i;
+		}
+		List<Integer> randomnumber=new ArrayList<Integer>();
+		int number=0,count=0;
+		String temp1="";
+		Random random=new Random();
+		do
+		{
+			do
+			{
+				number=random.nextInt(string.length());
+				count++;
+				if(!randomnumber.contains(number))
+				{
+					randomnumber.add(number);
+				}
+			}
+			while(randomnumber.size()!=string.length());
+			for(int k=0;k<string.length();k++)
+			{
+				temp1=temp1+string.charAt(randomnumber.get(k));
+			}
+			randomnumber.removeAll(randomnumber);
+			set.add(temp1);
+			temp1="";
+		}
+		while(set.size()!=no_of_permutations);
+		System.out.println("No of Iterations="+count);
+		System.out.println("No of Permutations="+no_of_permutations);
+		for(String s:set)
+		{
+			intnumber++;
+			if(intnumber==100)
+			{
+				intnumber=1;
+				System.out.println();
+			}
+			System.out.print(s+" ");
+		}
 	}
 	/**
 	 * purpose: Finding distance using power function
@@ -1469,7 +1519,7 @@ public class Utility
 		}
 		n_1_factorial=n_factorial*(test+1);
 		no_of_tree=two_n_factorial/((n_1_factorial)*(n_factorial));
-		return no_of_tree;
+		return no_of_tree%(Math.pow(10, 8)+7);
 	}
 	/**
 	 * Purpose: Creating calendar using Queue
@@ -1575,5 +1625,146 @@ public class Utility
 			listarray[temp].order();
 		}
 		return listarray;
+	}
+	/**
+	 * @param path path of the file
+	 */
+	public static JSONObject ricePulseWheat(String path)
+	{
+		JSONParser parser=null;
+		JSONObject jsonobject=null,rice=null,pulse=null,wheat=null;
+		FileReader file=null;
+		try
+		{
+			file=new FileReader(path);
+			parser=new JSONParser();
+			jsonobject=(JSONObject)parser.parse(file);
+			
+			rice=(JSONObject)jsonobject.get("Rice");
+			System.out.println(rice);
+			
+			pulse=(JSONObject)jsonobject.get("Pulse");
+			System.out.println(pulse);
+			
+			wheat=(JSONObject)jsonobject.get("Wheat");
+			System.out.println(wheat);
+		}
+		catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+		catch(ParseException e)
+		{
+			e.printStackTrace();
+		}
+		return jsonobject;
+	}
+	/**
+	 * @param path path of the file
+	 */
+	public static void inventoryManagement(String path)
+	{
+		long total=0;
+		JSONObject jsonObject=ricePulseWheat(path);
+		
+		JSONObject rice=(JSONObject)jsonObject.get("Rice");
+		total=(Long)rice.get("Weight")*(Long)rice.get("Price");
+		rice.put("Total", total);
+		
+		JSONObject pulse=(JSONObject)jsonObject.get("Pulse");
+		total=(Long)pulse.get("Weight")*(Long)pulse.get("Price");
+		pulse.put("Total", total);
+		
+		JSONObject wheat=(JSONObject)jsonObject.get("Wheat");
+		total=(Long)wheat.get("Weight")*(Long)wheat.get("Price");
+		wheat.put("Total", total);
+		
+		jsonObject=new JSONObject();
+		jsonObject.put("Rice", rice);
+		jsonObject.put("Pulse", pulse);
+		jsonObject.put("Wheat", wheat);
+		path="/home/bridgeit/Ganesh/BasicProject/Files/InventoryManagement";
+		FileWriter file=null;
+		try
+		{
+			file=new FileWriter(path);
+			System.out.println(jsonObject);
+			file.write(jsonObject.toJSONString());
+			
+		}
+		catch(FileNotFoundException e)
+		{
+			e.printStackTrace();
+		}
+		catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+		finally 
+		{
+			try
+			{
+				file.flush();
+				file.close();
+			}
+			catch(IOException e)
+			{
+				e.printStackTrace();
+			}
+		}
+		ricePulseWheat(path);
+	}
+	/**
+	 * @param no_of_stocks total no of stocks
+	 * @param path path of the file
+	 */
+	public static void stockReport(int no_of_stocks,String path)
+	{
+		JSONObject stock=new JSONObject();
+		JSONObject jsonObject=new JSONObject();
+		Utility utility=new Utility();
+		String stock_name=null;
+		long no_of_share=0,share_price=0,stock_value=0,total_value=0;
+		for(int i=0;i<no_of_stocks;i++)
+		{
+			System.out.println("Enter Stock Name");
+			stock_name=utility.next();
+			stock.put("Stock_Name", stock_name);
+			System.out.println("Enter Number of Shares=");
+			no_of_share=utility.nextLong();
+			stock.put("Number_Of_Shares", no_of_share);
+			System.out.println("Enter Price of Each Share=");
+			share_price=utility.nextLong();
+			stock.put("Price", share_price);
+			stock_value=no_of_share*share_price;
+			total_value=total_value+stock_value;
+			stock.put("Stock_Value", stock_value);
+			jsonObject.put("Stock_"+(i+1), stock);
+			stock=new JSONObject();
+		}
+		jsonObject.put("Total_Value", total_value);
+		System.out.println(jsonObject);
+		FileWriter fileWriter=null;
+		try
+		{
+			fileWriter=new FileWriter(path);
+			fileWriter.write(jsonObject.toJSONString());
+		}
+		catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+		finally 
+		{
+			try
+			{
+				fileWriter.flush();
+				fileWriter.close();
+			}
+			catch(IOException e)
+			{
+				e.printStackTrace();
+			}
+		}
 	}
 }

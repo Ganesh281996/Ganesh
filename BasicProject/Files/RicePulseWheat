@@ -1,0 +1,5 @@
+{
+	"Rice":{"Name":"Rice","Weight":10,"Price":100},
+	"Pulse":{"Name":"Pulse","Weight":8,"Price":1000},
+	"Wheat":{"Name":"Wheat","Weight":6,"Price":10000}
+}

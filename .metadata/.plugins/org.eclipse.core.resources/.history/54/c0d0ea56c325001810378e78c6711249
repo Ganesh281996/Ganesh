@@ -1,0 +1,9 @@
+package com.bridgelabz.objectoriented;
+
+public class RicePulseWheat 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

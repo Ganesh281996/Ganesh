@@ -7,7 +7,7 @@ public class HashingSearchSlotNumber
 {
 	public static void main(String[] args) 
 	{
-		String path="/home/bridgeit/Ganesh/Files/HashingFunction";
+		String path="/home/bridgeit/Ganesh/BasicProject/Files/HashingFunction";
 		String stringarray[]=Utility.getFileContents(path);
 		LinkedList<Integer> listarray[]=Utility.hashingSearchSlotNumber(stringarray);		
 		int temp;String tostring="";

@@ -1,0 +1,11 @@
+package com.bridgelabz.objectoriented;
+
+import com.bridgelabz.utility.Utility;
+
+public class StockReport 
+{
+	public static void main(String[] args) 
+	{
+		Utility utility=new Utility();
+	}
+}

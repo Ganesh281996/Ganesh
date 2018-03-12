@@ -1,5 +1,8 @@
 package com.bridgelabz.utility;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Test 
 {
 	public static void main(String[] args) 
@@ -15,5 +18,7 @@ public class Test
 		String a=list.getFirstItem();
 		list.remove(list.getFirstItem());
 		System.out.println(list.search(a));
+		List<LinkedList<String>> li=new ArrayList<>();
+		java.util.LinkedList<String> lis[]=new java.util.LinkedList[10];
 	}
 }

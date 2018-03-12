@@ -1,0 +1,13 @@
+package com.bridgelabz.objectoriented;
+
+import com.bridgelabz.utility.Utility;
+
+public class StockReport 
+{
+	public static void main(String[] args) 
+	{
+		Utility utility=new Utility();
+		System.out.println("Enter Number of Stocks=");
+		int no_of_stocks=utility.nextInt();
+	}
+}

@@ -8,7 +8,7 @@ public class OrderedList
 	public static void main(String[] args) 
 	{
 		Utility utility=new Utility();
-		String path="/home/bridgeit/Ganesh/Files/OrderedList";
+		String path="/home/bridgeit/Ganesh/BasicProject/Files/OrderedList";
 		String array[]=Utility.getFileContents(path);
 		LinkedList<Integer> list=new LinkedList<Integer>();
 		list.emptyList();

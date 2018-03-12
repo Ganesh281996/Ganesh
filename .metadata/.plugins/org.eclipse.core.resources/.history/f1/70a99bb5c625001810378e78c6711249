@@ -1,0 +1,10 @@
+package com.bridgelabz.objectoriented;
+
+public class RicePulseWheat 
+{
+	public static void main(String[] args) 
+	{
+		String path="/home/bridgeit/Ganesh/Files/RicePulseWheat";
+		
+	}
+}

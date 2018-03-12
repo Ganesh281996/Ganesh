@@ -1,0 +1,5 @@
+{
+"Total_Value":10001,
+"Stock_1":{"Price":1000,"Stock_Value":10000,"Stock_Name":"Ganesh","Number_Of_Shares":10},
+"Stock_2":{"Price":1,"Stock_Value":1,"Stock_Name":"Jaspreet","Number_Of_Shares":1}
+}
