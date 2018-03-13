@@ -7,9 +7,10 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.OutputStream;
-
+import java.text.SimpleDateFormat;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -17,8 +18,9 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -42,6 +44,21 @@ public class Utility
 		try
 		{
 			return scanner.next();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return "";
+	}	
+	/**
+	 * @return input for String also takes space
+	 */
+	public String nextLine()
+	{
+		try
+		{
+			return scanner.nextLine();
 		}
 		catch(Exception e)
 		{
@@ -1766,5 +1783,179 @@ public class Utility
 				e.printStackTrace();
 			}
 		}
+	}
+	/**
+	 * @param non_shuffled_cards 2D array containing ordered cards
+	 * @param suit array of suits
+	 * @param rank array of ranks
+	 * @return 2D array stating which player got which cards
+	 */
+	public static String[][]  deckOfCards(String non_shuffled_cards[][],String suit[],String rank[])
+	{
+		String shuffle_cards[][]=new String[52][2];
+		int row=0,column=0,count_row=0,count_column=0;
+		List<Integer> list=new ArrayList<Integer>();
+		Random random=new Random();
+		do
+		{
+			row=random.nextInt(52);
+			if(!list.contains(row))
+			{
+				list.add(row);
+				shuffle_cards[count_row][column]=non_shuffled_cards[row][column];
+				shuffle_cards[count_row][column+1]=non_shuffled_cards[row][column+1];
+				count_row++;
+			}
+		}
+		while(shuffle_cards[51][1]==null);
+		System.out.println("Shuffled Cards=");
+		for(int i=0;i<52;i++)
+		{
+			for(int j=0;j<2;j++)
+			{
+				System.out.print(shuffle_cards[i][j]+"  ");
+			}
+			System.out.println();
+		}
+		String distribute_cards[][]=new String[14][5];
+		for(int i=0;i<14;i++)
+		{
+			for(int j=0;j<5;j++)
+			{
+				distribute_cards[i][j]="";
+			}
+		}
+		for(int i=1;i<14;i++)
+		{
+			distribute_cards[i][0]=rank[i-1];
+		}
+		for(int i=1;i<5;i++)
+		{
+			distribute_cards[0][i]=suit[i-1];
+		}
+		int user=1;
+		for(int k=0;k<36;k++)
+		{
+			for(int i=1;i<5;i++)
+			{
+				if(shuffle_cards[k][0].equals(distribute_cards[0][i]))
+				{
+					for(int j=0;j<13;j++)
+					{
+						if(shuffle_cards[k][1].equals(distribute_cards[j+1][0]))
+						{
+							distribute_cards[j+1][i]="user"+user+"";
+							user++;
+						}
+					}
+				}
+			}
+			if(user==5)
+			{
+				user=1;
+			}
+		}
+		return distribute_cards;
+	}
+	/**
+	 * @param array 2D array to align space
+	 * @return aligned 2Darray
+	 */
+	public static String[][] alignSpace(String array[][])
+	{
+		for(int i=0;i<14;i++)
+		{
+			for(int j=0;j<5;j++)
+			{
+				do
+				{
+					array[i][j]=array[i][j]+" ";
+				}
+				while(array[i][j].length()!=10);
+			}
+		}
+		return array;
+	}
+	public static void queueDeckOfCards(String distribute_cards[][])
+	{
+		Integer temp=0;
+		Queue<Integer> queue[]=new Queue[4];
+		for(int i=0;i<4;i++)
+		{
+			queue[i]=new Queue<>(10);
+		}
+		for(int i=1;i<14;i++)
+		{
+			for(int j=1;j<5;j++)
+			{
+				
+				if(distribute_cards[i][j]!=null && distribute_cards[i][j]!="")
+				{
+					temp=Integer.parseInt(distribute_cards[i][j]);
+					if(temp==1 || temp==2 || temp==3 || temp==4)
+					{
+						queue[j-1].enQueue(temp);
+					}
+				}
+			}
+		}
+		for(int i=0;i<4;i++)
+		{
+			queue[i].order();
+			System.out.println(queue[i].toString());
+		}
+	}
+	public static String regularExpression(String string)
+	{
+		Utility utility=new Utility();
+		
+		Pattern pattern=Pattern.compile("[a-zA-Z]+$");
+		Matcher matcher=null;
+		String name,last_name,mobile,date;
+		do
+		{
+			System.out.println("Enter First Name=");
+			name=utility.next();
+			matcher=pattern.matcher(name);
+			if(!matcher.matches())
+			{
+				System.out.println("Please try again.");
+			}
+		}
+		while(!matcher.matches());
+		
+		pattern=Pattern.compile("[a-zA-Z]+$");
+		do
+		{
+			System.out.println("Enter Last Name=");
+			last_name=utility.next();
+			matcher=pattern.matcher(last_name);
+			if(!matcher.matches())
+			{
+				System.out.println("Please try again.");
+			}
+		}
+		while(!matcher.matches());
+		
+		pattern=Pattern.compile("[0-9]{10}+$");
+		do
+		{
+			System.out.println("Enter Contact Name=");
+			mobile=utility.next();
+			matcher=pattern.matcher(mobile);
+			if(!matcher.matches())
+			{
+				System.out.println("Please try again.");
+			}
+		}
+		while(!matcher.matches());
+		SimpleDateFormat dateFormat=new SimpleDateFormat("dd/MM/YYYY");
+		Date date_object=new Date();
+		date=dateFormat.format(date_object);
+		string=string.replaceAll("<<name>>", name);
+		string=string.replaceAll("<<full name>>", name+" "+last_name);
+		string=string.replaceAll("91­xxxxxxxxxx", mobile);
+		string=string.replaceAll("01/01/2016", date);
+		return string;
 	}
 }

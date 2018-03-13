@@ -74,4 +74,8 @@ public class Queue<T>
 	{
 		return queue.retrieve();
 	}
+	public void order()
+	{
+		queue.order();
+	}
 }

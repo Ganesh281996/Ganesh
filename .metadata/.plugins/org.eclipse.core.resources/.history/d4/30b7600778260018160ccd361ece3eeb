@@ -1,0 +1,9 @@
+package com.bridgelabz.objectoriented;
+
+public class DeckOfCards 
+{
+	public static void main(String[] args) 
+	{
+		String suit[]={"Clubs","Diamonds","Hearts","Spades"};
+	}
+}
