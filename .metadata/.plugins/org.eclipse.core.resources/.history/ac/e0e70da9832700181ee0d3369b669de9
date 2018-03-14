@@ -1,0 +1,17 @@
+package com.bridgelabz.objectoriented;
+
+import com.bridgelabz.utility.Utility;
+
+public class CommercialStockAccount 
+{
+	public static void main(String[] args) 
+	{
+		Utility utility=new Utility();
+		String name=null;
+		do
+		{
+			System.out.println("Enter the name=");
+			name=utility.next();
+		}
+	}
+}

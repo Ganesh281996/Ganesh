@@ -1,0 +1,79 @@
+package com.bridgelabz.utility;
+
+import java.util.Map;
+
+import org.json.simple.JSONObject;
+
+public class StockAccount 
+{
+	public StockAccount(Customer customer,String path)
+	{
+		JSONObject jsonObject=null;
+		jsonObject.put(+customer.getName(), value)
+	}
+}
+class Customer
+{
+	private String name;
+	private long money;
+	private Map<String, Integer> shares;
+	private int total_share;
+	
+	public Customer(String name, long money, Map<String, Integer> shares, int total_share) 
+	{
+		super();
+		this.name = name;
+		this.money = money;
+		this.shares = shares;
+		this.total_share = total_share;
+	}
+
+	public String getName() 
+	{
+		return name;
+	}
+
+	public void setName(String name) 
+	{
+		this.name = name;
+	}
+
+	public long getMoney() 
+	{
+		return money;
+	}
+
+	public void setMoney(long money) 
+	{
+		this.money = money;
+	}
+
+	public Map<String, Integer> getShares() 
+	{
+		return shares;
+	}
+
+	public void setShares(Map<String, Integer> shares) 
+	{
+		this.shares = shares;
+	}
+
+	public int getTotal_share() 
+	{
+		return total_share;
+	}
+
+	public void setTotal_share(int total_share) 
+	{
+		this.total_share = total_share;
+	}
+
+	@Override
+	public String toString() 
+	{
+		return "Customer [name=" + name + ", money=" + money + ", shares=" 
+				+ shares + ", total_share=" + total_share	+ "]";
+	}
+	
+	
+}

@@ -1,0 +1,24 @@
+package com.bridgelabz.objectoriented;
+
+import com.bridgelabz.utility.Utility;
+
+public class CommercialStockAccount 
+{
+	public static void main(String[] args) 
+	{
+		Utility utility=new Utility();
+		String name=null;
+		int choice=0;
+		do
+		{
+			System.out.println("1. Create Account");
+			System.out.println("2. Buy Shares");
+			System.out.println("3. Sell Shares");
+			System.out.println("4. Display Report");
+			System.out.println("5. Exit");
+			System.out.println("Enter your choice=");
+			choice=utility.nextInt();
+			System.out.println();
+		}
+	}
+}

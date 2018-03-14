@@ -1,0 +1,35 @@
+package com.bridgelabz.utility;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+public class StockAccount 
+{
+	String customerPath="/home/bridgeit/Ganesh/BasicProject/Files/StockCustomer.json";
+	String stockPath="/home/bridgeit/Ganesh/BasicProject/Files/StockAccount.json";
+	public StockAccount(Customer customer)
+	{
+		JSONObject name=new JSONObject();
+		JSONObject jsonObject=Utility.readJsonFile(customerPath);
+		if(jsonObject==null)
+		{
+			jsonObject=new JSONObject();
+		}
+		name.put("Money", customer.getMoney());
+		name.put("TotalShare", customer.getTotal_share());
+		jsonObject.put(customer.getName(), name);
+		Utility.writeJsonFile(customerPath, jsonObject);
+	}
+	public void buy(String symbol,int no_of_shares,String name)
+	{
+		JSONObject jsonObject=Utility.readJsonFile(customerPath);
+		JSONObject customer=(JSONObject)jsonObject.get(name);
+		JSONObject share=null;
+		JSONObject share_value=null;
+		if(customer.get("Shares")==null)
+		{
+			array=new JSONArray();
+		}
+		
+	}
+}

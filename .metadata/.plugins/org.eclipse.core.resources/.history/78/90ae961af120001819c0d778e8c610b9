@@ -1,9 +1,0 @@
-package com.bridgelabz.algorithm;
-
-public class SwapNibbleOfBinaryNumber 
-{
-	public static void main(String[] args) 
-	{
-		
-	}
-}

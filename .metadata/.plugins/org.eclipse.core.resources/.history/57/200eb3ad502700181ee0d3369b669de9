@@ -1,0 +1,20 @@
+package com.bridgelabz.utility;
+
+import org.json.simple.JSONObject;
+
+public class StockAccount 
+{
+	public StockAccount(Customer customer,String path)
+	{
+		JSONObject name=new JSONObject();
+		JSONObject jsonObject=Utility.readJsonFile(path);
+		name.put("Money", customer.getMoney());
+		name.put("TotalShare", customer.getTotal_share());
+		jsonObject.put(customer.getName(), name);
+		Utility.writeJsonFile(path, jsonObject);
+	}
+	public void buy(String symbol,int no_of_shares,String name,String CustomerPath,String StockPath)
+	{
+		JSONObject jsonObject=Utility.readJsonFile(CustomerPath);
+	}
+}

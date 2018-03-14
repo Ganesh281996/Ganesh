@@ -1,0 +1,14 @@
+package com.bridgelabz.utility;
+
+import java.util.Map;
+
+public class StockAccount 
+{
+	
+}
+class Customer
+{
+	private String name;
+	private long money;
+	private Map<String, Integer> shares;
+}
