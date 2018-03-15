@@ -20,20 +20,26 @@ public class Test
 //		System.out.println(list.search(a));
 //		List<LinkedList<String>> li=new ArrayList<>();
 //		java.util.LinkedList<String> lis[]=new java.util.LinkedList[10];
-		for(int i=0;i<5;i++)
-		{
-			for(int j=0;j<5;j++)
-			{
-				if(i==0 || j==0 || i==4 ||j==4)
-				{
-					System.out.print("*");
-				}
-				else
-				{
-					System.out.print("-");
-				}
-			}
-			System.out.println();
-		}
+//		for(int i=0;i<5;i++)
+//		{
+//			for(int j=0;j<5;j++)
+//			{
+//				if(i==0 || j==0 || i==4 ||j==4)
+//				{
+//					System.out.print("*");
+//				}
+//				else
+//				{
+//					System.out.print("-");
+//				}
+//			}
+//			System.out.println();
+//		}
+//		String a[]={"4a","3z"};
+//		a=Utility.bubbleSortString(a);System.out.println(a[0]+"  "+a[1]);
+		Doctor d=new Doctor(2, "Ganesh", "java", "AM");
+//		Patient p=new Patient(1, "Vimal", 12312);
+		Clinique c=new Clinique();
+		c.addDoctor(d);
 	}
 }

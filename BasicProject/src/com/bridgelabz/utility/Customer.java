@@ -1,7 +1,5 @@
 package com.bridgelabz.utility;
 
-import java.util.Map;
-
 public class Customer
 {
 	private String name;

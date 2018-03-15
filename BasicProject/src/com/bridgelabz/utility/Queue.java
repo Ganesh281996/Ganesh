@@ -78,4 +78,8 @@ public class Queue<T>
 	{
 		queue.order();
 	}
+	public void orderString()
+	{
+		queue.orderString();
+	}
 }

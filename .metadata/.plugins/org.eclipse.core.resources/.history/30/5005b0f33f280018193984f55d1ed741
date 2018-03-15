@@ -1,0 +1,18 @@
+package com.bridgelabz.utility;
+
+import org.json.simple.JSONObject;
+
+public class Clinique 
+{
+	String doctorPath="/home/bridgeit/Ganesh/BasicProject/Files/Doctor.json";
+	String patientPath="/home/bridgeit/Ganesh/BasicProject/Files/Patient.json";
+	String appointmentsPath="/home/bridgeit/Ganesh/BasicProject/Files/Appointments.json";
+	
+	public void addDoctor(Doctor doctor)
+	{
+		JSONObject jsonObject=Utility.readJsonFile(doctorPath);
+		jsonObject.put("Name", doctor.getDoctorName());
+		jsonObject.put("Id", doctor.getDoctorId());
+		jsonObject.put("Specialization", doctor.getDoctorName());
+	}
+}

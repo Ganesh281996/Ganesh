@@ -1,0 +1,12 @@
+package com.bridgelabz.utility;
+
+public class Clinique 
+{
+	String doctorPath="";
+	String patientPath="";
+	String appointmentsPath="";
+	public void addDoctor(Doctor doctor)
+	{
+		
+	}
+}

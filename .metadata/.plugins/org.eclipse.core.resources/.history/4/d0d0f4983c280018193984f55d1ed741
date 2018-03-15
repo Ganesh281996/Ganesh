@@ -1,0 +1,12 @@
+package com.bridgelabz.utility;
+
+public class Clinique 
+{
+	String doctorPath="/home/bridgeit/Ganesh/BasicProject/Files/Doctor.json";
+	String patientPath="/home/bridgeit/Ganesh/BasicProject/Files/Patient.json";
+	String appointmentsPath="/home/bridgeit/Ganesh/BasicProject/Files/Appointments.json";
+	public void addDoctor(Doctor doctor)
+	{
+		
+	}
+}

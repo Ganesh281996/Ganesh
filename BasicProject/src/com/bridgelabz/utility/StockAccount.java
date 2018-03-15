@@ -1,11 +1,23 @@
 package com.bridgelabz.utility;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
 import org.json.simple.JSONObject;
 
 public class StockAccount 
 {
 	String customerPath="/home/bridgeit/Ganesh/BasicProject/Files/StockCustomer.json";
 	String stockPath="/home/bridgeit/Ganesh/BasicProject/Files/StockAccount.json";
+	
+	Map<String, String> transaction=new HashMap<String,String>();
+	SimpleDateFormat dateFormat=new SimpleDateFormat("hh-mm-ss dd/MM/YYYY");
+	Date date=new Date();
+	int count=1;
+	
 	public StockAccount()
 	{
 		
@@ -65,6 +77,7 @@ public class StockAccount
 		customer.put("Shares", share_value);
 		jsonObject.put(name, customer);
 		Utility.writeJsonFile(customerPath, jsonObject);
+		transaction.put((count++)+" "+symbol, name+" bought "+no_of_shares+" Share at time "+dateFormat.format(date));
 		
 	}
 	public void sell(String symbol,long no_of_shares,String name)
@@ -93,5 +106,37 @@ public class StockAccount
 		
 		Utility.writeJsonFile(customerPath, customerJson);
 		
+		transaction.put((count++)+" "+symbol, name+" sold "+no_of_shares+" Share at time "+dateFormat.format(date));
+	}
+	public void addNewSymbol(String symbol,long noOfShares,long priceOfEachShare)
+	{
+		JSONObject jsonObject=Utility.readJsonFile(stockPath);
+		JSONObject jsonSymbol=new JSONObject();
+		jsonSymbol.put("NumberOfShare", noOfShares);
+		jsonSymbol.put("Price", priceOfEachShare);
+		jsonObject.put(symbol, jsonSymbol);
+		Utility.writeJsonFile(stockPath, jsonObject);
+	}
+	public void removeSymbol(String symbol)
+	{
+		JSONObject jsonObject=Utility.readJsonFile(stockPath);
+		jsonObject.remove(symbol);
+		Utility.writeJsonFile(stockPath, jsonObject);
+	}
+	public void displayTransactionDetails()
+	{
+		Iterator<Map.Entry<String, String>> iterator=transaction.entrySet().iterator();
+		while(iterator.hasNext())
+		{
+			Entry<String, String> entry=iterator.next();
+			System.out.println(entry.getKey()+"    "+entry.getValue());
+		}
+	}
+	public void displayReport()
+	{
+		JSONObject jsonStock=Utility.readJsonFile(stockPath);
+		System.out.println(jsonStock.toJSONString());
+		JSONObject jsonCustomer=Utility.readJsonFile(customerPath);
+		System.out.println(jsonCustomer.toJSONString());
 	}
 }

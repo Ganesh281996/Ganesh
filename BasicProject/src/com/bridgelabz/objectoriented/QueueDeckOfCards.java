@@ -7,7 +7,7 @@ public class QueueDeckOfCards
 	public static void main(String[] args) 
 	{
 		String suit[]={"Clubs","Diamonds","Hearts","Spades"};
-		String rank[]={"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
+		String rank[]={"a2","b3","c4","d5","e6","f7","g8","h9","i10","jJack","kQueen","lKing","mAce"};
 		String non_shuffled_cards[][]=new String [52][2];
 		int row=0,column=0;
 		for(int i=0;i<4;i++)
@@ -19,7 +19,6 @@ public class QueueDeckOfCards
 				row++;
 			}
 		}
-		String distribute_cards[][]=Utility.deckOfCards(non_shuffled_cards,suit,rank);
-		Utility.queueDeckOfCards(distribute_cards);
+		Utility.queueDeckOfCards(non_shuffled_cards,suit,rank);
 	}
 }

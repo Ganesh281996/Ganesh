@@ -1,9 +1,0 @@
-package com.bridgelabz.datastructure;
-
-public class TwoDPrimeNumber 
-{
-	public static void main(String[] args) 
-	{
-		
-	}
-}

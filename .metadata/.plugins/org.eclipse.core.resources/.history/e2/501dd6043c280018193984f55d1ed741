@@ -1,0 +1,9 @@
+package com.bridgelabz.utility;
+
+public class Clinique 
+{
+	public void addDoctor(Doctor doctor)
+	{
+		
+	}
+}

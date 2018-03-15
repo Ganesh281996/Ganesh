@@ -10,10 +10,10 @@ public class CommercialStockAccount
 	{
 		Utility utility=new Utility();
 		Customer customer=null;
-		StockAccount account=null;
+		StockAccount account=new StockAccount();
 		StockAccount stockAccount=new StockAccount();
 		String name=null,symbol=null;;
-		long money=0,noOfShares=0;
+		long money=0,noOfShares=0,priceOfEachShare=0;
 		long total_share=0;
 		int choice=0;
 		do
@@ -21,8 +21,11 @@ public class CommercialStockAccount
 			System.out.println("1. Create Account");
 			System.out.println("2. Buy Shares");
 			System.out.println("3. Sell Shares");
-			System.out.println("4. Display Report");
-			System.out.println("5. Exit");
+			System.out.println("4. Add Company");
+			System.out.println("5. Remove Company");
+			System.out.println("6. Display Transaction Details");
+			System.out.println("7. Display Report");
+			System.out.println("8. Exit");
 			System.out.println("Enter your choice=");
 			choice=utility.nextInt();
 			
@@ -55,9 +58,27 @@ public class CommercialStockAccount
 				stockAccount.sell(symbol, noOfShares, name);
 				break;
 			case 4:
+				System.out.println("Enter the Symbol of Company to Add in File=");
+				symbol=utility.next();
+				System.out.println("Enter no of Shares=");
+				noOfShares=utility.nextLong();
+				System.out.println("Enter Price of Shares");
+				priceOfEachShare=utility.nextLong();
+				stockAccount.addNewSymbol(symbol, noOfShares, priceOfEachShare);
+				break;
+			case 5:
+				System.out.println("Enter the Symbol of Company to Add in File=");
+				symbol=utility.next();
+				account.removeSymbol(symbol);
+				break;
+			case 6:
+				stockAccount.displayTransactionDetails();
+				break;
+			case 7:
+				stockAccount.displayReport();
 				break;
 			}
 		}
-		while(choice!=5);
+		while(choice!=8);
 	}
 }

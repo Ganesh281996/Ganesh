@@ -1,0 +1,8 @@
+package com.bridgelabz.utility;
+
+public class Patient 
+{
+	private int patientId;
+	private String patientName;
+	private long mobileNumber;
+}

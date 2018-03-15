@@ -290,6 +290,25 @@ public class LinkedList<T>
 			 }
 		 }
 	}
+	public void orderString()
+	{
+		 T temp=null;
+		 String a,b;
+		 for(Node<T> i=start;i!=null;i=i.getPointer())
+		 {
+			 for(Node<T> j=i.getPointer();j!=null;j=j.getPointer())
+			 {
+				 a=(String)i.getValue();
+				 b=(String)j.getValue();
+				 if(a.compareTo(b)>0)
+				 {
+					 temp=i.getValue();
+					 i.setValue(j.getValue());
+					 j.setValue(temp);
+				 }
+			 }
+		 }
+	}
 	public void reverseLinkedList()
 	{
 		LinkedList<T> list=new LinkedList<T>();
