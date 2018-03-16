@@ -1,7 +1,1 @@
-{
-"Doctor":
-[
-{"Specialization":"java","Availiability":"AM","Id":2,"Name":"Ganesh"},
-{"Specialization":"java","Availiability":"AM","Id":2,"Name":"Ganesh"}
-]
-}
+[{"DoctorName":"a","Availability":"dfsdf","Specialization":"ff","Id":1,"NoOfPatients":0},{"DoctorName":"a","Availability":"dfsdf","Specialization":"ff","Id":2,"NoOfPatients":0}]

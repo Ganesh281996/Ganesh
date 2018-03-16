@@ -1,0 +1,9 @@
+package com.bridgelabz.objectoriented;
+
+public class CliniqueManagement 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

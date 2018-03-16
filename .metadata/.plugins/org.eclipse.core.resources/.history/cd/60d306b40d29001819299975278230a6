@@ -1,0 +1,34 @@
+package com.bridgelabz.utility;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+public class Clinique 
+{
+	String doctorPath="/home/bridgeit/Ganesh/BasicProject/Files/Doctor.json";
+	String patientPath="/home/bridgeit/Ganesh/BasicProject/Files/Patient.json";
+	String appointmentsPath="/home/bridgeit/Ganesh/BasicProject/Files/Appointments.json";
+	
+	public boolean addDoctor(String name,int id,String specialization,
+							String availability,int noOfPatients)
+	{
+		JSONArray jsonArray=Utility.readJsonArrayFile(doctorPath);
+		
+		for(int i=0;i<jsonArray.size();i++)
+		{
+			
+		}
+	}
+	
+	public void addPatient(Patient Patient)
+	{
+		JSONObject jsonObject=Utility.readJsonFile(patientPath);
+		JSONObject jsonPatient=new JSONObject();
+		
+		jsonPatient.put("Name", Patient.getPatientName());
+		jsonPatient.put("Mobile", Patient.getMobileNumber());
+		
+		jsonObject.put(Patient.getPatientId(), jsonPatient);
+		Utility.writeJsonFile(patientPath, jsonObject);
+	}
+}

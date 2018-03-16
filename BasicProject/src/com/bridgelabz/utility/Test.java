@@ -37,9 +37,9 @@ public class Test
 //		}
 //		String a[]={"4a","3z"};
 //		a=Utility.bubbleSortString(a);System.out.println(a[0]+"  "+a[1]);
-		Doctor d=new Doctor(2, "Ganesh", "java", "AM");
+//		Doctor d=new Doctor(2, "Ganesh", "java", "AM");
 //		Patient p=new Patient(1, "Vimal", 12312);
-		Clinique c=new Clinique();
-		c.addDoctor(d);
+//		Clinique c=new Clinique();
+//		c.addDoctor(d);
 	}
 }

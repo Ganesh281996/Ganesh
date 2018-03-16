@@ -9,32 +9,82 @@ public class Clinique
 	String patientPath="/home/bridgeit/Ganesh/BasicProject/Files/Patient.json";
 	String appointmentsPath="/home/bridgeit/Ganesh/BasicProject/Files/Appointments.json";
 	
-	public void addDoctor(Doctor doctor)
+	public boolean addDoctor(String name,long id,String specialization,
+							String availability,long noOfPatients)
 	{
-		JSONObject jsonObject=Utility.readJsonFile(doctorPath);
-		JSONArray jsonArray=(JSONArray)jsonObject.get("Doctor");
-		
-		JSONObject jsonDoctor=new JSONObject();
-		
-		jsonDoctor.put("Name", doctor.getDoctorName());
-		jsonDoctor.put("Specialization", doctor.getSpecialization());
-		jsonDoctor.put("Availiability", doctor.getAvailability());
-		jsonDoctor.put("Id", doctor.getDoctorId());
-		
-		jsonArray.add(jsonDoctor);
-		jsonObject.put("Doctor", jsonArray);
-		Utility.writeJsonFile(doctorPath, jsonObject);
+		boolean flag=false;
+		JSONArray jsonArray=Utility.readJsonArrayFile(doctorPath);
+		JSONObject jsonObject=null;
+		for(int i=0;i<jsonArray.size();i++)
+		{
+			jsonObject=(JSONObject)jsonArray.get(i);
+			if((long)jsonObject.get("Id")==id)
+			{
+				flag=true;
+				break;
+			}
+		}
+		if(flag==false)
+		{
+			jsonObject=new JSONObject();
+			jsonObject.put("DoctorName", name);
+			jsonObject.put("Id", id);
+			jsonObject.put("Specialization", specialization);
+			jsonObject.put("Availability", availability);
+			jsonObject.put("NoOfPatients", noOfPatients);
+			jsonArray.add(jsonObject);
+			Utility.writeJsonArrayFile(doctorPath, jsonArray);
+			return true;
+		}
+		return false;
 	}
 	
-	public void addPatient(Patient Patient)
+	public boolean addPatient(String name,long id,long age,long mobile)
 	{
-		JSONObject jsonObject=Utility.readJsonFile(patientPath);
-		JSONObject jsonPatient=new JSONObject();
-		
-		jsonPatient.put("Name", Patient.getPatientName());
-		jsonPatient.put("Mobile", Patient.getMobileNumber());
-		
-		jsonObject.put(Patient.getPatientId(), jsonPatient);
-		Utility.writeJsonFile(patientPath, jsonObject);
+		boolean flag=false;
+		JSONArray jsonArray=Utility.readJsonArrayFile(patientPath);
+		JSONObject jsonObject=null;
+		for(int i=0;i<jsonArray.size();i++)
+		{
+			jsonObject=(JSONObject)jsonArray.get(i);
+			if((long)jsonObject.get("Id")==id)
+			{
+				flag=true;
+				break;
+			}
+		}
+		if(flag==false)
+		{
+			jsonObject=new JSONObject();
+			jsonObject.put("DoctorName", name);
+			jsonObject.put("Id", id);
+			jsonObject.put("Age", age);
+			jsonObject.put("MobileNumber", mobile);
+			jsonArray.add(jsonObject);
+			Utility.writeJsonArrayFile(patientPath, jsonArray);
+			return true;
+		}
+		return false;
 	}
+	
+	public void searchPatientById(long id)
+	{
+		boolean flag=false;int i;
+		JSONArray jsonArray=Utility.readJsonArrayFile(patientPath);
+		JSONObject jsonObject=new JSONObject();
+		for(i=0;i<jsonArray.size();i++)
+		{
+			jsonObject=(JSONObject)jsonArray.get(i);
+			if((long)jsonObject.get("Id")==id)
+			{
+				flag=true;
+				break;
+			}
+		}
+		if(flag==false)
+		{
+			
+		}
+	}
+
 }

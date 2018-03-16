@@ -22,6 +22,7 @@ import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -2074,6 +2075,88 @@ public class Utility
 		{
 			file=new FileWriter(path);
 			file.write(jsonObject.toJSONString());
+		}
+		catch(FileNotFoundException e)
+		{
+			e.printStackTrace();
+		}
+		catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			try
+			{
+				file.flush();
+				file.close();
+			}
+			catch(IOException e)
+			{
+				e.printStackTrace();
+			}
+		}
+	}
+	/**
+	 * @param path path of the file
+	 * @return jsonArray read jsonArray from file
+	 */
+	public static JSONArray readJsonArrayFile(String path)
+	{
+		FileReader file=null;
+		JSONParser parser=null;
+		JSONArray jsonArray=null;
+		File checking_file=null;
+		try
+		{
+			checking_file=new File(path);
+			if(checking_file.length()==0)
+			{
+				jsonArray=null;
+			}
+			else
+			{
+				file=new FileReader(path);
+				parser=new JSONParser();
+				jsonArray=(JSONArray)parser.parse(file);
+			}
+		}
+		catch(FileNotFoundException e)
+		{
+			e.printStackTrace();
+		}
+		catch(ParseException e)
+		{
+			e.printStackTrace();
+		}
+		catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			try
+			{
+				file.close();
+			}
+			catch(IOException e)
+			{
+				e.printStackTrace();
+			}
+		}
+		return jsonArray;
+	}
+	/**
+	 * @param path path of the file
+	 * @param jsonArray jsonArray to write on the file 
+	 */
+	public static void writeJsonArrayFile(String path,JSONArray jsonArray)
+	{
+		FileWriter file=null;
+		try
+		{
+			file=new FileWriter(path);
+			file.write(jsonArray.toJSONString());
 		}
 		catch(FileNotFoundException e)
 		{
