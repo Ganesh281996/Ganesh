@@ -2,19 +2,19 @@ package com.bridgelabz.utility;
 
 public class Queue<T>
 {
-	private int rear;
-	private LinkedList<T> queue;
-	private int size;
+	private int mRear;
+	private LinkedList<T> mQueue;
+	private int mSize;
 	
 	public Queue(int capacity)
 	{
-		size=capacity;
-		queue=new LinkedList<>();
-		rear=-1;
+		mSize=capacity;
+		mQueue=new LinkedList<>();
+		mRear=-1;
 	}
 	public boolean isEmpty()
 	{
-		if(rear==-1)
+		if(mRear==-1)
 		{
 			return true;
 		}
@@ -25,7 +25,7 @@ public class Queue<T>
 	}
 	public boolean isFull()
 	{
-		if(rear==size)
+		if(mRear==mSize)
 		{
 			return true;
 		}
@@ -36,7 +36,7 @@ public class Queue<T>
 	}
 	public int size()
 	{
-		return rear+1;
+		return mRear+1;
 	}
 	public void enQueue(T item)
 	{	
@@ -46,8 +46,8 @@ public class Queue<T>
 		}
 		else
 		{
-			rear++;
-			queue.append(item);
+			mRear++;
+			mQueue.append(item);
 		}
 	}
 	public T deQueue()
@@ -59,27 +59,27 @@ public class Queue<T>
 		}
 		else
 		{
-			item=queue.getFirstItem();
-			queue.remove(item);
-			rear--;
+			item=mQueue.getFirstItem();
+			mQueue.remove(item);
+			mRear--;
 		}
 		return item;
 	}
 	@Override
 	public String toString()
 	{
-		return queue.toString();
+		return mQueue.toString();
 	}
 	public String[] retrieve()
 	{
-		return queue.retrieve();
+		return mQueue.retrieve();
 	}
 	public void order()
 	{
-		queue.order();
+		mQueue.order();
 	}
 	public void orderString()
 	{
-		queue.orderString();
+		mQueue.orderString();
 	}
 }

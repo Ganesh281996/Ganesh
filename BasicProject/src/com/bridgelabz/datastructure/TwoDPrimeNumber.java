@@ -2,6 +2,11 @@ package com.bridgelabz.datastructure;
 
 import com.bridgelabz.utility.Utility;
 
+/**
+ * Purpose finding numbers that are prime using 2D array
+ * @author Ganesh
+ * @since 10 March 2018
+ */
 public class TwoDPrimeNumber 
 {
 	public static void main(String[] args) 

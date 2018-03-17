@@ -2,6 +2,11 @@ package com.bridgelabz.datastructure;
 
 import com.bridgelabz.utility.Utility;
 
+/**
+ * Purpose Creating calendar using 2D array
+ * @author Ganesh
+ *@since 4 March 2018
+ */
 public class Calendar 
 {
 	public static void main(String[] args) 

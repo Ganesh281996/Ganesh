@@ -1,0 +1,103 @@
+package com.bridgelabz.objectoriented;
+
+import org.json.simple.JSONObject;
+
+import com.bridgelabz.utility.Clinique;
+import com.bridgelabz.utility.Utility;
+
+public class CliniqueManagement 
+{
+	public static void main(String[] args) 
+	{
+		Utility utility=new Utility();
+		Clinique clinique=new Clinique();
+		JSONObject jsonObject=new JSONObject();
+		String name,specialization,availability;
+		long id,mobile,age;
+		boolean flag=false;
+		int choice=0;
+		do
+		{
+			System.out.println("1. Add Doctor");
+			System.out.println("2. Add Patient");
+			System.out.println("3. Display Doctors");
+			System.out.println("4. Display Patients");
+			System.out.println("5. Search patient by Id");
+			System.out.println("20. Exit");
+			System.out.println("Enter your choice");
+			choice=utility.nextInt();
+			switch(choice)
+			{
+			case 1:
+				System.out.println("Enter Name");
+				name=utility.next();
+				System.out.println("Enter Id");
+				id=utility.nextLong();
+				System.out.println("Enter specialization");
+				specialization=utility.next();
+				System.out.println("Enter availability");
+				availability=utility.next();
+				flag=clinique.addDoctor(name, id, specialization, availability, 0);
+				if(flag==true)
+				{
+					System.out.println("Doctor was Added.");
+				}
+				else
+				{
+					System.out.println("Cant add Doctor with same Id.");
+				}
+				break;
+				
+			case 2:
+				System.out.println("Enter Name");
+				name=utility.next();
+				System.out.println("Enter Id");
+				id=utility.nextLong();
+				System.out.println("Enter Mobile Number");
+				mobile=utility.nextLong();
+				System.out.println("Enter Age");
+				age=utility.nextLong();
+				flag=clinique.addPatient(name, id, age, mobile);
+				if(flag==true)
+				{
+					System.out.println("Patient was Added.");
+				}
+				else
+				{
+					System.out.println("Cant add Patient with same Id.");
+				}
+				break;
+				
+			case 3:
+				clinique.displayDoctor();
+				break;
+				
+			case 4:
+				clinique.displayPatient();
+				break;
+				
+			case 5:
+				System.out.println("Enter Id to search Patient=");
+				id=utility.nextLong();
+				jsonObject=clinique.searchPatientById(id);
+				if(jsonObject==null)
+				{
+					System.out.println("Patient with Id="+id+" was not found.");
+				}
+				else
+				{
+					System.out.println("Patient was found.");
+					System.out.println(jsonObject);
+				}
+				
+			case 6:
+				break;
+				
+			case 7:
+				
+				break;
+			}
+		}
+		while(choice!=20);
+	}
+}

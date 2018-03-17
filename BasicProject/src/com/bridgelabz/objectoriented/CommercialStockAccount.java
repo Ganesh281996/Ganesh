@@ -4,6 +4,11 @@ import com.bridgelabz.utility.Customer;
 import com.bridgelabz.utility.StockAccount;
 import com.bridgelabz.utility.Utility;
 
+/**
+ * Purpose managing commercial stock account . Buying and selling shares using json
+ * @author Ganesh
+ * @since 16 March 2018
+ */
 public class CommercialStockAccount 
 {
 	public static void main(String[] args) 

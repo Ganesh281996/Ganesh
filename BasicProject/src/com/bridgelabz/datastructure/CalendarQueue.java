@@ -3,6 +3,11 @@ package com.bridgelabz.datastructure;
 import com.bridgelabz.utility.Queue;
 import com.bridgelabz.utility.Utility;
 
+/**
+ * Purpose creating calendar using Queue
+ * @author Ganesh
+ *@since 4 March 2018
+ */
 public class CalendarQueue 
 {
 	public static void main(String[] args) 

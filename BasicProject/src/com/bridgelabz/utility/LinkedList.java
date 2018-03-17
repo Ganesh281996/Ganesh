@@ -2,13 +2,13 @@ package com.bridgelabz.utility;
 
 class Node<T>
 {
-	private T value;
-	private Node<T> pointer;
+	private T mValue;
+	private Node<T> mPointer;
 
 	public Node(T value, Node<T> pointer) 
 	{
-		this.value = value;
-		this.pointer = pointer;
+		this.mValue = value;
+		this.mPointer = pointer;
 	}
 	
 	public Node() 
@@ -18,28 +18,28 @@ class Node<T>
 
 	public T getValue() 
 	{
-		return value;
+		return mValue;
 	}
 
 	public void setValue(T value) 
 	{
-		this.value = value;
+		this.mValue = value;
 	}
 
 	public Node<T> getPointer() 
 	{
-		return pointer;
+		return mPointer;
 	}
 
 	public void setPointer(Node<T> pointer) 
 	{
-		this.pointer = pointer;
+		this.mPointer = pointer;
 	}	
 	
 	@Override
 	public String toString() 
 	{
-		return "Node [value=" + value + ", pointer=" + pointer + "]";
+		return "Node [value=" + mValue + ", pointer=" + mPointer + "]";
 	}
 
 }

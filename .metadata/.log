@@ -1797,3 +1797,675 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 
 !ENTRY org.eclipse.jface.text 2 0 2018-03-16 16:53:24.543
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2018-03-17 09:04:47.820 -----------------------------------------------
+eclipse.buildId=4.7.0.I20160915-0230
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.osgi 2 0 2018-03-17 09:05:18.956
+!MESSAGE While loading class "org.eclipse.egit.ui.internal.ConfigurationChecker$1$1", thread "Thread[Worker-0,5,main]" timed out waiting (5037ms) for thread "Thread[main,6,main]" to finish starting bundle "org.eclipse.egit.ui_4.4.1.201607150455-r [276]". To avoid deadlock, thread "Thread[Worker-0,5,main]" is proceeding but "org.eclipse.egit.ui.internal.ConfigurationChecker$1$1" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; type="osgi.bundle"; version:Version="4.4.1.201607150455-r"; osgi.identity="org.eclipse.egit.ui"; singleton:="true" [id=276] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:337)
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:103)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.egit.ui.internal.ConfigurationChecker$1.run(ConfigurationChecker.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:334)
+	... 13 more
+Root exception:
+java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:334)
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:103)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.egit.ui.internal.ConfigurationChecker$1.run(ConfigurationChecker.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-03-17 09:13:43.409
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-03-17 09:13:43.413
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-03-17 10:16:22.042
+!MESSAGE Exception occurred during problem detection:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package com.bridgelabz.utility;
+
+import java.util.Iterator;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+public class Clinique 
+{
+	String doctorPath="/home/bridgeit/Ganesh/BasicProject/Files/Doctor.json";
+	String patientPath="/home/bridgeit/Ganesh/BasicProject/Files/Patient.json";
+	String appointmentsPath="/home/bridgeit/Ganesh/BasicProject/Files/Appointments.json";
+	
+	public boolean addDoctor(String name,long id,String specialization,
+							String availability,long noOfPatients)
+	{
+		boolean flag=false;
+		JSONArray jsonArray=Utility.readJsonArrayFile(doctorPath);
+		JSONObject jsonObject=null;
+		for(int i=0;i<jsonArray.size();i++)
+		{
+			jsonObject=(JSONObject)jsonArray.get(i);
+			if((long)jsonObject.get("Id")==id)
+			{
+				flag=true;
+				break;
+			}
+		}
+		if(flag==false)
+		{
+			jsonObject=new JSONObject();
+			jsonObject.put("DoctorName", name);
+			jsonObject.put("Id", id);
+			jsonObject.put("Specialization", specialization);
+			jsonObject.put("Availability", availability);
+			jsonObject.put("NoOfPatients", noOfPatients);
+			jsonArray.add(jsonObject);
+			Utility.writeJsonArrayFile(doctorPath, jsonArray);
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean addPatient(String name,long id,long age,long mobile)
+	{
+		boolean flag=false;
+		JSONArray jsonArray=Utility.readJsonArrayFile(patientPath);
+		JSONObject jsonObject=null;
+		for(int i=0;i<jsonArray.size();i++)
+		{
+			jsonObject=(JSONObject)jsonArray.get(i);
+			if((long)jsonObject.get("Id")==id)
+			{
+				flag=true;
+				break;
+			}
+		}
+		if(flag==false)
+		{
+			jsonObject=new JSONObject();
+			jsonObject.put("PatientName", name);
+			jsonObject.put("Id", id);
+			jsonObject.put("Age", age);
+			jsonObject.put("MobileNumber", mobile);
+			jsonArray.add(jsonObject);
+			Utility.writeJsonArrayFile(patientPath, jsonArray);
+			return true;
+		}
+		return false;
+	}
+	
+	public void displayDoctor()
+	{
+		JSONArray jsonArray=Utility.readJsonArrayFile(doctorPath);
+		Iterator<JSONObject> iterator=jsonArray.iterator();
+		while(iterator.hasNext())
+		{
+			System.out.println(iterator.next());
+		}
+	}
+	
+	public void displayPatient()
+	{
+		JSONArray jsonArray=Utility.readJsonArrayFile(patientPath);
+		Iterator<JSONObject> iterator=jsonArray.iterator();
+		while(iterator.hasNext())
+		{
+			System.out.println(iterator.next());
+		}
+	}
+	
+	public JSONObject searchPatientById(long id)
+	{
+		boolean flag=false;int i;
+		JSONArray jsonArray=Utility.readJsonArrayFile(patientPath);
+		JSONObject jsonObject=new JSONObject();
+		for(i=0;i<jsonArray.size();i++)
+		{
+			jsonObject=(JSONObject)jsonArray.get(i);
+			if((long)jsonObject.get("Id")==id)
+			{
+				flag=true;
+				break;
+			}
+		}
+		if(flag==false)
+		{
+			return null;
+		}
+		else
+		{
+			return (JSONObject)jsonArray.get(i);
+		}
+	}
+	
+	public JSONObject searchDoctorById(long id)
+	{
+		boolean flag=false;int i;
+		JSONArray jsonArray=Utility.readJsonArrayFile(doctorPath);
+		JSONObject jsonObject=null;
+		for(i=0;i<jsonArray.size();i++)
+		{
+			jsonObject=(JSONObject)jsonArray.get(i);
+			if((long)jsonObject.get("Id")==id)
+			{
+				flag=true;
+				break;
+			}
+		}
+		if(flag==false)
+		{
+			return null;
+		}
+		else
+		{
+			return (JSONObject)jsonArray.get(i);
+		}
+	}
+	
+	public JSONArray searchDoctorBySpecialization(String specialization)
+	{
+		JSONArray jsonArray=Utility.readJsonArrayFile(doctorPath);
+		JSONArray specializationJsonArray=new JSONArray();
+		JSONObject jsonObject=null;
+		for(int i=0;i<jsonArray.size();i++)
+		{
+			jsonObject=(JSONObject)jsonArray.get(i);
+			if(jsonObject.get("Specialization").equals(specialization))
+			{
+				specializationJsonArray.add(jsonObject);
+			}
+		}
+		return specializationJsonArray;
+	}
+	
+	public JSONArray searchPatientByAge(Long age)
+	{
+		JSONArray jsonArray=Utility.readJsonArrayFile(doctorPath);
+		JSONArray ageJsonArray=new JSONArray();
+		JSONObject jsonObject=null;
+		for(int i=0;i<jsonArray.size();i++)
+		{
+			jsonObject=(JSONObject)jsonArray.get(i);
+			if(jsonObject.get("Age"(age))
+			{
+				ageJsonArray.add(jsonObject);
+			}
+		}
+		return ageJsonArray;
+	}
+
+}
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:827)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1093)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4788)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4755)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:911)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:730)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolveTypeExpecting(Expression.java:1056)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:273)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2018-03-17 10:16:22.096
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 1
+Java Model Exception: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:249)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:827)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1093)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4788)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4755)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:911)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:730)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolveTypeExpecting(Expression.java:1056)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:273)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	... 19 more
+Caused by: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:827)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1093)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4788)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4755)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:911)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:730)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolveTypeExpecting(Expression.java:1056)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:273)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1005 2018-03-17 10:16:22.097
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:827)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1093)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4788)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4755)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:911)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:730)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolveTypeExpecting(Expression.java:1056)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:273)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1005 2018-03-17 10:16:22.097
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:827)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1093)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4788)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4755)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:911)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:730)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolveTypeExpecting(Expression.java:1056)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:273)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2018-03-17 10:16:22.101
+!MESSAGE Error in JDT Core during reconcile
+!STACK 1
+Java Model Exception: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:249)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:827)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1093)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4788)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4755)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:911)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:730)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolveTypeExpecting(Expression.java:1056)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:273)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	... 19 more
+Caused by: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:827)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1093)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4788)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4755)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:911)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:730)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolveTypeExpecting(Expression.java:1056)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:273)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1005 2018-03-17 10:16:22.101
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:141)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:827)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1093)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4788)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4755)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:773)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1656)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1557)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2840)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:911)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:730)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolveTypeExpecting(Expression.java:1056)
+	at org.eclipse.jdt.internal.compiler.ast.IfStatement.resolve(IfStatement.java:273)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:634)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:306)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:544)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1195)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1308)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:593)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1030)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:724)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:790)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:128)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:110)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:90)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:154)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SESSION 2018-03-17 12:37:06.135 -----------------------------------------------
+eclipse.buildId=4.7.0.I20160915-0230
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-03-17 12:37:15.159
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.osgi 2 0 2018-03-17 12:37:35.063
+!MESSAGE While loading class "org.eclipse.egit.ui.internal.ConfigurationChecker$1$1", thread "Thread[Worker-1,5,main]" timed out waiting (5004ms) for thread "Thread[main,6,main]" to finish starting bundle "org.eclipse.egit.ui_4.4.1.201607150455-r [276]". To avoid deadlock, thread "Thread[Worker-1,5,main]" is proceeding but "org.eclipse.egit.ui.internal.ConfigurationChecker$1$1" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; type="osgi.bundle"; version:Version="4.4.1.201607150455-r"; osgi.identity="org.eclipse.egit.ui"; singleton:="true" [id=276] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:337)
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:103)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.egit.ui.internal.ConfigurationChecker$1.run(ConfigurationChecker.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:334)
+	... 13 more
+Root exception:
+java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:334)
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:103)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:529)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:325)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:372)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:364)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.egit.ui.internal.ConfigurationChecker$1.run(ConfigurationChecker.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-03-17 12:41:30.787
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-03-17 12:41:30.791
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-03-17 14:49:15.777
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-03-17 14:49:15.777
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

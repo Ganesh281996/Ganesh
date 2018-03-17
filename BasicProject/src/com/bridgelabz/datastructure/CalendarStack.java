@@ -3,6 +3,11 @@ package com.bridgelabz.datastructure;
 import com.bridgelabz.utility.Stack;
 import com.bridgelabz.utility.Utility;
 
+/**
+ * Purpose creating calendar using Stack
+ * @author Ganesh
+ * @since  4 March 2018
+ */
 public class CalendarStack 
 {
 	public static void main(String[] args) 

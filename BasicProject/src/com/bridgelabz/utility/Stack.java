@@ -2,19 +2,19 @@ package com.bridgelabz.utility;
 
 public class Stack<T>
 {
-	private int top;
-	private LinkedList<T> stack=null;
-	private int capacity;
+	private int mTop;
+	private LinkedList<T> mStack;
+	private int mCapacity;
 	
 	public Stack(int capacity)
 	{
-		stack=new LinkedList<T>();
-		top=0;
-		this.capacity=capacity;
+		mStack=new LinkedList<T>();
+		mTop=0;
+		this.mCapacity=capacity;
 	}
 	public boolean isEmpty()
 	{
-		if(top==0)
+		if(mTop==0)
 		{
 			return true;
 		}
@@ -25,7 +25,7 @@ public class Stack<T>
 	}
 	public boolean isFull()
 	{ 
-		if(top==capacity)
+		if(mTop==mCapacity)
 		{
 			return true;
 		}
@@ -38,8 +38,8 @@ public class Stack<T>
 	{
 		if(!isFull())
 		{
-			stack.append(item);
-			top++;
+			mStack.append(item);
+			mTop++;
 		}
 		else
 		{
@@ -55,35 +55,35 @@ public class Stack<T>
 		}
 		else
 		{
-			item=stack.getLastItem();
-			stack.remove(item);
-			top--;
+			item=mStack.getLastItem();
+			mStack.remove(item);
+			mTop--;
 		}
 		return item;
 	}
 	public T peek()
 	{
-		return stack.getLastItem();
+		return mStack.getLastItem();
 	}
 	public int size()
 	{
-		return top;
+		return mTop;
 	}
 	@Override
 	public String toString()
 	{
-		return stack.toString();
+		return mStack.toString();
 	}
 	public void order()
 	{
-		stack.order();
+		mStack.order();
 	}
 	public void reverseStack()
 	{
-		stack.reverseLinkedList();
+		mStack.reverseLinkedList();
 	}
 	public String[] retrieve()
 	{
-		return stack.retrieve();
+		return mStack.retrieve();
 	}
 }

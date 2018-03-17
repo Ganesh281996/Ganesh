@@ -10,8 +10,8 @@ import org.json.simple.JSONObject;
 
 public class StockAccount 
 {
-	String customerPath="/home/bridgeit/Ganesh/BasicProject/Files/StockCustomer.json";
-	String stockPath="/home/bridgeit/Ganesh/BasicProject/Files/StockAccount.json";
+	String mCustomerPath="/home/bridgeit/Ganesh/BasicProject/Files/StockCustomer.json";
+	String mStockPath="/home/bridgeit/Ganesh/BasicProject/Files/StockAccount.json";
 	
 	Map<String, String> transaction=new HashMap<String,String>();
 	SimpleDateFormat dateFormat=new SimpleDateFormat("hh-mm-ss dd/MM/YYYY");
@@ -25,7 +25,7 @@ public class StockAccount
 	public StockAccount(Customer customer)
 	{
 		JSONObject name=new JSONObject();
-		JSONObject jsonObject=Utility.readJsonFile(customerPath);
+		JSONObject jsonObject=Utility.readJsonFile(mCustomerPath);
 		if(jsonObject==null)
 		{
 			jsonObject=new JSONObject();
@@ -33,18 +33,18 @@ public class StockAccount
 		name.put("Money", customer.getMoney());
 		name.put("TotalShare", customer.getTotal_share());
 		jsonObject.put(customer.getName(), name);
-		Utility.writeJsonFile(customerPath, jsonObject);
+		Utility.writeJsonFile(mCustomerPath, jsonObject);
 	}
 	public void buy(String symbol,long no_of_shares,String name)
 	{
-		JSONObject jsonStock=Utility.readJsonFile(stockPath);
+		JSONObject jsonStock=Utility.readJsonFile(mStockPath);
 		JSONObject stockSymbol=(JSONObject)jsonStock.get(symbol);
 		long price=(long)stockSymbol.get("Price");
 		stockSymbol.put("NumberOfShare", (long)stockSymbol.get("NumberOfShare")-no_of_shares);
 		jsonStock.put(symbol, stockSymbol);
-		Utility.writeJsonFile(stockPath, jsonStock);
+		Utility.writeJsonFile(mStockPath, jsonStock);
 		boolean flag=false;
-		JSONObject jsonObject=Utility.readJsonFile(customerPath);
+		JSONObject jsonObject=Utility.readJsonFile(mCustomerPath);
 		JSONObject customer=(JSONObject)jsonObject.get(name);
 		JSONObject share_value=null;
 		if(customer.get("Shares")==null)
@@ -76,20 +76,20 @@ public class StockAccount
 		customer.put("TotalShare", (long)customer.get("TotalShare")+no_of_shares);
 		customer.put("Shares", share_value);
 		jsonObject.put(name, customer);
-		Utility.writeJsonFile(customerPath, jsonObject);
+		Utility.writeJsonFile(mCustomerPath, jsonObject);
 		transaction.put((count++)+" "+symbol, name+" bought "+no_of_shares+" Share at time "+dateFormat.format(date));
 		
 	}
 	public void sell(String symbol,long no_of_shares,String name)
 	{
-		JSONObject customerJson=Utility.readJsonFile(customerPath);
-		JSONObject stockJson=Utility.readJsonFile(stockPath);
+		JSONObject customerJson=Utility.readJsonFile(mCustomerPath);
+		JSONObject stockJson=Utility.readJsonFile(mStockPath);
 		
 		JSONObject symbolJson=(JSONObject)stockJson.get(symbol);
 		long price=(long)symbolJson.get("Price");
 		symbolJson.put("NumberOfShare", (long)symbolJson.get("NumberOfShare")+no_of_shares);
 		stockJson.put(symbol, symbolJson);
-		Utility.writeJsonFile(stockPath, stockJson);
+		Utility.writeJsonFile(mStockPath, stockJson);
 		
 		JSONObject nameJson=(JSONObject)customerJson.get(name);
 		nameJson.put("Money", (long)nameJson.get("Money")+(price*no_of_shares));
@@ -104,24 +104,24 @@ public class StockAccount
 		nameJson.put("Shares", share);
 		customerJson.put(name, nameJson);
 		
-		Utility.writeJsonFile(customerPath, customerJson);
+		Utility.writeJsonFile(mCustomerPath, customerJson);
 		
 		transaction.put((count++)+" "+symbol, name+" sold "+no_of_shares+" Share at time "+dateFormat.format(date));
 	}
 	public void addNewSymbol(String symbol,long noOfShares,long priceOfEachShare)
 	{
-		JSONObject jsonObject=Utility.readJsonFile(stockPath);
+		JSONObject jsonObject=Utility.readJsonFile(mStockPath);
 		JSONObject jsonSymbol=new JSONObject();
 		jsonSymbol.put("NumberOfShare", noOfShares);
 		jsonSymbol.put("Price", priceOfEachShare);
 		jsonObject.put(symbol, jsonSymbol);
-		Utility.writeJsonFile(stockPath, jsonObject);
+		Utility.writeJsonFile(mStockPath, jsonObject);
 	}
 	public void removeSymbol(String symbol)
 	{
-		JSONObject jsonObject=Utility.readJsonFile(stockPath);
+		JSONObject jsonObject=Utility.readJsonFile(mStockPath);
 		jsonObject.remove(symbol);
-		Utility.writeJsonFile(stockPath, jsonObject);
+		Utility.writeJsonFile(mStockPath, jsonObject);
 	}
 	public void displayTransactionDetails()
 	{
@@ -134,9 +134,9 @@ public class StockAccount
 	}
 	public void displayReport()
 	{
-		JSONObject jsonStock=Utility.readJsonFile(stockPath);
+		JSONObject jsonStock=Utility.readJsonFile(mStockPath);
 		System.out.println(jsonStock.toJSONString());
-		JSONObject jsonCustomer=Utility.readJsonFile(customerPath);
+		JSONObject jsonCustomer=Utility.readJsonFile(mCustomerPath);
 		System.out.println(jsonCustomer.toJSONString());
 	}
 }

@@ -2,19 +2,19 @@ package com.bridgelabz.utility;
 
 public class DeQueue<T>
 {
-	private int rear;
-	private LinkedList<T> dequeue;
-	private int size;
+	private int mRear;
+	private LinkedList<T> mDeque;
+	private int mSize;
 	
 	public DeQueue(int capacity)
 	{
-		size=capacity;
-		dequeue=new LinkedList<>();
-		rear=-1;
+		mSize=capacity;
+		mDeque=new LinkedList<>();
+		mRear=-1;
 	}
 	public boolean isEmpty()
 	{
-		if(rear==-1)
+		if(mRear==-1)
 		{
 			return true;
 		}
@@ -25,7 +25,7 @@ public class DeQueue<T>
 	}
 	public boolean isFull()
 	{
-		if(rear==size)
+		if(mRear==mSize)
 		{
 			return true;
 		}
@@ -36,7 +36,7 @@ public class DeQueue<T>
 	}
 	public int size()
 	{
-		return rear+1;
+		return mRear+1;
 	}
 	public void addRear(T item)
 	{	
@@ -46,8 +46,8 @@ public class DeQueue<T>
 		}
 		else
 		{
-			rear++;
-			dequeue.append(item);
+			mRear++;
+			mDeque.append(item);
 		}
 	}
 	public void addFront(T item)
@@ -58,8 +58,8 @@ public class DeQueue<T>
 		}
 		else
 		{
-			rear++;
-			dequeue.add(item);
+			mRear++;
+			mDeque.add(item);
 		}
 	}
 	public T removeFront()
@@ -71,9 +71,9 @@ public class DeQueue<T>
 		}
 		else
 		{
-			item=dequeue.getFirstItem();
-			dequeue.remove(item);
-			rear--;
+			item=mDeque.getFirstItem();
+			mDeque.remove(item);
+			mRear--;
 		}
 		return item;
 	}
@@ -86,19 +86,19 @@ public class DeQueue<T>
 		}
 		else
 		{
-			item=dequeue.getLastItem();
-			dequeue.remove(item);
-			rear--;
+			item=mDeque.getLastItem();
+			mDeque.remove(item);
+			mRear--;
 		}
 		return item;
 	}
 	@Override
 	public String toString()
 	{
-		return dequeue.toString();
+		return mDeque.toString();
 	}
 	public String[] retrieve()
 	{
-		return dequeue.retrieve();
+		return mDeque.retrieve();
 	}
 }

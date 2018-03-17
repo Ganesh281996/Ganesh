@@ -2,52 +2,52 @@ package com.bridgelabz.utility;
 
 public class Customer
 {
-	private String name;
-	private long money;
-	private long total_share;
+	private String mName;
+	private long mMoney;
+	private long mTotalShare;
 	
-	public Customer(String name, long money, long total_share) 
+	public Customer(String name, long money, long totalShare) 
 	{
-		this.name = name;
-		this.money = money;
-		this.total_share = total_share;
+		this.mName = name;
+		this.mMoney = money;
+		this.mTotalShare = totalShare;
 	}
 
 	public String getName() 
 	{
-		return name;
+		return mName;
 	}
 
 	public void setName(String name) 
 	{
-		this.name = name;
+		this.mName = name;
 	}
 
 	public long getMoney() 
 	{
-		return money;
+		return mMoney;
 	}
 
 	public void setMoney(long money) 
 	{
-		this.money = money;
+		this.mMoney = money;
 	}
 
 
 	public long getTotal_share() 
 	{
-		return total_share;
+		return mTotalShare;
 	}
 
-	public void setTotal_share(int total_share) 
+	public void setTotal_share(int totalShare) 
 	{
-		this.total_share = total_share;
+		this.mTotalShare = totalShare;
 	}
 
 	@Override
 	public String toString() 
 	{
-		return "Customer [name=" + name + ", money=" + money + ", total_share=" + total_share	+ "]";
+		return "Customer [name=" + mName + ", money=" + mMoney + ", total_share=" + mTotalShare	+ "]";
 	}	
 	
 }
