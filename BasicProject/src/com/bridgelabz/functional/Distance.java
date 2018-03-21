@@ -1,12 +1,12 @@
-package com.bridgelabz.functional;
-
-import com.bridgelabz.utility.Utility;
-
 /*
  * purpose: To find distance using Math.pow() function
  * @author Ganesh
  * @since 28 Feb 2018
 */
+package com.bridgelabz.functional;
+
+import com.bridgelabz.utility.Utility;
+
 public class Distance
 {
 	public static void main(String[] args) 

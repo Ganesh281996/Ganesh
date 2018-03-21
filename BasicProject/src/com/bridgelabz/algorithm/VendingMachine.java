@@ -1,12 +1,12 @@
-package com.bridgelabz.algorithm;
-
-import com.bridgelabz.utility.Utility;
-
 /**
  * purpose: taking money as input and finding number of notes needed to take change
  * @author Ganesh
  * @since 6 march 2018
  */
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.Utility;
+
 public class VendingMachine 
 {
 	public static void main(String[] args) 

@@ -1,0 +1,6 @@
+package com.bridgelabz.utility;
+
+public interface Computer 
+{
+	Computer getInstance();
+}

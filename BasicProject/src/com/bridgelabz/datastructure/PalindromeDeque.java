@@ -1,13 +1,13 @@
-package com.bridgelabz.datastructure;
-
-import com.bridgelabz.utility.DeQueue;
-import com.bridgelabz.utility.Utility;
-
 /**
  * Purpose checking if the word is palindrome or not using deque
  * @author Ganesh
  * @since 8 March 2018
  */
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.DeQueue;
+import com.bridgelabz.utility.Utility;
+
 public class PalindromeDeque
 {
 	public static void main(String[] args) 

@@ -1,12 +1,12 @@
-package com.bridgelabz.algorithm;
-
-import com.bridgelabz.utility.Utility;
-
 /*
  * purpose: Finding monthly payment from P Y R using formula
  * @author Ganesh
  * @since 1 March 2018
 */
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.Utility;
+
 public class MonthlyPayment 
 {
 	public static void main(String[] args) 

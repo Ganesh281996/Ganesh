@@ -1,12 +1,12 @@
-package com.bridgelabz.functional;
-
-import com.bridgelabz.utility.Utility;
-
 /*
  * purpose: Prints the nth Harmonic number 1/1+1/2+...+1/N 
  * @author Ganesh
  * @since 28 Feb 2018
 */
+package com.bridgelabz.functional;
+
+import com.bridgelabz.utility.Utility;
+
 public class HarmonicNumber
 {
 	public static void main(String[] args) 

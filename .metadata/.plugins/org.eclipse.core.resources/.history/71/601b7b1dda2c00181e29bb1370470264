@@ -1,0 +1,19 @@
+package com.bridgelabz.singleton;
+
+public class SerializationSingleton 
+{
+	private SerializationSingleton()
+	{
+
+	}
+
+	private static class InnerClass
+	{
+		private static final SerializationSingleton instance=new SerializationSingleton();
+	}
+
+	public static BillPughSingleton getInstance()
+	{
+		return InnerClass.instance;
+	}
+}

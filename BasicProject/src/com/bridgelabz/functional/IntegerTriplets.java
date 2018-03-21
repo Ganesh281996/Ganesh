@@ -1,12 +1,12 @@
-package com.bridgelabz.functional;
-
-import com.bridgelabz.utility.Utility;
-
 /*
  * purpose: Read in N integers and counts the number of triples that sum to exactly 0 
  * @author Ganesh
  * @since 28 Feb 2018
 */
+package com.bridgelabz.functional;
+
+import com.bridgelabz.utility.Utility;
+
 public class IntegerTriplets
 {
 	public static void main(String[] args) 

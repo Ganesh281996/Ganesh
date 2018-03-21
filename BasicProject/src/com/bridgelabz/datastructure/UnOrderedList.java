@@ -1,13 +1,13 @@
-package com.bridgelabz.datastructure;
-
-import com.bridgelabz.utility.LinkedList;
-import com.bridgelabz.utility.Utility;
-
 /**
  * Purpose Finding content in a UnOrdered Linked List
  * @author Ganesh
  * @since 4 March 2018
  */
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.LinkedList;
+import com.bridgelabz.utility.Utility;
+
 public class UnOrderedList 
 {
 	public static void main(String[] args) 

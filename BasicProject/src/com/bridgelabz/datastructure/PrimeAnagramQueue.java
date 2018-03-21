@@ -1,13 +1,13 @@
-package com.bridgelabz.datastructure;
-
-import com.bridgelabz.utility.Queue;
-import com.bridgelabz.utility.Utility;
-
 /**
  * Purpose finding numbers that are prime and anagram using queue
  * @author Ganesh
  * @since 10 March 2018
  */
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.Queue;
+import com.bridgelabz.utility.Utility;
+
 public class PrimeAnagramQueue 
 {
 	public static void main(String[] args) 

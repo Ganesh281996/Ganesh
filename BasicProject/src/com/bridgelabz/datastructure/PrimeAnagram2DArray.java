@@ -1,12 +1,12 @@
-package com.bridgelabz.datastructure;
-
-import com.bridgelabz.utility.Utility;
-
 /**
  * Purpose finding numbers that are Prime and Anagram using 2D Array
  * @author Ganesh
  * @since 10 March 2018
  */
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.Utility;
+
 public class PrimeAnagram2DArray 
 {
 	public static void main(String[] args) 

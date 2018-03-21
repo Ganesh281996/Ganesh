@@ -1,13 +1,13 @@
-package com.bridgelabz.datastructure;
-
-import com.bridgelabz.utility.LinkedList;
-import com.bridgelabz.utility.Utility;
-
 /**
  * Purpose Finding content in a Ordered Linked List
  * @author Ganesh
  * @since 6 March 2018
  */
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.LinkedList;
+import com.bridgelabz.utility.Utility;
+
 public class OrderedList 
 {
 	public static void main(String[] args) 

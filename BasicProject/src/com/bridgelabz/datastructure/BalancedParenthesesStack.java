@@ -1,14 +1,13 @@
+/**
+ * Purpose Finding if the expression is balanced using Stack
+ * @author Ganesh
+ * @since 3 March 2018
+ */
 package com.bridgelabz.datastructure;
 
 import com.bridgelabz.utility.Stack;
 import com.bridgelabz.utility.Utility;
 
-/**
- * Purpose Finding if the expression is balanced using Stack
- * @author Ganesh
- * @since 3 March 2018
- *
- */
 public class BalancedParenthesesStack
 {
 	public static void main(String[] args) 

@@ -1,12 +1,12 @@
-package com.bridgelabz.functional;
-
-import com.bridgelabz.utility.Utility;
-
 /*
  * purpose: Takes two command line args and prints wind chill using formula
  * @author Ganesh
  * @since 28 Feb 2018
 */
+package com.bridgelabz.functional;
+
+import com.bridgelabz.utility.Utility;
+
 public class WindChill
 {
 	public static void main(String[] args) 

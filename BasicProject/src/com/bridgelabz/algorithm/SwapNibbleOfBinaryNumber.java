@@ -1,12 +1,12 @@
-package com.bridgelabz.algorithm;
-
-import com.bridgelabz.utility.Utility;
-
 /**
  * purpose: swapping nibbles of binary number and finding if the resultant number is power of 2 or not
  * @author Ganesh
  * @since 6 march 2018
  */
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.Utility;
+
 public class SwapNibbleOfBinaryNumber 
 {
 	public static void main(String[] args) 

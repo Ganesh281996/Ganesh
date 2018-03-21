@@ -1,0 +1,12 @@
+package com.bridgelabz.utility;
+
+public class Pc implements Computer
+{
+
+	@Override
+	public Computer getInstance() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

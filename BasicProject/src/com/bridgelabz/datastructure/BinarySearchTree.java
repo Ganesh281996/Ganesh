@@ -1,12 +1,12 @@
-package com.bridgelabz.datastructure;
-
-import com.bridgelabz.utility.Utility;
-
 /**
  * Purpose finding number of binary trees for given size
  * @author Ganesh
  *@since 3 March 2018
  */
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.Utility;
+
 public class BinarySearchTree 
 {
 	public static void main(String[] args) 

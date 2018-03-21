@@ -1,12 +1,12 @@
-package com.bridgelabz.objectoriented;
-
-import com.bridgelabz.utility.Utility;
-
 /**
  * Purpose Doing validation using regular expression
  * @author Ganesh
  * @since 11 March 2018
  */
+package com.bridgelabz.objectoriented;
+
+import com.bridgelabz.utility.Utility;
+
 public class RegularExpression 
 {
 	public static void main(String[] args) 

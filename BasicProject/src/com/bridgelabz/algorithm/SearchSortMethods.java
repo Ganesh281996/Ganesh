@@ -1,12 +1,12 @@
-package com.bridgelabz.algorithm;
-
-import com.bridgelabz.utility.Utility;
-
 /*
  * purpose: Finding elapsed time between search and sorting methods
  * @author Ganesh
  * @since 3 March 2018
 */
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.Utility;
+
 public class SearchSortMethods
 {
 	public static void main(String[] args) 

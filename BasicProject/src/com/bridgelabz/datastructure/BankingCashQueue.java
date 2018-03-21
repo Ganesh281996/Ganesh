@@ -1,13 +1,13 @@
-package com.bridgelabz.datastructure;
-
-import com.bridgelabz.utility.Queue;
-import com.bridgelabz.utility.Utility;
-
 /**
  * Purpose maintaining cash in bank while people deposit and withdraw
  * @author Ganesh
  *@since 3 March 2018
  */
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.Queue;
+import com.bridgelabz.utility.Utility;
+
 public class BankingCashQueue 
 {
 	public static void main(String[] args) 

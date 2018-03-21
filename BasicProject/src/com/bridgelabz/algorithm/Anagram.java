@@ -1,12 +1,12 @@
-package com.bridgelabz.algorithm;
-
-import com.bridgelabz.utility.Utility;
-
 /*
  * purpose: Finding if the two strings are anagram of each other or not
  * @author Ganesh
  * @since 1 March 2018
 */
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.Utility;
+
 public class Anagram
 {
 	public static void main(String[] args) 

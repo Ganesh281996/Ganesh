@@ -1,3 +1,8 @@
+/**
+ * Purpose Managing CLinique Patients can take appointment from doctors using json
+ * @author Ganesh
+ * @since 17 March 2018
+ */
 package com.bridgelabz.objectoriented;
 
 import java.util.Iterator;
@@ -8,11 +13,6 @@ import org.json.simple.JSONObject;
 import com.bridgelabz.utility.Clinique;
 import com.bridgelabz.utility.Utility;
 
-/**
- * Purpose Managing CLinique Patients can take appointment from doctors using json
- * @author Ganesh
- * @since 17 March 2018
- */
 public class CliniqueManagement 
 {
 	public static void main(String[] args) 

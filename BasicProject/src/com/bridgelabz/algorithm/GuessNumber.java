@@ -1,12 +1,12 @@
-package com.bridgelabz.algorithm;
-
-import com.bridgelabz.utility.Utility;
-
 /*
  * purpose: Computer will guess the number from ana array
  * @author Ganesh
  * @since 1 March 2018
 */
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.Utility;
+
 public class GuessNumber
 {
 	public static void main(String[] args) 

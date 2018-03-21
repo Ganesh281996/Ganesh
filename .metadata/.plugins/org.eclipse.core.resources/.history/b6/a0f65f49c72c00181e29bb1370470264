@@ -1,0 +1,24 @@
+package com.bridgelabz.utility;
+
+public class Pc implements Computer
+{
+	private static final Pc instance=new Pc();
+	
+	@Override
+	public Computer getInstance() 
+	{
+		return instance;
+	}
+}
+
+class Server implements Computer
+{
+	private static final Server instance=new Pc();
+	
+	@Override
+	public Computer getInstance() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

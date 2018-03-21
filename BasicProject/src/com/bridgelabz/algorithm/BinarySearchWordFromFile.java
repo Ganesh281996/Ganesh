@@ -1,12 +1,12 @@
-package com.bridgelabz.algorithm;
-
-import com.bridgelabz.utility.Utility;
-
 /*
  * purpose: Using Binary search on words taken from a a file
  * @author Ganesh
  * @since 1 March 2018
 */
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.Utility;
+
 public class BinarySearchWordFromFile
 {
 	public static void main(String[] args) 

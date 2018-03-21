@@ -1,0 +1,41 @@
+package com.bridgelabz.utility;
+
+public interface Computer 
+{
+	Computer getInstance();
+}
+
+class Pc implements Computer
+{
+	private static final Pc instance=new Pc();
+	
+	@Override
+	public Computer getInstance() 
+	{
+		return instance;
+	}
+}
+
+class Server implements Computer
+{
+	private static final Server instance=new Server();
+	
+	@Override
+	public Computer getInstance() 
+	{
+		return instance;
+	}
+	
+}
+
+class Laptop implements Computer
+{
+	private static final Server instance=new Computer();
+	
+	@Override
+	public Computer getInstance()
+	{
+		return instance;
+	}
+	
+}

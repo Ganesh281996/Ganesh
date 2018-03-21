@@ -1,12 +1,12 @@
-package com.bridgelabz.functional;
-
-import com.bridgelabz.utility.Utility;
-
 /*
  * purpose: Finding Prime factors of given positive number
  * @author Ganesh
  * @since 28 Feb 2018
 */
+package com.bridgelabz.functional;
+
+import com.bridgelabz.utility.Utility;
+
 public class PrimeFactors
 {
 	public static void main(String[] args) 

@@ -26,7 +26,6 @@
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="javax.xml.crypto.KeySelector.Purpose"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.LinkedList"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
@@ -59,4 +58,5 @@
 <fullyQualifiedTypeName name="org.json.simple.JSONArray"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.Utility"/>
 <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
+<fullyQualifiedTypeName name="javax.xml.crypto.KeySelector.Purpose"/>
 </qualifiedTypeNameHistroy>

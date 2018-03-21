@@ -1,13 +1,13 @@
-package com.bridgelabz.objectoriented;
-
-import com.bridgelabz.utility.AddressBook;
-import com.bridgelabz.utility.Utility;
-
 /**
  * Purpose maintaining Address book using json
  * @author Ganesh
  * @since 15 March 2018
  */
+package com.bridgelabz.objectoriented;
+
+import com.bridgelabz.utility.AddressBook;
+import com.bridgelabz.utility.Utility;
+
 public class UIAddressBook 
 {
 	public static void main(String[] args) 

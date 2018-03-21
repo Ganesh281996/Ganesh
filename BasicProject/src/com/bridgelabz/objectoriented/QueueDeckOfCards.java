@@ -1,12 +1,12 @@
-package com.bridgelabz.objectoriented;
-
-import com.bridgelabz.utility.Utility;
-
 /**
  * Purpose Distributing cards to 4 players using and sorting them using queue
  * @author Ganesh
  * @since 15 March 2018
  */
+package com.bridgelabz.objectoriented;
+
+import com.bridgelabz.utility.Utility;
+
 public class QueueDeckOfCards 
 {
 	public static void main(String[] args) 

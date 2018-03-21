@@ -1,12 +1,12 @@
-package com.bridgelabz.objectoriented;
-
-import com.bridgelabz.utility.Utility;
-
 /**
  * Purpose managing Stock Report using json
  * @author Ganesh
  * @since 12 March 2018
  */
+package com.bridgelabz.objectoriented;
+
+import com.bridgelabz.utility.Utility;
+
 public class StockReport 
 {
 	public static void main(String[] args) 

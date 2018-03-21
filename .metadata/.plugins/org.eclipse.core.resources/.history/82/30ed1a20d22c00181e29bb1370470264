@@ -1,0 +1,16 @@
+package com.bridgelabz.singleton;
+
+public class StaticInitialization 
+{
+	private static StaticInitialization instance;
+	
+	private StaticInitialization()
+	{
+		
+	}
+	
+	static
+	{
+		
+	}
+}

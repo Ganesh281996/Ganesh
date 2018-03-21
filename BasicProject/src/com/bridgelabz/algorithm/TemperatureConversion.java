@@ -1,12 +1,12 @@
-package com.bridgelabz.algorithm;
-
-import com.bridgelabz.utility.Utility;
-
 /*
  * purpose: converting temperature from fahrenheit to celsius and vice versa
  * @author Ganesh
  * @since 3 March 2018
 */
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.Utility;
+
 public class TemperatureConversion
 {
 	public static void main(String[] args) 

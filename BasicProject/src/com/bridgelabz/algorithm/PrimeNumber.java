@@ -1,12 +1,12 @@
-package com.bridgelabz.algorithm;
-
-import com.bridgelabz.utility.Utility;
-
 /*
  * purpose: Finding if the number is prime or not
  * @author Ganesh
  * @since 3 March 2018
 */
+package com.bridgelabz.algorithm;
+
+import com.bridgelabz.utility.Utility;
+
 public class PrimeNumber
 {
 	public static void main(String[] args) 

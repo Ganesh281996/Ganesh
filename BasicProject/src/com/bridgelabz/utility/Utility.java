@@ -359,7 +359,7 @@ public class Utility
 			key = array[i];  
             j=i-1;  
             while((j>=0) && (array[j].compareToIgnoreCase(key))>0) 
-            {  
+            { 
                 array[j+1]=array[j];  
                 j--;  
             }
@@ -1707,7 +1707,7 @@ public class Utility
 		try
 		{
 			file=new FileWriter(path);
-			System.out.println(jsonObject);
+//			System.out.println(jsonObject);
 			file.write(jsonObject.toJSONString());
 			
 		}
@@ -1734,34 +1734,34 @@ public class Utility
 		ricePulseWheat(path);
 	}
 	/**
-	 * @param no_of_stocks total no of stocks
+	 * @param noOfStocks total no of stocks
 	 * @param path path of the file
 	 */
-	public static void stockReport(int no_of_stocks,String path)
+	public static void stockReport(int noOfStocks,String path)
 	{
 		JSONObject stock=new JSONObject();
 		JSONObject jsonObject=new JSONObject();
 		Utility utility=new Utility();
-		String stock_name=null;
-		long no_of_share=0,share_price=0,stock_value=0,total_value=0;
-		for(int i=0;i<no_of_stocks;i++)
+		String stockName=null;
+		long noOfShare=0,sharePrice=0,stockValue=0,totalValue=0;
+		for(int i=0;i<noOfStocks;i++)
 		{
 			System.out.println("Enter Stock Name");
-			stock_name=utility.next();
-			stock.put("Stock_Name", stock_name);
+			stockName=utility.next();
+			stock.put("Stock_Name", stockName);
 			System.out.println("Enter Number of Shares=");
-			no_of_share=utility.nextLong();
-			stock.put("Number_Of_Shares", no_of_share);
+			noOfShare=utility.nextLong();
+			stock.put("Number_Of_Shares", noOfShare);
 			System.out.println("Enter Price of Each Share=");
-			share_price=utility.nextLong();
-			stock.put("Price", share_price);
-			stock_value=no_of_share*share_price;
-			total_value=total_value+stock_value;
-			stock.put("Stock_Value", stock_value);
+			sharePrice=utility.nextLong();
+			stock.put("Price", sharePrice);
+			stockValue=noOfShare*sharePrice;
+			totalValue=totalValue+stockValue;
+			stock.put("Stock_Value", stockValue);
 			jsonObject.put("Stock_"+(i+1), stock);
 			stock=new JSONObject();
 		}
-		jsonObject.put("Total_Value", total_value);
+		jsonObject.put("Total_Value", totalValue);
 		System.out.println(jsonObject);
 		FileWriter fileWriter=null;
 		try
@@ -1787,15 +1787,15 @@ public class Utility
 		}
 	}
 	/**
-	 * @param non_shuffled_cards 2D array containing ordered cards
+	 * @param nonShuffledCards 2D array containing ordered cards
 	 * @param suit array of suits
 	 * @param rank array of ranks
 	 * @return 2D array stating which player got which cards
 	 */
-	public static String[][]  deckOfCards(String non_shuffled_cards[][],String suit[],String rank[])
+	public static String[][]  deckOfCards(String nonShuffledCards[][],String suit[],String rank[])
 	{
-		String shuffle_cards[][]=new String[52][2];
-		int row=0,column=0,count_row=0,count_column=0;
+		String shuffleCards[][]=new String[52][2];
+		int row=0,column=0,countRow=0,countColumn=0;
 		List<Integer> list=new ArrayList<Integer>();
 		Random random=new Random();
 		do
@@ -1804,49 +1804,49 @@ public class Utility
 			if(!list.contains(row))
 			{
 				list.add(row);
-				shuffle_cards[count_row][column]=non_shuffled_cards[row][column];
-				shuffle_cards[count_row][column+1]=non_shuffled_cards[row][column+1];
-				count_row++;
+				shuffleCards[countRow][column]=nonShuffledCards[row][column];
+				shuffleCards[countRow][column+1]=nonShuffledCards[row][column+1];
+				countRow++;
 			}
 		}
-		while(shuffle_cards[51][1]==null);
+		while(shuffleCards[51][1]==null);
 		System.out.println("Shuffled Cards=");
 		for(int i=0;i<52;i++)
 		{
 			for(int j=0;j<2;j++)
 			{
-				System.out.print(shuffle_cards[i][j]+"  ");
+				System.out.print(shuffleCards[i][j]+"  ");
 			}
 			System.out.println();
 		}
-		String distribute_cards[][]=new String[14][5];
+		String distributeCards[][]=new String[14][5];
 		for(int i=0;i<14;i++)
 		{
 			for(int j=0;j<5;j++)
 			{
-				distribute_cards[i][j]="";
+				distributeCards[i][j]="";
 			}
 		}
 		for(int i=1;i<14;i++)
 		{
-			distribute_cards[i][0]=rank[i-1];
+			distributeCards[i][0]=rank[i-1];
 		}
 		for(int i=1;i<5;i++)
 		{
-			distribute_cards[0][i]=suit[i-1];
+			distributeCards[0][i]=suit[i-1];
 		}
 		int user=1;
 		for(int k=0;k<36;k++)
 		{
 			for(int i=1;i<5;i++)
 			{
-				if(shuffle_cards[k][0].equals(distribute_cards[0][i]))
+				if(shuffleCards[k][0].equals(distributeCards[0][i]))
 				{
 					for(int j=0;j<13;j++)
 					{
-						if(shuffle_cards[k][1].equals(distribute_cards[j+1][0]))
+						if(shuffleCards[k][1].equals(distributeCards[j+1][0]))
 						{
-							distribute_cards[j+1][i]=user+"";
+							distributeCards[j+1][i]=user+"";
 							user++;
 						}
 					}
@@ -1857,7 +1857,7 @@ public class Utility
 				user=1;
 			}
 		}
-		return distribute_cards;
+		return distributeCards;
 	}
 	/**
 	 * @param array 2D array to align space
@@ -1879,13 +1879,13 @@ public class Utility
 		return array;
 	}
 	/**
-	 * @param non_shuffled_cards deck of cards not shuffled
+	 * @param nonShuffledCards deck of cards not shuffled
 	 * @param suit Diamond,Spade,Heart,Club
 	 * @param rank 2 to 10,king,queen,jack,ace
 	 */
-	public static void queueDeckOfCards(String non_shuffled_cards[][],String suit[],String rank[])
+	public static void queueDeckOfCards(String nonShuffledCards[][],String suit[],String rank[])
 	{
-		String shuffle_cards[][]=new String[52][2];
+		String shuffleCards[][]=new String[52][2];
 		int row=0,column=0,count_row=0,count_column=0;
 		List<Integer> list=new ArrayList<Integer>();
 		Random random=new Random();
@@ -1895,12 +1895,12 @@ public class Utility
 			if(!list.contains(row))
 			{
 				list.add(row);
-				shuffle_cards[count_row][column]=non_shuffled_cards[row][column];
-				shuffle_cards[count_row][column+1]=non_shuffled_cards[row][column+1];
+				shuffleCards[count_row][column]=nonShuffledCards[row][column];
+				shuffleCards[count_row][column+1]=nonShuffledCards[row][column+1];
 				count_row++;
 			}
 		}
-		while(shuffle_cards[51][1]==null);
+		while(shuffleCards[51][1]==null);
 		
 		Queue<String> array[]=new Queue[4];
 		int count=0;
@@ -1913,7 +1913,7 @@ public class Utility
 		{
 			for(int j=0;j<9;j++)
 			{
-				array[i].enQueue(shuffle_cards[count][1]+shuffle_cards[count++][0]);
+				array[i].enQueue(shuffleCards[count][1]+shuffleCards[count++][0]);
 			}
 		}
 		
@@ -1959,7 +1959,7 @@ public class Utility
 		
 		Pattern pattern=Pattern.compile("[a-zA-Z]+$");
 		Matcher matcher=null;
-		String name,last_name,mobile,date;
+		String name,lastName,mobile,date;
 		do
 		{
 			System.out.println("Enter First Name=");
@@ -1976,8 +1976,8 @@ public class Utility
 		do
 		{
 			System.out.println("Enter Last Name=");
-			last_name=utility.next();
-			matcher=pattern.matcher(last_name);
+			lastName=utility.next();
+			matcher=pattern.matcher(lastName);
 			if(!matcher.matches())
 			{
 				System.out.println("Please try again.");
@@ -2001,7 +2001,7 @@ public class Utility
 		Date date_object=new Date();
 		date=dateFormat.format(date_object);
 		string=string.replaceAll("<<name>>", name);
-		string=string.replaceAll("<<full name>>", name+" "+last_name);
+		string=string.replaceAll("<<full name>>", name+" "+lastName);
 		string=string.replaceAll("91­xxxxxxxxxx", mobile);
 		string=string.replaceAll("01/01/2016", date);
 		return string;
@@ -2015,11 +2015,11 @@ public class Utility
 		FileReader file=null;
 		JSONParser parser=null;
 		JSONObject jsonObject=null;
-		File checking_file=null;
+		File checkingFile=null;
 		try
 		{
-			checking_file=new File(path);
-			if(checking_file.length()==0)
+			checkingFile=new File(path);
+			if(checkingFile.length()==0)
 			{
 				jsonObject=null;
 			}

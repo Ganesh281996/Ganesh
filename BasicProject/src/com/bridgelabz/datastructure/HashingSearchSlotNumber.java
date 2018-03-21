@@ -1,13 +1,13 @@
-package com.bridgelabz.datastructure;
-
-import com.bridgelabz.utility.LinkedList;
-import com.bridgelabz.utility.Utility;
-
 /**
  * Purpose Searching number from array of linked list using hashing mechanism
  * @author Ganesh
  * @since 5 March 2018
  */
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.LinkedList;
+import com.bridgelabz.utility.Utility;
+
 public class HashingSearchSlotNumber 
 {
 	public static void main(String[] args) 

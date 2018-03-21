@@ -1,13 +1,13 @@
-package com.bridgelabz.datastructure;
-
-import com.bridgelabz.utility.Stack;
-import com.bridgelabz.utility.Utility;
-
 /**
  * Purpose finding numbers that are prime and anagram using Stack
  * @author Ganesh
  * @since 10 March 2018
  */
+package com.bridgelabz.datastructure;
+
+import com.bridgelabz.utility.Stack;
+import com.bridgelabz.utility.Utility;
+
 public class PrimeAnagramStack 
 {
 	public static void main(String[] args) 
