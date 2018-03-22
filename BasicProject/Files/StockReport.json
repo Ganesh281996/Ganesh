@@ -1,1 +1,4 @@
-{"Stock_3":{"Price":50,"Stock_Value":1000,"Stock_Name":"def","Number_Of_Shares":20},"Total_Value":1230,"Stock_1":{"Price":10,"Stock_Value":30,"Stock_Name":"abc","Number_Of_Shares":3},"Stock_2":{"Price":20,"Stock_Value":200,"Stock_Name":"bcd","Number_Of_Shares":10}}
+{"Stock_3":{"Price":50,"Stock_Value":1000,"Stock_Name":"def","Number_Of_Shares":20},
+"Total_Value":1230,
+"Stock_1":{"Price":10,"Stock_Value":30,"Stock_Name":"abc","Number_Of_Shares":3},
+"Stock_2":{"Price":20,"Stock_Value":200,"Stock_Name":"bcd","Number_Of_Shares":10}}

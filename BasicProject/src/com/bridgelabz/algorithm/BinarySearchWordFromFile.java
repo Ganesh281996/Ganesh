@@ -14,21 +14,21 @@ public class BinarySearchWordFromFile
 		Utility utility=new Utility();
 		boolean flag=false;
 		String string="",path="/home/bridgeit/Ganesh/BasicProject/Files/BinarySearch";
-		String stringarray1[],stringarray[];
-		stringarray1=Utility.getFileContents(path);
-		stringarray=new String[stringarray1.length-1];
-		for(int i=0;i<stringarray.length;i++)
+		String stringArray1[],stringArray2[];
+		stringArray1=Utility.getFileContents(path);
+		stringArray2=new String[stringArray1.length-1];
+		for(int i=0;i<stringArray2.length;i++)
 		{
-			stringarray[i]=stringarray1[i];
+			stringArray2[i]=stringArray1[i];
 		}
-		stringarray=Utility.bubbleSortString(stringarray);
-		for(int i=0;i<stringarray.length;i++)
+		stringArray2=Utility.bubbleSortString(stringArray2);
+		for(int i=0;i<stringArray2.length;i++)
 		{
-			System.out.println(stringarray[i]);
+			System.out.println(stringArray2[i]);
 		}
 		System.out.println("Enter the string to search=");
 		string=utility.next();
-		flag=Utility.binarySearchString(stringarray, string);
+		flag=Utility.binarySearchString(stringArray2, string);
 		if(flag==true)
 		{
 			System.out.println("The word is present.");

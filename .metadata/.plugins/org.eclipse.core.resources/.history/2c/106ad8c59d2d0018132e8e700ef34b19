@@ -1,0 +1,6 @@
+package com.bridgelabz.utility;
+
+public class Volt 
+{
+	private int volt;
+}

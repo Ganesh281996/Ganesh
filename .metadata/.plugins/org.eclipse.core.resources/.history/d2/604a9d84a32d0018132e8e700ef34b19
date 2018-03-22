@@ -1,0 +1,17 @@
+package com.bridgelabz.designpatterns;
+
+import com.bridgelabz.utility.SocketAdapter;
+import com.bridgelabz.utility.SocketClassAdapter;
+import com.bridgelabz.utility.Volt;
+
+public class AdapterPattern 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Socket Object Adapter");
+		SocketAdapter socketAdapter=new SocketClassAdapter();
+		Volt v3=socketAdapter.get3Volt();
+		System.out.println("3 Volts using Object Adapter="+v3.getVolt());
+		
+	}
+}

@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.omg.PortableInterceptor.SYSTEM_EXCEPTION"/>
-<fullyQualifiedTypeName name="java.awt.List"/>
-<fullyQualifiedTypeName name="java.lang.Double"/>
-<fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="java.util.TreeMap"/>
-<fullyQualifiedTypeName name="java.security.KeyStore.Entry"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.TreeSet"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.UnOrderedList"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
@@ -59,4 +49,15 @@
 <fullyQualifiedTypeName name="com.bridgelabz.utility.Utility"/>
 <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
 <fullyQualifiedTypeName name="javax.xml.crypto.KeySelector.Purpose"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.Pc"/>
+<fullyQualifiedTypeName name="com.bridgelabz.singleton.EagerInitialization"/>
+<fullyQualifiedTypeName name="com.bridgelabz.singleton.StaticInitialization"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.bridgelabz.singleton.LazyInitialization"/>
+<fullyQualifiedTypeName name="com.bridgelabz.singleton.ThreadSafeSingleton"/>
+<fullyQualifiedTypeName name="com.bridgelabz.singleton.BillPughSingleton"/>
+<fullyQualifiedTypeName name="com.bridgelabz.singleton.BillPughSingleton.InnerClass"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.ComputerFactory"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.Computer"/>
 </qualifiedTypeNameHistroy>

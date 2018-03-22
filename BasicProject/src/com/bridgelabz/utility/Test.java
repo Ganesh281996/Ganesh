@@ -41,5 +41,7 @@ public class Test
 //		Patient p=new Patient(1, "Vimal", 12312);
 //		Clinique c=new Clinique();
 //		c.addDoctor(d);
+//		Integer a[]=new Integer[5];
+//		System.out.println(a[0]);
 	}
 }

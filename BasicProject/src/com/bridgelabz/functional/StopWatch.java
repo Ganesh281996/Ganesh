@@ -14,7 +14,7 @@ public class StopWatch
 		Utility utility=new Utility();
 		System.out.println("Enter a number to start stopwatch=");
 		utility.nextInt();
-		long elapsedtime=Utility.stopWatch();
-		System.out.println("Elapsed Time="+elapsedtime+" MilliSeconds");
+		double elapsedTime=Utility.stopWatch();
+		System.out.println("Elapsed Time="+elapsedTime+" Seconds");
 	}
 }

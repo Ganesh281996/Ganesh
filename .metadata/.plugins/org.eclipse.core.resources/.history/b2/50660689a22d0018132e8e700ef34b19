@@ -1,0 +1,15 @@
+package com.bridgelabz.designpatterns;
+
+import com.bridgelabz.utility.SocketAdapter;
+import com.bridgelabz.utility.SocketClassAdapter;
+
+public class AdapterPattern 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Socket Class Adapter");
+		SocketAdapter socketAdapter=new SocketClassAdapter();
+		
+		
+	}
+}

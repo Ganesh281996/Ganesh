@@ -1,0 +1,25 @@
+package com.bridgelabz.utility;
+
+public interface SocketAdapter 
+{
+	Volt get120Volt();
+	Volt get3Volt();
+}
+
+class SocketClassAdapter extends Socket implements SocketAdapter
+{
+
+	@Override
+	public Volt get120Volt() 
+	{
+		return getVolt();
+	}
+
+	@Override
+	public Volt get3Volt() 
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

@@ -12,13 +12,13 @@ public class HarmonicNumber
 	public static void main(String[] args) 
 	{
 		Utility utility=new Utility();
-		int harmonicnumber=0;
+		int harmonicNumber=0;
 		do
 		{
 			System.out.println("Enter Harmonic Number greater than 0");
-			harmonicnumber=utility.nextInt();
+			harmonicNumber=utility.nextInt();
 		}
-		while(harmonicnumber<=0);
-		System.out.println(Utility.harmonicNumber(harmonicnumber));
+		while(harmonicNumber<=0);
+		System.out.println(Utility.harmonicNumber(harmonicNumber));
 	}
 }

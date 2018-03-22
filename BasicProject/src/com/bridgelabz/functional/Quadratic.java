@@ -17,9 +17,16 @@ public class Quadratic
 		double b=utility.nextDouble();
 		double c=utility.nextDouble();
 		double rootarray[]=Utility.quadratic(a, b, c);
-		for(int i=0;i<rootarray.length;i++)
+		if(rootarray==null)
 		{
-			System.out.println("Root"+i+" of x is "+rootarray[i]);
+			System.out.println("Imaginary Number");
+		}
+		else
+		{
+			for(int i=0;i<rootarray.length;i++)
+			{
+				System.out.println("Root"+i+" of x is "+rootarray[i]);
+			}
 		}
 	}
 }

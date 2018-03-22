@@ -13,10 +13,10 @@ public class TwoDArray
 	{
 		Utility utility=new Utility();	
 		int choice=0;
-		int row,col;
+		int row,column;
 		System.out.println("Enter Rows and Columns of array=");
 		row=utility.nextInt();
-		col=utility.nextInt();
+		column=utility.nextInt();
 		do
 		{
 			System.out.println("1 Integers.");
@@ -28,40 +28,40 @@ public class TwoDArray
 			switch(choice)
 			{
 			case 1:
-				Integer twodarrayinteger[][]=new Integer[row][col];
+				Integer twodarrayinteger[][]=new Integer[row][column];
+				System.out.print("Enter "+(row*column)+" numbers.");
 				for(int i=0;i<row;i++)
 				{
-					for(int j=0;j<col;j++)
+					for(int j=0;j<column;j++)
 					{
-						System.out.print("Enter "+(row*col)+" numbers.");
 						twodarrayinteger[i][j]=utility.nextInt();
 					}
 				}
-				Utility.generic2DArray(twodarrayinteger,row,col);
+				Utility.generic2DArray(twodarrayinteger,row,column);
 				break;
 			case 2:
-				Double twodarraydouble[][]=new Double[row][col];
+				Double twodarraydouble[][]=new Double[row][column];
+				System.out.print("Enter "+(row*column)+" numbers.");
 				for(int i=0;i<row;i++)
 				{
-					for(int j=0;j<col;j++)
+					for(int j=0;j<column;j++)
 					{
-						System.out.print("Enter "+(row*col)+" numbers.");
 						twodarraydouble[i][j]=utility.nextDouble();
 					}
 				}
-				Utility.generic2DArray(twodarraydouble,row,col);
+				Utility.generic2DArray(twodarraydouble,row,column);
 				break;
 			case 3:
-				Boolean twodarrayboolean[][]=new Boolean[row][col];
+				Boolean twodarrayboolean[][]=new Boolean[row][column];
+				System.out.print("Enter "+(row*column)+" numbers.");
 				for(int i=0;i<row;i++)
 				{
-					for(int j=0;j<col;j++)
+					for(int j=0;j<column;j++)
 					{
-						System.out.print("Enter "+(row*col)+" numbers.");
 						twodarrayboolean[i][j]=utility.nextBoolean();
 					}
 				}
-				Utility.generic2DArray(twodarrayboolean,row,col);
+				Utility.generic2DArray(twodarrayboolean,row,column);
 				break;
 			case 4:
 				break;

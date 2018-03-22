@@ -12,7 +12,7 @@ public class PrimeNumber
 	public static void main(String[] args) 
 	{
 		Utility utility=new Utility();
-		System.out.println("Enter number between o and 1000");
+		System.out.println("Enter Range");
 		int number=utility.nextInt();
 		for(int i=0;i<=number;i++)
 		{

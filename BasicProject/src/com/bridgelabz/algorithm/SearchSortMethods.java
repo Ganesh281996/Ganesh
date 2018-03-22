@@ -13,79 +13,79 @@ public class SearchSortMethods
 	{
 		Utility utility=new Utility();
 		System.out.println("Input size of Arrays=");
-		long currenttime;
-		int elapsedsize=0;
+		long currentTime=0;
+		int elapsedSize=0;
 		boolean flag;
 		int size=utility.nextInt();
-		int inputintegerarray[]=new int[size];
-		int outputintegerarray[]=new int[size];
-		long elapsedtime[]=new long[6];
-		String inputstringarray[]=new String[size];
-		String outputstringarray[]=new String[size];
+		int inputIntegerArray[]=new int[size];
+		int outputIntegerArray[]=new int[size];
+		long elapsedTime[]=new long[6];
+		String inputStringArray[]=new String[size];
+		String outputStringArray[]=new String[size];
 		System.out.println("Input integer array=");
 		for(int i=0;i<size;i++)
 		{
-			inputintegerarray[i]=utility.nextInt();
+			inputIntegerArray[i]=utility.nextInt();
 		}
 		System.out.println("Input String array=");
 		for(int i=0;i<size;i++)
 		{
-			inputstringarray[i]=utility.next();
+			inputStringArray[i]=utility.next();
 		}
 		System.out.println("Enter number to search in integer array=");
 		int number=utility.nextInt();
 		System.out.println("Enter String to search in String array=");
 		String string=utility.next();
 		
-		currenttime=System.currentTimeMillis();
-		outputintegerarray=Utility.bubbleSortInteger(inputintegerarray);
-		elapsedtime[elapsedsize]=System.currentTimeMillis()-currenttime;
+		currentTime=System.nanoTime();
+		outputIntegerArray=Utility.bubbleSortInteger(inputIntegerArray);
+		elapsedTime[elapsedSize++]=System.nanoTime()-currentTime;
 		System.out.println("Bubble Sort Integer");
 		for(int i=0;i<size;i++)
 		{
-			System.out.print(outputintegerarray[i]+"  ");
+			System.out.print(outputIntegerArray[i]+"  ");
 		}
 		System.out.println();
 		
-		currenttime=System.currentTimeMillis();
-		outputstringarray=Utility.bubbleSortString(inputstringarray);
-		elapsedtime[elapsedsize++]=System.currentTimeMillis()-currenttime;
+		currentTime=System.nanoTime();
+		outputStringArray=Utility.bubbleSortString(inputStringArray);
+		elapsedTime[elapsedSize++]=System.nanoTime()-currentTime;
 		System.out.println("Bubble Sort String");
 		for(int i=0;i<size;i++)
 		{
-			System.out.print(outputstringarray[i]+"  ");
+			System.out.print(outputStringArray[i]+"  ");
 		}
 		System.out.println();
 		
-		currenttime=System.currentTimeMillis();
-		outputintegerarray=Utility.insertionSortInteger(inputintegerarray);
-		elapsedtime[elapsedsize++]=System.currentTimeMillis()-currenttime;
+		currentTime=System.nanoTime();
+		outputIntegerArray=Utility.insertionSortInteger(inputIntegerArray);
+		elapsedTime[elapsedSize++]=System.nanoTime()-currentTime;
 		System.out.println("Insertion Sort Integer");
 		for(int i=0;i<size;i++)
 		{
-			System.out.print(outputintegerarray[i]+"  ");
+			System.out.print(outputIntegerArray[i]+"  ");
 		}
 		System.out.println();
 		
-		currenttime=System.currentTimeMillis();
-		outputstringarray=Utility.insertionSortString(inputstringarray);
-		elapsedtime[elapsedsize++]=System.currentTimeMillis()-currenttime;
+		currentTime=System.nanoTime();
+		outputStringArray=Utility.insertionSortString(inputStringArray);
+		elapsedTime[elapsedSize++]=System.nanoTime()-currentTime;
 		System.out.println("Insertion Sort String");
 		for(int i=0;i<size;i++)
 		{
-			System.out.print(outputstringarray[i]+"  ");
+			System.out.print(outputStringArray[i]+"  ");
 		}
 		System.out.println();
 		
-		currenttime=System.currentTimeMillis();
-		flag=Utility.binarySearchInteger(inputintegerarray, number);
-		elapsedtime[elapsedsize++]=System.currentTimeMillis()-currenttime;
+		currentTime=System.nanoTime();
+		flag=Utility.binarySearchInteger(inputIntegerArray, number);
+		elapsedTime[elapsedSize++]=System.nanoTime()-currentTime;
 		System.out.println("Binary Search Integer");
 		System.out.println(flag);
 		
-		currenttime=System.currentTimeMillis();
-		flag=Utility.binarySearchString(inputstringarray, string);
-		elapsedtime[elapsedsize++]=System.currentTimeMillis()-currenttime;
+		currentTime=System.nanoTime();
+		flag=Utility.binarySearchString(inputStringArray, string);
+		elapsedTime[elapsedSize++]=System.nanoTime()-currentTime;
 		System.out.println("Binary Search String");
 		System.out.println(flag);
 		
@@ -95,17 +95,18 @@ public class SearchSortMethods
 		System.out.println("Insertion Sort String");
 		System.out.println("Binary Search Integer");
 		System.out.println("Binary Search String");
-		for(int i=0;i<size;i++)
+		System.out.println("BI     BS     II     IS     BI     BS");
+		for(int i=0;i<6;i++)
 		{
-			System.out.print(elapsedtime[i]+"  ");
+			System.out.print(elapsedTime[i]+"  ");
 		}
 		System.out.println();
 		
-		elapsedtime=Utility.sortLongDesc(elapsedtime);
+		elapsedTime=Utility.sortLongDesc(elapsedTime);
 		System.out.println("After sorting in descending order=");
-		for(int i=0;i<elapsedsize;i++)
+		for(int i=0;i<6;i++)
 		{
-			System.out.print(elapsedtime[i]+"  ");
+			System.out.print(elapsedTime[i]+"  ");
 		}
 	}
 }

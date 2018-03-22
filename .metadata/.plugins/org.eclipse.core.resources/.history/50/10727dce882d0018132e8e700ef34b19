@@ -1,0 +1,7 @@
+package com.bridgelabz.utility;
+
+public class Employee implements Cloneable 
+{
+	private String name;
+	private long mobileNumber;
+}

@@ -12,28 +12,42 @@ public class GuessNumber
 	public static void main(String[] args) 
 	{
 		Utility utility=new Utility();
-		System.out.println("Enter number such that N=2^n=");
-		int bign=utility.nextInt();
-		int mul=2;
+		boolean flag=false;
+		int bigN=0;
+		do
+		{
+			System.out.println("Enter number such that N=2^n=");
+			bigN=utility.nextInt();
+			for(int i=0;i<bigN;i++)
+			{
+				if(Math.pow(2, i)==bigN)
+				{
+					flag=true;
+					break;
+				}
+			}
+		}
+		while(flag==false);
+		int multiply=2;
 		int i;
-		if(bign==1)
+		if(bigN==1)
 		{
 			i=0;
 		}
 		else
 		{
-			for(i=1;i<bign;i++)
+			for(i=1;i<bigN;i++)
 			{
-				if(mul==bign)
+				if(multiply==bigN)
 				{
 					break;
 				}
-				mul=mul*2;
+				multiply=multiply*2;
 			}
 		}
 		int smalln=i;
-		System.out.println("My number=");
+		System.out.println("My number between 0 and "+bigN+"=");
 		int mynumber=utility.nextInt();
-		Utility.guessNumber(bign, smalln, mynumber);
+		Utility.guessNumber(bigN, smalln, mynumber);
 	}
 }

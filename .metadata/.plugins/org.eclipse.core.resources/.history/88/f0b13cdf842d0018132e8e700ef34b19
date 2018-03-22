@@ -1,0 +1,20 @@
+package com.bridgelabz.utility;
+
+publi class ComputerFactory
+{
+	public static Computer getComputer(String details)
+	{
+		if(details.equalsIgnoreCase("Pc"))
+		{
+			return new Pc(details);
+		}
+		else if(details.equalsIgnoreCase("Laptop"))
+		{
+			return new Laptop(details);
+		}
+		else
+		{
+			return new Server(details);
+		}
+	}
+}

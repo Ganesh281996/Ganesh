@@ -14,7 +14,14 @@ public class WindChill
 		double t=Double.parseDouble(args[0]);
 		double v=Double.parseDouble(args[1]);
 		System.out.println("Command Line arguments are "+t+"  "+v);
-		double w=Utility.windChill(t, v);
-		System.out.println("w="+w);
+		if(t>50 && (v>3 && v<120))
+		{
+			System.out.println("Invalid Inputs");
+		}
+		else
+		{
+			double w=Utility.windChill(t, v);
+			System.out.println("w="+w);
+		}
 	}
 }

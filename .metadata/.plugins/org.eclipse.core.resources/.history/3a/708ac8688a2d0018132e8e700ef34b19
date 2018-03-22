@@ -1,0 +1,13 @@
+package com.bridgelabz.designpatterns;
+
+public class PrototypePattern 
+{
+	public static void main(String[] args) 
+	{
+		int id;
+		String name;
+		long mobileNumber;
+		int age;
+		System.out.println("Enter");
+	}
+}

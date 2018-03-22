@@ -13,8 +13,10 @@ public class Anagram
 	{
 		Utility utility=new Utility();
 		System.out.println("Enter two Strings=");
-		String string1=utility.next();
-		String string2=utility.next();
+		String string1=utility.nextLine();
+		String string2=utility.nextLine();
+		string1=string1.replaceAll(" ", "");
+		string2=string2.replaceAll(" ", "");
 		boolean flag=Utility.findingAnagram(string1, string2);
 		if(flag)
 		{

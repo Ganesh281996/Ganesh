@@ -1,9 +1,0 @@
-package com.bridgelabz.objectoriented;
-
-public class InventoryManagement 
-{
-	public static void main(String[] args) 
-	{
-		String path="/home/bridgeit/Ganesh/BasicProject/Files/InventoryManagement";
-	}
-}

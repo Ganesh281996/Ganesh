@@ -11,17 +11,17 @@ public class FlipCoin
 {
 	public static void main(String[] args) 
 	{
-		int fliptimes=0;
+		int flipTimes=0;
 		Utility utility=new Utility();
 		do
 		{
 			System.out.println("Enter how many times to flip the coin?");
-			fliptimes=utility.nextInt();
+			flipTimes=utility.nextInt();
 		}
-		while(fliptimes<=0);
-		double headpercent=Utility.flipCoin(fliptimes);
-		double tailpercent=100-headpercent;
-		System.out.println("HeadPercent = "+headpercent+"%");
-		System.out.println("Tailpercent = "+tailpercent+"%");
+		while(flipTimes<=0);
+		double headPercent=Utility.flipCoin(flipTimes);
+		double tailPercent=100-headPercent;
+		System.out.println("HeadPercent = "+headPercent+"%");
+		System.out.println("Tailpercent = "+tailPercent+"%");
 	}
 }

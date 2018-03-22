@@ -2,51 +2,19 @@ package com.bridgelabz.utility;
 
 public class ComputerFactory
 {
-	public Computer getInstance(String string)
+	public Computer getComputer(String details)
 	{
-		if(string.equalsIgnoreCase("Pc"))
+		if(details.equalsIgnoreCase("Pc"))
 		{
-			
+			return new Pc(details);
 		}
-		return null;
+		else if(details.equalsIgnoreCase("Laptop"))
+		{
+			return new Laptop(details);
+		}
+		else
+		{
+			return new Server(details);
+		}
 	}
-}
-
-interface Computer
-{
-	Computer getInstance();
-}
-
-class Pc implements Computer
-{
-	private static final Pc instance=new Pc();
-	
-	@Override
-	public Computer getInstance() 
-	{
-		return instance;
-	}
-}
-
-class Server implements Computer
-{
-	private static final Server instance=new Server();
-	
-	@Override
-	public Computer getInstance() 
-	{
-		return instance;
-	}
-}
-
-class Laptop implements Computer
-{
-	private static final Laptop instance=new Laptop();
-	
-	@Override
-	public Computer getInstance()
-	{
-		return instance;
-	}
-	
 }

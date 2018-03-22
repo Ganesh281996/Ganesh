@@ -1,0 +1,63 @@
+package com.bridgelabz.utility;
+
+public class ComputerFactory
+{
+	public Computer getComputer(String details)
+	{
+		if(details.equalsIgnoreCase("pc"))
+		{
+			return new Pc(details);
+		}
+	}
+}
+
+interface Computer
+{
+	String getDetails();
+}
+
+class Pc implements Computer
+{
+	private String details;
+
+	public Pc(String details)
+	{
+		this.details=details;
+	}
+	@Override
+	public String getDetails() 
+	{
+		return details;
+	}
+}
+
+class Server implements Computer
+{
+	private String details;
+	
+	public Server(String details)
+	{
+		this.details=details;
+	}
+	@Override
+	public String getDetails() 
+	{
+		return details;
+	}
+}
+
+class Laptop implements Computer
+{
+	private String details;
+
+	public Laptop(String details)
+	{
+		this.details=details;
+	}
+	@Override
+	public String getDetails() 
+	{
+		return details;
+	}
+	
+}

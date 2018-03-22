@@ -18,7 +18,7 @@ public class LeapYear
 			System.out.println("Enter the Year");
 			year=utility.nextInt();
 		}
-		while(year<1000);
+		while(year<0);
 		boolean flag=Utility.leapYear(year);
 		if(flag==true)
 		{
