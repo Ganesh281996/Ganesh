@@ -1,0 +1,6 @@
+package com.bridgelabz.utility;
+
+interface class Facade 
+{
+
+}

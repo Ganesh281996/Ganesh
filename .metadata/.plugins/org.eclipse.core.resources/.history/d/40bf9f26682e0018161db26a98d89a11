@@ -1,0 +1,9 @@
+package com.bridgelabz.designpatterns;
+
+public class ProxyPattern 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

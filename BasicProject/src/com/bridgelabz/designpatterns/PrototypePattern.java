@@ -27,6 +27,7 @@ public class PrototypePattern
 		Employee employee2=(Employee)employee1.clone();
 		Employee employee3=(Employee)employee1.clone();
 		Employee employee4=(Employee)employee1.clone();
+		
 		System.out.println("Employee1="+employee1);
 		System.out.println("Employee2="+employee2);
 		System.out.println("Employee3="+employee3);

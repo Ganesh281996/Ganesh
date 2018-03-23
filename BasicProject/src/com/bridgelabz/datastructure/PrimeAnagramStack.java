@@ -16,22 +16,25 @@ public class PrimeAnagramStack
 		System.out.println("Enter the range=");
 		int range=utility.nextInt();
 		Stack<Integer> stack=new Stack<Integer>(range);
-		for(int i=0;i<range;i++)
+		for(int i=0;i<range-1;i++)
 		{
 			for(int j=i+1;j<range;j++)
 			{
-				if(Utility.primeNumber(i) && Utility.primeNumber(j))
+				if(i!=j)
 				{
-					if(Utility.findingAnagram(""+i,""+j))
+					if(Utility.primeNumber(i) && Utility.primeNumber(j))
 					{
-						stack.push(i);
-						stack.push(j);
+						if(Utility.findingAnagram(""+i,""+j))
+						{
+							stack.push(i);
+							stack.push(j);
+						}
 					}
 				}
 			}
 		}
+		stack.order();
 		stack.reverseStack();
-		String tostring=stack.toString();
-		System.out.println(tostring);
+		System.out.println(stack.toString());
 	}
 }

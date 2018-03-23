@@ -1,0 +1,25 @@
+package com.bridgelabz.utility;
+
+import org.json.simple.JSONObject;
+
+public interface Facade
+{
+	JSONObject getDetailsFromFile(String path);
+	void printDetails(JSONObject jsonObject);
+}
+
+class FacadeImplementation implements Facade
+{
+	String path="/home/bridgeit/Ganesh/BasicProject/Files/AddressBook.json";
+	@Override
+	public JSONObject getDetailsFromFile(String path) 
+	{
+		return Utility.readJsonFile(path);
+	}
+
+	@Override
+	public void printDetails(JSONObject jsonObject) 
+	{
+		System.out.println(jsonObject.toJSONString());
+	}
+}

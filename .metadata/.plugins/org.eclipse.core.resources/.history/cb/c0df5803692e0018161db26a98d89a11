@@ -1,0 +1,47 @@
+package com.bridgelabz.utility;
+
+interface Executor 
+{
+	void runCommand(String command);
+}
+
+class CommandExecutorProxy implements Executor
+{
+	@Override
+	public void runCommand(String command) 
+	{
+		System.out.println("Command Executed");
+	}
+}
+
+class CommandExecutorProxy implements Executor 
+{
+	private boolean isAdmin;
+	private CommandExecutorProxy executor;
+	
+	public CommandExecutorProxy(String user, String pwd)
+	{
+		if("Pankaj".equals(user) && "J@urnalD$v".equals(pwd)) isAdmin=true;
+		executor = new CommandExecutorProxy();
+	}
+	
+	@Override
+	public void runCommand(String cmd) 
+	{
+		if(isAdmin)
+		{
+			executor.runCommand(cmd);
+		}
+		else
+		{
+			if(cmd.trim().startsWith("rm"))
+			{
+				System.out.println("rm command is not allowed for non-admin users.");
+			}
+			else
+			{
+				executor.runCommand(cmd);
+			}
+		}
+	}
+}

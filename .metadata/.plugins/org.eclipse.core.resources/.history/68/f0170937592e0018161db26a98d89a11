@@ -1,0 +1,26 @@
+package com.bridgelabz.utility;
+
+import org.json.simple.JSONObject;
+
+public interface Facade 
+{
+	JSONObject getDetailsFromFile(String path);
+	void printDetails(JSONObject jsonObject);
+}
+
+class FacadeImplementation implements Facade
+{
+
+	@Override
+	public JSONObject getDetailsFromFile(String path) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void printDetails(JSONObject jsonObject) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

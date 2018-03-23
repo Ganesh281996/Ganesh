@@ -1,0 +1,28 @@
+package com.bridgelabz.designpatterns;
+
+import com.bridgelabz.utility.MyTopic;
+import com.bridgelabz.utility.MyTopicSubscriber;
+
+public class ObserverPattern 
+{
+	public static void main(String[] args) 
+	{
+		MyTopic topic = new MyTopic();
+		
+		MyTopicSubscriber subscriber1 = new MyTopicSubscriber("Obj1");
+		MyTopicSubscriber obj2 = new MyTopicSubscriber("Obj2");
+		MyTopicSubscriber obj3 = new MyTopicSubscriber("Obj3");
+		
+		topic.register(subscriber1);
+		topic.register(obj2);
+		topic.register(obj3);
+		
+		subscriber1.setSubject(topic);
+		obj2.setSubject(topic);
+		obj3.setSubject(topic);
+		
+		subscriber1.update();
+		
+		topic.postMessage("New Message");
+	}
+}
