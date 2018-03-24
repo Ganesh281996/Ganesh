@@ -5,6 +5,7 @@ import java.util.Iterator;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
+@SuppressWarnings("unchecked")
 public class Clinique 
 {
 	String mDoctorPath="/home/bridgeit/Ganesh/BasicProject/Files/Doctor.json";

@@ -21,12 +21,12 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+@SuppressWarnings("unchecked")
 public class Utility
 {
 	Scanner mScanner;
@@ -1806,7 +1806,7 @@ public class Utility
 	public static String[][]  deckOfCards(String nonShuffledCards[][],String suit[],String rank[])
 	{
 		String shuffleCards[][]=new String[52][2];
-		int row=0,column=0,countRow=0,countColumn=0;
+		int row=0,column=0,countRow=0;
 		List<Integer> list=new ArrayList<Integer>();
 		Random random=new Random();
 		do
@@ -1897,7 +1897,7 @@ public class Utility
 	public static void queueDeckOfCards(String nonShuffledCards[][],String suit[],String rank[])
 	{
 		String shuffleCards[][]=new String[52][2];
-		int row=0,column=0,count_row=0,count_column=0;
+		int row=0,column=0,count_row=0;
 		List<Integer> list=new ArrayList<Integer>();
 		Random random=new Random();
 		do

@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import org.json.simple.JSONObject;
 
+@SuppressWarnings("unchecked")
 public class StockAccount 
 {
 	String mCustomerPath="/home/bridgeit/Ganesh/BasicProject/Files/StockCustomer.json";

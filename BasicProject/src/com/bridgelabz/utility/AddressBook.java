@@ -15,6 +15,8 @@ import org.json.simple.JSONObject;
  * @author Ganesh
  * @since 15 March 2018
  */
+
+@SuppressWarnings("unchecked")
 public class AddressBook 
 {
 	String mAdressBookPath="/home/bridgeit/Ganesh/BasicProject/Files/AddressBook.json";
@@ -99,8 +101,7 @@ public class AddressBook
 	public void sortByName()
 	{
 		JSONObject jsonObject=Utility.readJsonFile(mAdressBookPath);
-		JSONObject sortedJsonObject=new JSONObject();
-		JSONObject person=null,object=null,name=null;
+		JSONObject person=null,name=null;
 		JSONArray jsonArray=new JSONArray();
 		JSONObject temp=new JSONObject();
 		List<String > list=new ArrayList<String>();

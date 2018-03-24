@@ -7,6 +7,7 @@ public class Test
 {
 	public static void main(String[] args) 
 	{
+		
 //		Queue<String> queue=new Queue<>(5);
 //		LinkedList<String> list=new LinkedList<String>();
 //		list.add("abc");
@@ -43,5 +44,6 @@ public class Test
 //		c.addDoctor(d);
 //		Integer a[]=new Integer[5];
 //		System.out.println(a[0]);
+		
 	}
 }

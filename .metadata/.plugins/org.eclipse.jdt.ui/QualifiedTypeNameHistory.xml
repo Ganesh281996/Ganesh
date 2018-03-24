@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.bridgelabz.utility.Stack"/>
-<fullyQualifiedTypeName name="com.bridgelabz.utility.Node"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="com.bridgelabz.utility.LinkedList"/>
-<fullyQualifiedTypeName name="java.util.LinkedList"/>
-<fullyQualifiedTypeName name="java.io.InputStream"/>
-<fullyQualifiedTypeName name="java.io.FileInputStream"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="com.bridgelabz.utility.Queue"/>
-<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
 <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
@@ -24,7 +11,6 @@
 <fullyQualifiedTypeName name="org.json.simple.parser.ParseException"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.Customer"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.StockAccount"/>
@@ -32,7 +18,6 @@
 <fullyQualifiedTypeName name="java.lang.Long"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.Clinique"/>
 <fullyQualifiedTypeName name="org.json.simple.JSONArray"/>
-<fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
 <fullyQualifiedTypeName name="javax.xml.crypto.KeySelector.Purpose"/>
 <fullyQualifiedTypeName name="com.bridgelabz.singleton.EagerInitialization"/>
 <fullyQualifiedTypeName name="com.bridgelabz.singleton.StaticInitialization"/>
@@ -51,7 +36,6 @@
 <fullyQualifiedTypeName name="java.lang.Cloneable"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
-<fullyQualifiedTypeName name="com.bridgelabz.utility.Utility"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.Employee"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.Socket"/>
 <fullyQualifiedTypeName name="java.lang.Void"/>
@@ -60,4 +44,20 @@
 <fullyQualifiedTypeName name="com.bridgelabz.utility.SocketClassAdapter"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.Facade"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.FacadeImplementation"/>
+<fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.Executor"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.CommandExecutor"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.Observer"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.MyTopic"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.MyTopicSubscriber"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.Items"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.Book"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.Fruit"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.ShoppingCartVisitorImpl"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.Utility"/>
 </qualifiedTypeNameHistroy>

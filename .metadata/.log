@@ -2872,3 +2872,16 @@ Java Model Exception: Java Model Status [Book [in [Working copy] Items.java [in 
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 !SUBENTRY 1 org.eclipse.jdt.core 4 969 2018-03-23 18:42:11.139
 !MESSAGE Book [in [Working copy] Items.java [in com.bridgelabz.utility [in src [in BasicProject]]]] does not exist
+!SESSION 2018-03-24 09:11:25.207 -----------------------------------------------
+eclipse.buildId=4.7.0.I20160915-0230
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface.text 2 0 2018-03-24 11:14:38.485
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-03-24 11:14:38.503
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
