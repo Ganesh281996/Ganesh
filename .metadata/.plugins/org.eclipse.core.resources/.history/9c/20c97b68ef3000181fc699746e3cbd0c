@@ -13,10 +13,10 @@ public class BinarySearchTree
 	{
 		Utility utility=new Utility();
 		System.out.println("Enter Number of Test cases=");
-		int testCases=utility.nextInt();
+		int testcases=utility.nextInt();
 		int test=0;	
 		double noOfTree;
-		for(int i=0;i<testCases;i++)
+		for(int i=0;i<testcases;i++)
 		{
 			System.out.print("Enter the case= ");
 			test=utility.nextInt();
