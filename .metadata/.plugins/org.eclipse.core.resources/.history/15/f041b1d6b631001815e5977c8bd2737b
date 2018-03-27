@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="">
+<table>
+
+<tr>
+<td>First Name:	</td><td> <input  id="FirstName" placeholder="FirstName"></td>
+ </tr>
+ <tr>
+Last Name: <input id="LastName" placeholder="LastName"><br>
+</tr>
+<tr>
+Mobile Number: <input id="Mobile" placeholder="MobileNumber"><br>
+</tr>
+<tr>
+Age: <input id="Age" placeholder="Age"><br>
+</tr>
+<tr>
+Address: <textarea id="Address" placeholder="Address">  </textarea><br>
+</tr>
+<tr>
+Male<input type="radio" name="Gender" value="Male"><br>
+Female<input type="radio" name="Gender" value="Female"><br>
+<select>
+<option value="Java">Java</option>
+<option value=".Net">.Net</option>
+<option value="C++">C++</option>
+<option value="Mean">Mean</option>
+</select>
+</table>
+</form>
+</body>
+</html>
