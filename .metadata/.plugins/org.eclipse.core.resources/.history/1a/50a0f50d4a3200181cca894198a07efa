@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Nothing to See</title>
+<link rel="stylesheet" type="text/css" href="design.css">
+<!-- <script src="/home/bridgeit/Ganesh/BasicHtml/Files/validate.js"></script> -->
+</head>
+<body>
+<script type="text/javascript"> 
+function validate(){
+document.getElementById("paragraph").innerHTML="nothing";
+}
+</script>
+	<button id="button" onclick="validate()">button</button>
+<p Name="paragraph" >fgdfhgb</p>
+	<form action="return validate()" >
+		<table>
+			<tr>
+				<td>First Name:</td>
+				<td><input id="FirstName" placeholder="FirstName"></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><input id="LastName" placeholder="LastName"></td>
+			</tr>
+			<tr>
+				<td>Mobile Number:</td>
+				<td><input id="Mobile" placeholder="MobileNumber"></td>
+			</tr>
+			<tr>
+				<td>Age:</td>
+				<td><input id="Age" placeholder="Age"></td>
+			</tr>
+			<tr>
+				<td>Address:</td>
+				<td><textarea id="Address" placeholder="Address">  </textarea></td>
+			</tr>
+			<tr>
+				<td>Male</td>
+				<td><input type="radio" name="Gender" value="Male"></td>
+			</tr>
+			<tr>
+				<td>Female</td>
+				<td><input type="radio" name="Gender" value="Female"></td>
+			</tr>
+			<tr>
+				<td>Select your Interest</td>
+				<td><select>
+						<option value="Java">Java</option>
+						<option value=".Net">.Net</option>
+						<option value="C++">C++</option>
+						<option value="Mean">Mean</option>
+				</select></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

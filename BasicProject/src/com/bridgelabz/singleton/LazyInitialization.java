@@ -1,5 +1,7 @@
 package com.bridgelabz.singleton;
 
+import com.bridgelabz.utility.Test;
+
 public class LazyInitialization 
 {
 	private static LazyInitialization instance;
@@ -17,5 +19,4 @@ public class LazyInitialization
 		}
 		return instance;
 	}	
-	
 }

@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+tr {
+	background-color: green;
+}
+table
+{
+border: 20px;
+align: right;
+}
+td {
+	text-align: center;
+	color: red;
+}

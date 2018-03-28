@@ -5,8 +5,16 @@ package com.bridgelabz.utility;
 
 public class Test 
 {
+	
+	public <T extends Comparable<T>> void method()
+	{
+//		int a=0;
+//		return a;
+	}
 	public static void main(String[] args) 
 	{
+		Test t=new Test();
+		t.method();
 		
 //		Queue<String> queue=new Queue<>(5);
 //		LinkedList<String> list=new LinkedList<String>();
