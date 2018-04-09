@@ -1,8 +1,0 @@
-package com.bridgelabz.utility;
-
-import org.json.simple.JSONObject;
-
-public interface Facade 
-{
-	JSONObject getDetailsFromFile(String path);
-}

@@ -1,5 +1,0 @@
-[
-{"DoctorId":3,"specialization":"ff","Patients":[{"PatientId":2},{"PatientId":3},{"PatientId":3}]},
-{"DoctorId":2,"specialization":"ac","Patients":[{"PatientId":2}]},
-{"DoctorId":1,"specialization":"ff","Patients":[{"PatientId":2}]}
-]

@@ -1,0 +1,129 @@
+package com.bridgelabz.addressbook;
+
+import com.bridgelabz.utility.Utility;
+
+public class MainAddressBook 
+{
+	public static void main(String[] args) 
+	{
+		int choice=0;
+		String filePath=null;
+		String folderPath="/BasicProject/Files/AddressBookFiles/";
+		AddressBookManager manager=new AddressBookManager();
+		MainAddressBook mainAddressBook=new MainAddressBook();
+		AddressBook addressBook=null;
+		Utility utility=new Utility();
+		
+		
+		do
+		{
+			System.out.println("1. Open Existing Address Book");
+			System.out.println("2. Create New Address Book");
+			System.out.println("3. Save Address Book");
+			System.out.println("4. Exit");
+			
+			switch(choice)
+			{
+			case 1:
+				System.out.println("Enter Address Book Name");
+				filePath=folderPath+utility.next()+".txt";
+				addressBook=manager.openAddressBook(filePath);
+				manager.printAddressBook(addressBook);
+				mainAddressBook.addressBookMenu(filePath, addressBook);
+				break;
+				
+			case 2:
+				System.out.println("Enter Address Book Name");
+				filePath=folderPath+utility.next()+".txt";
+				addressBook=manager.newAddressBook(filePath);
+				mainAddressBook.addressBookMenu(filePath, addressBook);
+				break;
+				
+			case 3:
+				manager.saveAddressBook(addressBook, filePath);
+				break;
+			}
+		}
+		while(choice!=10);
+	}
+	
+	void addressBookMenu(String filePath,AddressBook addressBook)
+	{
+		int choice=0;
+		long phoneNumber=0;
+		Utility utility=new Utility();
+		
+		do
+		{
+			System.out.println("1. Add Person");
+			System.out.println("2. Edit Person");
+			System.out.println("3. Delete Person");
+			System.out.println("4. Sort By Name");
+			System.out.println("5. Sort By Zip Code");
+			System.out.println("6. Save File");
+			System.out.println("7. Exit");
+			
+			switch(choice)
+			{
+			case 1:
+				addressBook.addPerson();
+				break;
+				
+			case 2:
+				System.out.println("Enter Phone Number");
+				phoneNumber=utility.nextLong();
+				addressBook.editPerson(phoneNumber);
+				break;
+				
+			case 3:
+				System.out.println("Enter Phone Number");
+				phoneNumber=utility.nextLong();
+				addressBook.deletePerson(phoneNumber);
+				break;
+				
+			case 4:
+				addressBook.sortByName();
+				break;
+				
+			case 5:
+				addressBook.sortByZip();
+				break;
+				
+			case 6:
+				
+			}
+		}
+		while(choice!=10);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

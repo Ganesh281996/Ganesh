@@ -1,9 +1,0 @@
-package com.bridgelabz.designpatterns;
-
-public class AdapterPattern 
-{
-	public static void main(String[] args) 
-	{
-		System.out.println("Class Adapter");
-	}
-}

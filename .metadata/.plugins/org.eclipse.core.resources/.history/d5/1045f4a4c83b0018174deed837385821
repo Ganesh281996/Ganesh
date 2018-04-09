@@ -1,0 +1,8 @@
+package com.bridgelabz.addressbook;
+
+import java.util.Comparator;
+
+public class SortByName implements Comparator<Person>
+{
+
+}

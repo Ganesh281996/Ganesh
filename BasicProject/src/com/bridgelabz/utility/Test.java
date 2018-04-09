@@ -2,19 +2,42 @@ package com.bridgelabz.utility;
 
 //import java.util.ArrayList;
 //import java.util.List;
+//class Abc
+//{
+//	private void m()
+//	{
+//		System.out.println("shfh");
+//	}
+//}
+
+
+
 
 public class Test 
 {
+//	public static void main(String[] args) 
+//	{
+//		try {
+//			Class c=Class.forName("Abpopoc");
+//		} catch (ClassNotFoundException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	}
 	
-	public <T extends Comparable<T>> void method()
-	{
-//		int a=0;
-//		return a;
-	}
-	public static void main(String[] args) 
-	{
-		Test t=new Test();
-		t.method();
+	
+	
+	
+	
+//	public <T extends Comparable<T>> void method()
+//	{
+////		int a=0;
+////		return a;
+//	}
+//	public static void main(String[] args) 
+//	{
+//		Test t=new Test();
+//		t.method();
 		
 //		Queue<String> queue=new Queue<>(5);
 //		LinkedList<String> list=new LinkedList<String>();
@@ -51,7 +74,6 @@ public class Test
 //		Clinique c=new Clinique();
 //		c.addDoctor(d);
 //		Integer a[]=new Integer[5];
-//		System.out.println(a[0]);
-		
-	}
+//		System.out.println(a[0]);	
+//	}
 }

@@ -1,9 +1,0 @@
-package com.bridgelabz.designpatterns;
-
-public class FacadePattern 
-{
-	public static void main(String[] args) 
-	{
-		
-	}
-}

@@ -1,0 +1,50 @@
+package com.bridgelabz.addressbook;
+
+import java.util.List;
+
+import com.bridgelabz.utility.Utility;
+
+public class AddressBook 
+{
+	String firstName;
+	String lastName;
+	long phoneNumber;
+	String city;
+	String state;
+	long zip;
+	Address address;
+	Person person;
+	Utility utility=new Utility();
+	
+	List<Person> personList;
+	
+	public void setPersonList(List<Person> personList) 
+	{
+		this.personList = personList;
+	}
+
+	void addPerson()
+	{
+		System.out.println("Enter First Name=");
+		firstName=utility.next();
+		System.out.println("Enter Last Name=");
+		lastName=utility.next();
+		System.out.println("Enter Phone Number=");
+		phoneNumber=utility.nextLong();
+		System.out.println("Enter city=");
+		city=utility.next();
+		System.out.println("Enter State=");
+		state=utility.next();
+		System.out.println("Enter Zip Code=");
+		zip=utility.nextLong();
+		
+		address=new Address(city, state, zip);
+		person=new Person(firstName, lastName, phoneNumber, address);
+		personList.add(person);
+	}
+	
+	void delete(Long phoneNumber)
+	{
+		
+	}
+}

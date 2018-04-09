@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-<fullyQualifiedTypeName name="java.io.FileReader"/>
-<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
-<fullyQualifiedTypeName name="org.json.simple.parser.JSONParser"/>
-<fullyQualifiedTypeName name="org.json.simple.parser.ParseException"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="java.io.FileWriter"/>
-<fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="com.bridgelabz.utility.Customer"/>
-<fullyQualifiedTypeName name="com.bridgelabz.utility.StockAccount"/>
-<fullyQualifiedTypeName name="java.util.Map.Entry"/>
-<fullyQualifiedTypeName name="java.lang.Long"/>
-<fullyQualifiedTypeName name="com.bridgelabz.utility.Clinique"/>
-<fullyQualifiedTypeName name="org.json.simple.JSONArray"/>
-<fullyQualifiedTypeName name="javax.xml.crypto.KeySelector.Purpose"/>
-<fullyQualifiedTypeName name="com.bridgelabz.singleton.EagerInitialization"/>
-<fullyQualifiedTypeName name="com.bridgelabz.singleton.StaticInitialization"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="com.bridgelabz.singleton.LazyInitialization"/>
 <fullyQualifiedTypeName name="com.bridgelabz.singleton.ThreadSafeSingleton"/>
 <fullyQualifiedTypeName name="com.bridgelabz.singleton.BillPughSingleton"/>
@@ -44,8 +26,6 @@
 <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.Executor"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.CommandExecutor"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.Observer"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.MyTopic"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.MyTopicSubscriber"/>
@@ -53,11 +33,31 @@
 <fullyQualifiedTypeName name="com.bridgelabz.utility.Book"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.Fruit"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.ShoppingCartVisitorImpl"/>
-<fullyQualifiedTypeName name="com.bridgelabz.utility.Utility"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.util.concurrent.ConcurrentHashMap"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.Test"/>
+<fullyQualifiedTypeName name="java.lang.Class"/>
+<fullyQualifiedTypeName name="java.lang.Long"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="com.bridgelabz.addressbook.SortByName"/>
+<fullyQualifiedTypeName name="com.bridgelabz.addressbook.SortByZipCode"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.codehaus.jackson.map.ObjectMapper"/>
+<fullyQualifiedTypeName name="org.codehaus.jackson.map.JsonMappingException"/>
+<fullyQualifiedTypeName name="com.bridgelabz.addressbook.Address"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.bridgelabz.addressbook.AddressBookManager"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="com.bridgelabz.addressbook.MainAddressBook"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.Utility"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="com.bridgelabz.addressbook.Person"/>
+<fullyQualifiedTypeName name="org.codehaus.jackson.type.JavaType"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.bridgelabz.addressbook.AddressBook"/>
 </qualifiedTypeNameHistroy>

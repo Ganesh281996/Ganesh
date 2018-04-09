@@ -1,6 +1,0 @@
-package com.bridgelabz.singleton;
-
-public class LazyInitialization 
-{
-	private static LazyInitialization instance;
-}
