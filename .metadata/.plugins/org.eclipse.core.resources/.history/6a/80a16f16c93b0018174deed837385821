@@ -1,8 +1,0 @@
-package com.bridgelabz.addressbook;
-
-import java.util.Comparator;
-
-public class SortByZipCode implements Comparator<Person> 
-{
-	
-}

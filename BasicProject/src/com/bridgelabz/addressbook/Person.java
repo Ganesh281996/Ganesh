@@ -2,8 +2,8 @@ package com.bridgelabz.addressbook;
 
 public class Person 
 {
-	private final String firstName;
-	private final String lastName;
+	private String firstName;
+	private String lastName;
 	private long phoneNumber;
 	private Address address;
 	
@@ -15,6 +15,11 @@ public class Person
 		this.address = address;
 	}
 
+	public Person()
+	{
+		
+	}
+	
 	public long getPhoneNumber() 
 	{
 		return phoneNumber;

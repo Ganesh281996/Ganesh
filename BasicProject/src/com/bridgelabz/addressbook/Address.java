@@ -12,6 +12,11 @@ public class Address
 		this.state = state;
 		this.zip = zip;
 	}
+	
+	public Address()
+	{
+		
+	}
 
 	public String getCity() 
 	{

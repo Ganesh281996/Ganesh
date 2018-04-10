@@ -16,6 +16,7 @@ public class AddressBook
 	Address address;
 	Person person;
 	Utility utility=new Utility();
+	AddressBook addressBook;
 	Iterator<Person> iterator;
 	boolean flag;
 	
@@ -25,15 +26,15 @@ public class AddressBook
 	{
 		this.personList = personList;
 	}
+	
+	public AddressBook()
+	{
+		
+	}
 
 	public List<Person> getPersonList() 
 	{
 		return personList;
-	}
-
-	public void setPersonList(List<Person> personList) 
-	{
-		this.personList = personList;
 	}
 	
 	@Override
@@ -118,13 +119,19 @@ public class AddressBook
 		}
 	}
 	
-	void sortByName()
+	AddressBook sortByName()
 	{
 		Collections.sort(personList, new SortByName());
+		System.out.println("Address Book has been Sorted according to Names");
+		addressBook=new AddressBook(personList);
+		return addressBook;
 	}
 	
-	void sortByZip()
+	AddressBook sortByZip()
 	{
+		System.out.println("Address Book has been Sorted according to Zip Code");
 		Collections.sort(personList, new SortByZipCode());
+		addressBook=new AddressBook(personList);
+		return addressBook;
 	}
 }

@@ -16,16 +16,23 @@ public class MainAddressBook
 		
 		do
 		{
-			System.out.println("1. Open Existing Address Book");
-			System.out.println("2. Create New Address Book");
-			System.out.println("3. Save Address Book");
-			System.out.println("4. Exit");
+			System.out.println("      Main Menu");
+			System.out.println("1. Show All Files");
+			System.out.println("2. Open Existing Address Book");
+			System.out.println("3. Create New Address Book");
+			System.out.println("4. Print Current Address Book");
+			System.out.println("5. Save Address Book");
+			System.out.println("6. Exit");
 			System.out.println("Enter your Choice=");
 			choice=utility.nextInt();
 			
 			switch(choice)
 			{
 			case 1:
+				manager.showAllFiles(folderPath);
+				break;
+			
+			case 2:
 				System.out.println("Enter Address Book Name");
 				filePath=folderPath+utility.next()+".txt";
 				addressBook=manager.openAddressBook(filePath);
@@ -33,20 +40,26 @@ public class MainAddressBook
 				addressBook=mainAddressBook.addressBookMenu(filePath, addressBook);
 				break;
 				
-			case 2:
+			case 3:
 				System.out.println("Enter Address Book Name");
 				filePath=folderPath+utility.next()+".txt";
 				addressBook=manager.newAddressBook(filePath);
+				System.out.println("Empty Address Book has been created.");
 				addressBook=mainAddressBook.addressBookMenu(filePath, addressBook);
 				System.out.println(addressBook.getPersonList());
 				break;
 				
-			case 3:
+			case 4:
+				manager.printAddressBook(addressBook);
+				break;
+				
+			case 5:
 				manager.saveAddressBook(addressBook, filePath);
+				System.out.println("Address Book has been Saved.");
 				break;
 			}
 		}
-		while(choice!=10);
+		while(choice!=6);
 	}
 	
 	AddressBook addressBookMenu(String filePath,AddressBook addressBook)
@@ -54,15 +67,17 @@ public class MainAddressBook
 		int choice=0;
 		long phoneNumber=0;
 		Utility utility=new Utility();
+		AddressBookManager manager=new AddressBookManager();
 		
 		do
 		{
+			System.out.println("     Address Book Menu");
 			System.out.println("1. Add Person");
 			System.out.println("2. Edit Person");
 			System.out.println("3. Delete Person");
 			System.out.println("4. Sort By Name");
 			System.out.println("5. Sort By Zip Code");
-			System.out.println("6. Save File");
+			System.out.println("6. Print Current Address Book");
 			System.out.println("7. Exit");
 			System.out.println("Enter your Choice=");
 			choice=utility.nextInt();
@@ -86,15 +101,16 @@ public class MainAddressBook
 				break;
 				
 			case 4:
-				addressBook.sortByName();
+				addressBook=addressBook.sortByName();
 				break;
 				
 			case 5:
-				addressBook.sortByZip();
+				addressBook=addressBook.sortByZip();
 				break;
 				
 			case 6:
-				
+				manager.printAddressBook(addressBook);
+				break;
 			}
 		}
 		while(choice!=7);

@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import org.codehaus.jackson.JsonGenerationException;
@@ -16,7 +15,6 @@ public class AddressBookManager
 {
 	List<Person> personList;
 	Utility utility=new Utility();
-	Person personArray[];
 	Iterator<Person> iterator=null;
 	AddressBook addressBook;
 	ObjectMapper objectMapper=new ObjectMapper();
@@ -48,9 +46,9 @@ public class AddressBookManager
 		file=new File(filePath);
 		try 
 		{
-			personList=objectMapper.readValue(file, ArrayList.class);
+			personList=new ArrayList<Person>(Arrays.asList(objectMapper.readValue(file, Person[].class)));
 			addressBook=new AddressBook(personList);
-//			addressBook=new AddressBook(Arrays.asList(personArray));
+			
 		} 
 		catch (IOException e) 
 		{
@@ -80,6 +78,16 @@ public class AddressBookManager
 		while(iterator.hasNext())
 		{
 			System.out.println(iterator.next());
+		}
+	}
+	void showAllFiles(String folderPath)
+	{
+		file=new File(folderPath);
+		File [] files =file.listFiles();
+		int index=1;
+		for(int i=0;i<files.length;i++)
+		{
+			System.out.println(index+++"  "+files[i].getName());
 		}
 	}
 }
