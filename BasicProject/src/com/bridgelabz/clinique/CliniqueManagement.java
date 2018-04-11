@@ -1,7 +1,8 @@
 package com.bridgelabz.clinique;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
+//import java.util.ArrayList;
+//import java.util.LinkedHashMap;
+
 import com.bridgelabz.utility.Utility;
 
 public class CliniqueManagement 
@@ -9,7 +10,7 @@ public class CliniqueManagement
 	public static void main(String[] args) 
 	{
 		int choice=0;
-		Clinique clinique=new Clinique();
+		Clinique clinique=new CliniqueImp();
 		Utility utility=new Utility();
 		
 		clinique.readData();
@@ -31,6 +32,7 @@ public class CliniqueManagement
 			System.out.println("10. Search Patient by Name");
 			System.out.println("11. Search Patient by Phone Number");
 			System.out.println("12. Take Appointment by Id");
+			System.out.println("13. Popular Doctor");
 			System.out.println("15. Exit");
 			System.out.println("Enter your Choice=");
 			choice=utility.nextInt();
@@ -83,6 +85,10 @@ public class CliniqueManagement
 				
 			case 12:
 				clinique.takeAppointmentByID();
+				break;
+				
+			case 13:
+				clinique.popularDoctor();
 				break;
 			}
 		}

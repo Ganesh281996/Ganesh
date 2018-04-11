@@ -1,1 +1,13 @@
-{"Doctor [doctorId=1, doctorName=ganesh, specialization=java, availability=pm, noOfPatients=5]":[{"patientId":1,"patientName":"jasvim","phoneNumber":100,"age":100},{"patientId":1,"patientName":"jasvim","phoneNumber":100,"age":100},{"patientId":1,"patientName":"jasvim","phoneNumber":100,"age":100},{"patientId":1,"patientName":"jasvim","phoneNumber":100,"age":100},{"patientId":1,"patientName":"jasvim","phoneNumber":100,"age":100}],"Doctor [doctorId=2, doctorName=vimal, specialization=gdfg, availability=gfdhnf, noOfPatients=2]":[{"patientId":1,"patientName":"jasvim","phoneNumber":100,"age":100},{"patientId":1,"patientName":"jasvim","phoneNumber":100,"age":100}]}
+{"Doctor [doctorId=2, doctorName=doctor, specialization=nothing, availability=none, noOfPatients=2]":
+[
+{"patientId":1,"patientName":"jas","phoneNumber":100,"age":35},
+{"patientId":2,"patientName":"vimal","phoneNumber":200,"age":35}],
+"Doctor [doctorId=1, doctorName=ganesh, specialization=java, availability=pm, noOfPatients=5]":
+[
+{"patientId":1,"patientName":"jas","phoneNumber":100,"age":35},
+{"patientId":2,"patientName":"vimal","phoneNumber":200,"age":35},
+{"patientId":1,"patientName":"jas","phoneNumber":100,"age":35},
+{"patientId":5,"patientName":"bdgfbh","phoneNumber":645,"age":543},
+{"patientId":8,"patientName":"raj","phoneNumber":77898,"age":25}
+]
+}

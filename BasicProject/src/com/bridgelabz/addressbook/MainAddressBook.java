@@ -2,16 +2,16 @@ package com.bridgelabz.addressbook;
 
 import com.bridgelabz.utility.Utility;
 
-public class MainAddressBook 
+public class MainAddressBook
 {
 	public static void main(String[] args) 
 	{
 		int choice=0;
 		String filePath=null;
 		String folderPath="/home/bridgeit/Ganesh//BasicProject/Files/AddressBookFiles/";
-		AddressBookManager manager=new AddressBookManager();
+		AddressBookManager manager=new AddressBookManagerImp();
 		MainAddressBook mainAddressBook=new MainAddressBook();
-		AddressBook addressBook=null;
+		AddressBookImp addressBook=null;
 		Utility utility=new Utility();	
 		
 		do
@@ -62,16 +62,16 @@ public class MainAddressBook
 		while(choice!=6);
 	}
 	
-	AddressBook addressBookMenu(String filePath,AddressBook addressBook)
+	AddressBookImp addressBookMenu(String filePath,AddressBookImp addressBook)
 	{
 		int choice=0;
 		long phoneNumber=0;
 		Utility utility=new Utility();
-		AddressBookManager manager=new AddressBookManager();
+		AddressBookManagerImp manager=new AddressBookManagerImp();
 		
 		do
 		{
-			System.out.println("     Address Book Menu");
+			System.out.println("Address Book Menu");
 			System.out.println("1. Add Person");
 			System.out.println("2. Edit Person");
 			System.out.println("3. Delete Person");
