@@ -15,7 +15,7 @@ public class OrderedList
 		Utility utility=new Utility();
 		String path="/home/bridgeit/Ganesh/BasicProject/Files/OrderedList";
 		String array[]=Utility.getFileContents(path);
-		LinkedList<Integer> list=new LinkedList<Integer>();
+		LinkedList<Integer> list=new LinkedList<>();
 		list.emptyList();
 		for(int i=0;i<array.length-1;i++)
 		{
@@ -25,7 +25,7 @@ public class OrderedList
 		list.display();
 		System.out.println("Enter the Number=");
 		int number=utility.nextInt();
-		if(list.search(number)==true)
+		if(list.search(number))
 		{
 			list.removeInteger(number);
 		}

@@ -71,7 +71,7 @@ public class AddressBookManagerImp implements AddressBookManager
 		{
 			e.printStackTrace();
 		}
-		personList=new ArrayList<Person>();
+		personList=new ArrayList<>();
 		addressBook=new AddressBookImp(personList);
 		return addressBook;
 	}	
@@ -92,9 +92,12 @@ public class AddressBookManagerImp implements AddressBookManager
 		file=new File(folderPath);
 		File [] files =file.listFiles();
 		int index=1;
-		for(int i=0;i<files.length;i++)
+		if(files!=null)
 		{
-			System.out.println(index+++"  "+files[i].getName());
+			for(int i=0;i<files.length;i++)
+			{
+				System.out.println(index+++"  "+files[i].getName());
+			}
 		}
 	}
 }

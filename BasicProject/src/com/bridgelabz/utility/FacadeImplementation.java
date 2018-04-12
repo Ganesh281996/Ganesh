@@ -47,7 +47,10 @@ class Facade
 		{
 			try
 			{
-				file.close();
+				if(file!=null)
+				{
+					file.close();
+				}
 			}
 			catch(IOException e)
 			{
@@ -77,8 +80,11 @@ class Facade
 		{
 			try
 			{
-				file.flush();
-				file.close();
+				if(file!=null)
+				{
+					file.flush();
+					file.close();
+				}
 			}
 			catch(IOException e)
 			{

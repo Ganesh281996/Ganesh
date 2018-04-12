@@ -33,7 +33,7 @@ public class PrimeAnagram2DArray
 			for(int j=0;j<col;j++)
 			{
 				System.out.print(array[i][j]+"  ");
-				if(array[i][j]=="")
+				if(array[i][j].equals(""))
 				{
 					System.out.print("       ");
 				}

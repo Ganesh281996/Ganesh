@@ -13,7 +13,8 @@ public class BinarySearchWordFromFile
 	{
 		Utility utility=new Utility();
 		boolean flag=false;
-		String string="",path="/home/bridgeit/Ganesh/BasicProject/Files/BinarySearch";
+		String string="";
+		String path="/home/bridgeit/Ganesh/BasicProject/Files/BinarySearch";
 		String stringArray1[],stringArray2[];
 		stringArray1=Utility.getFileContents(path);
 		stringArray2=new String[stringArray1.length-1];

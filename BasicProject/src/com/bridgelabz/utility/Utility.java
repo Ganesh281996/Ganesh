@@ -1204,7 +1204,7 @@ public class Utility
 		{
 			for(Integer j:primeNumber)
 			{
-				if(i!=j)
+				if(!i.equals(j))
 				{
 					string1=string1+i;
 					string2=string2+j;
@@ -1320,7 +1320,7 @@ public class Utility
 					}
 				}	
 				dayOfWeek=temp;
-				temp=temp++;
+				temp++;
 				if(date==30)
 				{
 					break;
@@ -1341,7 +1341,7 @@ public class Utility
 					}
 				}	
 				dayOfWeek=temp;
-				temp=temp++;
+				temp++;
 				if(date==29)
 				{
 					break;
@@ -1364,7 +1364,7 @@ public class Utility
 						}
 					}	
 					dayOfWeek=temp;
-					temp=temp++;
+					temp++;
 					if(date==31)
 					{
 						break;
@@ -1385,7 +1385,7 @@ public class Utility
 						}
 					}
 					dayOfWeek=temp;
-					temp=temp++;
+					temp++;
 					if(date==32)
 					{
 						break;
@@ -1734,8 +1734,11 @@ public class Utility
 		{
 			try
 			{
-				file.flush();
-				file.close();
+				if(file!=null)
+				{
+					file.flush();
+					file.close();
+				}
 			}
 			catch(IOException e)
 			{
@@ -1788,8 +1791,11 @@ public class Utility
 		{
 			try
 			{
-				fileWriter.flush();
-				fileWriter.close();
+				if(fileWriter!=null)
+				{
+					fileWriter.flush();
+					fileWriter.close();
+				}
 			}
 			catch(IOException e)
 			{
@@ -2057,7 +2063,10 @@ public class Utility
 		{
 			try
 			{
-				file.close();
+				if(file!=null)
+				{
+					file.close();
+				}
 			}
 			catch(IOException e)
 			{
@@ -2090,8 +2099,11 @@ public class Utility
 		{
 			try
 			{
-				file.flush();
-				file.close();
+				if(file!=null)
+				{
+					file.flush();
+					file.close();
+				}
 			}
 			catch(IOException e)
 			{
@@ -2108,11 +2120,11 @@ public class Utility
 		FileReader file=null;
 		JSONParser parser=null;
 		JSONArray jsonArray=null;
-		File checking_file=null;
+		File checkingFile=null;
 		try
 		{
-			checking_file=new File(path);
-			if(checking_file.length()==0)
+			checkingFile=new File(path);
+			if(checkingFile.length()==0)
 			{
 				jsonArray=null;
 			}
@@ -2139,7 +2151,10 @@ public class Utility
 		{
 			try
 			{
-				file.close();
+				if(file!=null)
+				{
+					file.close();
+				}
 			}
 			catch(IOException e)
 			{
@@ -2172,8 +2187,11 @@ public class Utility
 		{
 			try
 			{
-				file.flush();
-				file.close();
+				if(file!=null)
+				{
+					file.flush();
+					file.close();
+				}
 			}
 			catch(IOException e)
 			{

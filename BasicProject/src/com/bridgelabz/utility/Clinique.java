@@ -172,7 +172,7 @@ public class Clinique
 		for(int i=0;i<jsonArray.size();i++)
 		{
 			jsonObject=(JSONObject)jsonArray.get(i);
-			if(jsonObject.get("Age")==(age))
+			if(jsonObject.get("Age").equals(age))
 			{
 				ageJsonArray.add(jsonObject);
 			}

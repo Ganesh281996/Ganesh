@@ -33,7 +33,7 @@ public class CliniqueManagement
 			System.out.println("11. Search Patient by Phone Number");
 			System.out.println("12. Take Appointment by Id");
 			System.out.println("13. Popular Doctor");
-			System.out.println("15. Exit");
+			System.out.println("14. Exit");
 			System.out.println("Enter your Choice=");
 			choice=utility.nextInt();
 			
@@ -90,8 +90,30 @@ public class CliniqueManagement
 			case 13:
 				clinique.popularDoctor();
 				break;
+				
+			default:
+				if(choice<1)
+				{
+					System.out.println("Invalid Input Try Again.");
+					System.out.println("1. Add Doctor");
+					System.out.println("2. Add Patient");
+					System.out.println("3. Print Data");
+					System.out.println("4. Save Data");
+					System.out.println("5. Search Doctor by Id");
+					System.out.println("6. Search Doctor by Name");
+					System.out.println("7. Search Doctor by Specialization");
+					System.out.println("8. Search Doctor by Availability");
+					System.out.println("9. Search Patient by Id");
+					System.out.println("10. Search Patient by Name");
+					System.out.println("11. Search Patient by Phone Number");
+					System.out.println("12. Take Appointment by Id");
+					System.out.println("13. Popular Doctor");
+					System.out.println("14. Exit");
+					System.out.println("Enter your Choice=");
+					choice=utility.nextInt();
+				}
 			}
 		}
-		while(choice!=15);
+		while(choice!=14);
 	}
 }

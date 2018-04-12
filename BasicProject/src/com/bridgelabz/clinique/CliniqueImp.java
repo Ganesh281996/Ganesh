@@ -29,7 +29,7 @@ public class CliniqueImp implements Clinique
 	String patientPath="/home/bridgeit/Ganesh/BasicProject/Files/Clinique/Patient.json";
 	
 	Utility utility=new Utility();
-	ObjectMapper objectMapper=new ObjectMapper();
+	ObjectMapper objectMapper=CliniqueUtility.getObjectMapper();
 	File file;
 	List<Doctor> doctorList;
 	List<Patient> patientList;
@@ -41,18 +41,17 @@ public class CliniqueImp implements Clinique
 	Iterator<?> iterator;
 	Iterator<Map.Entry<String, List<Patient>>> mapIterator;
 	
-	
 	@SuppressWarnings("unchecked")
 	@Override
 	public void readData()
 	{
 		try 
 		{
-			file=new File(doctorPath);
+			file=CliniqueUtility.getFile(doctorPath);
 			doctorList=new ArrayList<>(Arrays.asList(objectMapper.readValue(file, Doctor[].class)));
-			file=new File(patientPath);
+			file=CliniqueUtility.getFile(patientPath);
 			patientList=new ArrayList<>(Arrays.asList(objectMapper.readValue(file, Patient[].class)));
-			file=new File(appointmentPath);
+			file=CliniqueUtility.getFile(appointmentPath);
 			appointments=objectMapper.readValue(file, LinkedHashMap.class);
 		} 
 		catch (IOException e) 
@@ -66,11 +65,11 @@ public class CliniqueImp implements Clinique
 	{
 		try 
 		{
-			file=new File(doctorPath);
+			file=CliniqueUtility.getFile(doctorPath);
 			objectMapper.writeValue(file, doctorList);
-			file=new File(patientPath);
+			file=CliniqueUtility.getFile(patientPath);
 			objectMapper.writeValue(file, patientList);
-			file=new File(appointmentPath);
+			file=CliniqueUtility.getFile(appointmentPath);
 			objectMapper.writeValue(file, appointments);
 		} 
 		catch (IOException e) 
@@ -162,6 +161,7 @@ public class CliniqueImp implements Clinique
 				patientAppointment=new ArrayList<>();
 				patientAppointment.add(patient);
 				appointments.put(doctor.toString(), patientAppointment);
+				return;
 			}
 			else if(doctor.getNoOfPatients()>0 && doctor.getNoOfPatients()<5)
 			{
@@ -171,6 +171,7 @@ public class CliniqueImp implements Clinique
 				doctor.setNoOfPatients(doctor.getNoOfPatients()+1);
 				patientAppointment.add(patient);
 				appointments.put(doctor.toString(), patientAppointment);
+				return;
 			}
 			else
 			{
