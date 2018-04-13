@@ -1,0 +1,23 @@
+
+f
+squid:S106'"9Replace this use of System.out or System.err by a logger.(¹ÛªHğ˜RMAJORZ
+CODE_SMELL
+Vsquid:S1125!"(Remove the literal "true" boolean value.(ùìëÈHñ˜RMINORZ
+CODE_SMELL
+fsquid:S1197"8Move the array designator from the variable to the type.(ìÚúãHë˜RMINORZ
+CODE_SMELL
+k
+squid:S106"9Replace this use of System.out or System.err by a logger.(®¡Ú±øÿÿÿÿHî˜RMAJORZ
+CODE_SMELL
+fsquid:S1197"8Move the array designator from the variable to the type.(ìÚúãHê˜RMINORZ
+CODE_SMELL
+Xsquid:S1659"*Declare "stringArray2" on a separate line.(ìÚúãHé˜RMINORZ
+CODE_SMELL
+k
+squid:S106"9Replace this use of System.out or System.err by a logger.(ŠûãüÿÿÿÿHí˜RMAJORZ
+CODE_SMELL
+tsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(˜µ™ÿÿÿÿÿHì˜RMINORZ
+CODE_SMELL
+k
+squid:S106#"9Replace this use of System.out or System.err by a logger.(¯·áåûÿÿÿÿHï˜RMAJORZ
+CODE_SMELL

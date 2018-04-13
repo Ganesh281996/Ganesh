@@ -1,3 +1,8 @@
+/**
+ * @purpose Interface for all methods of Clinique
+ * @author Ganesh
+ * @since 11 March 2018
+ */
 package com.bridgelabz.clinique;
 
 public interface Clinique 

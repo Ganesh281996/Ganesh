@@ -1,0 +1,20 @@
+
+k
+squid:S106c"9Replace this use of System.out or System.err by a logger.(óÈó¸ÿÿÿÿÿHùšRMAJORZ
+CODE_SMELL
+k
+squid:S106U"9Replace this use of System.out or System.err by a logger.(¡¹—ÒøÿÿÿÿHÙšRMAJORZ
+CODE_SMELL
+wsquid:S2147'"DCombine this catch with the one at line 31, which has the same body.(É˜ÙúÿÿÿÿHÜšRMINORZ
+CODE_SMELL
+rsquid:S2147#"DCombine this catch with the one at line 31, which has the same body.(óÛµèHÛšRMINORZ
+CODE_SMELL
+Ysquid:S11489"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHàšRMINORZVULNERABILITY
+w
+squid:S899D"BDo something with the "boolean" value returned by "createNewFile".(Ğ’ÍùÿÿÿÿHâšRMINORZVULNERABILITY
+Ysquid:S1148%"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHŞšRMINORZVULNERABILITY
+Ysquid:S1148)"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHßšRMINORZVULNERABILITY
+Ysquid:S1148H"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHášRMINORZVULNERABILITY
+Œsquid:S22933"YReplace the type specification in this constructor call with the diamond operator ("<>").(öªª²üÿÿÿÿH×šRMINORZ
+CODE_SMELL
+Ysquid:S1148!"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHİšRMINORZVULNERABILITY

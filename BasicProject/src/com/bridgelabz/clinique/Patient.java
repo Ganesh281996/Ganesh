@@ -1,3 +1,8 @@
+/**
+ * @purpose Pojo of Patient
+ * @author Ganesh
+ * @since 11 March 2018
+ */
 package com.bridgelabz.clinique;
 
 public class Patient 

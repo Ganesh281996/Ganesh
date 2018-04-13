@@ -1,0 +1,26 @@
+
+rsquid:S2147&"DCombine this catch with the one at line 34, which has the same body.(Î¿À¿H‘™RMINORZ
+CODE_SMELL
+Ysquid:S1148$"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH”™RMINORZVULNERABILITY
+wsquid:S2147*"DCombine this catch with the one at line 34, which has the same body.(É˜ÙúÿÿÿÿH’™RMINORZ
+CODE_SMELL
+Ysquid:S11489"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH—™RMINORZVULNERABILITY
+Ysquid:S1148M"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH™™RMINORZVULNERABILITY
+Ysquid:S1148["#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHš™RMINORZVULNERABILITY
+Ysquid:S1148("#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH•™RMINORZVULNERABILITY
+wsquid:S2147K"DCombine this catch with the one at line 71, which has the same body.(É˜ÙúÿÿÿÿH“™RMINORZ
+CODE_SMELL
+–squid:S4165"hRemove this useless assignment; "jsonObject" already holds the assigned value along all execution paths.(ùÊĞ“H‰™RMAJORZ
+CODE_SMELL
+Ysquid:S1148,"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH–™RMINORZVULNERABILITY
+`squid:S2093B"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿH‹™RCRITICALZ
+CODE_SMELL
+k
+squid:S106j"9Replace this use of System.out or System.err by a logger.(©¬èùÿÿÿÿH™RMAJORZ
+CODE_SMELL
+qsquid:S2095D"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ÿæëªHŒ™RBLOCKERZBUG
+Ysquid:S1148I"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH˜™RMINORZVULNERABILITY
+`squid:S2093"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿHŠ™RCRITICALZ
+CODE_SMELL
+hsquid:S1118":Add a private constructor to hide the implicit public one.(áÊÔÓH™RMAJORZ
+CODE_SMELL

@@ -1,7 +1,9 @@
+/**
+ * @purpose Manage Clinique Operations
+ * @author Ganesh
+ * @since 11 March 2018
+ */
 package com.bridgelabz.clinique;
-
-//import java.util.ArrayList;
-//import java.util.LinkedHashMap;
 
 import com.bridgelabz.utility.Utility;
 
@@ -14,10 +16,6 @@ public class CliniqueManagement
 		Utility utility=new Utility();
 		
 		clinique.readData();
-//		clinique.doctorList=new ArrayList<>();
-//		clinique.patientList=new ArrayList<>();
-//		clinique.patientAppointment=new ArrayList<>();
-//		clinique.appointments=new LinkedHashMap<>();
 		do
 		{
 			System.out.println("1. Add Doctor");

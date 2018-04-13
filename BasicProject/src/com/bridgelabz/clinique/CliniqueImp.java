@@ -1,3 +1,8 @@
+/**
+ * @purpose Implementation of Clinique Interface
+ * @author Ganesh
+ * @since 11 March 2018
+ */
 package com.bridgelabz.clinique;
 
 import java.io.File;
@@ -41,6 +46,9 @@ public class CliniqueImp implements Clinique
 	Iterator<?> iterator;
 	Iterator<Map.Entry<String, List<Patient>>> mapIterator;
 	
+	/* 
+	 * Read Data from files of Doctor Patient and Appointments
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void readData()
@@ -60,6 +68,9 @@ public class CliniqueImp implements Clinique
 		}
 	}
 	
+	/* 
+	 * Write changed data of Doctors Patient and appointments in there files
+	 */
 	@Override
 	public void writeData()
 	{
@@ -79,6 +90,9 @@ public class CliniqueImp implements Clinique
 		System.out.println("Data has been Saved.");
 	}
 	
+	/* 
+	 * Print details of Doctors Patient and Appointments
+	 */
 	@Override
 	public void printData()
 	{
@@ -111,6 +125,9 @@ public class CliniqueImp implements Clinique
 		}
 	}
 	
+	/* 
+	 * Add new Doctor in list of Doctors
+	 */
 	@Override
 	public void addDoctor()
 	{
@@ -129,6 +146,9 @@ public class CliniqueImp implements Clinique
 		System.out.println(doctor);
 	}
 	
+	/* 
+	 * Add new Patient in list of Patients
+	 */
 	@Override
 	public void addPatient()
 	{
@@ -147,10 +167,20 @@ public class CliniqueImp implements Clinique
 		System.out.println(patient);
 	}
 	
+	/* 
+	 * Patient takes Appointment from available Doctors
+	 */
 	@Override
 	public void takeAppointmentByID()
 	{
 		searchPatientById();
+		if(!flag)
+		{
+			System.out.println("Patient not Found");
+			System.out.println("Enter 2 to Add patient");
+			return;
+		}
+		flag=false;
 		searchDoctorById();
 		if(flag)
 		{
@@ -181,6 +211,9 @@ public class CliniqueImp implements Clinique
 		flag=false;
 	}
 	
+	/* 
+	 * Prints Popular Doctors on the basis of no of Patients
+	 */
 	@Override
 	public void popularDoctor()
 	{
@@ -196,6 +229,9 @@ public class CliniqueImp implements Clinique
 		}
 	}
 	
+	/* 
+	 * Searches Doctor of given Id
+	 */
 	@Override
 	public void searchDoctorById()
 	{
@@ -216,6 +252,9 @@ public class CliniqueImp implements Clinique
 		System.out.println("Doctor with Id ="+doctorId+" was not found");
 	}
 	
+	/* 
+	 * Searches Doctor of given Name
+	 */
 	@Override
 	public void searchDoctorByName()
 	{
@@ -238,6 +277,9 @@ public class CliniqueImp implements Clinique
 		flag=false;
 	}
 	
+	/* 
+	 * Searches Doctor of given Specialization
+	 */
 	@Override
 	public void searchDoctorBySpecialization()
 	{
@@ -260,6 +302,9 @@ public class CliniqueImp implements Clinique
 		flag=false;
 	}
 	
+	/* 
+	 * Searches Doctor of by there Avialibility
+	 */
 	@Override
 	public void searchDoctorByAvailiability()
 	{
@@ -283,6 +328,9 @@ public class CliniqueImp implements Clinique
 		
 	}
 	
+	/* 
+	 * Searches Patients of given Id
+	 */
 	@Override
 	public void searchPatientById()
 	{
@@ -296,12 +344,16 @@ public class CliniqueImp implements Clinique
 			{
 				System.out.println("Patient with Id ="+patientId+" was found");
 				System.out.println(patient);
+				flag=true;
 				return;
 			}
 		}
 		System.out.println("Patient with Id ="+patientId+" was not found");
 	}
 	
+	/* 
+	 * Searches Patients of given Name
+	 */
 	@Override
 	public void searchPatientByName()
 	{
@@ -324,6 +376,9 @@ public class CliniqueImp implements Clinique
 		flag=false;
 	}
 	
+	/* 
+	 * Searches Patients with given Phone Number
+	 */
 	@Override
 	public void searchPatientByPhoneNumber()
 	{
