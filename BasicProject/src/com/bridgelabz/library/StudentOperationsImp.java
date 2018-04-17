@@ -1,3 +1,8 @@
+/**
+ * Purpose All Operations of Student are here like signIn,signUp or Issuing Books
+ * @author Ganesh
+ * @since 16 April 2018
+ */
 package com.bridgelabz.library;
 
 import java.util.ArrayList;
@@ -6,6 +11,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Scanner;
 
 public class StudentOperationsImp implements StudentOperations 
@@ -22,6 +28,9 @@ public class StudentOperationsImp implements StudentOperations
 	Student student;
 	long studentId;
 	
+	/* 
+	 * Student Views all the Books in Library
+	 */
 	@Override
 	public void browseBooks() 
 	{
@@ -32,6 +41,10 @@ public class StudentOperationsImp implements StudentOperations
 		}
 	}
 
+	/* 
+	 * Search Book by Name
+	 * @param bookName search this Book
+	 */
 	@Override
 	public Book searchBookByName(String bookName)
 	{
@@ -47,6 +60,10 @@ public class StudentOperationsImp implements StudentOperations
 		return null;
 	}
 
+	/* 
+	 * Search Book by Author
+	 * @param bookAuthor search this Book
+	 */
 	@Override
 	public List<Book> searchBookByAuthor(String author)
 	{
@@ -63,6 +80,10 @@ public class StudentOperationsImp implements StudentOperations
 		return searchBooks;
 	}
 
+	/* 
+	 * method for SignUp
+	 * @param student SignUp this Student 
+	 */
 	@Override
 	public Student signUp(Student student) 
 	{
@@ -75,12 +96,20 @@ public class StudentOperationsImp implements StudentOperations
 		return null;
 	}
 
+	/* 
+	 * method for SignIn 
+	 * @param student SignIn with Student
+	 */
 	@Override
 	public boolean signIn(Student student) 
 	{
 		return students.contains(student);
 	}
 
+	/* 
+	 * method for Issuing Books
+	 * @param student this student will issue Book
+	 */
 	@Override
 	public void issueBook(Student student) 
 	{
@@ -109,5 +138,29 @@ public class StudentOperationsImp implements StudentOperations
 		{
 			System.out.println("Book not Found.");
 		}
+	}
+
+	/* 
+	 * method for Returning Books
+	 * @param student this student will return Book
+	 * @param student will return this Book
+	 */
+	@Override
+	public void returnBook(Student student,Book book)
+	{
+		bookWithDate=StudentOperationsImp.issuedBooks.get(student);
+		if(bookWithDate.size()==1)
+		{
+			StudentOperationsImp.issuedBooks.remove(student);
+			return;
+		}
+		for(Entry<String, Book> entry:bookWithDate.entrySet())
+		{
+			if(entry.getValue().equals(book))
+			{
+				bookWithDate.remove(entry.getKey());
+			}
+		}
+		StudentOperationsImp.issuedBooks.put(student, bookWithDate);
 	}
 }

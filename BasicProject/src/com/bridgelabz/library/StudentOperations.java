@@ -10,4 +10,5 @@ public interface StudentOperations
 	Book searchBookByName(String bookName);
 	List<Book> searchBookByAuthor(String author);
 	void issueBook(Student student);
+	void returnBook(Student student,Book book);
 }

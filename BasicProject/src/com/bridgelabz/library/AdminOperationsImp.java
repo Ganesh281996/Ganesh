@@ -1,8 +1,15 @@
+/**
+ * Purpose All the Admin Operations are here like adding book book and manipulating it.
+ * Admin manages the Library.
+ * @author Ganesh
+ * @since 16 April 2018
+ */
 package com.bridgelabz.library;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class AdminOperationsImp implements AdminOperations
@@ -15,6 +22,10 @@ public class AdminOperationsImp implements AdminOperations
 	static List<Book> books=new ArrayList<>();
 	Iterator<Student> iterator;
 
+	/* 
+	 * Admin adds new Book to library
+	 * @param book add this book to library
+	 */
 	@Override
 	public Book addBook(Book book) 
 	{
@@ -27,6 +38,10 @@ public class AdminOperationsImp implements AdminOperations
 		return null;
 	}
 
+	/* 
+	 * Admin edit existing Book
+	 * @param book Edit this book 
+	 */
 	@Override
 	public void editBook(Book book) 
 	{
@@ -41,12 +56,19 @@ public class AdminOperationsImp implements AdminOperations
 		books.add(book);
 	}
 
+	/* 
+	 * Delete existing Book
+	 * @param book delete this book
+	 */
 	@Override
 	public void deleteBook(Book book)
 	{
 		books.remove(book);
 	}
 
+	/* 
+	 * View Students who have Signed Up
+	 */
 	@Override
 	public void viewStudents()
 	{
@@ -57,13 +79,23 @@ public class AdminOperationsImp implements AdminOperations
 		}
 	}
 
+	/* 
+	 * View Issued Book to Students
+	 */
 	@Override
 	public void viewIssuedBooks() 
 	{
-		Iterator iterator=StudentOperationsImp.issuedBooks.entrySet().iterator();
-		while(iterator.hasNext())
+		Iterator<Map.Entry<Student, Map<String,Book>>> mapIterator=StudentOperationsImp.issuedBooks.entrySet().iterator();
+		Iterator<Map.Entry<String,Book>> bookDateIterator=null; 
+		while(mapIterator.hasNext())
 		{
-			System.out.println(iterator.next());
+			Map.Entry<Student, Map<String,Book>> entry=mapIterator.next();
+			System.out.println(entry.getKey());
+			bookDateIterator=entry.getValue().entrySet().iterator();
+			while(bookDateIterator.hasNext())
+			{
+				System.out.println(bookDateIterator.next());
+			}
 		}
 	}
 }

@@ -1,3 +1,8 @@
+/**
+ * Purpose Manage logins for User and Admin and give access to them according to there Logins
+ * @author Ganesh
+ * @since 16 April 2018
+ */
 package com.bridgelabz.library;
 
 import java.util.Iterator;
@@ -21,6 +26,9 @@ public class ManageLoginsImp implements ManageLogins
 	long contactNumber;
 	int choice=0;
 	
+	/* 
+	 * method for all Admin Operations
+	 */
 	@Override
 	public void adminLogin() 
 	{
@@ -34,7 +42,8 @@ public class ManageLoginsImp implements ManageLogins
 				System.out.println("3. Add new Book");
 				System.out.println("4. Delete Book");
 				System.out.println("5. Edit Book");
-				System.out.println("6. Exit");
+				System.out.println("6. View Issued Books");
+				System.out.println("7. Exit");
 				System.out.println("Enter your Choice");
 				choice=scanner.nextInt();
 				
@@ -100,11 +109,26 @@ public class ManageLoginsImp implements ManageLogins
 						System.out.println("Book Not Found");
 					}
 					break;
+				case 6:
+					adminOperations.viewIssuedBooks();
+					break;
 				default:
-					System.out.println("Invalid input try again.");
+					if(choice<1 || choice>7)
+					{
+						System.out.println("Invalid input try again.");
+						System.out.println("1. View Students");
+						System.out.println("2. View Books");
+						System.out.println("3. Add new Book");
+						System.out.println("4. Delete Book");
+						System.out.println("5. Edit Book");
+						System.out.println("6. View Issued Books");
+						System.out.println("7. Exit");
+						System.out.println("Enter your Choice");
+					}
+					
 				}
 			}
-			while(choice!=6);
+			while(choice!=7);
 		}
 		else
 		{
@@ -112,6 +136,9 @@ public class ManageLoginsImp implements ManageLogins
 		}
 	}
 
+	/* 
+	 * Method for user login and SignUp
+	 */
 	@Override
 	public void userLogin()
 	{
@@ -148,19 +175,30 @@ public class ManageLoginsImp implements ManageLogins
 				if(studentOperations.signIn(student))
 				{
 					System.out.println("Signed In Successfully.");
-					loginOperations(student);
+					studentLoginOperations(student);
 					break;
 				}
 				System.out.println("Student not Found. Try Sign Up");
 				break;
 			default:
-				System.out.println("Invalid Input");
+				if(choice<1 || choice>3)
+				{
+					System.out.println("Invalid Input");
+					System.out.println("1. SignUp");
+					System.out.println("2. SignIn");
+					System.out.println("3. Exit");
+					System.out.println("Enter your Choice");
+				}
 			}
 		}
 		while(choice!=3);
 	}
 	
-	void loginOperations(Student student)
+	/**
+	 * Student Operations
+	 * @param student who is currently logged in
+	 */
+	void studentLoginOperations(Student student)
 	{
 		do
 		{
@@ -168,7 +206,8 @@ public class ManageLoginsImp implements ManageLogins
 			System.out.println("2. Search Book by Name");
 			System.out.println("3. Search Book by Author");
 			System.out.println("4. Issue Book");
-			System.out.println("5. Exit");
+			System.out.println("5. Return Book");
+			System.out.println("6. Exit");
 			System.out.println("Enter your Choice");
 			choice=scanner.nextInt();
 			
@@ -207,10 +246,48 @@ public class ManageLoginsImp implements ManageLogins
 			case 4:
 				studentOperations.issueBook(student);
 				break;
+			case 5:
+				flag=false;
+				if(StudentOperationsImp.issuedBooks.containsKey(student))
+				{
+					System.out.println("Enter Book Name");
+					bookName=scanner.next();
+					iterator=AdminOperationsImp.books.iterator();
+					while(iterator.hasNext())
+					{
+						book=iterator.next();
+						if(book.getBookName().equals(bookName))
+						{
+							studentOperations.returnBook(student, book);
+							System.out.println("Book was Returned");
+							flag=true;
+							break;
+						}
+					}
+					if(!flag)
+					{
+						System.out.println("You dont have that Book");
+					}
+				}
+				else
+				{
+					System.out.println("You dont have any Books");
+				}
+				break;
 			default:
-				System.out.println("Invalid Input Try Again.");
+				if(choice<1 || choice>6)
+				{
+					System.out.println("Invalid Input Try Again.");
+					System.out.println("1. Browse Books");
+					System.out.println("2. Search Book by Name");
+					System.out.println("3. Search Book by Author");
+					System.out.println("4. Issue Book");
+					System.out.println("5. Return Book");
+					System.out.println("6. Exit");
+					System.out.println("Enter your Choice");
+				}
 			}
 		}
-		while(choice!=5);
+		while(choice!=6);
 	}
 }

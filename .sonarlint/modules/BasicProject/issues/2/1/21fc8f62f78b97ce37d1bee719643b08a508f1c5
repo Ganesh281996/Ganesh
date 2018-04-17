@@ -1,0 +1,10 @@
+
+tsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(Œ«ÞˆÿÿÿÿÿHòŸRMINORZ
+CODE_SMELL
+rsquid:S1197&"8Move the array designator from the variable to the type.(°„â­ÿÿÿÿÿ8¡ÝÏä¬,HøŸRMINORZ
+CODE_SMELL
+r
+squid:S106+"9Replace this use of System.out or System.err by a logger.(…ˆÊ£ÿÿÿÿÿ8¡ÝÏä¬,HùŸRMAJORZ
+CODE_SMELL
+lsquid:S1197"8Move the array designator from the variable to the type.(ïŠÄ8ŸÂÐä¬,HüŸRMINORZ
+CODE_SMELL

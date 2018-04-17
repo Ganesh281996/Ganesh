@@ -1,3 +1,8 @@
+/**
+ * Purpose Managing the Library starting from logins for admin and User
+ * @author Ganesh
+ * @since 16 April 2018
+ */
 package com.bridgelabz.library;
 
 import java.util.Scanner;
