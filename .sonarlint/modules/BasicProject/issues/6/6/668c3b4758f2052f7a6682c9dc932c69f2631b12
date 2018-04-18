@@ -1,143 +1,222 @@
 
-m
-squid:S106]"9Replace this use of System.out or System.err by a logger.(Àƒ¿³8½²ó¬,HÒ£RMAJORZ
+s
+squid:S106è"9Replace this use of System.out or System.err by a logger.(ôÈôˆúÿÿÿÿ8íÍ”­,HÕ¥RMAJORZ
+CODE_SMELL
+s
+squid:S106ó"9Replace this use of System.out or System.err by a logger.(¡¹—Òøÿÿÿÿ8½²ó¬,HÂ¤RMAJORZ
+CODE_SMELL
+s
+squid:S106±"9Replace this use of System.out or System.err by a logger.(ïåì›şÿÿÿÿ8ëüà­,H‡¥RMAJORZ
 CODE_SMELL
 n
-squid:S106‰"9Replace this use of System.out or System.err by a logger.(ÆÖÙ8½²ó¬,HÓ£RMAJORZ
-CODE_SMELL
-m
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ë¹ß8Ñçÿğ¬,H€¢RMAJORZ
+squid:S106¤"9Replace this use of System.out or System.err by a logger.(ÆÖÙ8½²ó¬,HÀ¤RMAJORZ
 CODE_SMELL
 n
-squid:S106‘"9Replace this use of System.out or System.err by a logger.(ÛÏ§´8ÎÁ™ó¬,HĞ£RMAJORZ
+squid:S106å"9Replace this use of System.out or System.err by a logger.(äüÃâ8Äå­,HĞ¥RMAJORZ
 CODE_SMELL
 m
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ë¹ß8ïËÛò¬,H¨£RMAJORZ
+squid:S106‡"9Replace this use of System.out or System.err by a logger.(Õñ×8íÍ”­,HÚ¥RMAJORZ
 CODE_SMELL
 n
-squid:S106ƒ"9Replace this use of System.out or System.err by a logger.(ÛÏ§´8ğ™Àó¬,Hà£RMAJORZ
-CODE_SMELL
-l
-squid:S106o"9Replace this use of System.out or System.err by a logger.(Õñ×8Ì‘íó¬,Hæ£RMAJORZ
-CODE_SMELL
-m
-squid:S106A"9Replace this use of System.out or System.err by a logger.(ºÖŞŠ8ÃÔÌô¬,Hù£RMAJORZ
+squid:S106¬"9Replace this use of System.out or System.err by a logger.(ÛÏ§´8±ÆØô¬,HË¤RMAJORZ
 CODE_SMELL
 r
-squid:S106&"9Replace this use of System.out or System.err by a logger.(Òèİ©ùÿÿÿÿ8õ¤ó¬,H×£RMAJORZ
-CODE_SMELL
-r
-squid:S106:"9Replace this use of System.out or System.err by a logger.(›á×ãúÿÿÿÿ8‡îàò¬,H«£RMAJORZ
-CODE_SMELL
-m
-squid:S106 "9Replace this use of System.out or System.err by a logger.(÷ë8Ñçÿğ¬,H¢RMAJORZ
-CODE_SMELL
-m
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ÿ¬•¸8 óó¬,Hé£RMAJORZ
-CODE_SMELL
-s
-squid:S106¬"9Replace this use of System.out or System.err by a logger.(Òèİ©ùÿÿÿÿ8¥¥Òô¬,H€¤RMAJORZ
-CODE_SMELL
-s
-squid:S106Æ"9Replace this use of System.out or System.err by a logger.(ê”¹—ûÿÿÿÿ8¾×İô¬,Hˆ¤RMAJORZ
+squid:S106="9Replace this use of System.out or System.err by a logger.(ôÈôˆúÿÿÿÿ8Äå­,HÊ¥RMAJORZ
 CODE_SMELL
 n
-squid:S106¾"9Replace this use of System.out or System.err by a logger.(äüÃâ8î†¬ô¬,Hì£RMAJORZ
+squid:S106Ñ"9Replace this use of System.out or System.err by a logger.(ª‘éË8†¸à­,HÅ¥RMAJORZ
+CODE_SMELL
+m
+squid:S106}"9Replace this use of System.out or System.err by a logger.(äÎ¡Ï8Ñçÿğ¬,H¼¤RMAJORZ
 CODE_SMELL
 n
-squid:S106Ó"9Replace this use of System.out or System.err by a logger.(¨Öç8¸Ûãô¬,HŒ¤RMAJORZ
+squid:S106»"9Replace this use of System.out or System.err by a logger.(çş¯Ô8ÃÔÌô¬,HÛ¤RMAJORZ
+CODE_SMELL
+squid:S3776!"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(‹Ÿˆ€ùÿÿÿÿ8üĞÒó¬,Há¤RCRITICALZ
 CODE_SMELL
 m
-squid:S106ª"9Replace this use of System.out or System.err by a logger.(ËŞ·k8ÃÔÌô¬,Hş£RMAJORZ
+squid:S106z"9Replace this use of System.out or System.err by a logger.(”€ÈÁ8€“’­,HÔ¥RMAJORZ
+CODE_SMELL
+s
+squid:S106Ó"9Replace this use of System.out or System.err by a logger.(Òèİ©ùÿÿÿÿ8ƒ£æ­,HÇ¥RMAJORZ
 CODE_SMELL
 m
-squid:S106#"9Replace this use of System.out or System.err by a logger.(”€ÈÁ8«¿’ó¬,H¸£RMAJORZ
+squid:S106("9Replace this use of System.out or System.err by a logger.(÷ë8ïËÛò¬,HÍ¤RMAJORZ
+CODE_SMELL
+s
+squid:S106Ï"9Replace this use of System.out or System.err by a logger.(áéöøÿÿÿÿ8ğ™Àó¬,H¾¤RMAJORZ
+CODE_SMELL
+r
+squid:S106C"9Replace this use of System.out or System.err by a logger.(›á×ãúÿÿÿÿ8Äå­,HÉ¥RMAJORZ
+CODE_SMELL
+m
+squid:S106f"9Replace this use of System.out or System.err by a logger.(Àƒ¿³8î†¬ô¬,HØ¤RMAJORZ
 CODE_SMELL
 n
-squid:S106§"9Replace this use of System.out or System.err by a logger.(™Ô‘š8ÃÔÌô¬,Hû£RMAJORZ
+squid:S106ı"9Replace this use of System.out or System.err by a logger.(÷ğË“8ÃÔÌô¬,HÊ¤RMAJORZ
 CODE_SMELL
 s
-squid:S106Ì"9Replace this use of System.out or System.err by a logger.(¡¹—Òøÿÿÿÿ8óÄëô¬,H¤RMAJORZ
-CODE_SMELL
-s
-squid:S106½"9Replace this use of System.out or System.err by a logger.(ŸÏ´ÿøÿÿÿÿ8½²ó¬,HÔ£RMAJORZ
+squid:S106§"9Replace this use of System.out or System.err by a logger.(ÇÉ®¼ûÿÿÿÿ8íÍ”­,HÛ¥RMAJORZ
 CODE_SMELL
 n
-squid:S106µ"9Replace this use of System.out or System.err by a logger.(÷ğË“8İ°³ó¬,HÙ£RMAJORZ
-CODE_SMELL
-m
-squid:S106P"9Replace this use of System.out or System.err by a logger.(‰—ı‘8±ÁÛô¬,H‡¤RMAJORZ
-CODE_SMELL
-m
-squid:S106d"9Replace this use of System.out or System.err by a logger.(‰—ı‘8Ñçÿğ¬,Hÿ¡RMAJORZ
-CODE_SMELL
-m
-squid:S106z"9Replace this use of System.out or System.err by a logger.(ù÷Ç÷8±ÆØô¬,H„¤RMAJORZ
+squid:S106™"9Replace this use of System.out or System.err by a logger.(™Ô‘š8©áïò¬,Hâ¤RMAJORZ
 CODE_SMELL
 s
-squid:S106º"9Replace this use of System.out or System.err by a logger.(ê”¹—ûÿÿÿÿ8±ÁÛô¬,H†¤RMAJORZ
-CODE_SMELL
-m
-squid:S1062"9Replace this use of System.out or System.err by a logger.(÷ğË“8ŒÀâò¬,H¬£RMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(—ˆõşÿÿÿÿ8¿ŠŒó¬,Hç¤RMAJORZ
 CODE_SMELL
 s
-squid:S106©"9Replace this use of System.out or System.err by a logger.(áéöøÿÿÿÿ8ÃÔÌô¬,Hı£RMAJORZ
-CODE_SMELL
-r
-squid:S106="9Replace this use of System.out or System.err by a logger.(ğƒÃ•ùÿÿÿÿ8©áïò¬,H°£RMAJORZ
-CODE_SMELL
-s
-squid:S106"9Replace this use of System.out or System.err by a logger.(şñ‚Ÿıÿÿÿÿ8á™Úô¬,H…¤RMAJORZ
-CODE_SMELL
-r
-squid:S106{"9Replace this use of System.out or System.err by a logger.(Òèİ©ùÿÿÿÿ8¿ŠŒó¬,Hµ£RMAJORZ
+squid:S106ä"9Replace this use of System.out or System.err by a logger.(ŸÏ´ÿøÿÿÿÿ8¯”Æó¬,Hæ¤RMAJORZ
 CODE_SMELL
 m
-squid:S106%"9Replace this use of System.out or System.err by a logger.(¨õİÀ8Ü¢ºó¬,Hİ£RMAJORZ
-CODE_SMELL
-r
-squid:S106y"9Replace this use of System.out or System.err by a logger.(æñªûÿÿÿÿ8¿ŠŒó¬,H¶£RMAJORZ
-CODE_SMELL
-s
-squid:S106Œ"9Replace this use of System.out or System.err by a logger.(ÇÉ®¼ûÿÿÿÿ8ÃÔÌô¬,Hú£RMAJORZ
+squid:S106+"9Replace this use of System.out or System.err by a logger.(”€ÈÁ8íÍ”­,H×¥RMAJORZ
 CODE_SMELL
 m
-squid:S106x"9Replace this use of System.out or System.err by a logger.(çş¯Ô8ïËÛò¬,H©£RMAJORZ
-CODE_SMELL
-s
-squid:S106–"9Replace this use of System.out or System.err by a logger.(ïåì›şÿÿÿÿ8¯”Æó¬,Há£RMAJORZ
-CODE_SMELL
-s
-squid:S106š"9Replace this use of System.out or System.err by a logger.(Ó˜Úƒùÿÿÿÿ8Ü¢ºó¬,HŞ£RMAJORZ
-CODE_SMELL
-m
-squid:S106!"9Replace this use of System.out or System.err by a logger.(Î”Öœ8½²ó¬,HÑ£RMAJORZ
-CODE_SMELL
-m
-squid:S106U"9Replace this use of System.out or System.err by a logger.(ºÖŞŠ8ûüóò¬,H±£RMAJORZ
-CODE_SMELL
-r
-squid:S1064"9Replace this use of System.out or System.err by a logger.(ôÈôˆúÿÿÿÿ8Á¾çò¬,H­£RMAJORZ
+squid:S106œ"9Replace this use of System.out or System.err by a logger.(Ë¹ß8ÃÔÌô¬,HÁ¤RMAJORZ
 CODE_SMELL
 n
-squid:S106«"9Replace this use of System.out or System.err by a logger.(š”¹Ï8ÒØêó¬,Hå£RMAJORZ
+squid:S106Ü"9Replace this use of System.out or System.err by a logger.(÷ğË“8½²ó¬,HÙ¤RMAJORZ
 CODE_SMELL
-r
-squid:S106""9Replace this use of System.out or System.err by a logger.(µüÊ±øÿÿÿÿ8Á¾çò¬,H®£RMAJORZ
-CODE_SMELL
-r
-squid:S106h"9Replace this use of System.out or System.err by a logger.(¯úßÒÿÿÿÿÿ8æú¾ó¬,Hß£RMAJORZ
-CODE_SMELL
-squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(‹Ÿˆ€ùÿÿÿÿ8üĞÒó¬,Hä£RCRITICALZ
+m
+squid:S106Y"9Replace this use of System.out or System.err by a logger.(‰—ı‘8Ì‘íó¬,HÏ¤RMAJORZ
 CODE_SMELL
 s
-squid:S106Á"9Replace this use of System.out or System.err by a logger.(ôÈôˆúÿÿÿÿ8ÎÁ™ó¬,HÏ£RMAJORZ
-CODE_SMELL
-squid:S1192&"RDefine a constant instead of duplicating this literal "Enter your Choice" 3 times.(Òèİ©ùÿÿÿÿ8ÃÔÌô¬,H÷£RCRITICALZ
+squid:S106í"9Replace this use of System.out or System.err by a logger.(ê”¹—ûÿÿÿÿ8Ñçÿğ¬,HÃ¤RMAJORZ
 CODE_SMELL
 r
-squid:S106$"9Replace this use of System.out or System.err by a logger.(öİ­×úÿÿÿÿ8©„òó¬,Hè£RMAJORZ
+squid:S106*"9Replace this use of System.out or System.err by a logger.(µüÊ±øÿÿÿÿ8æú¾ó¬,Hë¤RMAJORZ
+CODE_SMELL
+s
+squid:S106º"9Replace this use of System.out or System.err by a logger.(şñ‚Ÿıÿÿÿÿ8€“’­,HÓ¥RMAJORZ
+CODE_SMELL
+s
+squid:S106’"9Replace this use of System.out or System.err by a logger.(†¢ŠÈøÿÿÿÿ8Ñçÿğ¬,Hè¤RMAJORZ
+CODE_SMELL
+m
+squid:S106w"9Replace this use of System.out or System.err by a logger.(÷ë8Äå­,HÌ¥RMAJORZ
+CODE_SMELL
+squid:S1192/"RDefine a constant instead of duplicating this literal "Enter your Choice" 6 times.(Òèİ©ùÿÿÿÿ8ÃÔÌô¬,HÈ¤RCRITICALZ
+CODE_SMELL
+s
+squid:S106¼"9Replace this use of System.out or System.err by a logger.(æñªûÿÿÿÿ8İ°³ó¬,HÆ¤RMAJORZ
+CODE_SMELL
+r
+squid:S106/"9Replace this use of System.out or System.err by a logger.(Òèİ©ùÿÿÿÿ8ÎÁ™ó¬,Hé¤RMAJORZ
+CODE_SMELL
+r
+squid:S106F"9Replace this use of System.out or System.err by a logger.(ğƒÃ•ùÿÿÿÿ8Ü¢ºó¬,HŞ¤RMAJORZ
+CODE_SMELL
+m
+squid:S106x"9Replace this use of System.out or System.err by a logger.(Î”Öœ8«¿’ó¬,Hê¤RMAJORZ
 CODE_SMELL
 n
-squid:S106¨"9Replace this use of System.out or System.err by a logger.(†¼±÷8ÃÔÌô¬,Hü£RMAJORZ
+squid:S106“"9Replace this use of System.out or System.err by a logger.(çş¯Ô8¶³Ç­,HÀ¥RMAJORZ
+CODE_SMELL
+n
+squid:S106"9Replace this use of System.out or System.err by a logger.(¨õİÀ8Äå­,HÍ¥RMAJORZ
+CODE_SMELL
+r
+squid:S106y"9Replace this use of System.out or System.err by a logger.(µüÊ±øÿÿÿÿ8¿ŠŒó¬,Hã¤RMAJORZ
+CODE_SMELL
+m
+squid:S106J"9Replace this use of System.out or System.err by a logger.(ºÖŞŠ8ÎÁ™ó¬,HĞ¤RMAJORZ
+CODE_SMELL
+s
+squid:S106Ÿ"9Replace this use of System.out or System.err by a logger.(Òèİ©ùÿÿÿÿ8óÄëô¬,Hà¤RMAJORZ
+CODE_SMELL
+m
+squid:S106-"9Replace this use of System.out or System.err by a logger.(â×ûä8±ÁÛô¬,HÚ¤RMAJORZ
+CODE_SMELL
+m
+squid:S106."9Replace this use of System.out or System.err by a logger.(äÎ¡Ï8ÃÔÌô¬,HÒ¤RMAJORZ
+CODE_SMELL
+m
+squid:S106#"9Replace this use of System.out or System.err by a logger.(Ÿ¬•¸8ïËÛò¬,HÌ¤RMAJORZ
+CODE_SMELL
+n
+squid:S106Ò"9Replace this use of System.out or System.err by a logger.(¨õİÀ8ÃÔÌô¬,HÉ¤RMAJORZ
+CODE_SMELL
+‹squid:S3776É"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(äÏ½8ÂÈ­,HÁ¥RCRITICALZ
+CODE_SMELL
+r
+squid:S106{"9Replace this use of System.out or System.err by a logger.(öİ­×úÿÿÿÿ8íÍ”­,HØ¥RMAJORZ
+CODE_SMELL
+ˆsquid:S1192;"PDefine a constant instead of duplicating this literal "Enter Book Name" 3 times.(÷ğË“8şÎÊ­,HÃ¥RCRITICALZ
+CODE_SMELL
+n
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÛÏ§´8±ÁÛô¬,Hß¤RMAJORZ
+CODE_SMELL
+m
+squid:S106)"9Replace this use of System.out or System.err by a logger.(Î”Öœ8Äå­,HË¥RMAJORZ
+CODE_SMELL
+m
+squid:S106m"9Replace this use of System.out or System.err by a logger.(‰—ı‘8¾×İô¬,H×¤RMAJORZ
+CODE_SMELL
+m
+squid:S106|"9Replace this use of System.out or System.err by a logger.(â×ûä8ŒÀâò¬,H¿¤RMAJORZ
+CODE_SMELL
+r
+squid:S106v"9Replace this use of System.out or System.err by a logger.(¯úßÒÿÿÿÿÿ8¸Ûãô¬,HÓ¤RMAJORZ
+CODE_SMELL
+n
+squid:S106˜"9Replace this use of System.out or System.err by a logger.(¨Öç8Á¾çò¬,H½¤RMAJORZ
+CODE_SMELL
+s
+squid:S106†"9Replace this use of System.out or System.err by a logger.(İÁ­­üÿÿÿÿ8 óó¬,HÄ¤RMAJORZ
+CODE_SMELL
+s
+squid:S106–"9Replace this use of System.out or System.err by a logger.(Òèİ©ùÿÿÿÿ8€“’­,HÒ¥RMAJORZ
+CODE_SMELL
+n
+squid:S106š"9Replace this use of System.out or System.err by a logger.(†¼±÷8Ü¢ºó¬,Hİ¤RMAJORZ
+CODE_SMELL
+s
+squid:S106”"9Replace this use of System.out or System.err by a logger.(æñªûÿÿÿÿ8şÎÊ­,HÄ¥RMAJORZ
+CODE_SMELL
+m
+squid:S106Ğ"9Replace this use of System.out or System.err by a logger.(ËŞ·k8€“’­,HÑ¥RMAJORZ
+CODE_SMELL
+m
+squid:S106;"9Replace this use of System.out or System.err by a logger.(÷ğË“8á™Úô¬,HÖ¤RMAJORZ
+CODE_SMELL
+r
+squid:S106,"9Replace this use of System.out or System.err by a logger.(öİ­×úÿÿÿÿ8¥¥Òô¬,HÎ¤RMAJORZ
+CODE_SMELL
+r
+squid:S106~"9Replace this use of System.out or System.err by a logger.(Òèİ©ùÿÿÿÿ8½²ó¬,HÇ¤RMAJORZ
+CODE_SMELL
+s
+squid:S106µ"9Replace this use of System.out or System.err by a logger.(Ó˜Úƒùÿÿÿÿ8‡îàò¬,HÅ¤RMAJORZ
+CODE_SMELL
+s
+squid:S106¾"9Replace this use of System.out or System.err by a logger.(Òèİ©ùÿÿÿÿ8Á¾çò¬,HÈ¥RMAJORZ
+CODE_SMELL
+m
+squid:S106ª"9Replace this use of System.out or System.err by a logger.(Ë¹ß8íÍ”­,HÖ¥RMAJORZ
+CODE_SMELL
+n
+squid:S106•"9Replace this use of System.out or System.err by a logger.(ù÷Ç÷8ÃÔÌô¬,HÕ¤RMAJORZ
+CODE_SMELL
+n
+squid:S106Í"9Replace this use of System.out or System.err by a logger.(™Ô‘š8íÍ”­,HÙ¥RMAJORZ
+CODE_SMELL
+n
+squid:S106Î"9Replace this use of System.out or System.err by a logger.(†¼±÷8Äå­,HÏ¥RMAJORZ
+CODE_SMELL
+s
+squid:S106›"9Replace this use of System.out or System.err by a logger.(áéöøÿÿÿÿ8©„òó¬,Hä¤RMAJORZ
+CODE_SMELL
+n
+squid:S106½"9Replace this use of System.out or System.err by a logger.(ù÷Ç÷8Äå­,HÎ¥RMAJORZ
+CODE_SMELL
+m
+squid:S106œ"9Replace this use of System.out or System.err by a logger.(ËŞ·k8õ¤ó¬,HÔ¤RMAJORZ
+CODE_SMELL
+n
+squid:S106"9Replace this use of System.out or System.err by a logger.(ª‘éË8§õÂ­,H¾¥RMAJORZ
+CODE_SMELL
+s
+squid:S106á"9Replace this use of System.out or System.err by a logger.(ê”¹—ûÿÿÿÿ8ûüóò¬,HÜ¤RMAJORZ
+CODE_SMELL
+m
+squid:S106^"9Replace this use of System.out or System.err by a logger.(ºÖŞŠ8ÒØêó¬,Hå¤RMAJORZ
 CODE_SMELL

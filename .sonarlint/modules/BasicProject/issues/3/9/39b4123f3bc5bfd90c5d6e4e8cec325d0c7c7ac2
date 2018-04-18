@@ -1,16 +1,16 @@
 
-r
-squid:S106a"9Replace this use of System.out or System.err by a logger.(Â‡’ğúÿÿÿÿ8şÿ•õ¬,H™¤RMAJORZ
+s
+squid:S106†"9Replace this use of System.out or System.err by a logger.(Â‡’ğúÿÿÿÿ8şÿ•õ¬,Hÿ¤RMAJORZ
 CODE_SMELL
 r
-squid:S106i"9Replace this use of System.out or System.err by a logger.(Â‡’ğúÿÿÿÿ8ìšÊõ¬,H­¤RMAJORZ
+squid:S106("9Replace this use of System.out or System.err by a logger.(¡¹—Òøÿÿÿÿ8ØÀ¤õ¬,Hƒ¥RMAJORZ
 CODE_SMELL
 r
-squid:S106W"9Replace this use of System.out or System.err by a logger.(óï®şÿÿÿÿ8ñ†–ò¬,Hé¢RMAJORZ
+squid:S106~"9Replace this use of System.out or System.err by a logger.(Â‡’ğúÿÿÿÿ8ñ†–ò¬,H€¥RMAJORZ
+CODE_SMELL
+n
+squid:S106‹"9Replace this use of System.out or System.err by a logger.(”—•í8åÌÊõ¬,H‚¥RMAJORZ
 CODE_SMELL
 r
-squid:S106"9Replace this use of System.out or System.err by a logger.(¡¹—Òøÿÿÿÿ8ØÀ¤õ¬,H¤RMAJORZ
-CODE_SMELL
-m
-squid:S106n"9Replace this use of System.out or System.err by a logger.(”—•í8åÌÊõ¬,H®¤RMAJORZ
+squid:S106t"9Replace this use of System.out or System.err by a logger.(óï®şÿÿÿÿ8ìšÊõ¬,H¥RMAJORZ
 CODE_SMELL
