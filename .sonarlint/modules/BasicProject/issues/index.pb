@@ -59,3 +59,9 @@ b
 2src/com/bridgelabz/library/AdminOperationsImp.java,7/0/704406722283295693869185c81f5455b3ee1adf
 ]
 -src/com/bridgelabz/database/TestDataBase.java,f/4/f41ad1750ee8259077d465ee50ad6ea3eb1a835c
+b
+2src/com/bridgelabz/database/StatementPractice.java,5/0/501a6bb96e75389dab429d03ab02a231204cda37
+i
+9src/com/bridgelabz/database/PrepareStatementPractice.java,8/8/88e38dc40eb883218e5ed606dca83b38f44b14fe
+j
+:src/com/bridgelabz/database/CallableStatementPractice.java,0/2/026a1dfab178e2a6751725d05642607be5b0a855

@@ -62,7 +62,7 @@ public class StatementPractice
 				break;
 			case 4:
 				query="delete from Employee "
-				+"where name='JasVim'";
+				+"where name='JahibernatesVim'";
 				delete(query);
 				break;
 			case 5:

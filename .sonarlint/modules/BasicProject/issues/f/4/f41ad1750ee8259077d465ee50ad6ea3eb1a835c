@@ -1,5 +1,15 @@
 
-squid:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ôöšª8Àá–­,Hù¥RBLOCKERZBUG
-}squid:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(Í›†Äşÿÿÿÿ8ÉÔî”­,Hï¥RBLOCKERZBUG
-…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Œ¢–Ìøÿÿÿÿ8¿Æ›­,H„¦RMAJORZ
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(üäâ÷øÿÿÿÿ8ı€ò»­,H¦¦RMAJORZ
+CODE_SMELL
+}squid:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(Í›†Äşÿÿÿÿ8ÉÔî”­,H¦RBLOCKERZBUG
+squid:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ôöšª8Àá–­,H¦RBLOCKERZBUG
+…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ıÉÑ™ÿÿÿÿÿ8ı€ò»­,H¥¦RMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ïãâïÿÿÿÿÿ8ãï¸¸­,H‘¦RMAJORZ
+CODE_SMELL
+|squid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(üäâ÷øÿÿÿÿ8·©½¸­,H˜¦RBLOCKERZBUG
+hsquid:S1481".Remove this unused "resultSet" local variable.(›÷Œœúÿÿÿÿ8àÛò»­,H«¦RMINORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Œ¢–Ìøÿÿÿÿ8¿Æ›­,HŒ¦RMAJORZ
 CODE_SMELL
