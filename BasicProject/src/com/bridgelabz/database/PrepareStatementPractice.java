@@ -9,11 +9,12 @@ import java.util.Scanner;
 
 public class PrepareStatementPractice 
 {
+	static Scanner scanner=new Scanner(System.in);
+
 	public static void main(String[] args) 
 	{
 		int choice=0;
 		String query=null;
-		Scanner scanner=new Scanner(System.in);
 		String name=null;
 		String branch=null;
 		
@@ -24,7 +25,8 @@ public class PrepareStatementPractice
 			System.out.println("3. Update");
 			System.out.println("4. Delete");
 			System.out.println("5. Display");
-			System.out.println("6. Exit");
+			System.out.println("6. Multiple Insert");
+			System.out.println("7. Exit");
 			System.out.println("Enter your Choice");
 			choice=scanner.nextInt();
 			switch(choice)
@@ -68,9 +70,12 @@ public class PrepareStatementPractice
 				query="select * from Student";
 				display(query);
 				break;
+			case 6:
+				multipleInsert();
+				break;
 			}
 		}
-		while(choice!=6);
+		while(choice!=7);
 		scanner.close();
 	}
 	static void create(String query)
@@ -303,6 +308,72 @@ public class PrepareStatementPractice
 					e.printStackTrace();
 				}
 			}
+			if(preparedStatement!=null)
+			{
+				try 
+				{
+					preparedStatement.close();
+				} 
+				catch (SQLException e)
+				{
+					e.printStackTrace();
+				}
+			}
+			if(connection!=null)
+			{
+				try 
+				{
+					connection.close();
+				} 
+				catch (SQLException e)
+				{
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+	static void multipleInsert()
+	{
+		String query=null;
+		String name=null;
+		int number=0;
+		String branch=null;
+		Connection connection=null;
+		PreparedStatement preparedStatement=null;
+		try
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/Kalyan", "root", "root");
+			System.out.println("How many row to Insert");
+			number=scanner.nextInt();
+			query="insert into Student"
+					+"(Name,Branch)"
+					+"values"
+					+"(?,?)";
+			preparedStatement=connection.prepareStatement(query);
+			for(int i=1;i<=number;i++)
+			{
+				System.out.println("Enter Name");
+				name=scanner.next();
+				System.out.println("Enter Branch");
+				branch=scanner.next();
+				preparedStatement.setString(1, name);
+				preparedStatement.setString(2, branch);
+				
+				preparedStatement.executeUpdate();
+			}
+			System.out.println("Inserted");
+		}
+		catch(ClassNotFoundException e)
+		{
+			e.printStackTrace();
+		}
+		catch(SQLException e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
 			if(preparedStatement!=null)
 			{
 				try 

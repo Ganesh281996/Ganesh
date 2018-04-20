@@ -9,13 +9,14 @@ import java.util.Scanner;
 
 public class CallableStatementPractice
 {
+	static Scanner scanner=new Scanner(System.in);
+
 	public static void main(String[] args) 
 	{
 		int choice=0;
 		String query=null;
 		String name=null;
 		int age=0;
-		Scanner scanner=new Scanner(System.in);
 		do
 		{
 			System.out.println("1. create");
@@ -23,7 +24,8 @@ public class CallableStatementPractice
 			System.out.println("3. Update");
 			System.out.println("4. Delete");
 			System.out.println("5. Display");
-			System.out.println("6. Exit");
+			System.out.println("6. Multiple Insert");
+			System.out.println("7. Exit");
 			System.out.println("Enter your Choice");
 			choice=scanner.nextInt();
 			
@@ -58,9 +60,12 @@ public class CallableStatementPractice
 				query="{call displayDetails()}";
 				display(query);
 				break;
+			case 6:
+				multipleInsert();
+				break;
 			}
 		}
-		while(choice!=6);
+		while(choice!=7);
 		scanner.close();
 	}
 	static void create(String query)
@@ -293,6 +298,68 @@ public class CallableStatementPractice
 					e.printStackTrace();
 				}
 			}
+			if(callableStatement!=null)
+			{
+				try
+				{
+					callableStatement.close();
+				}
+				catch(SQLException e)
+				{
+					e.printStackTrace();
+				}
+			}
+			if(connection!=null)
+			{
+				try
+				{
+					connection.close();
+				}
+				catch(SQLException e)
+				{
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+	static void multipleInsert()
+	{
+		Connection connection=null;
+		String name=null;
+		String query=null;
+		int age=0;
+		int number=0;
+		CallableStatement callableStatement=null;
+		try 
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/Kalyan", "root", "root");
+			query="{call insertInToTable(?,?)}";
+			callableStatement=connection.prepareCall(query);
+			System.out.println("How many times to Insert");
+			number=scanner.nextInt();
+			for(int i=0;i<number;i++)
+			{
+				System.out.println("Enter Name");
+				name=scanner.next();
+				System.out.println("Enter Age");
+				age=scanner.nextInt();
+				callableStatement.setString(1, name);
+				callableStatement.setInt(2, age);
+				callableStatement.executeUpdate();
+			}
+			System.out.println("Row Inserted");
+		} 
+		catch(ClassNotFoundException e) 
+		{
+			e.printStackTrace();
+		} 
+		catch (SQLException e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
 			if(callableStatement!=null)
 			{
 				try
