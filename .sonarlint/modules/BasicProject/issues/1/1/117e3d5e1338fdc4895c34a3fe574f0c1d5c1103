@@ -1,0 +1,41 @@
+
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8ãûÅ–®,H‡´RMAJORZ
+CODE_SMELL
+~squid:S2147F"DCombine this catch with the one at line 66, which has the same body.(ÿ©„€ùÿÿÿÿ8Î¯þ•®,HÑ³RMINORZ
+CODE_SMELL
+~squid:S2095!"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(’Þµ/8ãûÅ–®,H„´RBLOCKERZBUG
+`squid:S1148_"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¯þ•®,HÒ³RMINORZVULNERABILITY
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(ˆÂýŸ8ãûÅ–®,Hˆ´RMAJORZ
+CODE_SMELL
+m
+squid:S106)"9Replace this use of System.out or System.err by a logger.(ˆÂýŸ8ãûÅ–®,H‹´RMAJORZ
+CODE_SMELL
+`squid:S1148D"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¯þ•®,HÓ³RMINORZVULNERABILITY
+r
+squid:S106;"9Replace this use of System.out or System.err by a logger.(É‘”Ûþÿÿÿÿ8Î¯þ•®,HÎ³RMAJORZ
+CODE_SMELL
+r
+squid:S1063"9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8Î¯þ•®,HÈ³RMAJORZ
+CODE_SMELL
+r
+squid:S106&"9Replace this use of System.out or System.err by a logger.(Çæ×Çûÿÿÿÿ8ãûÅ–®,H‰´RMAJORZ
+CODE_SMELL
+`squid:S1148T"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¯þ•®,HÕ³RMINORZVULNERABILITY
+~squid:S2095-"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(’Þµ/8ãûÅ–®,H…´RBLOCKERZBUG
+`squid:S1148H"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¯þ•®,HÔ³RMINORZVULNERABILITY
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(õè€ ýÿÿÿÿ8ãûÅ–®,H†´RMAJORZ
+CODE_SMELL
+r
+squid:S106'"9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8ãûÅ–®,HŠ´RMAJORZ
+CODE_SMELL
+r
+squid:S106>"9Replace this use of System.out or System.err by a logger.(ŸÒ§¥þÿÿÿÿ8Á¿Â–®,Hü³RMAJORZ
+CODE_SMELL
+r
+squid:S1062"9Replace this use of System.out or System.err by a logger.(·ÎÐ®ûÿÿÿÿ8Î¯þ•®,HÊ³RMAJORZ
+CODE_SMELL
+ˆsquid:S1192"KDefine a constant instead of duplicating this literal "Enter Name" 3 times.(ÊÚ¿Ùÿÿÿÿÿ8ãûÅ–®,Hƒ´RCRITICALZ
+CODE_SMELL

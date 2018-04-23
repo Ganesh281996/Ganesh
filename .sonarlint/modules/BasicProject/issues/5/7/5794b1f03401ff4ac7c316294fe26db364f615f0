@@ -1,0 +1,17 @@
+
+~squid:S2147#"DCombine this catch with the one at line 31, which has the same body.(ÿ©„€ùÿÿÿÿ8÷Åñ™®,Hš´RMINORZ
+CODE_SMELL
+`squid:S1148%"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8÷Åñ™®,H›´RMINORZVULNERABILITY
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(“óğİûÿÿÿÿ8İİû™®,H±´RMAJORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(¡ï±şÿÿÿÿ8”÷ÿ™®,H²´RMAJORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(æÄŒÃûÿÿÿÿ8”÷ÿ™®,H³´RMAJORZ
+CODE_SMELL
+`squid:S1148!"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ğÕğ™®,H—´RMINORZVULNERABILITY
+`squid:S1148<"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ºÇ•š®,Hâ´RMINORZVULNERABILITY
+`squid:S11481"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ºÇ•š®,Há´RMINORZVULNERABILITY
+`squid:S1148G"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ñğ–š®,Hã´RMINORZVULNERABILITY

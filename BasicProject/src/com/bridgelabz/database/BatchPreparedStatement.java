@@ -16,50 +16,66 @@ public class BatchPreparedStatement
 		String query=null;
 		String name=null;
 		int age=0;
+		int choice=0;
 		try
 		{
 			Class.forName("com.mysql.jdbc.Driver");
 			connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/Kalyan", "root", "root");
 			connection.setAutoCommit(false);
 			
-			System.out.println("Insert");
-			System.out.println("Enter Name");
-			name=scanner.next();
-			System.out.println("Enter Age");
-			age=scanner.nextInt();
 			query="insert into Person "
 					+"(Name,Age)"
 					+"values(?,?)";
-			preparedStatement=connection.prepareStatement(query);
-			preparedStatement.setString(1, name);
-			preparedStatement.setInt(2, age);
-			preparedStatement.addBatch();
 			
-			System.out.println("Update");
-			System.out.println("Enter Name");
-			name=scanner.next();
-			System.out.println("Enter Age");
-			age=scanner.nextInt();
-			query="update Person "
-					+"set age=? where name=?";
 			preparedStatement=connection.prepareStatement(query);
-			preparedStatement.setInt(1, age);
-			preparedStatement.setString(2, name);
-			preparedStatement.addBatch();
+			System.out.println("Enter how many rows to Insert");
+			choice=scanner.nextInt();
 			
-			System.out.println("Delete");
-			System.out.println("Enter Name");
-			name=scanner.next();
-			query="delete from Person where name=?";
-			preparedStatement=connection.prepareStatement(query);
-			preparedStatement.setString(1, name);
-			preparedStatement.addBatch();
+			for(int i=0;i<choice;i++)
+			{
+				System.out.println("Insert");
+				System.out.println("Enter Name");
+				name=scanner.next();
+				System.out.println("Enter Age");
+				age=scanner.nextInt();
+				preparedStatement.setString(1, name);
+				preparedStatement.setInt(2, age);
+				preparedStatement.addBatch();
+			}
+//			System.out.println("Update");
+//			System.out.println("Enter Name");
+//			name=scanner.next();
+//			System.out.println("Enter Age");
+//			age=scanner.nextInt();
+//			query="update Person "
+//					+"set age=? where name=?";
+//			preparedStatement=connection.prepareStatement(query);
+//			preparedStatement.setInt(1, age);
+//			preparedStatement.setString(2, name);
+//			preparedStatement.addBatch();
+//			
+//			System.out.println("Delete");
+//			System.out.println("Enter Name");
+//			name=scanner.next();
+//			query="delete from Person where name=?";
+//			preparedStatement=connection.prepareStatement(query);
+//			preparedStatement.setString(1, name);
+//			preparedStatement.addBatch();
 			
 			preparedStatement.executeBatch();
-			System.out.println("Before Commit Enter number to commit");
-			scanner.nextInt();
-			connection.commit();
-			System.out.println("Commited");
+			choice=scanner.nextInt();
+			if(choice==1)
+			{
+				connection.commit();
+			}
+			else
+			{
+				connection.rollback();
+			}
+//			System.out.println("Before Commit Enter number to commit");
+//			scanner.nextInt();
+//			connection.commit();
+//			System.out.println("Commited");
 			
 			scanner.close();
 		}

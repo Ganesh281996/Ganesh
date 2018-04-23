@@ -3,6 +3,7 @@ package com.bridgelabz.database;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Savepoint;
 import java.sql.Statement;
 import java.util.Scanner;
 
@@ -13,6 +14,7 @@ public class BatchStatement
 		Scanner scanner=new Scanner(System.in);
 		Connection connection=null;
 		Statement statement=null;
+		Savepoint savepoint=null;
 		String query=null;
 		String name=null;
 		int age=0;
@@ -33,6 +35,8 @@ public class BatchStatement
 					+"values('"+name+"',"+age+")";
 			statement.addBatch(query);
 			
+			savepoint=connection.setSavepoint();
+			
 			System.out.println("Update");
 			System.out.println("Enter Name");
 			name=scanner.next();
@@ -49,9 +53,19 @@ public class BatchStatement
 			statement.addBatch(query);
 			
 			statement.executeBatch();
-			System.out.println("Before Commit Enter number to commit");
-			scanner.nextInt();
-			connection.commit();
+			connection.rollback(savepoint);
+			System.out.println("1. Commit");
+			System.out.println("2. Rollback");
+			System.out.println("Enter your Choice");
+			int choice=scanner.nextInt();
+			if(choice==1)
+			{
+				connection.commit();
+			}
+			else
+			{
+				connection.rollback();
+			}
 			
 			scanner.close();
 		}
