@@ -1,90 +1,90 @@
 
 r
-squid:S106-"9Replace this use of System.out or System.err by a logger.(û…àÙøÿÿÿÿ8 ˜ô®,H²RMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ê”Şêıÿÿÿÿ8ºë–®,Hİ·RMAJORZ
 CODE_SMELL
-›squid:S1192J"cDefine a constant instead of duplicating this literal "jdbc:mysql://localhost:3306/Kalyan" 4 times.(ÏÎßÃ8àÂˆ®,HŸ²RCRITICALZ
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ü¤¦Üûÿÿÿÿ8ºë–®,HŞ·RMAJORZ
 CODE_SMELL
-asquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ê…¾®,H½²RMINORZVULNERABILITY
-€squid:S2147‹"ECombine this catch with the one at line 135, which has the same body.(ÿ©„€ùÿÿÿÿ8Ïõ¿®,Hô±RMINORZ
+asquid:S1148Ü"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ê…¾®,Hß·RMINORZVULNERABILITY
+€squid:S2147ƒ"ECombine this catch with the one at line 255, which has the same body.(ÿ©„€ùÿÿÿÿ8ÒÏÍ®,Hà·RMINORZ
 CODE_SMELL
-m
-squid:S106"9Replace this use of System.out or System.err by a logger.(š”¹Ï8ºë–®,HÏ±RMAJORZ
+asquid:S1148Å"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8àÂˆ®,Há·RMINORZVULNERABILITY
+asquid:S1148§"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ïõ¿®,Hâ·RMINORZVULNERABILITY
+s
+squid:S106ü"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8àÂˆ®,Hã·RMAJORZ
+CODE_SMELL
+`squid:S1148l"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÏÍ®,Hä·RMINORZVULNERABILITY
+asquid:S1148Á"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8´ĞÅ®,Hå·RMINORZVULNERABILITY
+asquid:S1148œ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÏÍ®,Hæ·RMINORZVULNERABILITY
+`squid:S1148Q"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8àÂˆ®,Hç·RMINORZVULNERABILITY
+~squid:S2147S"DCombine this catch with the one at line 79, which has the same body.(ÿ©„€ùÿÿÿÿ8àÂˆ®,Hè·RMINORZ
+CODE_SMELL
+`squid:S1148a"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8àÂˆ®,Hé·RMINORZVULNERABILITY
+asquid:S1148¤"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÏÍ®,Hê·RMINORZVULNERABILITY
+asquid:S1148Ñ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8´ĞÅ®,Hë·RMINORZVULNERABILITY
+›squid:S1192J"cDefine a constant instead of duplicating this literal "jdbc:mysql://localhost:3306/Kalyan" 4 times.(ÏÎßÃ8àÂˆ®,Hì·RCRITICALZ
+CODE_SMELL
+€squid:S2147‹"ECombine this catch with the one at line 135, which has the same body.(ÿ©„€ùÿÿÿÿ8Ïõ¿®,Hí·RMINORZ
 CODE_SMELL
 s
-squid:S106¸"9Replace this use of System.out or System.err by a logger.(†Ó‡Òûÿÿÿÿ8•¦—®,H²²RMAJORZ
+squid:S106¸"9Replace this use of System.out or System.err by a logger.(†Ó‡Òûÿÿÿÿ8•¦—®,Hî·RMAJORZ
 CODE_SMELL
-v"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ãËûÿÿÿÿ8Û¯œ®,HØ±RCRITICALZ
-CODE_SMELL
-`squid:S1148U"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ê…¾®,H¿²RMINORZVULNERABILITY
-€squid:S2147ƒ"ECombine this catch with the one at line 255, which has the same body.(ÿ©„€ùÿÿÿÿ8ÒÏÍ®,H†²RMINORZ
-CODE_SMELL
-asquid:S1148‰"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÏÍ®,Hˆ²RMINORZVULNERABILITY
 r
-squid:S106M"9Replace this use of System.out or System.err by a logger.(‚õĞşÿÿÿÿÿ8ãÕ“®,H°²RMAJORZ
+squid:S106M"9Replace this use of System.out or System.err by a logger.(‚õĞşÿÿÿÿÿ8ãÕ“®,Hï·RMAJORZ
 CODE_SMELL
+r
+squid:S1064"9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8ÒÏÍ®,Hğ·RMAJORZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(¨§§ä8³ÌÈ®,Hñ·RMAJORZ
+CODE_SMELL
+asquid:S1148™"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ôà•®,Hò·RMINORZVULNERABILITY
+asquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ê…¾®,Hó·RMINORZVULNERABILITY
+“squid:S1192I"VDefine a constant instead of duplicating this literal "com.mysql.jdbc.Driver" 4 times.(¹µÖÁüÿÿÿÿ8àÂˆ®,Hô·RCRITICALZ
+CODE_SMELL
+s
+squid:S106ù"9Replace this use of System.out or System.err by a logger.(€•¦ûùÿÿÿÿ8¶Í®,Hõ·RMAJORZ
+CODE_SMELL
+asquid:S1148‰"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÏÍ®,Hö·RMINORZVULNERABILITY
 n
-squid:S106ú"9Replace this use of System.out or System.err by a logger.(–óùø8¢ßÍ®,HÇ²RMAJORZ
+squid:S106ú"9Replace this use of System.out or System.err by a logger.(–óùø8¢ßÍ®,H÷·RMAJORZ
 CODE_SMELL
-r
-squid:S1066"9Replace this use of System.out or System.err by a logger.(û…àÙøÿÿÿÿ8ºë–®,HÎ±RMAJORZ
+s
+squid:S106¼"9Replace this use of System.out or System.err by a logger.(§²Ûıÿÿÿÿ8•¦—®,Hø·RMAJORZ
 CODE_SMELL
-~squid:S2147S"DCombine this catch with the one at line 79, which has the same body.(ÿ©„€ùÿÿÿÿ8àÂˆ®,H£²RMINORZ
-CODE_SMELL
-asquid:S1148Å"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8àÂˆ®,H¦²RMINORZVULNERABILITY
-asquid:S1148Á"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8´ĞÅ®,Hÿ±RMINORZVULNERABILITY
-r
-squid:S1064"9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8ÒÏÍ®,H­²RMAJORZ
-CODE_SMELL
-€squid:S2147Ã"ECombine this catch with the one at line 191, which has the same body.(ÿ©„€ùÿÿÿÿ8ê…¾®,H¼²RMINORZ
-CODE_SMELL
-asquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ê…¾®,H¾²RMINORZVULNERABILITY
-asquid:S1148…"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”Œ»®,Hì±RMINORZVULNERABILITY
+`squid:S1148U"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ê…¾®,Hù·RMINORZVULNERABILITY
 m
-squid:S106„"9Replace this use of System.out or System.err by a logger.(Ğ¿¨8ê…¾®,HÄ²RMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(š”¹Ï8ºë–®,Hú·RMAJORZ
+CODE_SMELL
+€squid:S2147Ã"ECombine this catch with the one at line 191, which has the same body.(ÿ©„€ùÿÿÿÿ8ê…¾®,Hû·RMINORZ
+CODE_SMELL
+s
+squid:S106û"9Replace this use of System.out or System.err by a logger.(”Ğ‡Åûÿÿÿÿ8ƒâİ®,Hü·RMAJORZ
+CODE_SMELL
+v"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ãËûÿÿÿÿ8Û¯œ®,Hı·RCRITICALZ
 CODE_SMELL
 r
-squid:S106"9Replace this use of System.out or System.err by a logger.(îÿä÷ÿÿÿÿÿ8¡ª—®,HÓ±RMAJORZ
+squid:S106+"9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8àÂˆ®,Hş·RMAJORZ
 CODE_SMELL
+asquid:S1148ç"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8àÂˆ®,Hÿ·RMINORZVULNERABILITY
+s
+squid:S106€"9Replace this use of System.out or System.err by a logger.(ÇÉ®¼ûÿÿÿÿ8¶Í®,H€¸RMAJORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(Òèİ©ùÿÿÿÿ8¹ßù®,H¸RMAJORZ
+CODE_SMELL
+r
+squid:S1066"9Replace this use of System.out or System.err by a logger.(û…àÙøÿÿÿÿ8ºë–®,H‚¸RMAJORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(îÿä÷ÿÿÿÿÿ8¡ª—®,Hƒ¸RMAJORZ
+CODE_SMELL
+asquid:S1148…"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”Œ»®,H„¸RMINORZVULNERABILITY
+asquid:S1148‘"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ê…¾®,H…¸RMINORZVULNERABILITY
 m
-squid:S106"9Replace this use of System.out or System.err by a logger.(¨§§ä8³ÌÈ®,H²RMAJORZ
+squid:S106„"9Replace this use of System.out or System.err by a logger.(Ğ¿¨8ê…¾®,H†¸RMAJORZ
 CODE_SMELL
-asquid:S1148™"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ôà•®,H±²RMINORZVULNERABILITY
-asquid:S1148ç"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8àÂˆ®,H¥²RMINORZVULNERABILITY
-“squid:S1192I"VDefine a constant instead of duplicating this literal "com.mysql.jdbc.Driver" 4 times.(¹µÖÁüÿÿÿÿ8àÂˆ®,H²RCRITICALZ
-CODE_SMELL
-s
-squid:S106ù"9Replace this use of System.out or System.err by a logger.(€•¦ûùÿÿÿÿ8¶Í®,HÆ²RMAJORZ
-CODE_SMELL
-s
-squid:S106¼"9Replace this use of System.out or System.err by a logger.(§²Ûıÿÿÿÿ8•¦—®,H³²RMAJORZ
-CODE_SMELL
+asquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ê…¾®,H‡¸RMINORZVULNERABILITY
 r
-squid:S106"9Replace this use of System.out or System.err by a logger.(Òèİ©ùÿÿÿÿ8¹ßù®,H²RMAJORZ
-CODE_SMELL
-asquid:S1148¤"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÏÍ®,H‰²RMINORZVULNERABILITY
-r
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ê”Şêıÿÿÿÿ8ºë–®,HĞ±RMAJORZ
-CODE_SMELL
-`squid:S1148l"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÏÍ®,H‡²RMINORZVULNERABILITY
-s
-squid:S106ü"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8àÂˆ®,H¡²RMAJORZ
-CODE_SMELL
-r
-squid:S106+"9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8àÂˆ®,H¢²RMAJORZ
-CODE_SMELL
-`squid:S1148a"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8àÂˆ®,H¤²RMINORZVULNERABILITY
-s
-squid:S106€"9Replace this use of System.out or System.err by a logger.(ÇÉ®¼ûÿÿÿÿ8¶Í®,HÅ²RMAJORZ
-CODE_SMELL
-asquid:S1148Ñ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8´ĞÅ®,Hş±RMINORZVULNERABILITY
-asquid:S1148Ü"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ê…¾®,HÀ²RMINORZVULNERABILITY
-`squid:S1148Q"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8àÂˆ®,H§²RMINORZVULNERABILITY
-asquid:S1148‘"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ê…¾®,HÁ²RMINORZVULNERABILITY
-r
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ü¤¦Üûÿÿÿÿ8ºë–®,HÑ±RMAJORZ
-CODE_SMELL
-asquid:S1148§"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ïõ¿®,Hõ±RMINORZVULNERABILITY
-asquid:S1148œ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÏÍ®,HŠ²RMINORZVULNERABILITY
-s
-squid:S106û"9Replace this use of System.out or System.err by a logger.(”Ğ‡Åûÿÿÿÿ8ƒâİ®,H‹²RMAJORZ
+squid:S106-"9Replace this use of System.out or System.err by a logger.(û…àÙøÿÿÿÿ8 ˜ô®,Hˆ¸RMAJORZ
 CODE_SMELL

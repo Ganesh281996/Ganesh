@@ -1,0 +1,9 @@
+
+Hsquid:S1220""Move this file to a named package.Hû¹RMINORZ
+CODE_SMELL
+]squid:S1604
+"(Make this anonymous inner class a lambda(™Ë¬ä8‚åèÜ°,Hü¹RMAJORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÒùÞ½ýÿÿÿÿ8‚åèÜ°,Hý¹RMAJORZ
+CODE_SMELL

@@ -1,39 +1,45 @@
 
-squid:S2077""RUse a variable binding mechanism to construct this query instead of concatenation.(õïìÆ8ÒÓû”®,H£³RCRITICALZVULNERABILITY
-ˆsquid:S1192"KDefine a constant instead of duplicating this literal "Enter Name" 3 times.(ÊÚ¿Ùÿÿÿÿÿ8İ©Ñ•®,H¶³RCRITICALZ
-CODE_SMELL
-r
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8……ğ”®,H³RMAJORZ
-CODE_SMELL
-r
-squid:S106$"9Replace this use of System.out or System.err by a logger.(Çæ×Çûÿÿÿÿ8€¡–•®,H©³RMAJORZ
-CODE_SMELL
-r
-squid:S106."9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8İ©Ñ•®,H¸³RMAJORZ
-CODE_SMELL
-squid:S20771"RUse a variable binding mechanism to construct this query instead of concatenation.(õïìÆ8õ€Ò•®,H»³RCRITICALZVULNERABILITY
-`squid:S1148<"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¶ò²”®,Hæ²RMINORZVULNERABILITY
-`squid:S1148@"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ºÚ³”®,Hì²RMINORZVULNERABILITY
-`squid:S1148L"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¹£Ù•®,HÁ³RMINORZVULNERABILITY
 m
-squid:S106'"9Replace this use of System.out or System.err by a logger.(ˆÂıŸ8óÁ¡•®,H®³RMAJORZ
-CODE_SMELL
-~squid:S2147>"DCombine this catch with the one at line 58, which has the same body.(ÿ©„€ùÿÿÿÿ8ºÚ³”®,Hë²RMINORZ
+squid:S106+"9Replace this use of System.out or System.err by a logger.(ˆÂıŸ8óÁ¡•®,Hú´RMAJORZ
 CODE_SMELL
 r
-squid:S106%"9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8”‡—•®,H«³RMAJORZ
+squid:S106:"9Replace this use of System.out or System.err by a logger.(£ò ®üÿÿÿÿ8ŒÒ¸…¯,HˆµRMAJORZ
+CODE_SMELL
+`squid:S1148Z"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ºÚ³”®,Hÿ´RMINORZVULNERABILITY
+squid:S2077/"RUse a variable binding mechanism to construct this query instead of concatenation.(õïìÆ8ÒÓû”®,Hù´RCRITICALZVULNERABILITY
+r
+squid:S1062"9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8€¡–•®,HµRMAJORZ
 CODE_SMELL
 r
-squid:S1064"9Replace this use of System.out or System.err by a logger.(É‘”Ûşÿÿÿÿ8ßÕ•®,H¾³RMAJORZ
-CODE_SMELL
-squid:S2077+"RUse a variable binding mechanism to construct this query instead of concatenation.(õïìÆ8ÿ”Î•®,H´³RCRITICALZVULNERABILITY
-r
-squid:S106"9Replace this use of System.out or System.err by a logger.(õè€ ıÿÿÿÿ8òÓò”®,H–³RMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(õè€ ıÿÿÿÿ8ßÕ•®,HµRMAJORZ
 CODE_SMELL
 r
-squid:S106-"9Replace this use of System.out or System.err by a logger.(·ÎĞ®ûÿÿÿÿ8İ©Ñ•®,H·³RMAJORZ
+squid:S106)"9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8òÓò”®,H€µRMAJORZ
+CODE_SMELL
+r
+squid:S106;"9Replace this use of System.out or System.err by a logger.(Òèİ©ùÿÿÿÿ8İ©Ñ•®,H†µRMAJORZ
+CODE_SMELL
+~squid:S2147L"DCombine this catch with the one at line 72, which has the same body.(ÿ©„€ùÿÿÿÿ8ºÚ³”®,Hû´RMINORZ
+CODE_SMELL
+ˆsquid:S1192"KDefine a constant instead of duplicating this literal "Enter Name" 3 times.(ÊÚ¿Ùÿÿÿÿÿ8İ©Ñ•®,Hü´RCRITICALZ
+CODE_SMELL
+`squid:S1148e"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¹£Ù•®,Hş´RMINORZVULNERABILITY
+r
+squid:S1069"9Replace this use of System.out or System.err by a logger.(…ÒÚüÿÿÿÿ8İ©Ñ•®,H‡µRMAJORZ
+CODE_SMELL
+`squid:S1148J"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¶ò²”®,Hö´RMINORZVULNERABILITY
+`squid:S1148N"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8î¨Û•®,HƒµRMINORZVULNERABILITY
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8€¡–•®,H‚µRMAJORZ
+CODE_SMELL
+r
+squid:S106("9Replace this use of System.out or System.err by a logger.(Çæ×Çûÿÿÿÿ8”‡—•®,H÷´RMAJORZ
+CODE_SMELL
+r
+squid:S1061"9Replace this use of System.out or System.err by a logger.(·ÎĞ®ûÿÿÿÿ8ŒÒ¸…¯,H‰µRMAJORZ
 CODE_SMELL
 m
-squid:S106"9Replace this use of System.out or System.err by a logger.(ˆÂıŸ8€¡–•®,H¨³RMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(ˆÂıŸ8……ğ”®,Hø´RMAJORZ
 CODE_SMELL
-`squid:S1148W"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8î¨Û•®,HÂ³RMINORZVULNERABILITY
+squid:S2077$"RUse a variable binding mechanism to construct this query instead of concatenation.(õïìÆ8ÿ”Î•®,H…µRCRITICALZVULNERABILITY
+squid:S20775"RUse a variable binding mechanism to construct this query instead of concatenation.(õïìÆ8õ€Ò•®,H„µRCRITICALZVULNERABILITY

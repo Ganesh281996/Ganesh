@@ -1,0 +1,24 @@
+
+squid:S2293×"YReplace the type specification in this constructor call with the diamond operator ("<>").(÷äêäûÿÿÿÿHÊ¹RMINORZ
+CODE_SMELL
+Œsquid:S2293?"YReplace the type specification in this constructor call with the diamond operator ("<>").(÷äêäûÿÿÿÿHË¹RMINORZ
+CODE_SMELL
+ˆsquid:S2293º"YReplace the type specification in this constructor call with the diamond operator ("<>").(ß¢ÍíHÌ¹RMINORZ
+CODE_SMELL
+Nsquid:S1659¨"Declare "b" on a separate line.(©í‘ÛHÍ¹RMINORZ
+CODE_SMELL
+g
+squid:S106ê"9Replace this use of System.out or System.err by a logger.(ÛşÎ°HÎ¹RMAJORZ
+CODE_SMELL
+g
+squid:S106î"9Replace this use of System.out or System.err by a logger.(··‚ÎHÏ¹RMAJORZ
+CODE_SMELL
+Ksquid:S1643‹"Use a StringBuilder instead.(¢îî¤HĞ¹RMINORZ
+CODE_SMELL
+gsquid:S1197É"8Move the array designator from the variable to the type.(ØçÎ£HÑ¹RMINORZ
+CODE_SMELL
+g
+squid:S106ô"9Replace this use of System.out or System.err by a logger.(¼“ôçHÒ¹RMAJORZ
+CODE_SMELL
+Ssquid:S1659•"Declare "b" on a separate line.(äöÍÖşÿÿÿÿHÓ¹RMINORZ
+CODE_SMELL

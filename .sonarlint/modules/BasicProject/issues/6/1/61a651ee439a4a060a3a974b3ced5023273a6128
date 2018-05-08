@@ -1,0 +1,24 @@
+
+[squid:S1659"&Declare "userName" on a separate line.(”éÊ†8È•€ˆ¯,H—¸RMINORZ
+CODE_SMELL
+Vsquid:S1659"!Declare "url" on a separate line.(”éÊ†8È•€ˆ¯,H˜¸RMINORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(†¨÷È8ÂÅõ‡¯,H™¸RMAJORZ
+CODE_SMELL
+r
+squid:S106>"9Replace this use of System.out or System.err by a logger.(£‚À•ıÿÿÿÿ8€ûä†¯,Hš¸RMAJORZ
+CODE_SMELL
+`squid:S1148d"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ñ–ó‡¯,H›¸RMINORZVULNERABILITY
+`squid:S1148Y"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÔÈô‡¯,Hœ¸RMINORZVULNERABILITY
+~squid:S2147K"DCombine this catch with the one at line 71, which has the same body.(ÿ©„€ùÿÿÿÿ8ËòÌ†¯,H¸RMINORZ
+CODE_SMELL
+`squid:S1148I"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ËòÌ†¯,H¸RMINORZVULNERABILITY
+r
+squid:S106<"9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8€ûä†¯,HŸ¸RMAJORZ
+CODE_SMELL
+`squid:S1148("#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ËòÌ†¯,H ¸RMINORZVULNERABILITY
+`squid:S1148M"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ËòÌ†¯,H¡¸RMINORZVULNERABILITY
+`squid:S1148$"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ËòÌ†¯,H¢¸RMINORZVULNERABILITY
+[squid:S1659"&Declare "password" on a separate line.(”éÊ†8È•€ˆ¯,H£¸RMINORZ
+CODE_SMELL
+`squid:S1148o"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Şœˆ¯,H¤¸RMINORZVULNERABILITY

@@ -1,0 +1,18 @@
+
+È%squid:RedundantThrowsDeclarationCheck"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(ù¯ÆÀ8†ñÖÙ¯,HÖ·RMINORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(†¨÷È8þÅÐÙ¯,HÊ·RMAJORZ
+CODE_SMELL
+½%squid:RedundantThrowsDeclarationCheck"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(ù¯ÆÀ8†ñÖÙ¯,H×·RMINORZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(šôÈû8þÅÐÙ¯,HË·RMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¨Ó¢þÿÿÿÿ8ÚãÖÙ¯,HÒ·RMAJORZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(Õ›í«8÷£ØÙ¯,HÛ·RMAJORZ
+CODE_SMELL
+r
+squid:S106 "9Replace this use of System.out or System.err by a logger.(ÃýÅÑùÿÿÿÿ8÷£ØÙ¯,HÜ·RMAJORZ
+CODE_SMELL
