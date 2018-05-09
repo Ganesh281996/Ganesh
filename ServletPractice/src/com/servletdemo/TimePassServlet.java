@@ -17,6 +17,7 @@ public class TimePassServlet extends HttpServlet
 {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
+		response.setContentType("text/html");
 		String nothing=request.getParameter("Nothing");
 		PrintWriter printWriter=response.getWriter();
 		printWriter.write(nothing);
@@ -24,10 +25,11 @@ public class TimePassServlet extends HttpServlet
 //		requestDispatcher.forward(request, response);
 //		response.sendRedirect("http://www.google.com");
 		
-		Cookie cookie=new Cookie("Cookie", "Nothing");
-		response.addCookie(cookie);
-		Scanner scanner=new Scanner(System.in);
-		int a=scanner.nextInt();
+//		Cookie cookie=new Cookie("Cookie", "Nothing");
+//		response.addCookie(cookie);
+//		Scanner scanner=new Scanner(System.in);
+//		int a=scanner.nextInt();
+		printWriter.write("<a href='TimePass.jsp?nametwo=ganesh'>click</a>");
 		
 //		cookie.setMaxAge(0);
 //		response.addCookie(cookie);

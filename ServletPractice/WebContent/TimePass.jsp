@@ -11,5 +11,11 @@
 <input type="text" name="Nothing">
 <input type="submit">
 </form>
+<input type="text" name="nametwo">
 </body>
+<script type="text/javascript">
+var a=document.getElementsByName("nametwo").value;
+//alert(a);
+console.log(a);
+</script>
 </html>
