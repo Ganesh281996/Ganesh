@@ -1,27 +1,27 @@
 
-€squid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(õéÌœ8Ì®¾…¯,H“µRMAJORZ
+`squid:S1148T"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¯þ•®,HÑÂRMINORZVULNERABILITY
+…squid:CommentedOutCodeLine3"<This block of commented-out lines of code should be removed.(ûÉûéøÿÿÿÿ8Ì®¾…¯,HÒÂRMAJORZ
 CODE_SMELL
+€squid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(Ê¾…8Ì®¾…¯,HÓÂRMAJORZ
+CODE_SMELL
+~squid:S2147V"DCombine this catch with the one at line 82, which has the same body.(ÿ©„€ùÿÿÿÿ8Î¯þ•®,HÔÂRMINORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(õéÌœ8Ì®¾…¯,HÕÂRMAJORZ
+CODE_SMELL
+r
+squid:S106$"9Replace this use of System.out or System.err by a logger.(õè€ ýÿÿÿÿ8Ý‡Æ…¯,HÖÂRMAJORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÁŠóÌþÿÿÿÿ8ãûÅ–®,H×ÂRMAJORZ
+CODE_SMELL
+`squid:S1148o"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¯þ•®,HØÂRMINORZVULNERABILITY
+`squid:S1148d"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¯þ•®,HÙÂRMINORZVULNERABILITY
+`squid:S1148X"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¯þ•®,HÚÂRMINORZVULNERABILITY
 m
-squid:S106'"9Replace this use of System.out or System.err by a logger.(ˆÂýŸ8ãûÅ–®,H”µRMAJORZ
+squid:S106'"9Replace this use of System.out or System.err by a logger.(ˆÂýŸ8ãûÅ–®,HÛÂRMAJORZ
 CODE_SMELL
-`squid:S1148d"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¯þ•®,Hæ´RMINORZVULNERABILITY
-…squid:CommentedOutCodeLine3"<This block of commented-out lines of code should be removed.(ûÉûéøÿÿÿÿ8Ì®¾…¯,HŒµRMAJORZ
-CODE_SMELL
-`squid:S1148T"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¯þ•®,Hñ´RMINORZVULNERABILITY
-r
-squid:S106%"9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8ãûÅ–®,H•µRMAJORZ
-CODE_SMELL
-`squid:S1148X"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¯þ•®,Hé´RMINORZVULNERABILITY
-€squid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(Ê¾…8Ì®¾…¯,HµRMAJORZ
+…squid:CommentedOutCodeLineK"<This block of commented-out lines of code should be removed.(¹¢ú›þÿÿÿÿ8¿‡Ã…¯,HÜÂRMAJORZ
 CODE_SMELL
 r
-squid:S106$"9Replace this use of System.out or System.err by a logger.(õè€ ýÿÿÿÿ8Ý‡Æ…¯,H–µRMAJORZ
+squid:S106%"9Replace this use of System.out or System.err by a logger.(ÊÚ¿Ùÿÿÿÿÿ8ãûÅ–®,HÝÂRMAJORZ
 CODE_SMELL
-~squid:S2147V"DCombine this catch with the one at line 82, which has the same body.(ÿ©„€ùÿÿÿÿ8Î¯þ•®,Hò´RMINORZ
-CODE_SMELL
-…squid:CommentedOutCodeLineK"<This block of commented-out lines of code should be removed.(¹¢ú›þÿÿÿÿ8¿‡Ã…¯,HµRMAJORZ
-CODE_SMELL
-r
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÁŠóÌþÿÿÿÿ8ãûÅ–®,H—µRMAJORZ
-CODE_SMELL
-`squid:S1148o"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Î¯þ•®,Hí´RMINORZVULNERABILITY

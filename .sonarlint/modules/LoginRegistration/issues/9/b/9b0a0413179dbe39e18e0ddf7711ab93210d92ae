@@ -1,0 +1,6 @@
+
+esquid:S1989"(Add a "try/catch" block for "getWriter".(ïô†úÿÿÿÿ8ÅôÖº·,HÒÊRMINORZVULNERABILITY
+^squid:S1989,"&Add a "try/catch" block for "include".(·ı¹Š8Ù¶Ÿ»·,HúÊRMINORZVULNERABILITY
+`squid:S11481"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÚÊØ‡¸,HüÊRMINORZVULNERABILITY
+hsquid:S1989&"+Add a "try/catch" block for "sendRedirect".(ºà¼÷úÿÿÿÿ8Ï×¾½·,HûÊRMINORZVULNERABILITY
+^squid:S1989,"&Add a "try/catch" block for "include".(·ı¹Š8Ù¶Ÿ»·,HùÊRMINORZVULNERABILITY

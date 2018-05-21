@@ -1,13 +1,10 @@
 
-asquid:S2092")Add the "secure" attribute to this cookie(§¹ª¾8²Ìðî³,HÜ»RMINORZVULNERABILITY
-…squid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(ìƒÛŠýÿÿÿÿ8øÐ€õ³,Hã»RMAJORZ
+esquid:S1989"(Add a "try/catch" block for "getWriter".(À¿ú©þÿÿÿÿ8Êýï±±,Hß¼RMINORZVULNERABILITY
+…squid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(ìƒÛŠýÿÿÿÿ8øÐ€õ³,Hà¼RMAJORZ
 CODE_SMELL
-€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(º£éÎ8Ú²¿±²,HÝ»RMAJORZ
+€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(º£éÎ8Ú²¿±²,Há¼RMAJORZ
 CODE_SMELL
-tsquid:S1161":Add the "@Override" annotation above this method signature(½œ•Æþÿÿÿÿ8É¾Â°²,HÚ»RMAJORZ
+…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(žÍ“øýÿÿÿÿ8²›Ó™´,HÞ¼RMAJORZ
 CODE_SMELL
-esquid:S1989"(Add a "try/catch" block for "getWriter".(À¿ú©þÿÿÿÿ8Êýï±±,HÙ»RMINORZVULNERABILITY
-[squid:S1481"&Remove this unused "a" local variable.(êÉ“8²ìÒü³,Hþ»RMINORZ
-CODE_SMELL
-jsquid:S1854"5Remove this useless assignment to local variable "a".(êÉ“8²ìÒü³,Hÿ»RMAJORZ
+tsquid:S1161":Add the "@Override" annotation above this method signature(½œ•Æþÿÿÿÿ8É¾Â°²,HÝ¼RMAJORZ
 CODE_SMELL

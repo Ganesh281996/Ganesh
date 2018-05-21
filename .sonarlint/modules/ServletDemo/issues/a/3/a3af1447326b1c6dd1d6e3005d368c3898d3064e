@@ -1,0 +1,10 @@
+
+~squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(žÍ“øýÿÿÿÿH¯ÃRMAJORZ
+CODE_SMELL
+ysquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(º£éÎH°ÃRMAJORZ
+CODE_SMELL
+tsquid:S1161":Add the "@Override" annotation above this method signature(½œ•Æþÿÿÿÿ8¥Èè¶,H±ÃRMAJORZ
+CODE_SMELL
+~squid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(ìƒÛŠýÿÿÿÿH²ÃRMAJORZ
+CODE_SMELL
+esquid:S1989"(Add a "try/catch" block for "getWriter".(À¿ú©þÿÿÿÿ8¥Èè¶,H³ÃRMINORZVULNERABILITY
