@@ -17,10 +17,13 @@ response.setHeader("Pragma", "no-cache");
 String email=(String)session.getAttribute("Email");
 %>
 
-<%if(email==null)
-{%>
-	<h1>Session has been expired. Login Again</h1>
-<%}else{%>
+<%if(session.getAttribute("Email")==null)
+	{
+		response.sendRedirect("home");
+	}
+else
+{
+%>
 
 <%
 UserOperation userOperation=new UserOperation(); 

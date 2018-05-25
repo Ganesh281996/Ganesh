@@ -22,7 +22,7 @@ public class LogoutController extends HttpServlet
 		session.removeAttribute("Email");
 		session.removeAttribute("Password");
 		session.invalidate();
-		RequestDispatcher requestDispatcher=request.getRequestDispatcher("Home.jsp");
+		RequestDispatcher requestDispatcher=request.getRequestDispatcher("home");
 		requestDispatcher.include(request, response);
 	}
 }

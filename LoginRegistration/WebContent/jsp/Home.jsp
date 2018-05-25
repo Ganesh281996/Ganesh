@@ -7,9 +7,18 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%
+response.setHeader("Cache-Control", "no-cache");
+response.setHeader("Cache-Control", "no-store");
+response.setDateHeader("Expires", 0);
+response.setHeader("Pragma", "no-cache");
+String email=(String)session.getAttribute("Email");
+%>
+
+
 <h1>Home Page</h1>
-<a href="Signup.jsp">SignUp</a>
-<a href="Login.jsp">Login</a>
+<a href="signup">SignUp</a>
+<a href="login">Login</a>
 <a href="displaycontroller">Display Users</a>
 </body>
 </html>

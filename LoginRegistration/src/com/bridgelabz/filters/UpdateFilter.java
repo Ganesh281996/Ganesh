@@ -14,7 +14,6 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 public class UpdateFilter implements Filter 
 {
-
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException 
 	{
 		response.setContentType("text/html");
@@ -69,7 +68,7 @@ public class UpdateFilter implements Filter
 		
 		if(!flag)
 		{
-			requestDispatcher=request.getRequestDispatcher("Update.jsp");
+			requestDispatcher=request.getRequestDispatcher("updatejsp");
 			requestDispatcher.include(request, response);
 		}
 		else

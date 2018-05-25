@@ -37,7 +37,7 @@ public class UpdateController extends HttpServlet
 		session.setAttribute("Password", password);
 		userOperation.insert(user);
 		out.println("Successfully Updated Data");
-		requestDispatcher=request.getRequestDispatcher("Welcome.jsp");
+		requestDispatcher=request.getRequestDispatcher("welcome");
 		requestDispatcher.include(request, response);		
 	}
 }

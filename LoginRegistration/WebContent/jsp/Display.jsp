@@ -9,6 +9,13 @@
 </head>
 <body>
 <%
+response.setHeader("Cache-Control", "no-cache");
+response.setHeader("Cache-Control", "no-store");
+response.setDateHeader("Expires", 0);
+response.setHeader("Pragma", "no-cache");
+String email=(String)session.getAttribute("Email");
+%>
+<%
 ResultSet resultSet=(ResultSet)request.getAttribute("Users");
 %>
 <table align="center" title="Users" style="border: dashed ; border-color: black;">
@@ -37,6 +44,6 @@ while(resultSet.next())
 </tr>
 <%}%>
 </table>
-<a href="Home.jsp">Home</a>
+<a href="home">Home</a>
 </body>
 </html>

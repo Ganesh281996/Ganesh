@@ -85,7 +85,7 @@ public class SignUpFilter implements Filter
 		
 		if(!flag)
 		{
-			requestDispatcher=request.getRequestDispatcher("Signup.jsp");
+			requestDispatcher=request.getRequestDispatcher("signup");
 			requestDispatcher.include(request, response);
 		}
 		else

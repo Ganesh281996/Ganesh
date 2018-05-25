@@ -53,7 +53,7 @@ public class LoginFilter implements Filter
 		}
 		else
 		{
-			requestDispatcher=request.getRequestDispatcher("Login.jsp");
+			requestDispatcher=request.getRequestDispatcher("login");
 			requestDispatcher.include(request, response);
 		}
 	}

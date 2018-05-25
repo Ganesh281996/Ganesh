@@ -7,6 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%
+response.setHeader("Cache-Control", "no-cache");
+response.setHeader("Cache-Control", "no-store");
+response.setDateHeader("Expires", 0);
+response.setHeader("Pragma", "no-cache");
+String email=(String)session.getAttribute("Email");
+%>
 <h1>Register</h1>
 <form action="signupcontroller" method="post">
 UserName : <input type="text" name="UserName"><br>

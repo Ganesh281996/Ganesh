@@ -39,13 +39,13 @@ public class SignUpController extends HttpServlet
 		{
 			userOperation.insert(user);
 			out.println("Successfully Signed Up");
-			requestDispatcher=request.getRequestDispatcher("Home.jsp");
+			requestDispatcher=request.getRequestDispatcher("home");
 			requestDispatcher.include(request, response);		
 		}
 		else
 		{
 			out.println("Email already Present");
-			requestDispatcher=request.getRequestDispatcher("Signup.jsp");
+			requestDispatcher=request.getRequestDispatcher("signup");
 			requestDispatcher.include(request, response);
 		}
 	}

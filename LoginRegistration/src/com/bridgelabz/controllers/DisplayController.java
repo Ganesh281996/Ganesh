@@ -21,7 +21,7 @@ public class DisplayController extends HttpServlet
 		UserOperation userOperation=new UserOperation();
 		ResultSet resultSet=userOperation.select();
 		request.setAttribute("Users", resultSet);
-		RequestDispatcher requestDispatcher=request.getRequestDispatcher("Display.jsp");
+		RequestDispatcher requestDispatcher=request.getRequestDispatcher("display");
 		requestDispatcher.forward(request, response);
 	}
 }

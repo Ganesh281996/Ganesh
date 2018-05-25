@@ -35,12 +35,12 @@ public class LoginController extends HttpServlet
 				HttpSession session=request.getSession();
 				session.setAttribute("Email", resultSet.getString(4));
 				session.setAttribute("Password", resultSet.getString(7));
-				response.sendRedirect("Welcome.jsp");
+				response.sendRedirect("welcome");
 			}
 			else
 			{
 				out.println("EmailId and Password did not match");
-				requestDispatcher=request.getRequestDispatcher("Login.jsp");
+				requestDispatcher=request.getRequestDispatcher("login");
 				requestDispatcher.include(request, response);
 			}
 		}

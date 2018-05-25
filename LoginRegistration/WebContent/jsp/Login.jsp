@@ -14,14 +14,11 @@ response.setDateHeader("Expires", 0);
 response.setHeader("Pragma", "no-cache");
 String email=(String)session.getAttribute("Email");
 %>
-
-<%if(email==null)
-{%>
-	<h1>Session has been expired. Login Again</h1>
-<%}else{%><br>
-Welcome <%=email %><br>
-<a href="logoutcontroller">Logout</a><br>
-<a href="Update.jsp">Update</a>
-<%}%>
+<h1>Login</h1>
+<form action="logincontroller" method="post">
+Email : <input type="text" name="Email"><br>
+Password : <input type="password" name="Password"><br>
+<input type="submit" value="Submit">  <input type="reset" value="Reset">
+</form>
 </body>
 </html>
