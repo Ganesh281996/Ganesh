@@ -1,12 +1,12 @@
 
-nsquid:S2696"6Make the enclosing method "static" or remove this set.(ğ°‚Æ8ÙÀ·,H½ÊRCRITICALZ
+nsquid:S2696"6Make the enclosing method "static" or remove this set.(ğ°‚Æ8ÙÀ·,HÖĞRCRITICALZ
 CODE_SMELL
 m
-squid:S106"9Replace this use of System.out or System.err by a logger.(’´ñâ8È¿‹‡¸,H×ÊRMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(’´ñâ8È¿‹‡¸,H×ĞRMAJORZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(ü¸Ûû8÷äÍ†¸,HØĞRMAJORZ
 CODE_SMELL
 r
-squid:S106"9Replace this use of System.out or System.err by a logger.(ñøÖòùÿÿÿÿ8œÏú†¸,HÖÊRMAJORZ
-CODE_SMELL
-m
-squid:S106"9Replace this use of System.out or System.err by a logger.(ü¸Ûû8÷äÍ†¸,HÂÊRMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(ñøÖòùÿÿÿÿ8œÏú†¸,HÙĞRMAJORZ
 CODE_SMELL

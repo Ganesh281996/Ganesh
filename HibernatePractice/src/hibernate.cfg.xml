@@ -12,7 +12,7 @@
         <property name="connection.username">root</property>  
         <property name="connection.password">root</property>  
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>  
-    <mapping class="com.hibernate.Emp1"/>  
+    <mapping class="com.pojo.Emp1"/>  
     </session-factory>  
   
 </hibernate-configuration>  

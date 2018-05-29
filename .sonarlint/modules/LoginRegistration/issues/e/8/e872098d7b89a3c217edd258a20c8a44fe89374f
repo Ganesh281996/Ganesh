@@ -1,6 +1,6 @@
 
-†squid:S1192!"IDefine a constant instead of duplicating this literal "Password" 3 times.(‰Õ¸–ıÿÿÿÿ8µÏ‰¸,HóËRCRITICALZ
+esquid:S1989"(Add a "try/catch" block for "getWriter".(ïô†úÿÿÿÿ8œ°‰¸,HûĞRMINORZVULNERABILITY
+^squid:S1989)"&Add a "try/catch" block for "include".(·ı¹Š8œ°‰¸,HşĞRMINORZVULNERABILITY
+^squid:S1989)"&Add a "try/catch" block for "include".(·ı¹Š8œ°‰¸,HıĞRMINORZVULNERABILITY
+†squid:S1192!"IDefine a constant instead of duplicating this literal "Password" 3 times.(‰Õ¸–ıÿÿÿÿ8µÏ‰¸,HüĞRCRITICALZ
 CODE_SMELL
-^squid:S1989)"&Add a "try/catch" block for "include".(·ı¹Š8œ°‰¸,HÙËRMINORZVULNERABILITY
-esquid:S1989"(Add a "try/catch" block for "getWriter".(ïô†úÿÿÿÿ8œ°‰¸,HÍËRMINORZVULNERABILITY
-^squid:S1989)"&Add a "try/catch" block for "include".(·ı¹Š8œ°‰¸,HØËRMINORZVULNERABILITY

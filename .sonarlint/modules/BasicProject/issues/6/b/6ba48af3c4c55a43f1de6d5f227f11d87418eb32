@@ -1,563 +1,563 @@
 
-hsquid:S2093ô"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿ8ÅäÀÀ«,HîÃRCRITICALZ
-CODE_SMELL
-n
-squid:S106Ë"9Replace this use of System.out or System.err by a logger.(™ªÎ¬8ÅäÀÀ«,HïÃRMAJORZ
-CODE_SMELL
-—squid:S4165¹"cRemove this useless assignment; "array" already holds the assigned value along all execution paths.(è¥ÜÁøÿÿÿÿHğÃRMAJORZ
-CODE_SMELL
-„squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(çúÔöHñÃRCRITICALZ
-CODE_SMELL
-hsquid:S2093¥"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿ8ÅäÀÀ«,HòÃRCRITICALZ
-CODE_SMELL
-Wsquid:S1125¥	"(Remove the literal "true" boolean value.(şÿ©HóÃRMINORZ
-CODE_SMELL
-g
-squid:S106³"9Replace this use of System.out or System.err by a logger.(«˜–ŠHôÃRMAJORZ
-CODE_SMELL
 l
-squid:S106·"9Replace this use of System.out or System.err by a logger.(ÉŒÎêøÿÿÿÿHõÃRMAJORZ
+squid:S106±"9Replace this use of System.out or System.err by a logger.(ÉŒÎêøÿÿÿÿHÔÓRMAJORZ
 CODE_SMELL
 g
-squid:S106Ç"9Replace this use of System.out or System.err by a logger.(ÇĞŸˆHöÃRMAJORZ
+squid:S106³"9Replace this use of System.out or System.err by a logger.(«˜–ŠHÕÓRMAJORZ
 CODE_SMELL
+f
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ô“´HÖÓRMAJORZ
+CODE_SMELL
+ssquid:S1197”"8Move the array designator from the variable to the type.(ã·ğãùÿÿÿÿ8ÅäÀÀ«,H×ÓRMINORZ
+CODE_SMELL
+Zsquid:S1148¿"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHØÓRMINORZVULNERABILITY
+asquid:S2093¶"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿHÙÓRCRITICALZ
+CODE_SMELL
+Ksquid:S1643"Use a StringBuilder instead.(ÍãûªHÚÓRMINORZ
+CODE_SMELL
+Vsquid:S1125­	"(Remove the literal "true" boolean value.(Í½.HÛÓRMINORZ
+CODE_SMELL
+\squid:S1172ï"&Remove these unused method parameters.(ØıÍ8ÅäÀÀ«,HÜÓRMAJORZ
+CODE_SMELL
+asquid:S1148„"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HİÓRMINORZVULNERABILITY
 Zsquid:S1148‡
-"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH÷ÃRMINORZVULNERABILITY
-squid:S2293Ÿ	"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÑáÜÈùÿÿÿÿHøÃRMINORZ
+"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHŞÓRMINORZVULNERABILITY
+Wsquid:S1659à"(Declare "sharePrice" on a separate line.(ë—ÑÄHßÓRMINORZ
 CODE_SMELL
-Nsquid:S1659ù"Declare "j" on a separate line.(†È¯ÏHùÃRMINORZ
-CODE_SMELL
-„squid:S3776œ	"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ó»ØHúÃRCRITICALZ
-CODE_SMELL
-squid:S2147†"FCombine this catch with the one at line 2178, which has the same body.(É˜Ùúÿÿÿÿ8ÅäÀÀ«,HûÃRMINORZ
-CODE_SMELL
-asquid:S1148ˆ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HüÃRMINORZVULNERABILITY
-Psquid:S1643ß	"Use a StringBuilder instead.(ˆß½ÑıÿÿÿÿHıÃRMINORZ
-CODE_SMELL
-ssquid:S1197ñ"8Move the array designator from the variable to the type.(«ƒõúÿÿÿÿ8ÅäÀÀ«,HşÃRMINORZ
-CODE_SMELL
-l
-squid:S106õ"9Replace this use of System.out or System.err by a logger.(ûÏ››ûÿÿÿÿHÿÃRMAJORZ
-CODE_SMELL
-l
-squid:S106²	"9Replace this use of System.out or System.err by a logger.(¦üû“şÿÿÿÿH€ÄRMAJORZ
-CODE_SMELL
-Ksquid:S1643"Use a StringBuilder instead.(ÍãûªHÄRMINORZ
-CODE_SMELL
-ssquid:S1197”"8Move the array designator from the variable to the type.(ã·ğãùÿÿÿÿ8ÅäÀÀ«,H‚ÄRMINORZ
-CODE_SMELL
-l
-squid:S106Š"9Replace this use of System.out or System.err by a logger.(øË¯íûÿÿÿÿHƒÄRMAJORZ
+asquid:S1148ñ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HàÓRMINORZVULNERABILITY
+Ksquid:S1643ß"Use a StringBuilder instead.(¬„‡®HáÓRMINORZ
 CODE_SMELL
 g
-squid:S106â"9Replace this use of System.out or System.err by a logger.(²˜ä‡H„ÄRMAJORZ
+squid:S106¡"9Replace this use of System.out or System.err by a logger.(Ãí»ÏHâÓRMAJORZ
 CODE_SMELL
-Ksquid:S1643ß"Use a StringBuilder instead.(¬„‡®H…ÄRMINORZ
+lsquid:S1197‰	"8Move the array designator from the variable to the type.(ƒÊ±øÿÿÿÿHãÓRMINORZ
 CODE_SMELL
-‹squid:S3776ï"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ØıÍ8ÅäÀÀ«,H†ÄRCRITICALZ
+l
+squid:S106¡"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿHäÓRMAJORZ
 CODE_SMELL
-Xsquid:S1659„")Declare "n1Factorial" on a separate line.(‰¢òÖH‡ÄRMINORZ
+†squid:S00117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ìôĞşÿÿÿÿHåÓRMINORZ
 CODE_SMELL
-Zsquid:S1148”"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHˆÄRMINORZVULNERABILITY
-gsquid:S1197Á"8Move the array designator from the variable to the type.(õ›ÔH‰ÄRMINORZ
+l
+squid:S106£"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿHæÓRMAJORZ
 CODE_SMELL
-gsquid:S1197"8Move the array designator from the variable to the type.(ƒíŒ‘HŠÄRMINORZ
+l
+squid:S106ã"9Replace this use of System.out or System.err by a logger.(¯›çüÿÿÿÿHçÓRMAJORZ
+CODE_SMELL
+hsquid:S2093¥"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿ8ÅäÀÀ«,HèÓRCRITICALZ
+CODE_SMELL
+lsquid:S1197"8Move the array designator from the variable to the type.(ŸàÜãÿÿÿÿÿHéÓRMINORZ
+CODE_SMELL
+hsquid:S2093Ì"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿ8ÅäÀÀ«,HêÓRCRITICALZ
+CODE_SMELL
+Nsquid:S1659ù"Declare "j" on a separate line.(†È¯ÏHëÓRMINORZ
+CODE_SMELL
+jsquid:S3516¢"9Refactor this method to not always return the same value.(Ÿ†¼•HìÓRBLOCKERZ
+CODE_SMELL
+}squid:S2095ù	"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(õ·°âûÿÿÿÿHíÓRBLOCKERZBUG
+rsquid:S2095…"HUse try-with-resources or close this "FileReader" in a "finally" clause.(Øœ£şHîÓRBLOCKERZBUG
+l
+squid:S106â"9Replace this use of System.out or System.err by a logger.(ü°„ôúÿÿÿÿHïÓRMAJORZ
+CODE_SMELL
+s
+squid:S106Ğ"9Replace this use of System.out or System.err by a logger.(‘‘ğüÿÿÿÿ8ÅäÀÀ«,HğÓRMAJORZ
+CODE_SMELL
+Ysquid:S1148a"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHñÓRMINORZVULNERABILITY
+Ksquid:S1643Ş"Use a StringBuilder instead.(œœÿßHòÓRMINORZ
+CODE_SMELL
+Zsquid:S1148ü"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHóÓRMINORZVULNERABILITY
+s
+squid:S106¾"9Replace this use of System.out or System.err by a logger.(¹ˆÍ†ûÿÿÿÿ8ÅäÀÀ«,HôÓRMAJORZ
+CODE_SMELL
+Wsquid:S1125í"(Remove the literal "true" boolean value.(ùìëÈHõÓRMINORZ
+CODE_SMELL
+usquid:S1075´"ARefactor your code to get this URI from a customizable parameter.(¿¾ú²ÿÿÿÿÿHöÓRMINORZ
+CODE_SMELL
+ksquid:S2583«"CChange this condition so that it does not always evaluate to "true"(ìÃØ’H÷ÓRMAJORZBUG
+Vsquid:S1659‹	"'Declare "sizeNotes" on a separate line.(ô¢¢ãHøÓRMINORZ
+CODE_SMELL
+squid:S3776”"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(ã·ğãùÿÿÿÿ8ÅäÀÀ«,HùÓRCRITICALZ
+CODE_SMELL
+squid:S2147â"FCombine this catch with the one at line 2138, which has the same body.(É˜Ùúÿÿÿÿ8ÅäÀÀ«,HúÓRMINORZ
+CODE_SMELL
+ˆsquid:S2293Å"YReplace the type specification in this constructor call with the diamond operator ("<>").(É„Ë¾HûÓRMINORZ
+CODE_SMELL
+Zsquid:S1148”"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHüÓRMINORZVULNERABILITY
+n
+squid:S106­"9Replace this use of System.out or System.err by a logger.(Ì­Ä€8ÅäÀÀ«,HıÓRMAJORZ
+CODE_SMELL
+‹squid:S3776ï"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ØıÍ8ÅäÀÀ«,HşÓRCRITICALZ
+CODE_SMELL
+Zsquid:S1148å	"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÿÓRMINORZVULNERABILITY
+l
+squid:S106ã"9Replace this use of System.out or System.err by a logger.(Êù‡¸ÿÿÿÿÿH€ÔRMAJORZ
+CODE_SMELL
+Psquid:S2114Ù"(Remove or correct this "removeAll" call.(¿óÁüHÔRMAJORZBUG
+Usquid:S2129²"!Remove this "Integer" constructor(íÍêûÿÿÿÿH‚ÔRMAJORZ
+CODE_SMELL
+csquid:S1066„"/Merge this if statement with the enclosing one.(ì¦áûÿÿÿÿHƒÔRMAJORZ
+CODE_SMELL
+vsquid:S2095û	"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(çŞÚ;H„ÔRBLOCKERZBUG
+l
+squid:S106¸"9Replace this use of System.out or System.err by a logger.(¸ÈñùÿÿÿÿH…ÔRMAJORZ
+CODE_SMELL
+_squid:S1659ò"$Declare "column" on a separate line.(°èÚüøÿÿÿÿ8ÅäÀÀ«,H†ÔRMINORZ
+CODE_SMELL
+„squid:S3776æ"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(ï¬ÊåH‡ÔRCRITICALZ
+CODE_SMELL
+ssquid:S1197ñ"8Move the array designator from the variable to the type.(«ƒõúÿÿÿÿ8ÅäÀÀ«,HˆÔRMINORZ
+CODE_SMELL
+—squid:S4165¹"cRemove this useless assignment; "array" already holds the assigned value along all execution paths.(è¥ÜÁøÿÿÿÿH‰ÔRMAJORZ
+CODE_SMELL
+asquid:S1148ä"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HŠÔRMINORZVULNERABILITY
+Psquid:S1659§"!Declare "mid" on a separate line.(éèôÌH‹ÔRMINORZ
+CODE_SMELL
+asquid:S1148Œ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HŒÔRMINORZVULNERABILITY
+”squid:S2293˜"YReplace the type specification in this constructor call with the diamond operator ("<>").(½áØÔùÿÿÿÿ8ÅäÀÀ«,HÔRMINORZ
+CODE_SMELL
+Wsquid:S1125¥	"(Remove the literal "true" boolean value.(şÿ©HÔRMINORZ
+CODE_SMELL
+ssquid:S1197Û"8Move the array designator from the variable to the type.(„³šºşÿÿÿÿ8ÅäÀÀ«,HÔRMINORZ
+CODE_SMELL
+‡squid:S2293¿"YReplace the type specification in this constructor call with the diamond operator ("<>").(Üîà@HÔRMINORZ
+CODE_SMELL
+Xsquid:S1659„")Declare "n1Factorial" on a separate line.(‰¢òÖH‘ÔRMINORZ
 CODE_SMELL
 g
-squid:S106ã"9Replace this use of System.out or System.err by a logger.(ƒıŒºH‹ÄRMAJORZ
+squid:S106ß"9Replace this use of System.out or System.err by a logger.(÷¢ºİH’ÔRMAJORZ
 CODE_SMELL
-Vsquid:S1659“
-""Declare "date" on a separate line.(ØèºüÿÿÿÿHŒÄRMINORZ
+Xsquid:S1659»""Declare "date" on a separate line.(ÈËª8ÅäÀÀ«,H“ÔRMINORZ
 CODE_SMELL
-Vsquid:S1125­	"(Remove the literal "true" boolean value.(Í½.HÄRMINORZ
+lsquid:S1197"8Move the array designator from the variable to the type.(ĞéÄÇúÿÿÿÿH”ÔRMINORZ
 CODE_SMELL
-Wsquid:S1125»	"(Remove the literal "true" boolean value.(ÔĞ–×HÄRMINORZ
+gsquid:S1197"8Move the array designator from the variable to the type.(ƒíŒ‘H•ÔRMINORZ
+CODE_SMELL
+lsquid:S1197Ä"8Move the array designator from the variable to the type.(ÎÙçâüÿÿÿÿH–ÔRMINORZ
+CODE_SMELL
+squid:S1488’"_Immediately return this expression instead of assigning it to the temporary variable "payment".(ëç¼øH—ÔRMINORZ
+CODE_SMELL
+usquid:S2147–"FCombine this catch with the one at line 1682, which has the same body.(Î¿À¿H˜ÔRMINORZ
+CODE_SMELL
+asquid:S1148ˆ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,H™ÔRMINORZVULNERABILITY
+xsquid:S1192¦"FDefine a constant instead of duplicating this literal "Total" 3 times.(ÃóÎøHšÔRCRITICALZ
+CODE_SMELL
+^squid:S1659›"#Declare "temp1" on a separate line.(ßĞÊòúÿÿÿÿ8ÅäÀÀ«,H›ÔRMINORZ
+CODE_SMELL
+Ssquid:S1659"Declare "b" on a separate line.(„û ”ùÿÿÿÿHœÔRMINORZ
+CODE_SMELL
+wsquid:S3986á"HMake sure that Week Year "YYYY" is expected here instead of Year "yyyy".(²Ä³†8ÅäÀÀ«,HÔRMAJORZBUG
+hsquid:S2093ô"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿ8ÅäÀÀ«,HÔRCRITICALZ
+CODE_SMELL
+squid:CommentedOutCodeLine¹"<This block of commented-out lines of code should be removed.(»€ßøÿÿÿÿHŸÔRMAJORZ
 CODE_SMELL
 l
-squid:S106İ"9Replace this use of System.out or System.err by a logger.(À—ĞŸûÿÿÿÿHÄRMAJORZ
+squid:S106İ"9Replace this use of System.out or System.err by a logger.(À—ĞŸûÿÿÿÿH ÔRMAJORZ
 CODE_SMELL
-Ssquid:S1659"Declare "b" on a separate line.(„û ”ùÿÿÿÿHÄRMINORZ
+nsquid:S1197‚"8Move the array designator from the variable to the type.(ÊØÖÌ8ÅäÀÀ«,H¡ÔRMINORZ
+CODE_SMELL
+~squid:S1192¥"GDefine a constant instead of duplicating this literal "Weight" 3 times.(ŞòáøùÿÿÿÿH¢ÔRCRITICALZ
+CODE_SMELL
+gsquid:S1197ï"8Move the array designator from the variable to the type.(ö¶ÌH£ÔRMINORZ
+CODE_SMELL
+g
+squid:S106¸"9Replace this use of System.out or System.err by a logger.(òí¡èH¤ÔRMAJORZ
+CODE_SMELL
+f
+squid:S106à"9Replace this use of System.out or System.err by a logger.(ÜŸãH¥ÔRMAJORZ
+CODE_SMELL
+g
+squid:S106ş	"9Replace this use of System.out or System.err by a logger.(ğ€ŒH¦ÔRMAJORZ
+CODE_SMELL
+squid:S1488¨"YImmediately return this expression instead of assigning it to the temporary variable "d".(ü©îÑşÿÿÿÿH§ÔRMINORZ
 CODE_SMELL
 l
-squid:S106â"9Replace this use of System.out or System.err by a logger.(ü°„ôúÿÿÿÿH‘ÄRMAJORZ
+squid:S106™"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿH¨ÔRMAJORZ
 CODE_SMELL
-Usquid:S2129²"!Remove this "Integer" constructor(íÍêûÿÿÿÿH’ÄRMAJORZ
+Ysquid:S1148p"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH©ÔRMINORZVULNERABILITY
+asquid:S1148Š"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HªÔRMINORZVULNERABILITY
+l
+squid:S106í"9Replace this use of System.out or System.err by a logger.(øíœ™ıÿÿÿÿH«ÔRMAJORZ
 CODE_SMELL
-nsquid:S1197‚"8Move the array designator from the variable to the type.(ÊØÖÌ8ÅäÀÀ«,H“ÄRMINORZ
+l
+squid:S106ó"9Replace this use of System.out or System.err by a logger.(©¬èùÿÿÿÿH¬ÔRMAJORZ
 CODE_SMELL
-Vsquid:S1659‹	"'Declare "sizeNotes" on a separate line.(ô¢¢ãH”ÄRMINORZ
-CODE_SMELL
-csquid:S1066„"/Merge this if statement with the enclosing one.(ì¦áûÿÿÿÿH•ÄRMAJORZ
+Psquid:S1643º	"Use a StringBuilder instead.(İ«¼öıÿÿÿÿH­ÔRMINORZ
 CODE_SMELL
 ‡
-squid:S135œ"YReduce the total number of break and continue statements in this loop to use at most one.(îô‘ËH–ÄRMINORZ
-CODE_SMELL
-asquid:S1148Œ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,H—ÄRMINORZVULNERABILITY
-Ssquid:S1659"Declare "c" on a separate line.(„û ”ùÿÿÿÿH˜ÄRMINORZ
-CODE_SMELL
-usquid:S2147–"FCombine this catch with the one at line 1682, which has the same body.(Î¿À¿H™ÄRMINORZ
-CODE_SMELL
-usquid:S2259¤"HA "NullPointerException" could be thrown; "jsonObject" is nullable here.(öÆ“øÿÿÿÿHšÄRMAJORZBUG
-^squid:S1659›"#Declare "temp1" on a separate line.(ßĞÊòúÿÿÿÿ8ÅäÀÀ«,H›ÄRMINORZ
-CODE_SMELL
-usquid:S1126¿"AReplace this if-then-else statement by a single return statement.(ù™«™şÿÿÿÿHœÄRMINORZ
-CODE_SMELL
-g
-squid:S106ß"9Replace this use of System.out or System.err by a logger.(÷¢ºİHÄRMAJORZ
+squid:S135œ"YReduce the total number of break and continue statements in this loop to use at most one.(îô‘ËH®ÔRMINORZ
 CODE_SMELL
 s
-squid:S106İ"9Replace this use of System.out or System.err by a logger.(‘‘ğüÿÿÿÿ8ÅäÀÀ«,HÄRMAJORZ
+squid:S106Ã"9Replace this use of System.out or System.err by a logger.(‘‘ğüÿÿÿÿ8ÅäÀÀ«,H¯ÔRMAJORZ
 CODE_SMELL
-‰squid:S3776ı"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(‹ı¿àùÿÿÿÿHŸÄRCRITICALZ
-CODE_SMELL
-Zsquid:S1148˜"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH ÄRMINORZVULNERABILITY
-asquid:S1148„"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,H¡ÄRMINORZVULNERABILITY
-gsquid:S1197á"8Move the array designator from the variable to the type.(“—î¥H¢ÄRMINORZ
-CODE_SMELL
-—squid:S4165ñ"hRemove this useless assignment; "charArray1" already holds the assigned value along all execution paths.(Û²öH£ÄRMAJORZ
-CODE_SMELL
-asquid:S1148°"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,H¤ÄRMINORZVULNERABILITY
-tsquid:S1854•"9Remove this useless assignment to local variable "count".(÷Ù¶Šùÿÿÿÿ8ÅäÀÀ«,H¥ÄRMAJORZ
-CODE_SMELL
-lsquid:S1197Æ"8Move the array designator from the variable to the type.(÷çñßıÿÿÿÿH¦ÄRMINORZ
-CODE_SMELL
-ssquid:S1197›"8Move the array designator from the variable to the type.(ßĞÊòúÿÿÿÿ8ÅäÀÀ«,H§ÄRMINORZ
-CODE_SMELL
-Vsquid:S1659""Declare "rice" on a separate line.(ÌàêçüÿÿÿÿH¨ÄRMINORZ
-CODE_SMELL
-†squid:S00117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ìôĞşÿÿÿÿH©ÄRMINORZ
-CODE_SMELL
-g
-squid:S106Å	"9Replace this use of System.out or System.err by a logger.(¿”ÿ€HªÄRMAJORZ
-CODE_SMELL
-l
-squid:S106õ"9Replace this use of System.out or System.err by a logger.(Ã”…ªûÿÿÿÿH«ÄRMAJORZ
-CODE_SMELL
-gsquid:S1197’
-"8Move the array designator from the variable to the type.(ıµúH¬ÄRMINORZ
-CODE_SMELL
-”squid:S2293˜"YReplace the type specification in this constructor call with the diamond operator ("<>").(½áØÔùÿÿÿÿ8ÅäÀÀ«,H­ÄRMINORZ
-CODE_SMELL
-Ksquid:S1643–"Use a StringBuilder instead.(¯åûîH®ÄRMINORZ
-CODE_SMELL
-gsquid:S1197Ä"8Move the array designator from the variable to the type.(³®ˆ–H¯ÄRMINORZ
-CODE_SMELL
-lsquid:S1197ı"8Move the array designator from the variable to the type.(‹ı¿àùÿÿÿÿH°ÄRMINORZ
-CODE_SMELL
-gsquid:S1197Ú"8Move the array designator from the variable to the type.(ğ½Á¹H±ÄRMINORZ
-CODE_SMELL
-s
-squid:S106¾"9Replace this use of System.out or System.err by a logger.(¹ˆÍ†ûÿÿÿÿ8ÅäÀÀ«,H²ÄRMAJORZ
-CODE_SMELL
-\squid:S1172ï"&Remove these unused method parameters.(ØıÍ8ÅäÀÀ«,H³ÄRMAJORZ
-CODE_SMELL
-Wsquid:S1125í"(Remove the literal "true" boolean value.(ùìëÈH´ÄRMINORZ
-CODE_SMELL
-~squid:S1192¥"GDefine a constant instead of duplicating this literal "Weight" 3 times.(ŞòáøùÿÿÿÿHµÄRCRITICALZ
-CODE_SMELL
-f
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ô“´H¶ÄRMAJORZ
-CODE_SMELL
-Qsquid:S1659Æ"#Declare "count" on a separate line.(º´Ó&H·ÄRMINORZ
-CODE_SMELL
-usquid:S1126ú"AReplace this if-then-else statement by a single return statement.(°Ìÿ¤ıÿÿÿÿH¸ÄRMINORZ
-CODE_SMELL
-squid:S1488¨"YImmediately return this expression instead of assigning it to the temporary variable "d".(ü©îÑşÿÿÿÿH¹ÄRMINORZ
-CODE_SMELL
-Zsquid:S1148¿"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHºÄRMINORZVULNERABILITY
-l
-squid:S106²"9Replace this use of System.out or System.err by a logger.(ß¶ßƒüÿÿÿÿH»ÄRMAJORZ
-CODE_SMELL
-Psquid:S1643¹	"Use a StringBuilder instead.(åÆÀ£úÿÿÿÿH¼ÄRMINORZ
-CODE_SMELL
-gsquid:S1197ï"8Move the array designator from the variable to the type.(ö¶ÌH½ÄRMINORZ
-CODE_SMELL
-gsquid:S1197Û"8Move the array designator from the variable to the type.(ĞÂôòH¾ÄRMINORZ
-CODE_SMELL
-bsquid:S1659Ò".Declare "subArrayInitial2" on a separate line.(§Àç ûÿÿÿÿH¿ÄRMINORZ
-CODE_SMELL
-g
-squid:S106ì"9Replace this use of System.out or System.err by a logger.(Ã©‚ƒHÀÄRMAJORZ
-CODE_SMELL
-[squid:S1659À"'Declare "intNumber" on a separate line.(¤²õùÿÿÿÿHÁÄRMINORZ
-CODE_SMELL
-jsquid:S3516¢"9Refactor this method to not always return the same value.(Ÿ†¼•HÂÄRBLOCKERZ
-CODE_SMELL
-ysquid:S2095§"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ÿæëª8ÅäÀÀ«,HÃÄRBLOCKERZBUG
-}squid:S1192¥"FDefine a constant instead of duplicating this literal "Price" 4 times.(ŞòáøùÿÿÿÿHÄÄRCRITICALZ
-CODE_SMELL
-_squid:S1659ò"$Declare "column" on a separate line.(°èÚüøÿÿÿÿ8ÅäÀÀ«,HÅÄRMINORZ
-CODE_SMELL
-g
-squid:S106¡"9Replace this use of System.out or System.err by a logger.(Ãí»ÏHÆÄRMAJORZ
+n
+squid:S106Ø"9Replace this use of System.out or System.err by a logger.(¶ëõ8ÅäÀÀ«,H°ÔRMAJORZ
 CODE_SMELL
 zsquid:S2147…
-"FCombine this catch with the one at line 1281, which has the same body.(É˜ÙúÿÿÿÿHÇÄRMINORZ
+"FCombine this catch with the one at line 1281, which has the same body.(É˜ÙúÿÿÿÿH±ÔRMINORZ
 CODE_SMELL
-lsquid:S1197”"8Move the array designator from the variable to the type.(ã·ğãùÿÿÿÿHÈÄRMINORZ
+Wsquid:S1659à"(Declare "totalValue" on a separate line.(ë—ÑÄH²ÔRMINORZ
 CODE_SMELL
-Zsquid:S1148ƒ
-"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÉÄRMINORZVULNERABILITY
-ssquid:S1197Û"8Move the array designator from the variable to the type.(„³šºşÿÿÿÿ8ÅäÀÀ«,HÊÄRMINORZ
+ssquid:S1197¯"8Move the array designator from the variable to the type.(—õ£±ùÿÿÿÿ8ÅäÀÀ«,H³ÔRMINORZ
 CODE_SMELL
-lsquid:S1197—"8Move the array designator from the variable to the type.(…Ó¤İÿÿÿÿÿHËÄRMINORZ
-CODE_SMELL
-asquid:S1148¾"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HÌÄRMINORZVULNERABILITY
-Wsquid:S1659à"(Declare "stockValue" on a separate line.(ë—ÑÄHÍÄRMINORZ
-CODE_SMELL
-ysquid:S2095ÿ"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ÿæëª8ÅäÀÀ«,HÎÄRBLOCKERZBUG
-Qsquid:S1659§""Declare "last" on a separate line.(éèôÌHÏÄRMINORZ
-CODE_SMELL
-Zsquid:S1148Ñ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHĞÄRMINORZVULNERABILITY
-nsquid:S1197ï"8Move the array designator from the variable to the type.(ØıÍ8ÅäÀÀ«,HÑÄRMINORZ
-CODE_SMELL
-Wsquid:S1659à"(Declare "sharePrice" on a separate line.(ë—ÑÄHÒÄRMINORZ
-CODE_SMELL
-ˆsquid:S2293	"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÿ¯È÷HÓÄRMINORZ
-CODE_SMELL
-l
-squid:S106¸"9Replace this use of System.out or System.err by a logger.(¸ÈñùÿÿÿÿHÔÄRMAJORZ
-CODE_SMELL
-squid:S2147â"FCombine this catch with the one at line 2138, which has the same body.(É˜Ùúÿÿÿÿ8ÅäÀÀ«,HÕÄRMINORZ
-CODE_SMELL
-Psquid:S2114Ù"(Remove or correct this "removeAll" call.(¿óÁüHÖÄRMAJORZBUG
-Wsquid:S1659„"(Declare "nFactorial" on a separate line.(‰¢òÖH×ÄRMINORZ
-CODE_SMELL
-squid:S2293Î"YReplace the type specification in this constructor call with the diamond operator ("<>").(É¯›±úÿÿÿÿHØÄRMINORZ
-CODE_SMELL
-Ysquid:S1148R"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÙÄRMINORZVULNERABILITY
-g
-squid:S106Ş"9Replace this use of System.out or System.err by a logger.(Ë–”èHÚÄRMAJORZ
-CODE_SMELL
-„squid:S3776×"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(¦şçªHÛÄRCRITICALZ
-CODE_SMELL
-zsquid:S2147Á"FCombine this catch with the one at line 1725, which has the same body.(É˜ÙúÿÿÿÿHÜÄRMINORZ
-CODE_SMELL
-”squid:S2293ó"YReplace the type specification in this constructor call with the diamond operator ("<>").(½áØÔùÿÿÿÿ8ÅäÀÀ«,HİÄRMINORZ
-CODE_SMELL
-Psquid:S1643º	"Use a StringBuilder instead.(İ«¼öıÿÿÿÿHŞÄRMINORZ
-CODE_SMELL
-gsquid:S1197™"8Move the array designator from the variable to the type.(¾­‡HßÄRMINORZ
-CODE_SMELL
-squid:S1192Ã"RDefine a constant instead of duplicating this literal "Please try again." 3 times.(‘‘ğüÿÿÿÿ8ÅäÀÀ«,HàÄRCRITICALZ
-CODE_SMELL
-asquid:S2093õ"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿHáÄRCRITICALZ
-CODE_SMELL
-|squid:S2147†"FCombine this catch with the one at line 2050, which has the same body.(Î¿À¿8ÅäÀÀ«,HâÄRMINORZ
-CODE_SMELL
-squid:S4165Ñ"gRemove this useless assignment; "jsonArray" already holds the assigned value along all execution paths.(ßÓÔ8ÅäÀÀ«,HãÄRMAJORZ
-CODE_SMELL
-vsquid:S2095Ü	"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(çŞÚ;HäÄRBLOCKERZBUG
-squid:S00117â"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À²§ùùÿÿÿÿ8ÅäÀÀ«,HåÄRMINORZ
-CODE_SMELL
-Ysquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHæÄRMINORZVULNERABILITY
-xsquid:S1192"FDefine a constant instead of duplicating this literal "Wheat" 3 times.(óÆÛŒHçÄRCRITICALZ
-CODE_SMELL
-‡squid:S2293¿"YReplace the type specification in this constructor call with the diamond operator ("<>").(Üîà@HèÄRMINORZ
-CODE_SMELL
-squid:S2293«"YReplace the type specification in this constructor call with the diamond operator ("<>").(½áØÔùÿÿÿÿHéÄRMINORZ
-CODE_SMELL
-asquid:S1148à"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HêÄRMINORZVULNERABILITY
-xsquid:S1192Œ"FDefine a constant instead of duplicating this literal "Pulse" 3 times.(ø‰ğ™HëÄRCRITICALZ
-CODE_SMELL
-l
-squid:S106“"9Replace this use of System.out or System.err by a logger.(ìÑÑÈÿÿÿÿÿHìÄRMAJORZ
-CODE_SMELL
-g
-squid:S106æ"9Replace this use of System.out or System.err by a logger.(µ¤¶±HíÄRMAJORZ
-CODE_SMELL
-asquid:S1148Ü"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HîÄRMINORZVULNERABILITY
-usquid:S1075´"ARefactor your code to get this URI from a customizable parameter.(¿¾ú²ÿÿÿÿÿHïÄRMINORZ
-CODE_SMELL
-Xsquid:S1659»""Declare "date" on a separate line.(ÈËª8ÅäÀÀ«,HğÄRMINORZ
-CODE_SMELL
-squid:S2293‡"YReplace the type specification in this constructor call with the diamond operator ("<>").(·Çœ×8ÅäÀÀ«,HñÄRMINORZ
-CODE_SMELL
-Wsquid:S1125»"(Remove the literal "true" boolean value.(ùìëÈHòÄRMINORZ
-CODE_SMELL
-gsquid:S1197ğ"8Move the array designator from the variable to the type.(µĞ€HóÄRMINORZ
-CODE_SMELL
-ssquid:S1197”"8Move the array designator from the variable to the type.(ã·ğãùÿÿÿÿ8ÅäÀÀ«,HôÄRMINORZ
-CODE_SMELL
-Ysquid:S1148C"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHõÄRMINORZVULNERABILITY
-gsquid:S1197É"8Move the array designator from the variable to the type.(ñ…ÒÒHöÄRMINORZ
-CODE_SMELL
-asquid:S1148¬"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,H÷ÄRMINORZVULNERABILITY
-rsquid:S2095÷"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ÿ“°¢HøÄRBLOCKERZBUG
-Wsquid:S1659Ù"#Declare "temp3" on a separate line.(ÂéùÙúÿÿÿÿHùÄRMINORZ
-CODE_SMELL
-asquid:S1148ˆ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HúÄRMINORZVULNERABILITY
-l
-squid:S106¡"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿHûÄRMAJORZ
-CODE_SMELL
-ssquid:S1197–"8Move the array designator from the variable to the type.(«ƒõúÿÿÿÿ8ÅäÀÀ«,HüÄRMINORZ
-CODE_SMELL
-l
-squid:S106í"9Replace this use of System.out or System.err by a logger.(ìÑÑÈÿÿÿÿÿHıÄRMAJORZ
-CODE_SMELL
-squid:S2293œ"YReplace the type specification in this constructor call with the diamond operator ("<>").(·ÓêöşÿÿÿÿHşÄRMINORZ
-CODE_SMELL
-„squid:S3776æ"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(ï¬ÊåHÿÄRCRITICALZ
-CODE_SMELL
-Ysquid:S1148p"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH€ÅRMINORZVULNERABILITY
-ˆsquid:S2293 	"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸¸ñ‰HÅRMINORZ
-CODE_SMELL
-lsquid:S1197Š	"8Move the array designator from the variable to the type.( ‡ÂıÿÿÿÿH‚ÅRMINORZ
-CODE_SMELL
-asquid:S1148Š"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HƒÅRMINORZVULNERABILITY
-lsquid:S1197÷"8Move the array designator from the variable to the type.(Çµ³üÿÿÿÿH„ÅRMINORZ
-CODE_SMELL
-Usquid:S1659"!Declare "mid" on a separate line.(¶öªßûÿÿÿÿH…ÅRMINORZ
-CODE_SMELL
-lsquid:S1197Ä"8Move the array designator from the variable to the type.(ÎÙçâüÿÿÿÿH†ÅRMINORZ
-CODE_SMELL
-Wsquid:S1659Ù"#Declare "temp2" on a separate line.(ÂéùÙúÿÿÿÿH‡ÅRMINORZ
-CODE_SMELL
-Ysquid:S1148a"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHˆÅRMINORZVULNERABILITY
-Ksquid:S1643×"Use a StringBuilder instead.(¯›îãH‰ÅRMINORZ
-CODE_SMELL
-l
-squid:S106æ"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿHŠÅRMAJORZ
-CODE_SMELL
-Zsquid:S1659»"$Declare "mobile" on a separate line.(ÈËª8ÅäÀÀ«,H‹ÅRMINORZ
-CODE_SMELL
-l
-squid:S106Ÿ"9Replace this use of System.out or System.err by a logger.(İÊ¦¥øÿÿÿÿHŒÅRMAJORZ
-CODE_SMELL
-Ksquid:S1643Ø"Use a StringBuilder instead.( ªéÂHÅRMINORZ
-CODE_SMELL
-g
-squid:S106"9Replace this use of System.out or System.err by a logger.(²ªŠÍHÅRMAJORZ
-CODE_SMELL
-s
-squid:S106­"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ÅäÀÀ«,HÅRMAJORZ
-CODE_SMELL
-l
-squid:S106£"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿHÅRMAJORZ
-CODE_SMELL
-Ysquid:S11484"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH‘ÅRMINORZVULNERABILITY
-nsquid:S1197ï"8Move the array designator from the variable to the type.(ØıÍ8ÅäÀÀ«,H’ÅRMINORZ
-CODE_SMELL
-Wsquid:S1659"#Declare "pulse" on a separate line.(ÌàêçüÿÿÿÿH“ÅRMINORZ
-CODE_SMELL
-l
-squid:S106±"9Replace this use of System.out or System.err by a logger.(ÉŒÎêøÿÿÿÿH”ÅRMAJORZ
-CODE_SMELL
-‰squid:S3776§"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(ÇíàœùÿÿÿÿH•ÅRCRITICALZ
-CODE_SMELL
-l
-squid:S106ë"9Replace this use of System.out or System.err by a logger.(ö¯åÇşÿÿÿÿH–ÅRMAJORZ
-CODE_SMELL
-”squid:S2293™"YReplace the type specification in this constructor call with the diamond operator ("<>").(§ãÈ×ûÿÿÿÿ8ÅäÀÀ«,H—ÅRMINORZ
-CODE_SMELL
-xsquid:S1192¦"FDefine a constant instead of duplicating this literal "Total" 3 times.(ÃóÎøH˜ÅRCRITICALZ
-CODE_SMELL
-squid:S2147Š"FCombine this catch with the one at line 2050, which has the same body.(É˜Ùúÿÿÿÿ8ÅäÀÀ«,H™ÅRMINORZ
-CODE_SMELL
-l
-squid:S106÷"9Replace this use of System.out or System.err by a logger.(‘±‘ĞûÿÿÿÿHšÅRMAJORZ
-CODE_SMELL
-l
-squid:S106ã"9Replace this use of System.out or System.err by a logger.(¯›çüÿÿÿÿH›ÅRMAJORZ
-CODE_SMELL
-n
-squid:S106­"9Replace this use of System.out or System.err by a logger.(Ì­Ä€8ÅäÀÀ«,HœÅRMAJORZ
-CODE_SMELL
-_squid:S1659—"$Declare "column" on a separate line.(†Æ¼§ÿÿÿÿÿ8ÅäÀÀ«,HÅRMINORZ
-CODE_SMELL
-asquid:S1659—"&Declare "countRow" on a separate line.(†Æ¼§ÿÿÿÿÿ8ÅäÀÀ«,HÅRMINORZ
-CODE_SMELL
-gsquid:S1197®"8Move the array designator from the variable to the type.(ä‚ˆÔHŸÅRMINORZ
-CODE_SMELL
-Tsquid:S1659¢	"%Declare "string2" on a separate line.(àº×œH ÅRMINORZ
-CODE_SMELL
-nsquid:S1197–"8Move the array designator from the variable to the type.(•‰†Œ8ÅäÀÀ«,H¡ÅRMINORZ
-CODE_SMELL
-gsquid:S1197È"8Move the array designator from the variable to the type.(ò­‰H¢ÅRMINORZ
-CODE_SMELL
-Psquid:S1659§"!Declare "mid" on a separate line.(éèôÌH£ÅRMINORZ
-CODE_SMELL
-hsquid:S2093ı"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿ8ÅäÀÀ«,H¤ÅRCRITICALZ
-CODE_SMELL
-g
-squid:S106‘"9Replace this use of System.out or System.err by a logger.(¹ĞÿÚH¥ÅRMAJORZ
-CODE_SMELL
-squid:S00117ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°èÚüøÿÿÿÿ8ÅäÀÀ«,H¦ÅRMINORZ
-CODE_SMELL
-lsquid:S1197"8Move the array designator from the variable to the type.(ŸàÜãÿÿÿÿÿH§ÅRMINORZ
-CODE_SMELL
-squid:S1488’"_Immediately return this expression instead of assigning it to the temporary variable "payment".(ëç¼øH¨ÅRMINORZ
-CODE_SMELL
-fsquid:S1197÷"8Move the array designator from the variable to the type.( ªªkH©ÅRMINORZ
-CODE_SMELL
-squid:S3776”"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(ã·ğãùÿÿÿÿ8ÅäÀÀ«,HªÅRCRITICALZ
-CODE_SMELL
-asquid:S1148ä"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,H«ÅRMINORZVULNERABILITY
-lsquid:S1197"8Move the array designator from the variable to the type.(ĞéÄÇúÿÿÿÿH¬ÅRMINORZ
-CODE_SMELL
-hsquid:S2093Ì"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿ8ÅäÀÀ«,H­ÅRCRITICALZ
-CODE_SMELL
-rsquid:S2095¸"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ÿæëªH®ÅRBLOCKERZBUG
-^squid:S1659›"#Declare "temp2" on a separate line.(ßĞÊòúÿÿÿÿ8ÅäÀÀ«,H¯ÅRMINORZ
-CODE_SMELL
-s
-squid:S106Ğ"9Replace this use of System.out or System.err by a logger.(‘‘ğüÿÿÿÿ8ÅäÀÀ«,H°ÅRMAJORZ
-CODE_SMELL
-psquid:S1126«"AReplace this if-then-else statement by a single return statement.(ìÃØ’H±ÅRMINORZ
+Ksquid:S1643×"Use a StringBuilder instead.(¯›îãH´ÔRMINORZ
 CODE_SMELL
 „squid:S3776
-"RRefactor this method to reduce its Cognitive Complexity from 79 to the 15 allowed.(ãåóŸH²ÅRCRITICALZ
+"RRefactor this method to reduce its Cognitive Complexity from 79 to the 15 allowed.(ãåóŸHµÔRCRITICALZ
 CODE_SMELL
-|squid:S2147Ş"FCombine this catch with the one at line 2138, which has the same body.(Î¿À¿8ÅäÀÀ«,H³ÅRMINORZ
+asquid:S1148¾"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,H¶ÔRMINORZVULNERABILITY
+hsquid:S2093ı"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿ8ÅäÀÀ«,H·ÔRCRITICALZ
 CODE_SMELL
-\squid:S1659»"&Declare "lastName" on a separate line.(ÈËª8ÅäÀÀ«,H´ÅRMINORZ
+Wsquid:S1659"#Declare "wheat" on a separate line.(ÌàêçüÿÿÿÿH¸ÔRMINORZ
+CODE_SMELL
+—squid:S4165"cRemove this useless assignment; "array" already holds the assigned value along all execution paths.(”Š¼ÏøÿÿÿÿH¹ÔRMAJORZ
+CODE_SMELL
+squid:S2147Š"FCombine this catch with the one at line 2050, which has the same body.(É˜Ùúÿÿÿÿ8ÅäÀÀ«,HºÔRMINORZ
+CODE_SMELL
+asquid:S1148¬"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,H»ÔRMINORZVULNERABILITY
+}squid:S1192¥"FDefine a constant instead of duplicating this literal "Price" 4 times.(ŞòáøùÿÿÿÿH¼ÔRCRITICALZ
 CODE_SMELL
 l
-squid:S106™"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿHµÅRMAJORZ
+squid:S106é"9Replace this use of System.out or System.err by a logger.(èúËğşÿÿÿÿH½ÔRMAJORZ
+CODE_SMELL
+squid:S2293«"YReplace the type specification in this constructor call with the diamond operator ("<>").(½áØÔùÿÿÿÿH¾ÔRMINORZ
+CODE_SMELL
+Vsquid:S1659“
+""Declare "date" on a separate line.(ØèºüÿÿÿÿH¿ÔRMINORZ
+CODE_SMELL
+ˆsquid:S2293	"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÿ¯È÷HÀÔRMINORZ
+CODE_SMELL
+‰squid:S3776§"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(ÇíàœùÿÿÿÿHÁÔRCRITICALZ
+CODE_SMELL
+bsquid:S1659ò"'Declare "count_row" on a separate line.(°èÚüøÿÿÿÿ8ÅäÀÀ«,HÂÔRMINORZ
+CODE_SMELL
+gsquid:S1197Û"8Move the array designator from the variable to the type.(ĞÂôòHÃÔRMINORZ
+CODE_SMELL
+gsquid:S1197ğ"8Move the array designator from the variable to the type.(µĞ€HÄÔRMINORZ
+CODE_SMELL
+ˆsquid:S2293¡	"YReplace the type specification in this constructor call with the diamond operator ("<>").(‰ÜÑŞHÅÔRMINORZ
+CODE_SMELL
+—squid:S4165ò"hRemove this useless assignment; "charArray2" already holds the assigned value along all execution paths.(Õ·„¢HÆÔRMAJORZ
+CODE_SMELL
+lsquid:S1197Š	"8Move the array designator from the variable to the type.( ‡ÂıÿÿÿÿHÇÔRMINORZ
+CODE_SMELL
+gsquid:S1197’
+"8Move the array designator from the variable to the type.(ıµúHÈÔRMINORZ
+CODE_SMELL
+gsquid:S1197É"8Move the array designator from the variable to the type.(ñ…ÒÒHÉÔRMINORZ
+CODE_SMELL
+ssquid:S1197–"8Move the array designator from the variable to the type.(«ƒõúÿÿÿÿ8ÅäÀÀ«,HÊÔRMINORZ
+CODE_SMELL
+Ssquid:S1659"Declare "c" on a separate line.(„û ”ùÿÿÿÿHËÔRMINORZ
+CODE_SMELL
+„squid:S3776×"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(¦şçªHÌÔRCRITICALZ
+CODE_SMELL
+Ysquid:S1148R"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÍÔRMINORZVULNERABILITY
+^squid:S1066ˆ"/Merge this if statement with the enclosing one.(ûïÌÄHÎÔRMAJORZ
+CODE_SMELL
+asquid:S1148à"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HÏÔRMINORZVULNERABILITY
+fsquid:S1197÷"8Move the array designator from the variable to the type.( ªªkHĞÔRMINORZ
+CODE_SMELL
+g
+squid:S106è"9Replace this use of System.out or System.err by a logger.(ĞÌûıHÑÔRMAJORZ
+CODE_SMELL
+gsquid:S1197Ú"8Move the array designator from the variable to the type.(ğ½Á¹HÒÔRMINORZ
 CODE_SMELL
 l
-squid:S106»"9Replace this use of System.out or System.err by a logger.(í ÂõøÿÿÿÿH¶ÅRMAJORZ
+squid:S106÷"9Replace this use of System.out or System.err by a logger.(‘±‘ĞûÿÿÿÿHÓÔRMAJORZ
+CODE_SMELL
+Zsquid:S1148é	"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÔÔRMINORZVULNERABILITY
+Vsquid:S1659""Declare "last" on a separate line.(¶öªßûÿÿÿÿHÕÔRMINORZ
+CODE_SMELL
+rsquid:S2095÷"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ÿ“°¢HÖÔRBLOCKERZBUG
+g
+squid:S106æ"9Replace this use of System.out or System.err by a logger.(µ¤¶±H×ÔRMAJORZ
+CODE_SMELL
+l
+squid:S106Š"9Replace this use of System.out or System.err by a logger.(øË¯íûÿÿÿÿHØÔRMAJORZ
+CODE_SMELL
+Ysquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÙÔRMINORZVULNERABILITY
+l
+squid:S106²"9Replace this use of System.out or System.err by a logger.(ß¶ßƒüÿÿÿÿHÚÔRMAJORZ
+CODE_SMELL
+gsquid:S1197Ø	"8Move the array designator from the variable to the type.(¹•ß‡HÛÔRMINORZ
+CODE_SMELL
+nsquid:S1197ï"8Move the array designator from the variable to the type.(ØıÍ8ÅäÀÀ«,HÜÔRMINORZ
+CODE_SMELL
+xsquid:S1192"FDefine a constant instead of duplicating this literal "Wheat" 3 times.(óÆÛŒHİÔRCRITICALZ
+CODE_SMELL
+ˆsquid:S2293±"YReplace the type specification in this constructor call with the diamond operator ("<>").(‚ôÆ¿HŞÔRMINORZ
+CODE_SMELL
+asquid:S2093õ"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿHßÔRCRITICALZ
+CODE_SMELL
+ˆsquid:S1488‹"YImmediately return this expression instead of assigning it to the temporary variable "w".(¶ƒˆ¨HàÔRMINORZ
+CODE_SMELL
+fsquid:S1197·"8Move the array designator from the variable to the type.(şËóvHáÔRMINORZ
+CODE_SMELL
+psquid:S1126«"AReplace this if-then-else statement by a single return statement.(ìÃØ’HâÔRMINORZ
+CODE_SMELL
+ssquid:S1197›"8Move the array designator from the variable to the type.(ßĞÊòúÿÿÿÿ8ÅäÀÀ«,HãÔRMINORZ
+CODE_SMELL
+Wsquid:S1125»"(Remove the literal "true" boolean value.(ùìëÈHäÔRMINORZ
+CODE_SMELL
+gsquid:S1197®"8Move the array designator from the variable to the type.(ä‚ˆÔHåÔRMINORZ
+CODE_SMELL
+Psquid:S1643¹	"Use a StringBuilder instead.(åÆÀ£úÿÿÿÿHæÔRMINORZ
+CODE_SMELL
+\squid:S1659»"&Declare "lastName" on a separate line.(ÈËª8ÅäÀÀ«,HçÔRMINORZ
+CODE_SMELL
+Usquid:S1659º"!Declare "mid" on a separate line.(¶öªßûÿÿÿÿHèÔRMINORZ
+CODE_SMELL
+Wsquid:S1659Ù"#Declare "temp1" on a separate line.(ÂéùÙúÿÿÿÿHéÔRMINORZ
+CODE_SMELL
+ysquid:S2095ÿ"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ÿæëª8ÅäÀÀ«,HêÔRBLOCKERZBUG
+Wsquid:S1659Ù"#Declare "temp3" on a separate line.(ÂéùÙúÿÿÿÿHëÔRMINORZ
+CODE_SMELL
+”squid:S2293™"YReplace the type specification in this constructor call with the diamond operator ("<>").(§ãÈ×ûÿÿÿÿ8ÅäÀÀ«,HìÔRMINORZ
+CODE_SMELL
+[squid:S1659ò"'Declare "randomCol" on a separate line.(é¡ğ†ûÿÿÿÿHíÔRMINORZ
+CODE_SMELL
+ssquid:S1197”"8Move the array designator from the variable to the type.(ã·ğãùÿÿÿÿ8ÅäÀÀ«,HîÔRMINORZ
+CODE_SMELL
+Vsquid:S1659""Declare "rice" on a separate line.(ÌàêçüÿÿÿÿHïÔRMINORZ
+CODE_SMELL
+l
+squid:S106í"9Replace this use of System.out or System.err by a logger.(ìÑÑÈÿÿÿÿÿHğÔRMAJORZ
+CODE_SMELL
+Qsquid:S1659Æ"#Declare "count" on a separate line.(º´Ó&HñÔRMINORZ
+CODE_SMELL
+Qsquid:S1643¤"Use a StringBuilder instead.(“§ù'8ÄäÀÀ«,HòÔRMINORZ
+CODE_SMELL
+gsquid:S1197Á"8Move the array designator from the variable to the type.(õ›ÔHóÔRMINORZ
+CODE_SMELL
+l
+squid:S106¥"9Replace this use of System.out or System.err by a logger.(ÖÙÕÎøÿÿÿÿHôÔRMAJORZ
+CODE_SMELL
+Ysquid:S1148C"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHõÔRMINORZVULNERABILITY
+g
+squid:S106–"9Replace this use of System.out or System.err by a logger.(¥µ¤ßHöÔRMAJORZ
+CODE_SMELL
+nsquid:S1197ï"8Move the array designator from the variable to the type.(ØıÍ8ÅäÀÀ«,H÷ÔRMINORZ
+CODE_SMELL
+[squid:S1659À"'Declare "intNumber" on a separate line.(¤²õùÿÿÿÿHøÔRMINORZ
+CODE_SMELL
+„squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(çúÔöHùÔRCRITICALZ
+CODE_SMELL
+squid:S1488ö"`Immediately return this expression instead of assigning it to the temporary variable "distance".(ÛâHúÔRMINORZ
+CODE_SMELL
+g
+squid:S106Ş"9Replace this use of System.out or System.err by a logger.(Ë–”èHûÔRMAJORZ
+CODE_SMELL
+l
+squid:S106»"9Replace this use of System.out or System.err by a logger.(í ÂõøÿÿÿÿHüÔRMAJORZ
+CODE_SMELL
+l
+squid:S106Í	"9Replace this use of System.out or System.err by a logger.(çÉºûûÿÿÿÿHıÔRMAJORZ
+CODE_SMELL
+l
+squid:S106Ÿ"9Replace this use of System.out or System.err by a logger.(İÊ¦¥øÿÿÿÿHşÔRMAJORZ
+CODE_SMELL
+Zsquid:S1148ƒ
+"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÿÔRMINORZVULNERABILITY
+Vsquid:S1659Æ""Declare "lose" on a separate line.(¤„§øÿÿÿÿH€ÕRMINORZ
+CODE_SMELL
+l
+squid:S106õ"9Replace this use of System.out or System.err by a logger.(Ã”…ªûÿÿÿÿHÕRMAJORZ
+CODE_SMELL
+asquid:S1659—"&Declare "countRow" on a separate line.(†Æ¼§ÿÿÿÿÿ8ÅäÀÀ«,H‚ÕRMINORZ
+CODE_SMELL
+usquid:S2259¤"HA "NullPointerException" could be thrown; "jsonObject" is nullable here.(öÆ“øÿÿÿÿHƒÕRMAJORZBUG
+g
+squid:S106Ç"9Replace this use of System.out or System.err by a logger.(ÇĞŸˆH„ÕRMAJORZ
+CODE_SMELL
+Vsquid:S1659º""Declare "last" on a separate line.(¶öªßûÿÿÿÿH…ÕRMINORZ
+CODE_SMELL
+lsquid:S1197—"8Move the array designator from the variable to the type.(…Ó¤İÿÿÿÿÿH†ÕRMINORZ
+CODE_SMELL
+lsquid:S1197”"8Move the array designator from the variable to the type.(ã·ğãùÿÿÿÿH‡ÕRMINORZ
+CODE_SMELL
+ˆsquid:S2293 	"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸¸ñ‰HˆÕRMINORZ
+CODE_SMELL
+Wsquid:S1659à"(Declare "stockValue" on a separate line.(ë—ÑÄH‰ÕRMINORZ
+CODE_SMELL
+Wsquid:S1659„"(Declare "nFactorial" on a separate line.(‰¢òÖHŠÕRMINORZ
+CODE_SMELL
+|squid:S2147†"FCombine this catch with the one at line 2050, which has the same body.(Î¿À¿8ÅäÀÀ«,H‹ÕRMINORZ
+CODE_SMELL
+lsquid:S1197Æ"8Move the array designator from the variable to the type.(÷çñßıÿÿÿÿHŒÕRMINORZ
+CODE_SMELL
+squid:S4165ù"hRemove this useless assignment; "jsonObject" already holds the assigned value along all execution paths.(ùÊĞ“8ÅäÀÀ«,HÕRMAJORZ
+CODE_SMELL
+squid:S2147®"FCombine this catch with the one at line 2090, which has the same body.(É˜Ùúÿÿÿÿ8ÅäÀÀ«,HÕRMINORZ
+CODE_SMELL
+squid:S00117â"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À²§ùùÿÿÿÿ8ÅäÀÀ«,HÕRMINORZ
+CODE_SMELL
+Ysquid:S11484"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÕRMINORZVULNERABILITY
+”squid:S2293ó"YReplace the type specification in this constructor call with the diamond operator ("<>").(½áØÔùÿÿÿÿ8ÅäÀÀ«,H‘ÕRMINORZ
 CODE_SMELL
 n
-squid:S106¦"9Replace this use of System.out or System.err by a logger.(ßáÅ¬8ÅäÀÀ«,H·ÅRMAJORZ
+squid:S106Ë"9Replace this use of System.out or System.err by a logger.(™ªÎ¬8ÅäÀÀ«,H’ÕRMAJORZ
 CODE_SMELL
-ksquid:S2583«"CChange this condition so that it does not always evaluate to "true"(ìÃØ’H¸ÅRMAJORZBUG
-Ksquid:S1643Ş"Use a StringBuilder instead.(œœÿßH¹ÅRMINORZ
+vsquid:S2095Ü	"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(çŞÚ;H“ÕRBLOCKERZBUG
+lsquid:S1197ı"8Move the array designator from the variable to the type.(‹ı¿àùÿÿÿÿH”ÕRMINORZ
+CODE_SMELL
+nsquid:S1197–"8Move the array designator from the variable to the type.(•‰†Œ8ÅäÀÀ«,H•ÕRMINORZ
+CODE_SMELL
+gsquid:S1197á"8Move the array designator from the variable to the type.(“—î¥H–ÕRMINORZ
+CODE_SMELL
+rsquid:S2095¸"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ÿæëªH—ÕRBLOCKERZBUG
+l
+squid:S106²	"9Replace this use of System.out or System.err by a logger.(¦üû“şÿÿÿÿH˜ÕRMAJORZ
+CODE_SMELL
+Tsquid:S1659¢	"%Declare "string2" on a separate line.(àº×œH™ÕRMINORZ
+CODE_SMELL
+asquid:S1148™"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HšÕRMINORZVULNERABILITY
+Zsquid:S1148˜"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH›ÕRMINORZVULNERABILITY
+lsquid:S1197÷"8Move the array designator from the variable to the type.(Çµ³üÿÿÿÿHœÕRMINORZ
+CODE_SMELL
+asquid:S1148„"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HÕRMINORZVULNERABILITY
+asquid:S1148Ü"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HÕRMINORZVULNERABILITY
+Wsquid:S1125»	"(Remove the literal "true" boolean value.(ÔĞ–×HŸÕRMINORZ
+CODE_SMELL
+Zsquid:S1148Ã"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH ÕRMINORZVULNERABILITY
+usquid:S1126¿"AReplace this if-then-else statement by a single return statement.(ù™«™şÿÿÿÿH¡ÕRMINORZ
+CODE_SMELL
+Psquid:S1643ß	"Use a StringBuilder instead.(ˆß½ÑıÿÿÿÿH¢ÕRMINORZ
+CODE_SMELL
+Wsquid:S1659Ù"#Declare "temp2" on a separate line.(ÂéùÙúÿÿÿÿH£ÕRMINORZ
+CODE_SMELL
+asquid:S1148ˆ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,H¤ÕRMINORZVULNERABILITY
+Usquid:S1659"!Declare "mid" on a separate line.(¶öªßûÿÿÿÿH¥ÕRMINORZ
+CODE_SMELL
+lsquid:S1197ò	"8Move the array designator from the variable to the type.(¦Ã£şÿÿÿÿH¦ÕRMINORZ
+CODE_SMELL
+Wsquid:S1659"#Declare "pulse" on a separate line.(ÌàêçüÿÿÿÿH§ÕRMINORZ
+CODE_SMELL
+nsquid:S1197ï"8Move the array designator from the variable to the type.(ØıÍ8ÅäÀÀ«,H¨ÕRMINORZ
+CODE_SMELL
+asquid:S1148–"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,H©ÕRMINORZVULNERABILITY
+squid:S1192Ã"RDefine a constant instead of duplicating this literal "Please try again." 3 times.(‘‘ğüÿÿÿÿ8ÅäÀÀ«,HªÕRCRITICALZ
 CODE_SMELL
 l
-squid:S106í"9Replace this use of System.out or System.err by a logger.(øíœ™ıÿÿÿÿHºÅRMAJORZ
+squid:S106æ"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿH«ÕRMAJORZ
+CODE_SMELL
+n
+squid:S106¦"9Replace this use of System.out or System.err by a logger.(ßáÅ¬8ÅäÀÀ«,H¬ÕRMAJORZ
+CODE_SMELL
+n
+squid:S106®"9Replace this use of System.out or System.err by a logger.(î  ¦8ÅäÀÀ«,H­ÕRMAJORZ
 CODE_SMELL
 l
-squid:S106¥"9Replace this use of System.out or System.err by a logger.(ÖÙÕÎøÿÿÿÿH»ÅRMAJORZ
+squid:S106ë"9Replace this use of System.out or System.err by a logger.(ö¯åÇşÿÿÿÿH®ÕRMAJORZ
 CODE_SMELL
-Zsquid:S1148Ã"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH¼ÅRMINORZVULNERABILITY
-g
-squid:S106ş	"9Replace this use of System.out or System.err by a logger.(ğ€ŒH½ÅRMAJORZ
+Zsquid:S1659»"$Declare "mobile" on a separate line.(ÈËª8ÅäÀÀ«,H¯ÕRMINORZ
 CODE_SMELL
-Usquid:S1168 "&Return an empty array instead of null.(¥¹ïH¾ÅRMAJORZ
-CODE_SMELL
-Vsquid:S1659Æ""Declare "lose" on a separate line.(¤„§øÿÿÿÿH¿ÅRMINORZ
-CODE_SMELL
-Usquid:S1659º"!Declare "mid" on a separate line.(¶öªßûÿÿÿÿHÀÅRMINORZ
-CODE_SMELL
-ˆsquid:S2293±"YReplace the type specification in this constructor call with the diamond operator ("<>").(‚ôÆ¿HÁÅRMINORZ
-CODE_SMELL
-l
-squid:S106ª	"9Replace this use of System.out or System.err by a logger.(Å®±ÛúÿÿÿÿHÂÅRMAJORZ
-CODE_SMELL
-l
-squid:S106Í	"9Replace this use of System.out or System.err by a logger.(çÉºûûÿÿÿÿHÃÅRMAJORZ
-CODE_SMELL
-ˆsquid:S2293Å"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØŠ˜çHÄÅRMINORZ
-CODE_SMELL
-ˆsquid:S2293¡	"YReplace the type specification in this constructor call with the diamond operator ("<>").(‰ÜÑŞHÅÅRMINORZ
-CODE_SMELL
-lsquid:S1197‰	"8Move the array designator from the variable to the type.(ƒÊ±øÿÿÿÿHÆÅRMINORZ
-CODE_SMELL
-squid:CommentedOutCodeLine¹"<This block of commented-out lines of code should be removed.(»€ßøÿÿÿÿHÇÅRMAJORZ
-CODE_SMELL
-g
-squid:S106Š"9Replace this use of System.out or System.err by a logger.(ıËâäHÈÅRMAJORZ
-CODE_SMELL
-asquid:S1148™"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HÉÅRMINORZVULNERABILITY
-gsquid:S1197Ø	"8Move the array designator from the variable to the type.(¹•ß‡HÊÅRMINORZ
-CODE_SMELL
-Vsquid:S1659""Declare "last" on a separate line.(¶öªßûÿÿÿÿHËÅRMINORZ
-CODE_SMELL
-ˆsquid:S2293Å"YReplace the type specification in this constructor call with the diamond operator ("<>").(É„Ë¾HÌÅRMINORZ
-CODE_SMELL
-Vsquid:S1659Õ""Declare "num2" on a separate line.(´ôØ·ûÿÿÿÿHÍÅRMINORZ
-CODE_SMELL
-l
-squid:S106ã"9Replace this use of System.out or System.err by a logger.(Êù‡¸ÿÿÿÿÿHÎÅRMAJORZ
+squid:S2147†"FCombine this catch with the one at line 2178, which has the same body.(É˜Ùúÿÿÿÿ8ÅäÀÀ«,H°ÕRMINORZ
 CODE_SMELL
 s
-squid:S106Ã"9Replace this use of System.out or System.err by a logger.(‘‘ğüÿÿÿÿ8ÅäÀÀ«,HÏÅRMAJORZ
+squid:S106­"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ÅäÀÀ«,H±ÕRMAJORZ
 CODE_SMELL
-}squid:S2095ù	"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(õ·°âûÿÿÿÿHĞÅRBLOCKERZBUG
-lsquid:S1197ò	"8Move the array designator from the variable to the type.(¦Ã£şÿÿÿÿHÑÅRMINORZ
+„squid:S3776œ	"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ó»ØH²ÕRCRITICALZ
 CODE_SMELL
-n
-squid:S106®"9Replace this use of System.out or System.err by a logger.(î  ¦8ÅäÀÀ«,HÒÅRMAJORZ
+g
+squid:S106‘"9Replace this use of System.out or System.err by a logger.(¹ĞÿÚH³ÕRMAJORZ
 CODE_SMELL
-bsquid:S1659ò"'Declare "count_row" on a separate line.(°èÚüøÿÿÿÿ8ÅäÀÀ«,HÓÅRMINORZ
+g
+squid:S106â"9Replace this use of System.out or System.err by a logger.(²˜ä‡H´ÕRMAJORZ
 CODE_SMELL
-asquid:S2093¶"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿHÔÅRCRITICALZ
+csquid:S1066”"/Merge this if statement with the enclosing one.(ì¦áûÿÿÿÿHµÕRMAJORZ
 CODE_SMELL
-n
-squid:S106Ø"9Replace this use of System.out or System.err by a logger.(¶ëõ8ÅäÀÀ«,HÕÅRMAJORZ
+g
+squid:S106ì"9Replace this use of System.out or System.err by a logger.(Ã©‚ƒH¶ÕRMAJORZ
 CODE_SMELL
-Zsquid:S1148å	"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÖÅRMINORZVULNERABILITY
-Zsquid:S1148ü"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH×ÅRMINORZVULNERABILITY
 l
-squid:S106ï"9Replace this use of System.out or System.err by a logger.(Æøë¹ûÿÿÿÿHØÅRMAJORZ
+squid:S106õ"9Replace this use of System.out or System.err by a logger.(ûÏ››ûÿÿÿÿH·ÕRMAJORZ
 CODE_SMELL
-rsquid:S2095…"HUse try-with-resources or close this "FileReader" in a "finally" clause.(Øœ£şHÙÅRBLOCKERZBUG
-Vsquid:S1659º""Declare "last" on a separate line.(¶öªßûÿÿÿÿHÚÅRMINORZ
+‰squid:S3776ı"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(‹ı¿àùÿÿÿÿH¸ÕRCRITICALZ
 CODE_SMELL
-ˆsquid:S1488‹"YImmediately return this expression instead of assigning it to the temporary variable "w".(¶ƒˆ¨HÛÅRMINORZ
-CODE_SMELL
-asquid:S1148ñ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HÜÅRMINORZVULNERABILITY
+ysquid:S2095§"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ÿæëª8ÅäÀÀ«,H¹ÕRBLOCKERZBUG
 l
-squid:S106ó"9Replace this use of System.out or System.err by a logger.(©¬èùÿÿÿÿHİÅRMAJORZ
+squid:S106ª	"9Replace this use of System.out or System.err by a logger.(Å®±ÛúÿÿÿÿHºÕRMAJORZ
 CODE_SMELL
-—squid:S4165ò"hRemove this useless assignment; "charArray2" already holds the assigned value along all execution paths.(Õ·„¢HŞÅRMAJORZ
-CODE_SMELL
-g
-squid:S106–"9Replace this use of System.out or System.err by a logger.(¥µ¤ßHßÅRMAJORZ
-CODE_SMELL
-nsquid:S1197ï"8Move the array designator from the variable to the type.(ØıÍ8ÅäÀÀ«,HàÅRMINORZ
-CODE_SMELL
-asquid:S1148–"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HáÅRMINORZVULNERABILITY
-squid:S1488ö"`Immediately return this expression instead of assigning it to the temporary variable "distance".(ÛâHâÅRMINORZ
-CODE_SMELL
-csquid:S1066”"/Merge this if statement with the enclosing one.(ì¦áûÿÿÿÿHãÅRMAJORZ
-CODE_SMELL
-Qsquid:S1643¤"Use a StringBuilder instead.(“§ù'8ÄäÀÀ«,HäÅRMINORZ
-CODE_SMELL
-fsquid:S1197·"8Move the array designator from the variable to the type.(şËóvHåÅRMINORZ
-CODE_SMELL
-ssquid:S1197¯"8Move the array designator from the variable to the type.(—õ£±ùÿÿÿÿ8ÅäÀÀ«,HæÅRMINORZ
-CODE_SMELL
-^squid:S1066ˆ"/Merge this if statement with the enclosing one.(ûïÌÄHçÅRMAJORZ
-CODE_SMELL
-[squid:S1659ò"'Declare "randomCol" on a separate line.(é¡ğ†ûÿÿÿÿHèÅRMINORZ
-CODE_SMELL
-—squid:S4165"cRemove this useless assignment; "array" already holds the assigned value along all execution paths.(”Š¼ÏøÿÿÿÿHéÅRMAJORZ
+gsquid:S1197È"8Move the array designator from the variable to the type.(ò­‰H»ÕRMINORZ
 CODE_SMELL
 g
-squid:S106¸"9Replace this use of System.out or System.err by a logger.(òí¡èHêÅRMAJORZ
+squid:S106ã"9Replace this use of System.out or System.err by a logger.(ƒıŒºH¼ÕRMAJORZ
 CODE_SMELL
-f
-squid:S106à"9Replace this use of System.out or System.err by a logger.(ÜŸãHëÅRMAJORZ
-CODE_SMELL
-wsquid:S3986á"HMake sure that Week Year "YYYY" is expected here instead of Year "yyyy".(²Ä³†8ÅäÀÀ«,HìÅRMAJORZBUG
-Wsquid:S1659Ù"#Declare "temp1" on a separate line.(ÂéùÙúÿÿÿÿHíÅRMINORZ
-CODE_SMELL
-squid:S2147®"FCombine this catch with the one at line 2090, which has the same body.(É˜Ùúÿÿÿÿ8ÅäÀÀ«,HîÅRMINORZ
-CODE_SMELL
-Zsquid:S1148é	"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHïÅRMINORZVULNERABILITY
 l
-squid:S106é"9Replace this use of System.out or System.err by a logger.(èúËğşÿÿÿÿHğÅRMAJORZ
+squid:S106ï"9Replace this use of System.out or System.err by a logger.(Æøë¹ûÿÿÿÿH½ÕRMAJORZ
 CODE_SMELL
-g
-squid:S106å"9Replace this use of System.out or System.err by a logger.(ş—óşHñÅRMAJORZ
-CODE_SMELL
-Psquid:S1659ï"!Declare "col" on a separate line.(ãÜòœHòÅRMINORZ
-CODE_SMELL
-zsquid:S2147ç	"FCombine this catch with the one at line 1251, which has the same body.(É˜ÙúÿÿÿÿHóÅRMINORZ
-CODE_SMELL
-squid:S4165ù"hRemove this useless assignment; "jsonObject" already holds the assigned value along all execution paths.(ùÊĞ“8ÅäÀÀ«,HôÅRMAJORZ
-CODE_SMELL
-g
-squid:S106è"9Replace this use of System.out or System.err by a logger.(ĞÌûıHõÅRMAJORZ
-CODE_SMELL
-asquid:S1148„"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HöÅRMINORZVULNERABILITY
-vsquid:S2095û	"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(çŞÚ;H÷ÅRBLOCKERZBUG
-Wsquid:S1659à"(Declare "totalValue" on a separate line.(ë—ÑÄHøÅRMINORZ
-CODE_SMELL
-Wsquid:S1659"#Declare "wheat" on a separate line.(ÌàêçüÿÿÿÿHùÅRMINORZ
+Psquid:S1659ï"!Declare "col" on a separate line.(ãÜòœH¾ÕRMINORZ
 CODE_SMELL
 s
-squid:S106«"9Replace this use of System.out or System.err by a logger.(’‘ËÄıÿÿÿÿ8ÅäÀÀ«,HúÅRMAJORZ
+squid:S106İ"9Replace this use of System.out or System.err by a logger.(‘‘ğüÿÿÿÿ8ÅäÀÀ«,H¿ÕRMAJORZ
+CODE_SMELL
+g
+squid:S106Å	"9Replace this use of System.out or System.err by a logger.(¿”ÿ€HÀÕRMAJORZ
+CODE_SMELL
+tsquid:S1854•"9Remove this useless assignment to local variable "count".(÷Ù¶Šùÿÿÿÿ8ÅäÀÀ«,HÁÕRMAJORZ
+CODE_SMELL
+|squid:S2147Ş"FCombine this catch with the one at line 2138, which has the same body.(Î¿À¿8ÅäÀÀ«,HÂÕRMINORZ
+CODE_SMELL
+Usquid:S1168 "&Return an empty array instead of null.(¥¹ïHÃÕRMAJORZ
+CODE_SMELL
+Ksquid:S1643–"Use a StringBuilder instead.(¯åûîHÄÕRMINORZ
+CODE_SMELL
+zsquid:S2147Á"FCombine this catch with the one at line 1725, which has the same body.(É˜ÙúÿÿÿÿHÅÕRMINORZ
+CODE_SMELL
+squid:S2293‡"YReplace the type specification in this constructor call with the diamond operator ("<>").(·Çœ×8ÅäÀÀ«,HÆÕRMINORZ
+CODE_SMELL
+Ksquid:S1643Ø"Use a StringBuilder instead.( ªéÂHÇÕRMINORZ
+CODE_SMELL
+usquid:S1126ú"AReplace this if-then-else statement by a single return statement.(°Ìÿ¤ıÿÿÿÿHÈÕRMINORZ
+CODE_SMELL
+zsquid:S2147ç	"FCombine this catch with the one at line 1251, which has the same body.(É˜ÙúÿÿÿÿHÉÕRMINORZ
+CODE_SMELL
+Vsquid:S1659Õ""Declare "num2" on a separate line.(´ôØ·ûÿÿÿÿHÊÕRMINORZ
+CODE_SMELL
+^squid:S1659›"#Declare "temp2" on a separate line.(ßĞÊòúÿÿÿÿ8ÅäÀÀ«,HËÕRMINORZ
+CODE_SMELL
+squid:S4165Ñ"gRemove this useless assignment; "jsonArray" already holds the assigned value along all execution paths.(ßÓÔ8ÅäÀÀ«,HÌÕRMAJORZ
+CODE_SMELL
+l
+squid:S106“"9Replace this use of System.out or System.err by a logger.(ìÑÑÈÿÿÿÿÿHÍÕRMAJORZ
+CODE_SMELL
+squid:S00117ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°èÚüøÿÿÿÿ8ÅäÀÀ«,HÎÕRMINORZ
+CODE_SMELL
+Qsquid:S1659§""Declare "last" on a separate line.(éèôÌHÏÕRMINORZ
+CODE_SMELL
+gsquid:S1197Ä"8Move the array designator from the variable to the type.(³®ˆ–HĞÕRMINORZ
+CODE_SMELL
+g
+squid:S106"9Replace this use of System.out or System.err by a logger.(²ªŠÍHÑÕRMAJORZ
+CODE_SMELL
+gsquid:S1197™"8Move the array designator from the variable to the type.(¾­‡HÒÕRMINORZ
+CODE_SMELL
+s
+squid:S106«"9Replace this use of System.out or System.err by a logger.(’‘ËÄıÿÿÿÿ8ÅäÀÀ«,HÓÕRMAJORZ
+CODE_SMELL
+_squid:S1659—"$Declare "column" on a separate line.(†Æ¼§ÿÿÿÿÿ8ÅäÀÀ«,HÔÕRMINORZ
+CODE_SMELL
+g
+squid:S106å"9Replace this use of System.out or System.err by a logger.(ş—óşHÕÕRMAJORZ
+CODE_SMELL
+xsquid:S1192Œ"FDefine a constant instead of duplicating this literal "Pulse" 3 times.(ø‰ğ™HÖÕRCRITICALZ
+CODE_SMELL
+squid:S2293Ÿ	"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÑáÜÈùÿÿÿÿH×ÕRMINORZ
+CODE_SMELL
+asquid:S1148°"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÅäÀÀ«,HØÕRMINORZVULNERABILITY
+ˆsquid:S2293Å"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØŠ˜çHÙÕRMINORZ
+CODE_SMELL
+bsquid:S1659Ò".Declare "subArrayInitial2" on a separate line.(§Àç ûÿÿÿÿHÚÕRMINORZ
+CODE_SMELL
+squid:S2293œ"YReplace the type specification in this constructor call with the diamond operator ("<>").(·ÓêöşÿÿÿÿHÛÕRMINORZ
+CODE_SMELL
+Zsquid:S1148Ñ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÜÕRMINORZVULNERABILITY
+—squid:S4165ñ"hRemove this useless assignment; "charArray1" already holds the assigned value along all execution paths.(Û²öHİÕRMAJORZ
+CODE_SMELL
+squid:S2293Î"YReplace the type specification in this constructor call with the diamond operator ("<>").(É¯›±úÿÿÿÿHŞÕRMINORZ
+CODE_SMELL
+l
+squid:S106·"9Replace this use of System.out or System.err by a logger.(ÉŒÎêøÿÿÿÿHßÕRMAJORZ
+CODE_SMELL
+g
+squid:S106Š"9Replace this use of System.out or System.err by a logger.(ıËâäHàÕRMAJORZ
 CODE_SMELL

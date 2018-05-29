@@ -1,8 +1,6 @@
 
-^squid:S1989*"&Add a "try/catch" block for "include".(·ı¹Š8ÏŸı¸·,HÅËRMINORZVULNERABILITY
-^squid:S19890"&Add a "try/catch" block for "include".(·ı¹Š8Ò…ó¸·,HÆËRMINORZVULNERABILITY
-hsquid:S1161":Add the "@Override" annotation above this method signature(»¬£HÇËRMAJORZ
-CODE_SMELL
-^squid:S1989*"&Add a "try/catch" block for "include".(·ı¹Š8ÏŸı¸·,HÈËRMINORZVULNERABILITY
-^squid:S19890"&Add a "try/catch" block for "include".(·ı¹Š8Ò…ó¸·,HÉËRMINORZVULNERABILITY
-esquid:S1989"(Add a "try/catch" block for "getWriter".(ïô†úÿÿÿÿ8Ûáì¸·,HÊËRMINORZVULNERABILITY
+^squid:S1989+"&Add a "try/catch" block for "include".(·ı¹Š8Ò…ó¸·,HöĞRMINORZVULNERABILITY
+^squid:S19891"&Add a "try/catch" block for "include".(·ı¹Š8ÏŸı¸·,H÷ĞRMINORZVULNERABILITY
+esquid:S1989"(Add a "try/catch" block for "getWriter".(ïô†úÿÿÿÿ8Ûáì¸·,HúĞRMINORZVULNERABILITY
+^squid:S1989+"&Add a "try/catch" block for "include".(·ı¹Š8ÏŸı¸·,HøĞRMINORZVULNERABILITY
+^squid:S19891"&Add a "try/catch" block for "include".(·ı¹Š8Ò…ó¸·,HùĞRMINORZVULNERABILITY
