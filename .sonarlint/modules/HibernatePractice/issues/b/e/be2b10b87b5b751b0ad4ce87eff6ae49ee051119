@@ -1,16 +1,16 @@
 
+jsquid:S1854"5Remove this useless assignment to local variable "t".(îÿ´Â8 •ê¬¹,H¨ÚRMAJORZ
+CODE_SMELL
+[squid:S1481"&Remove this unused "t" local variable.(îÿ´Â8 •ê¬¹,H¥ÚRMINORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Õý²£ÿÿÿÿÿ8 •ê¬¹,H©ÚRMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(úŸ¥þÿÿÿÿ8 •ê¬¹,H§ÚRMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(’ËÉ8 •ê¬¹,H£ÚRMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(å¤”þøÿÿÿÿ8ÿéç¬¹,H¤ÚRMAJORZ
+CODE_SMELL
 m
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÕÐ± 8ª›ä¬¹,H¦ÐRMAJORZ
-CODE_SMELL
-…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(å¤”þøÿÿÿÿ8ÿéç¬¹,H¨ÐRMAJORZ
-CODE_SMELL
-…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Õý²£ÿÿÿÿÿ8 •ê¬¹,H«ÐRMAJORZ
-CODE_SMELL
-€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(’ËÉ8 •ê¬¹,H¬ÐRMAJORZ
-CODE_SMELL
-…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(úŸ¥þÿÿÿÿ8 •ê¬¹,H­ÐRMAJORZ
-CODE_SMELL
-[squid:S1481"&Remove this unused "t" local variable.(îÿ´Â8 •ê¬¹,H®ÐRMINORZ
-CODE_SMELL
-jsquid:S1854"5Remove this useless assignment to local variable "t".(îÿ´Â8 •ê¬¹,H¯ÐRMAJORZ
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÕÐ± 8ª›ä¬¹,H¦ÚRMAJORZ
 CODE_SMELL

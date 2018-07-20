@@ -9,3 +9,7 @@ J
 WebContent/WEB-INF/web.xml,c/5/c510f2eaee6faa7ce096cfb89f5dcfc359c14265
 K
 src/com/hibernate/Test.java,5/7/57e1c2261b9939e5bb183331afabccacdf21cba7
+K
+src/com/hibernate/Cart.java,8/5/85c64fa790e2a54e7dbc57ed6d4e6d3c3df258b2
+E
+src/com/pojo/Emp.java,5/f/5fe65b45dc775aafa19b64d491df7cc1be7cb8f2
